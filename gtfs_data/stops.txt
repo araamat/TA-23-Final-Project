@@ -130,7 +130,6 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 946,04201-1,Vikerkaare,59.36781432,24.65218019,946,,Nõmme,,6581268.79,537083.39,Harju1,Tallinna TA
 159114,5190024-1,Metsaveere,58.95575631,25.75306623,159114,,Kareda vald,,6536505.60,600870.20,,Järvamaa ÜTK
 948,04203-1,Raba,59.36589675,24.64257876,948,,Nõmme,,6581049.91,536539.51,Harju1,Tallinna TA
-154465,7801031-1,Vahi tööstuspark,58.41766417,26.72159926,154465,,Tartu vald,,6478479.50,659004.87,,Tartu MV
 156802,8200855-1,Aaviku,58.04084655,26.37286814,156802,,Otepää vald,,6435762.99,640124.32,,Valga MV
 949,04301-1,Naaritsa,59.36479125,24.63752794,949,,Nõmme,,6580924.02,536253.48,Harju1,Tallinna TA
 950,04302-1,Naaritsa,59.36480231,24.63598798,950,,Nõmme,,6580924.42,536165.90,Harju1,Tallinna TA
@@ -190,6 +189,7 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 25645,5700072-1,Juurika,58.94826124,23.62772767,25645,,Haapsalu linn,"Ametlik nimi: Võnnu tee",6534412.00,478572.75,Laane1,Lääne MV
 1035,06406-1,Liiva,59.38840959,24.71944248,1035,,Nõmme,,6583602.13,540883.22,Harju1,Tallinna TA
 1036,06407-1,Liiva,59.38821228,24.71804474,1036,,Nõmme,,6583579.30,540804.03,Harju1,Tallinna TA
+159355,4401162-1,Kesalille (perspektiivne),59.37549671,27.78092365,159355,,Vaivara vald,,6588000.50,714827.12,,Ida-Viru MV
 1038,06409-1,Liiva jaam,59.38685906,24.7177061,1038,,Nõmme,,6583428.35,540786.40,Harju1,Tallinna TA
 1039,06410-1,Värava,59.38500918,24.71767434,1039,,Nõmme,,6583222.26,540786.80,Harju1,Tallinna TA
 1040,06411-1,Värava,59.3843958,24.71727682,1040,,Nõmme,,6583153.69,540764.94,Harju1,Tallinna TA
@@ -238,6 +238,7 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 1102,07801-1,Tedre,59.41976682,24.71320045,1102,,Kristiine,,6587091.46,540491.38,Harju1,Tallinna TA
 1103,07802-1,Tihase,59.42275453,24.71532543,1103,,Kristiine,,6587425.57,540608.47,Harju1,Tallinna TA
 161674,"",Viki 2 (tellimisel),58.35381029,22.07197682,161674,,Kihelkonna vald,,6469763.50,387138.68,,Saare MV
+161305,4401171-1,Turg,59.39106616,27.77632032,161305,,Sillamäe linn,"Bussijaama suunas",6589717.50,714468.25,,Ida-Viru MV
 125530,7820139-2,Lõunakeskus,58.35889909,26.67292438,125530,,Tartu linn,"Lõpp-peatus",6471825.19,656423.39,TartuLinn,Tartu LV
 25192,5900211-1,Karkuse tee,59.31045,26.389955,25192,,Vinni vald,,6577122.85,636095.42,Viru1,Lääne-Viru MV
 1109,07808-1,Lilleküla jaam,59.42391986,24.72511057,1109,,Kristiine,,6587561.35,541162.54,Harju1,Tallinna TA
@@ -726,7 +727,6 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 127575,5701010-1,Kersleti,59.02899768,23.16660256,127575,,Vormsi vald,,6543643.00,452144.03,Laane1,Lääne MV
 2875,20002-1,Õunapuu puiestee,59.47495333,24.95111153,2875,,Maardu linn,,6593406.50,553910.62,Harju2,Harjumaa ÜTK
 2876,20101-1,Kabelikivi,59.48068599,24.94412449,2876,,Maardu linn,,6594039.50,553505.62,Harju2,Harjumaa ÜTK
-2877,20102-1,Kardheina tee,59.4814223,24.932745,2877,,Maardu linn,,6594112.50,552859.62,Harju2,Harjumaa ÜTK
 2878,19904-1,Pirnipuu puiestee,59.47919359,24.92416673,2878,,Maardu linn,,6593857.50,552376.93,Harju2,Harjumaa ÜTK
 31294,6500675-1,Tartu maantee,58.099919,27.4436922,31294,,Räpina vald,"Jaamamõisa suunas",6445075.03,702974.84,,Põlva MV
 10300,23665-1,Lubjamäe,59.51363409,24.85063288,10300,,Viimsi vald,,6597638.99,548160.99,Harju2,Harjumaa ÜTK
@@ -743,7 +743,6 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 2947,19401-1,Kärmu,59.45310811,24.96638774,2947,,Maardu linn,,6590985.43,554811.50,Harju2,Harjumaa ÜTK
 161326,"",Läbara(tellimisel),57.94433254,22.09159247,161326,,Torgu vald,"peatus ettetellimisel dispetšerilt 6310263",6424142.50,386989.25,,Saare MV
 161327,7400725-2,Sääre,57.9183072,22.06217641,161327,,Torgu vald,,6421295.00,385164.06,,Saare MV
-31945,7801001-1,Tülba,58.46270585,26.63617849,31945,,Tartu vald,"Muuge tee peatuse suunas",6483293.00,653819.81,,Tartu MV
 3099,18623-1,Äigrumäe,59.48137596,24.89083159,3099,,Pirita,,6594075.05,550484.56,Harju1,Tallinna TA
 152779,8600943-1,Härmä,57.7955523,27.38955538,152779,,Setomaa vald,,6411056.00,701499.00,,Võru MV
 145991,16009-1,Taevapuna,59.43863313,24.85963582,145991,,Lasnamäe,,6589290.55,548777.77,Harju1,Tallinna TA
@@ -983,7 +982,7 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 4722,23301-1,Bioloogia,59.39166416,24.58013529,4722,,Saue vald,,6583888.00,532964.00,Harju2,Harjumaa ÜTK
 4723,23302-1,Bioloogia,59.39200139,24.58304496,4723,,Saue vald,,6583927.00,533129.00,Harju2,Harjumaa ÜTK
 32418,5900451-1,Mullikmäe,59.32889761,26.41442938,32418,,Vinni vald,,6579226.50,637414.56,Viru1,Lääne-Viru MV
-26651,7800799-1,Rõngu kool,58.14936187,26.24601519,26651,,Elva vald,,6447584.45,632231.57,,Tartu MV
+150086,7000800-1,Ohulepa mõis,59.06911936,24.56317963,150086,,Rapla vald,,6547950.50,532302.25,Rapla4,Rapla MV
 4732,21742-1,Pansionaat,59.39080543,24.21299373,4732,,Lääne-Harju vald,,6583669.00,512103.00,Harju3,Harjumaa ÜTK
 4733,21743-1,Pansionaat,59.39101302,24.21229108,4733,,Lääne-Harju vald,,6583692.00,512063.00,Harju3,Harjumaa ÜTK
 4734,21702-1,Heliküla,59.38789265,24.22110541,4734,,Lääne-Harju vald,,6583346.00,512565.00,Harju3,Harjumaa ÜTK
@@ -1252,7 +1251,6 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 24243,7000167-1,Pihali,59.13193434,24.60843635,24243,,Kohila vald,,6554970.00,534834.50,Kohila,Rapla MV
 138243,7000702-1,Keskuse,59.12751876,24.61293746,138243,,Kohila vald,,6554480.50,535096.68,Kohila,Rapla MV
 158835,47519-1,Vabaõhukeskuse,59.32970893,24.5405817,158835,,Saue vald,,6576967.51,530772.18,Harju2,Harjumaa ÜTK
-20228,7801168-1,Ülenurme keskus,58.31511817,26.72093073,20228,,Kambja vald,"Männi suunas",6467065.93,659429.01,,Tartu MV
 5162,22330-1,Sääsküla,59.1075327,25.23385918,5162,,Kose vald,,6552744.00,570688.50,Harju4B,Harjumaa ÜTK
 5163,22329-1,Sääsküla,59.10733326,25.23465156,5163,,Kose vald,,6552722.62,570734.29,Harju4B,Harjumaa ÜTK
 156143,8600963-1,Panni,57.92510046,26.65417157,156143,,Antsla vald,"Ruhingu suunas",6423504.00,657237.81,,Võru MV
@@ -1321,6 +1319,7 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 5257,21450-1,Lehtmetsa,59.31906277,25.35108089,5257,,Anija vald,,6576432.30,576928.73,Harju4B,Harjumaa ÜTK
 138811,22917-1,Lääne,59.34275346,24.07265424,138811,,Paldiski linn,"",6578298.92,504134.25,Harju4A,Harjumaa ÜTK
 32844,4900515-1,Riipuse,58.61898205,25.8161164,32844,,Põltsamaa vald,"Lebavere suunas",6499104.50,605512.68,tartu2,Jõgeva ÜTK
+92252,7800817-1,Saadjärve tee,58.53231281,26.69909389,92252,,Tartu vald,"Õvanurme suunas",6491185.50,657177.06,,Tartu MV
 138971,6701265-1,Veiko,58.42463,24.355234,138971,,Pärnu linn,,6476084.12,520755.44,,Pärnu MV
 158351,7800872-1,Päkste,58.29358101,26.89367277,158351,,Kastre vald,"Kriimani suunas",6465093.00,669647.93,,Tartu MV
 26939,8400642-1,Parika,58.49246,25.830771,26939,,Viljandi vald,"Kolga-Jaani suunas",6485040.85,606748.45,,Viljandi MV
@@ -1557,6 +1556,7 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 161348,"",Anseküla(tellimisel),58.10834744,22.23353214,161348,,Salme vald,"peatus ettetellimisel dispetšerilt 6310263",6442173.50,395873.53,,Saare MV
 146740,09608-1,Supelranna,59.44383153,24.68726634,146740,,Põhja-Tallinn,,6589756.87,538991.57,Harju1,Tallinna TA
 161347,"",Anseküla(tellimisel),58.10813144,22.2331786,161347,,Salme vald,"peatus ettetellimisel dispetšerilt 6310263",6442150.00,395852.06,,Saare MV
+27679,7800821-1,Saba,58.40342351,26.96085256,27679,,Luunja vald,"Kavastu suunas",6477487.00,673044.12,,Tartu MV
 5085,22021-1,Nõmmiku,59.26560647,24.80144262,5085,,Kiili vald,,6569975.58,545706.21,Harju2,Harjumaa ÜTK
 27749,8200454-1,Rähni,58.07185204,25.86411608,27749,,Tõrva vald,,6438266.08,609993.96,,Valga MV
 1435,15103-1,Pallasti,59.43346104,24.79741334,1435,,Lasnamäe,,6588670.79,545254.15,Harju1,Tallinna TA
@@ -1662,6 +1662,7 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 23665,5100254-1,Lõõla,58.9391,25.39805,23665,,Türi vald,,6534170.86,580484.81,tartu1,Järvamaa ÜTK
 139317,47352-1,Sinilille,59.20598801,24.4650354,139317,,Saue vald,,6563153.30,526567.40,Harju3,Harjumaa ÜTK
 32043,4400423-1,Meretare,59.41535381,27.51672314,32043,,Toila alevik,"Mere tn suunas",6591618.00,699597.18,,Ida-Viru MV
+28304,7800069-1,Sae,58.2423323,26.17656223,28304,,Elva vald,"Vehendi suunas",6457799.00,627808.12,,Tartu MV
 92478,8200573-1,Seedri,57.94793647,26.21080148,92478,,Valga vald,,6425093.50,630898.43,,Valga MV
 145452,5100676-1,Äiamaa,58.78602098,25.55462871,145452,,Türi vald,,6517323.00,589892.56,,Järvamaa ÜTK
 20776,7000022-1,Alu tee,59.0195063,24.76605776,20776,Alu,Rapla vald,,6542539.72,544001.39,Rapla1,Rapla MV
@@ -1693,6 +1694,7 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 130363,7820249-3,Soola II,58.37683585,26.73070579,130363,,Tartu linn,"Sõpruse silla suunas",6473957.50,659721.68,,Tartu LV
 149952,8490224-1,Koorti,58.047844,25.396512,149952,,Mulgi vald,"Abja-Paluoja suunas",6434922.07,582462.85,,Viljandi MV
 153371,27014-1,Oja tee,59.41538223,25.00414229,153371,,Jõelähtme vald,,6586814.50,557015.62,Harju2,Harjumaa ÜTK
+162843,"",Kanissaare(tellimisel),58.49473513,23.17811911,162843,,Pöide vald,,6484131.00,452076.18,,
 4431,23151-1,Mõigu,59.40489409,24.81051654,4431,,Kesklinn,,6585497.45,546036.19,Harju1,Tallinna TA
 26357,8400368-1,Lannu,58.03966121,25.54664539,26357,,Mulgi vald,"Lilli suunas",6434205.43,591347.62,,Viljandi MV
 139728,5901113-1,Karitsa,59.28703503,26.33157173,139728,,Rakvere vald,,6574399.00,632862.81,Viru1,Lääne-Viru MV
@@ -1712,7 +1714,6 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 126693,23384-1,Aila,59.29408361,24.49872246,126693,,Saue vald,,6572980.50,528418.93,Harju2,Harjumaa ÜTK
 154508,4401140-1,Vahtra,59.03487683,27.05110574,154508,,Tudulinna vald,"Tudulinna suunas",6547984.00,675117.18,Viru7,Ida-Viru MV
 158952,7000766-1,Kohila raudteejaam,59.17011931,24.74389701,158952,Kohila,Kohila vald,,6559301.50,542542.50,Kohila,Rapla MV
-145677,6790028-1,Pärnu-Jaagupi tee,58.607845,24.512119,145677,,Põhja-Pärnumaa vald,,6496549.20,529765.89,,Pärnu MV
 14839,23916-1,Põrguvälja,59.35978478,24.8854494,14839,,Rae vald,,6580526.38,550358.36,Harju2,Harjumaa ÜTK
 10267,23908-1,Vaida,59.28636425,24.9752467,10267,,Rae vald,,6572419.00,555584.00,Harju3,Harjumaa ÜTK
 138603,7000704-1,Mobile,59.20799001,24.6305006,138603,,Kohila vald,,6563453.50,536018.06,Kohila,Rapla MV
@@ -1746,6 +1747,7 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 10448,06612-1,Raudalu,59.36238994,24.76375201,10448,,Nõmme,,6580731.50,543434.06,Harju1,Tallinna TA
 154463,7801383-1,Maarja-Magdaleena kool,58.61804155,26.73889918,154463,,Tartu vald,"Maarja-Magdaleena suunas",6500820.00,659104.00,,Tartu MV
 10455,23293-1,Saku Kingu,59.29519231,24.65574203,10455,,Saku vald,,6573181.00,537365.00,Harju2,Harjumaa ÜTK
+162845,"",Kõrkvere(tellimisel),58.48796032,23.22268627,162845,,Pöide vald,,6483345.50,454666.03,,
 27010,7800181-1,Kabina tee,58.35770232,26.8569785,27010,,Luunja vald,"Luunja suunas",6472136.00,667193.87,,Tartu MV
 31417,6500216-1,Kosova,58.22678211,27.02803504,31417,,Põlva vald,"Rookse suunas",6458008.39,677855.73,,Põlva MV
 161362,"",Türju(tellimisel),57.98019163,22.01974145,161362,,Torgu vald,"peatus ettetellimisel dispetšerilt 6310263",6428258.00,382853.53,,Saare MV
@@ -1756,9 +1758,10 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 31526,6500225-1,Kruusa,58.03984604,26.90722685,31526,,Kanepi vald,"Ihamaru suunas",6436893.56,671666.54,,Põlva MV
 159310,4990758-1,Vadi koolimaja,58.98869307,26.97316027,159310,,Mustvee vald,"Vadi suunas",6542643.76,670874.45,,Jõgeva ÜTK
 149951,8490223-1,Koorti,58.0476,25.39713,149951,,Mulgi vald,"Sika suunas",6434895.66,582499.90,,Viljandi MV
-10524,20105-1,Kardheina tee,59.48134011,24.9323082,10524,,Maardu linn,,6594103.00,552835.00,Harju2,Harjumaa ÜTK
+162844,"",Keskvere(tellimisel),58.49096877,23.20376259,162844,,Pöide vald,,6483693.50,453566.40,,
 10525,20103-1,Kabelikivi,59.48138253,24.94400921,10525,,Maardu linn,,6594117.00,553498.00,Harju2,Harjumaa ÜTK
 10526,20104-1,Kabelikivi,59.48173244,24.94528948,10526,,Maardu linn,,6594157.00,553570.00,Harju2,Harjumaa ÜTK
+162846,"",Keskvere(tellimisel),58.4911455,23.20402654,162846,,Pöide vald,,6483713.00,453582.03,,
 138352,15311-1,Võidujooksu,59.43568,24.81225,138352,,Lasnamäe,,6588928.07,546093.11,Harju1,Tallinna TA
 24330,5700136-1,Kirimäe,58.925,23.75666999,24330,,Lääne-Nigula vald,,6531786.94,485984.97,Laane2,Lääne MV
 156418,5901249-1,Nurkse,59.30580035,26.56681223,156418,,Vinni vald,,6576977.36,646181.59,Viru3,Lääne-Viru MV
@@ -1772,6 +1775,7 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 10576,21773-1,Klooga raudteejaam,59.320813,24.257601,10576,Klooga,Lääne-Harju vald,,6575880.66,514667.66,Harju3,Harjumaa ÜTK
 24222,4400503-1,Sarapuu,59.38173256,28.13034194,24222,,Narva-Jõesuu linn,"Narva suunas",6589864.60,734613.83,,Ida-Viru MV
 29277,6500473-1,Piusa,57.83991959,27.46005671,29277,,Võru vald,"Piusa raudteejaama suunas",6416205.00,705431.62,,Võru MV
+162847,"",Kanissaare(tellimisel),58.49485675,23.17818326,162847,,Pöide vald,,6484144.50,452080.09,,
 145378,7400986-1,Reinu,58.42653483,22.80328254,145378,,Saaremaa vald,,6476865.00,430085.93,,Saare MV
 1297,12203-1,A. Laikmaa,59.43614,24.75755,1297,,Kesklinn,,6588942.99,542988.58,Harju1,Tallinna TA
 158202,8490266-1,Liivalohu,58.56584212,25.40305869,158202,,Põhja-Sakala vald,"Suure-Jaani suunas",6492611.17,581642.68,,Viljandi MV
@@ -1824,7 +1828,6 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 21809,8200303-1,Lutike,58.14213207,26.56402174,21809,,Otepää vald,"Tartu mnt suunas",6447451.06,650976.06,,Valga MV
 10861,41314-1,Kulli,59.38345848,25.0041678,10861,Kulli,Raasiku vald,"Rong Tallinna suunas",6583258.50,557070.31,Harju2,Harjumaa ÜTK
 10862,41313-1,Kulli,59.38347031,25.00320584,10862,Kulli,Raasiku vald,"Rong Aegviidu suunas",6583259.00,557015.62,Harju2,Harjumaa ÜTK
-162000,7801461-1,Söödi,58.31681117,26.63786989,162000,,Kambja vald,,6467059.94,654557.31,,Tartu MV
 10865,43157-1,Lagedi,59.39975161,24.93169943,10865,Lagedi,Rae vald,"Rong Tallinna suunas",6585014.00,552926.75,Harju2,Harjumaa ÜTK
 10872,13709-1,Vesse,59.42306429,24.81916097,10872,Vesse,Lasnamäe,"Rong Tallinna suunas",6587527.50,546502.43,Harju1,Tallinna TA
 10877,13411-1,Ülemiste,59.42338249,24.79508362,10877,Ülemiste,Lasnamäe,"Rong Balti jaama suunas",6587546.50,545135.25,Harju1,Tallinna TA
@@ -1846,7 +1849,6 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 11116,43002-1,Arumäe,59.39122359,24.97846886,11116,,Rae vald,,6584101.88,555597.24,Harju2,Harjumaa ÜTK
 159208,00191-1,Siimeoni (ajutine),59.43973506,24.76258277,159208,,Kesklinn,,6589346.71,543269.61,,Tallinna TA
 29280,6500475-1,Plotina,57.98348881,27.46812962,29280,,Setomaa vald,"Niitsiku suunas",6432198.87,705084.11,,Võru MV
-145678,6790029-1,Pärnu-Jaagupi tee,58.608299,24.512415,145678,,Põhja-Pärnumaa vald,,6496599.90,529782.71,,Pärnu MV
 157049,47505-1,Raja,59.26283324,24.56993741,157049,,Saue vald,,6569531.70,532506.50,Harju3,Harjumaa ÜTK
 161372,"",Ohessaare(tellimisel),57.99894772,22.02812364,161372,,Torgu vald,"peatus ettetellimisel dispetšerilt 6310263",6430331.50,383410.65,,Saare MV
 1034,06405-1,Kirde,59.38977172,24.71056539,1034,,Nõmme,,6583748.49,540377.18,Harju1,Tallinna TA
@@ -1879,7 +1881,7 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 11581,16508-1,Iru,59.46177747,24.90435519,11581,,Pirita,,6591902.10,551280.35,Harju2,Tallinna TA
 21842,5900673-1,Rünga,59.16085745,26.51293938,21842,,Vinni vald,,6560726.30,643719.70,Viru4,Lääne-Viru MV
 11606,11702-2,Keskturg,59.43192123,24.76756924,11606,,Kesklinn,,6588479.50,543562.50,Harju1,Tallinna TA
-162001,7801462-1,Söödi,58.31699375,26.63546271,162001,,Kambja vald,,6467074.71,654415.54,,Tartu MV
+162001,7801462-1,Söödi,58.31699375,26.63546271,162001,,Kambja vald,"Ülenurme suunas",6467074.71,654415.54,,Tartu MV
 11632,29005-1,Kuusalu kool,59.45201028,25.41682918,11632,,Kuusalu vald,,6591317.00,580359.00,Harju4B,Harjumaa ÜTK
 30527,5700307-1,Puise I,58.78295299,23.47575333,30527,,Haapsalu linn,"Ametlik nimi: Puise",6516058.00,469681.65,Laane2,Lääne MV
 134888,4990034-1,Rääbise,58.78885916,26.64526511,134888,,Jõgeva vald,,6519613.00,652917.50,,Jõgeva ÜTK
@@ -2002,6 +2004,7 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 146467,8600894-1,Holdi,57.71450578,27.12891779,146467,,Rõuge vald,"Ihatsi suunas",6401286.00,686437.50,,Võru MV
 21946,6700969-1,Tahkuranna,58.219108,24.488878,21946,,Võiste alevik,,6453243.25,528730.64,,Pärnu MV
 13012,13010-1,Peterburi tee,59.42415949,24.78807576,13012,,Lasnamäe,,6587628.36,544736.43,Harju1,Tallinna TA
+24118,7800855-1,Savipera,58.2047706,26.52026458,24118,,Nõo vald,"Tamsa suunas",6454325.00,648138.68,,Tartu MV
 136246,11403-1,Gonsiori,59.43342301,24.76781845,136246,,Kesklinn,,6588646.95,543574.72,Harju1,Tallinna TA
 12977,23426-1,Tõkke,59.31418468,24.53536748,12977,,Saue vald,,6575235.77,530489.18,Harju2,Harjumaa ÜTK
 24041,6700919-1,Soo,58.40604732,24.66470348,24041,,Tori vald,"Pärnu suunas",6474151.98,538857.03,PärnuMVLL,Pärnu MV
@@ -2054,6 +2057,7 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 156996,23854-1,Lukussepa,59.29036,24.64876,156996,,Saku vald,,6572638.84,536972.37,Harju2,Harjumaa ÜTK
 12186,25602-1,Haljava,59.39825612,25.18753367,12186,,Jõelähtme vald,,6585077.00,567461.43,Harju3,Harjumaa ÜTK
 143321,8200815-1,Pärna,57.78929674,26.11270106,143321,,Karula vald,,6407246.00,625648.43,,Valga MV
+27572,7800884-1,Sojamaa,58.47599726,26.62777081,27572,,Tartu vald,"Kärkna, Kärevere suunas",6484753.00,653271.50,,Tartu MV
 13592,15310-1,Uus-Pae,59.43483405,24.81465977,13592,,Lasnamäe,,6588835.50,546231.00,Harju1,Tallinna TA
 10379,21218-1,Estonia,59.43327524,24.75070073,10379,Estonia,Kesklinn,,6588619.50,542603.50,Harju1,Tallinna TA
 22993,8400057-1,Võivaku,58.47314765,25.60046847,22993,,Põhja-Sakala vald,"Saarepeedi suunas",6482547.01,593374.04,,Viljandi MV
@@ -2086,7 +2090,6 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 158947,5701110-1,Ilmajaama,58.9514889,23.81655778,158947,,Lääne-Nigula vald,,6534726.50,489442.37,Laane2,Lääne MV
 4765,21711-1,Aida,59.33939983,24.20833334,4765,,Lääne-Harju vald,,6577941.50,511855.96,Harju4A,Harjumaa ÜTK
 28458,8400507-1,Mustapali,58.297447,25.731574,28458,,Viljandi vald,"Viljandi suunas",6463174.26,601526.44,,Viljandi MV
-155083,7801031-2,Vahi tööstuspark,58.41766544,26.72175028,155083,,Tartu vald,,6478480.00,659013.68,,Tartu MV
 22356,8200524-1,Ristimäe,58.13567907,26.52104977,22356,,Otepää vald,"Tartu suunas",6446636.94,648473.97,,Valga MV
 22283,7800959-1,Tordi,58.41126469,26.92653979,22283,,Tartu vald,"Sääsküla suunas",6478271.50,671001.93,,Tartu MV
 1604,20801-1,Viimsi vallamaja,59.49886478,24.83691215,1604,,Viimsi vald,,6595983.93,547404.73,Harju2,Harjumaa ÜTK
@@ -2094,6 +2097,7 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 161395,"",Väike Ula (tellimisel),58.06408348,22.13781921,161395,,Salme vald,"peatus ettetellimisel dispetšerilt 6310263",6437398.00,390096.18,,Saare MV
 161396,"",Kasekääru(tellimisel),58.06219607,22.14599448,161396,,Salme vald,"peatus ettetellimisel dispetšerilt 6310263",6437174.50,390572.75,,Saare MV
 27371,6500603-1,Seto talumuuseum,57.94296403,27.6492548,27371,,Setomaa vald,"Verhulitsa suunas",6428260.21,716029.88,,Võru MV
+146226,7801317-1,Sootaga,58.49067657,26.70129712,146226,,Tartu vald,"Vasula suunas",6486557.00,657492.00,,Tartu MV
 26307,7000484-1,Riidaku,58.939477,24.550823,26307,,Märjamaa vald,,6533504.28,531712.11,Rapla3,Rapla MV
 141473,5100674-1,Aasuvälja,58.87425198,25.44371132,141473,,Türi vald,,6527005.00,583268.56,,Järvamaa ÜTK
 14052,7000072-1,Ikaruse,59.21655247,24.66445086,14052,,Kohila vald,,6564426.00,537948.00,Kohila,Rapla MV
@@ -2480,7 +2484,6 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 20561,5700347-1,Rõuma,58.97412,24.06034,20561,,Lääne-Nigula vald,,6537234.46,503470.47,Laane3,Lääne MV
 23787,8600012-1,Aida,57.828007,27.01831424,23787,,Võru linn,"Soo ristmiku suunas",6413612.94,679283.03,,Võru MV
 20565,7800068-1,Sae,58.24249904,26.17705483,20565,,Elva vald,"Rannu suunas",6457818.50,627836.43,,Tartu MV
-20566,7800967-1,Trepimäe,58.22965956,26.1441679,20566,,Elva vald,"Limnoloogia suunas",6456327.00,625951.68,,Tartu MV
 20567,8200270-1,Lemmiku,57.92085823,26.31573138,20567,,Otepää vald,"Otepää suunas",6422289.00,637212.87,,Valga MV
 20568,8200269-1,Lemmiku,57.92087033,26.31507265,20568,,Otepää vald,"Valga suunas",6422289.00,637173.81,,Valga MV
 152089,47425-1,Klooga kool,59.32015975,24.23665188,152089,,Lääne-Harju vald,,6575803.50,513475.09,Harju3,Harjumaa ÜTK
@@ -2567,7 +2570,6 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 20762,7801092-1,Vehendi,58.22511912,26.1361357,20762,,Elva vald,"Rannu suunas",6455806.50,625496.12,,Tartu MV
 25674,8600025-1,Annemõisa,57.89360528,26.8006162,25674,,Võru vald,"Sulbi suunas",6420351.93,666054.96,,Võru MV
 9127,21579-1,Loigu,59.39577741,24.31797835,9127,,Harku vald,,6584246.50,518065.90,Harju3,Harjumaa ÜTK
-20765,7801017-1,Unipiha park,58.25538111,26.61227282,20765,,Nõo vald,"Luke, Liudsepa suunas Nõo-Kambja teel",6460164.50,653324.68,,Tartu MV
 20766,7801042-1,Valmaotsa,58.47144971,26.36067491,20766,,Tartu vald,"Tartu suunas",6483667.50,637717.06,,Tartu MV
 20767,6700457-1,Levi,58.49804809,24.85746616,20767,,Tori vald,,6484525.94,549993.96,,Pärnu MV
 20768,7800634-1,Padakõrve,58.58462825,27.05281783,20768,,Peipsiääre vald,"Välgi suunas",6497889.50,677497.06,,Tartu MV
@@ -2659,7 +2661,6 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 21075,7400462-1,Mäla,58.58221369,23.27284703,21075,,Muhu vald,,6493810.00,457705.15,,Saare MV
 21076,7400465-1,Mändjala,58.21487878,22.31929429,21076,,Saaremaa vald,,6453905.05,401225.06,,Saare MV
 21077,7400464-1,Mändjala,58.21489641,22.31995549,21077,,Saaremaa vald,,6453906.04,401263.96,,Saare MV
-23581,7801051-1,Vana-Kuuste,58.25294338,26.79131613,23581,,Kambja vald,"Reola raudteejaama suunas",6460316.50,663838.87,,Tartu MV
 21099,6700419-1,Lanksaare,58.01318248,24.80276334,21099,,Saarde vald,,6430487.06,547450.99,,Pärnu MV
 21100,6700070-1,Audru kirik,58.41242026,24.35433348,21100,,Pärnu linn,,6474723.96,520710.01,,Pärnu MV
 21101,6700139-1,Jaagu,58.43056246,24.40116391,21101,,Pärnu linn,,6476759.99,523435.03,,Pärnu MV
@@ -2722,7 +2723,6 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 21302,7800215-1,Karjamõisa,58.51150937,26.72612901,21302,,Tartu vald,"Kukulinna suunas",6488934.00,658844.68,,Tartu MV
 21304,6700781-1,Raudtee,58.50328668,24.34981384,21304,,Pärnu linn,,6484843.04,520393.07,,Pärnu MV
 793,00109-1,Landi,59.44888623,24.590525,793,,Haabersti,,6590267.70,533498.22,Harju1,Tallinna TA
-129614,4990020-1,Tabivere raudteejaam,58.55110942,26.59265236,129614,,Tartu vald,,6493033.00,650900.87,,Tartu MV
 20927,7800654-1,Parapalu,58.31280012,27.38503016,20927,,Räpina vald,"Laaksaare suunas",6468579.00,698324.18,,Põlva MV
 31484,7800676-1,Pihuste,58.25362817,27.44445637,31484,,Räpina vald,"Piiroja suunas",6462174.50,702141.12,,Põlva MV
 21312,7000166-1,Pihali,59.13172318,24.6084752,21312,,Kohila vald,,6554946.50,534836.93,Kohila,Rapla MV
@@ -2785,7 +2785,6 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 21453,7800750-1,Rannu,58.23965552,26.21680149,21453,,Elva vald,"Konguta suunas",6457578.41,630179.98,,Tartu MV
 21454,7800941-1,Teedla,58.1898063,26.27927851,21454,,Elva vald,"Kirepi suunas",6452152.50,634036.12,,Tartu MV
 21455,7801120-1,Vilsi,58.18742282,26.25351829,21455,,Elva vald,"Teedla suunas",6451836.00,632530.75,,Tartu MV
-159355,4401162-1,Karikakra (perspektiivne),59.37549671,27.78092365,159355,,Vaivara vald,,6588000.50,714827.12,,Ida-Viru MV
 21465,8400609-1,Paalalinna kool,58.37167541,25.57488395,21465,,Viljandi linn,"Lääne tn suunas",6471212.96,592147.00,ViljandiLinn,Viljandi MV
 21466,5700313-1,Põlde,59.14203,23.76386999,21466,,Lääne-Nigula vald,,6555960.39,486484.76,Laane3,Lääne MV
 32007,5700259-1,Metsa,58.94269387,23.54823783,32007,,Haapsalu linn,,6533819.98,473993.36,Laane1,Lääne MV
@@ -2865,6 +2864,8 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 21596,7400839-1,Vantri,58.358049,22.44175429,21596,,Saaremaa vald,,6469672.95,408791.08,,Saare MV
 21597,7400840-1,Vantri,58.35829712,22.4415029,21597,,Saaremaa vald,,6469700.92,408777.01,,Saare MV
 21604,8200450-1,Pilkuse,58.05208133,26.53652487,21604,,Otepää vald,"Vastsemõisa suunas",6437367.06,649736.93,,Valga MV
+31161,7800918-1,Sääsküla,58.41073773,26.96246035,31161,,Luunja vald,"Sääsküla suunas",6478305.00,673102.06,,Tartu MV
+162000,7801461-1,Söödi,58.31681117,26.63786989,162000,,Kambja vald,"Külitse suunas",6467059.94,654557.31,,Tartu MV
 21607,8200362-1,Männiku,58.05572086,26.56319329,21607,,Otepää vald,"Otepää suunas",6437831.97,651294.98,,Valga MV
 22607,8400387-1,Lennuvälja,58.34413799,25.49516808,22607,,Viljandi vald,"Pärnu suunas",6468039.92,587551.95,,Viljandi MV
 21611,4400136-1,Staadioni,59.35918055,26.98567222,21611,,Lüganuse vald,"Keskuse suunas",6583905.33,669756.68,Viru7,Ida-Viru MV
@@ -2909,6 +2910,7 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 21698,8200464-1,Puka tee,58.05521069,26.19534688,21698,,Otepää vald,"Valga maantee suunas",6437005.00,629592.75,,Valga MV
 21699,8200233-1,Kõrepi,58.03903544,26.18480033,21699,,Otepää vald,"Valga suunas",6435184.07,629029.07,,Valga MV
 21701,8200218-1,Kuigatsi teerist,58.01093054,26.16262909,21701,,Otepää vald,"Valga suunas",6432013.01,627821.05,,Valga MV
+129614,4990020-1,Tabivere raudteejaam,58.55110942,26.59265236,129614,,Tartu vald,"Jõgeva suunas",6493033.00,650900.87,,Tartu MV
 21706,7400307-1,Kõiguste,58.39792707,22.97831119,21706,,Saaremaa vald,,6473509.99,440261.99,,Saare MV
 21707,7400308-1,Kõiguste,58.39814361,22.97844088,21707,,Saaremaa vald,,6473533.99,440269.94,,Saare MV
 21709,7400310-1,Kõljala,58.37084556,22.68063916,21709,,Pihtla vald,,6470798.00,422799.81,,Saare MV
@@ -2942,6 +2944,7 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 21744,6700708-1,Postikooli,58.2619987,24.68170763,21744,,Saarde vald,,6458118.95,540014.07,,Pärnu MV
 21745,7800320-1,Kukulinna,58.52648721,26.6964595,21745,,Tartu vald,"Lähte suunas",6490531.00,657049.81,,Tartu MV
 21746,8200724-1,Voki,58.01086233,26.42885658,21746,,Otepää vald,"Otepää suunas",6432543.95,643550.06,,Valga MV
+21940,7800928-1,Tammistu,58.44487873,26.93210072,21940,Tammistu,Tartu vald,"Tartu suunas",6482026.00,671163.06,,Tartu MV
 21749,8200134-1,Kannistiku,58.0496046,26.43603147,21749,,Otepää vald,"Puka suunas",6436871.50,643817.25,,Valga MV
 21757,3700026-1,Haavamägi,58.89912589,22.93160212,21757,,Pühalepa vald,"Kärdla suund",6529369.91,438420.27,,Hiiu MV
 21758,3700067-1,Kalginiit,58.86442217,22.919946,21758,,Pühalepa vald,"Käina suund",6525515.65,437686.26,,Hiiu MV
@@ -2952,7 +2955,6 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 21767,5700170-1,Kullamaa,58.88405,24.08957,21767,,Lääne-Nigula vald,,6527203.67,505165.04,Laane3,Lääne MV
 151751,3700320-1,Hilleste,58.87734195,22.9799642,151751,,Pühalepa vald,"Vahtrepa suund",6526900.36,441170.62,,Hiiu MV
 21772,7801142-1,Võsivere,58.33958709,26.42438152,21772,,Elva vald,"Ulila suunas",6469123.00,641962.68,,Tartu MV
-21774,6700592-1,Mädara,58.66958531,25.19121637,21774,,Põhja-Pärnumaa vald,,6503925.99,569111.99,,Pärnu MV
 21775,7800378-1,Kärgandi tee,58.57416471,26.98161532,21775,,Peipsiääre vald,"Välgi suunas",6496539.00,673411.75,,Tartu MV
 21776,8200315-1,Lüüsjärve,58.06906314,26.51620478,21776,,Otepää vald,"Otepää suunas",6439211.94,648467.02,,Valga MV
 21777,8200317-1,Majasoo,58.07383551,26.49846521,21777,,Otepää vald,"Otepää suunas",6439703.98,647401.00,,Valga MV
@@ -2986,6 +2988,7 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 21818,8200531-1,Ristipealse,58.03400121,26.43848246,21818,,Otepää vald,"Sangaste suunas",6435140.04,644025.05,,Valga MV
 21821,8200580-1,Sihva,58.01153466,26.43548615,21821,,Otepää vald,"Sangaste suunas",6432632.99,643938.99,,Valga MV
 21822,7000542-1,Tolli tee,58.83280123,24.30918657,21822,,Märjamaa vald,,6521533.00,517855.46,Rapla3,Rapla MV
+24126,7800926-1,Tammistu mõis,58.43563767,26.91117286,24126,Tammistu,Tartu vald,"Tartu suunas",6480944.50,669986.81,,Tartu MV
 21827,6700156-1,Juurikaru,58.63716748,25.09963072,21827,,Põhja-Pärnumaa vald,,6500224.99,563858.06,,Pärnu MV
 21829,5900051-1,Avanduse,59.0646232,26.4074498,21829,,Väike-Maarja vald,,6549792.11,638073.86,Viru5,Lääne-Viru MV
 21830,5900052-1,Avanduse,59.06431684,26.40713103,21830,,Väike-Maarja vald,,6549757.35,638056.81,Viru5,Lääne-Viru MV
@@ -3006,8 +3009,9 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 21855,6700596-1,Mägra,58.26969612,24.60501885,21855,,Häädemeeste vald,,6458933.06,535505.08,,Pärnu MV
 136173,6500955-1,Nüpli,58.00843188,26.85164431,136173,,Kanepi vald,"Kaagna suunas",6433257.00,668535.18,,Põlva MV
 21861,6701081-1,Uduvere,58.62143541,24.53858531,21861,,Põhja-Pärnumaa vald,,6498074.92,531292.01,,Pärnu MV
-21862,7800779-1,Roosi,58.26051977,26.89137883,21862,,Kastre vald,"Villemi suunas",6461408.34,669672.21,,Tartu MV
+21862,7800779-1,Roosi,58.26051977,26.89137883,21862,,Kastre vald,"Ignase suunas",6461408.34,669672.21,,Tartu MV
 21864,8200357-1,Mälle,57.95568075,26.54283111,21864,,Otepää vald,"Truuta suunas",6426652.00,650515.95,,Valga MV
+33535,7800252-1,Teedla tee,58.16671878,26.31276138,33535,,Elva vald,"",6449650.00,636093.00,,Tartu MV
 23445,4420040-1,Jäähall,59.36508775,28.18501045,23445,Narva,Narva linn,,6588206.41,737830.75,,Narva LV
 21871,6700793-1,Reiu mets,58.36304848,24.58753347,21871,Reiu mets,Pärnu linn,"Kesklinna suunas",6469320.92,534387.92,"PärnuLinn,PärnuMVLL",Pärnu MV
 21872,7800039-1,Aovere,58.44613668,26.80719278,21872,,Tartu vald,"Tartu suunas",6481854.04,663869.98,,Tartu MV
@@ -3043,7 +3047,7 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 21912,6700253-1,Kastna,58.35005095,23.91325618,21912,,Pärnu linn,,6467725.96,494921.01,,Pärnu MV
 21913,6701048-1,Trükikoda,58.15896741,24.9872979,21913,,Saarde vald,,6446867.99,558119.05,,Pärnu MV
 20078,7800899-1,Sopaku,58.41732411,26.762567,20078,,Tartu vald,"Jõhvi suunas",6478539.50,661398.56,,Tartu MV
-21921,7800859-1,Sepa,58.404164,26.98540684,21921,,Luunja vald,"Oolo peatuse suunas",6477633.00,674474.56,,Tartu MV
+21921,7800859-1,Sepa,58.404164,26.98540684,21921,,Luunja vald,"Kavastu suunas",6477633.00,674474.56,,Tartu MV
 21923,6700886-1,Seliste,58.28156564,24.08441187,21923,,Pärnu linn,,6460098.05,504952.05,,Pärnu MV
 32141,5700449-1,Kuuse rist,58.93588908,23.55655608,32141,,Haapsalu linn,,6533058.83,474467.20,Laane1,Lääne MV
 20798,8600086-1,Hänike,57.84042016,26.76308805,20798,,Võru vald,"Sõmerpalu suunas",6414340.99,664075.04,,Võru MV
@@ -3058,6 +3062,7 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 21947,6700970-1,Tahkuranna,58.217876,24.487779,21947,,Võiste alevik,,6453105.57,528667.05,,Pärnu MV
 1983,21104-1,Balti jaam (train station),59.4395256,24.73778919,1983,Tallinn; Balti Jaam,Kesklinn,,6589307.65,541863.12,Harju1,Tallinna TA
 21748,8200695-1,Vana-Otepää,58.07609956,26.5238268,21748,,Otepää vald,"Otepää suunas",6440011.98,648887.06,,Valga MV
+21774,6700592-1,Mädara,58.66951787,25.19084742,21774,,Vändra vald,,6503918.10,569090.72,,Pärnu MV
 26101,3700014-1,Aru,58.80850269,22.72901659,26101,,Hiiu vald,"Käina suund",6519481.21,426553.79,,Hiiu MV
 21951,6700169-1,Jõõksu,58.16568527,25.06710852,21951,,Saarde vald,,6447688.06,562804.96,,Pärnu MV
 25457,8600011-1,Aiandi,57.81359376,27.04225482,25457,,Võru vald,"Kose suunas",6412073.50,680776.87,,Võru MV
@@ -3107,7 +3112,7 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 22016,8600155-1,Kaubabaas,57.82835995,27.0320734,22016,,Võru linn,"Kek suunas",6413689.07,680097.97,,Võru MV
 22024,8600785-1,Vasla,57.81077222,27.4060474,22024,,Setomaa vald,"Obinitsa suunas",6412798.66,702392.52,,Võru MV
 22025,8600348-1,Luha,57.83600701,27.00743824,22025,,Võru linn,"Kaubamaja suunas",6414474.06,678597.51,,Võru MV
-22027,7800951-1,Tigase,58.34673158,27.01268134,22027,,Kastre vald,"Võõpste suunas",6471314.00,676354.68,,Tartu MV
+145677,6790028-1,Pärnu-Jaagupi tee,58.6074432,24.51205799,145677,,Pärnu-Jaagupi alev,,6496504.43,529762.69,,Pärnu MV
 22031,6701050-1,Trükikoda,58.1570956,24.98547717,22031,,Saarde vald,,6446657.96,558014.94,,Pärnu MV
 22032,6700294-1,Kilingi-Nõmme ringtee,58.15611981,24.952123,22032,,Saarde vald,,6446520.93,556053.06,,Pärnu MV
 22033,6701208-1,Äärelinna,58.1499868,24.93892951,22033,,Saarde vald,,6445826.97,555285.95,,Pärnu MV
@@ -3225,6 +3230,7 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 20621,7800863-1,Sikakurmu,58.23077058,27.30862318,20621,,Räpina vald,"Kliimaski suunas",6459230.50,694301.75,,Põlva MV
 88143,8200314-1,Lüüsjärve,58.06906223,26.51650323,88143,,Otepää vald,"Neeruti suunas",6439212.50,648484.62,,Valga MV
 22183,8200719-1,Villemsilla,58.03021151,26.17445166,22183,,Otepää vald,"Valga suunas",6434181.94,628449.97,,Valga MV
+145678,6790029-1,Pärnu-Jaagupi tee,58.60862455,24.51247427,145678,,Pärnu-Jaagupi alev,,6496636.19,529785.88,,Pärnu MV
 1307,12213-1,Pronksi,59.43719732,24.76100408,1307,,Kesklinn,,6589063.00,543183.25,Harju1,Tallinna TA
 1319,12305-2,Kivisilla,59.43521255,24.75932121,1319,,Kesklinn,,6588840.81,543090.26,Harju1,Tallinna TA
 28909,7800105-1,Haava,58.46313563,26.78591649,28909,,Tartu vald,"Jõhvi suunas",6483693.95,662550.08,,Tartu MV
@@ -3319,6 +3325,7 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 22348,8200602-1,Sõjatamme,58.04629887,26.45620273,22348,,Otepää vald,"Sangaste suunas",6436546.99,645021.06,,Valga MV
 31643,4900081-1,Juhani,58.69646256,26.43542104,31643,Metsakatsejaam,Jõgeva vald,"Kalevi peatuse suunas",6508868.93,641165.97,1,Jõgeva ÜTK
 22351,8200484-1,Raasiku,58.02488631,26.43963453,22351,,Otepää vald,"Otepää suunas",6434127.99,644129.98,,Valga MV
+22027,7800951-1,Tigase,58.34673158,27.01268134,22027,,Kastre vald,"Kastre suunas",6471314.00,676354.68,,Tartu MV
 22353,8200488-1,Raiga,58.09773359,26.49308676,22353,,Otepää vald,"Otepää suunas",6442352.04,646984.93,,Valga MV
 22354,8200489-1,Raiga,58.09806638,26.49348363,22354,,Otepää vald,"Tartu suunas",6442389.95,647006.94,,Valga MV
 9114,21105-5,Balti jaam 5 (train station),59.44114562,24.7399999,9114,Tallinn; Balti Jaam,Põhja-Tallinn,,6589489.50,541986.56,Harju1,Tallinna TA
@@ -3607,16 +3614,15 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 22963,8600810-1,Villa,57.68604537,27.08056522,22963,,Rõuge vald,"Plaani suunas",6397986.05,683703.97,,Võru MV
 22964,8600809-1,Villa,57.6860461,27.08071816,22964,,Rõuge vald,"Riidmäe suunas",6397986.55,683713.08,,Võru MV
 22971,7800334-1,Kure,58.31150143,26.84557335,22971,,Kastre vald,"Roiu suunas",6466966.50,666745.06,,Tartu MV
-22973,7800775-1,Roiu,58.29911958,26.86893042,22973,,Kastre vald,"Kaagver, Kurepalu suunas",6465647.00,668171.87,,Tartu MV
-22974,7800870-1,Sillaotsa,58.29380008,26.89088486,22974,,Kastre vald,"Uniküla, Lohu peatuse suunas",6465110.33,669483.54,,Tartu MV
+26492,7800960-1,Tordi,58.41166685,26.92750079,26492,,Tartu vald,"Pilka suunas",6478318.70,671056.10,,Tartu MV
+22974,7800870-1,Sillaotsa,58.29380008,26.89088486,22974,,Kastre vald,"Uniküla suunas",6465110.33,669483.54,,Tartu MV
 32129,4400456-1,Mustanina,59.35028333,27.74009947,32129,,Vaivara vald,"Sillamäe suunas",6585066.00,712666.50,,Ida-Viru MV
-22978,7801016-1,Uniküla,58.26915562,26.90937555,22978,,Kastre vald,"Sillaotsa suunas (tee 22140)",6462414.94,670685.93,,Tartu MV
 22980,7800004-1,Aardla küla,58.31460589,26.77747385,22980,,Kastre vald,"Reola raudteejaama suunas",6467144.71,662742.56,,Tartu MV
-22981,7801065-1,Vangi,58.30500405,26.76668777,22981,,Kastre vald,"Suurekivi peatuse suunas",6466050.07,662155.02,,Tartu MV
-22982,7801064-1,Vangi,58.30484055,26.76632571,22982,,Kastre vald,"Reola raudteejaama suunas",6466031.00,662134.56,,Tartu MV
+22981,7801065-1,Vangi,58.30500405,26.76668777,22981,,Kastre vald,"Aardlapalu suunas",6466050.07,662155.02,,Tartu MV
+22982,7801064-1,Vangi,58.30484055,26.76632571,22982,,Kastre vald,"Vana-Kuuste suunas",6466031.00,662134.56,,Tartu MV
 22983,7800954-1,Tilga,58.15453863,26.28193726,22983,,Elva vald,"Valga suunas",6448232.07,634326.02,,Tartu MV
 25744,5100164-1,Pärna,58.803141,25.429186,25744,,Türi linn,,6519068.13,582599.66,tartu1,Järvamaa ÜTK
-153100,7801364-1,Sulu,58.20638643,26.58162678,153100,,Kambja vald,"Luke suunas",6454642.00,651736.81,,Tartu MV
+153100,7801364-1,Sulu,58.20638643,26.58162678,153100,,Kambja vald,"",6454642.00,651736.81,,Tartu MV
 157481,8200858-2,Asula,58.13357763,26.47519934,157481,,Otepää vald,,6446302.48,645783.54,,Valga MV
 29926,4900133-1,Kalevi,58.68853154,26.46228581,29926,,Jõgeva vald,"Kassinurme suunas",6508043.00,642754.87,1,Jõgeva ÜTK
 31109,4900758-1,Õvanurme,58.56328512,26.62881041,31109,,Tartu vald,"Tabivere suunas",6494470.00,652951.18,,Tartu MV
@@ -3641,6 +3647,7 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 25156,8600739-1,Uue-Antsla,57.88106513,26.54397837,25156,,Antsla vald,"Kuldre suunas",6418350.00,650898.93,,Võru MV
 162311,22773-1,Nissi kalmistu,59.10023059,24.31967807,162311,,Saue vald,,6551324.09,518319.38,Harju4A,Harjumaa ÜTK
 135143,22362-1,Kiruvere,59.1216304,25.36172389,135143,,Kose vald,,6554455.79,577981.10,Harju4B,Harjumaa ÜTK
+26975,7800966-1,Tornimäe,58.30520582,27.08249247,26975,,Kastre vald,"Kastre suunas",6466879.50,680650.87,,Tartu MV
 153191,8200849-1,Räime,57.65789872,26.28979012,153191,,Valga vald,"Võru suunas",6392965.00,636676.00,,Valga MV
 147183,5901203-1,Lasila kool,59.25124159,26.21753955,147183,,Rakvere vald,,6570193.50,626499.00,Viru5,Lääne-Viru MV
 153634,8490246-1,Alliku,58.19105537,25.99047611,153634,,Viljandi vald,"Järveküla suunas",6451751.01,617053.92,,Viljandi MV
@@ -3816,6 +3823,7 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 32703,5900733-1,Simuna,59.0454618,26.40005529,32703,,Väike-Maarja vald,,6547643.87,637726.30,Simuna,Lääne-Viru MV
 23548,8600453-1,Obinitsa,57.80956803,27.43979636,23548,,Setomaa vald,"Poe poolne peatus",6412767.05,704403.06,,Võru MV
 23549,8600170-1,Kiksova,57.82714352,27.45810149,23549,,Setomaa vald,"Obinitsa suunas",6414777.92,705388.97,,Võru MV
+20566,7800967-1,Trepimäe,58.22965956,26.1441679,20566,,Elva vald,"Rannaküla suunas",6456327.00,625951.68,,Tartu MV
 23551,8600576-1,Runda,57.90753033,26.91756536,23551,,Võru vald,"Kungla suunas",6422196.97,672917.42,,Võru MV
 23552,8600396-1,Meremäe,57.74747902,27.45495493,23552,,Setomaa vald,"Serga teeristi suunas",6405907.07,705659.07,,Võru MV
 23554,8600220-1,Kuklase,57.60229064,27.09758759,23554,,Rõuge vald,"Kuura suunas",6388714.02,685148.99,,Võru MV
@@ -3915,7 +3923,7 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 92474,8200331-1,Meriloo tee,58.00121487,26.19234803,92474,,Valga vald,,6430988.50,629612.31,,Valga MV
 154422,4401137-1,Suvila tee,59.38103428,27.76592914,154422,,Vaivara vald,"Sillamäe suunas",6588568.50,713941.43,,Ida-Viru MV
 129030,6703020-1,Kurgo,58.40154096,24.39477495,129030,,Audru vald,,6473525.46,523080.83,,Pärnu MV
-23898,8200706-1,Veski,57.94662962,25.88135566,23898,,Tõrva vald,,6424352.99,611402.06,,Valga MV
+28693,7800586-1,Trulli,58.23214324,26.76197265,28693,,Kambja vald,"Kuuste, Sirvaku suunas",6457930.50,662212.87,,Tartu MV
 158355,"",Ruhve (Pärdi),58.36803731,23.02516801,158355,,Laimjala vald,,6470140.50,442953.12,,
 23903,7000504-1,Sikeldi,59.0214166,24.74024847,23903,,Rapla vald,,6542735.85,542516.65,Rapla1,Rapla MV
 23904,7000554-1,Töngi,59.087097,24.802127,23904,,Rapla vald,,6550092.39,545983.03,Rapla1,Rapla MV
@@ -3948,7 +3956,7 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 23958,7800667-1,Peedumäe,58.24328451,26.43728253,23958,,Nõo vald,"Tartu suunas",6458431.50,643107.43,,Tartu MV
 23961,7800080-1,Enno,58.1984911,26.37240323,23961,,Elva vald,"Elva suunas",6453309.07,639476.01,,Tartu MV
 22365,7800454-1,Lombi,58.4439283,26.74498994,22365,,Tartu vald,"Tartu suunas",6481458.00,660251.00,,Tartu MV
-23963,7801004-1,Uderna tee,58.19263813,26.36294124,23963,,Elva vald,"Tammiste suunas",6452637.95,638942.92,,Tartu MV
+162857,8600989-1,Juba,57.81081763,26.95411744,162857,,Võru vald,,6411530.50,675556.62,,Võru MV
 23965,7800157-1,Järiste,58.28972286,26.57322601,23965,,Nõo vald,"Elva suunas",6463898.00,650887.31,,Tartu MV
 23966,7800018-1,Aiamaa,58.28343217,26.56064186,23966,,Nõo vald,"Tartu suunas",6463169.63,650176.51,,Tartu MV
 23967,7000310-1,Luiste,58.8472558,24.21356305,23967,,Märjamaa vald,,6523121.50,512328.12,Rapla3,Rapla MV
@@ -3957,6 +3965,8 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 23527,8600213-1,Krabi,57.60968266,26.83379171,23527,,Rõuge vald,"Pähni suunas",6388839.47,669356.43,,Võru MV
 23972,8200480-1,Pühajärve,58.0467697,26.46570566,23972,,Otepää vald,"Otepää suunas",6436619.98,645579.96,,Valga MV
 23973,8600378-1,Madise,57.93500644,26.48475225,23973,,Antsla vald,"Restu suunas",6424222.08,647165.00,,Võru MV
+152672,7801361-1,Tõrvandi tee,58.32239138,26.72057788,152672,,Kambja vald,"",6467874.50,659375.50,,Tartu MV
+31945,7801001-1,Tülba,58.46270585,26.63617849,31945,,Tartu vald,"Kärevere suunas",6483293.00,653819.81,,Tartu MV
 23455,8600208-1,Kose,57.814876,27.0293501,23455,,Võru vald,"Puiga suunas",6412181.46,680004.12,,Võru MV
 23978,8200723-1,Voki,58.00959679,26.42878697,23978,,Otepää vald,"Otepää suunas",6432402.94,643551.05,,Valga MV
 156125,4990504-1,Koiduküla,58.83468208,26.28872409,156125,,Jõgeva vald,"Jõgeva suunas",6523955.94,632141.08,,Jõgeva ÜTK
@@ -4010,9 +4020,8 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 24112,5700382-1,Sinalepa,58.82169928,23.56563743,24112,,Haapsalu linn,,6520336.50,474907.71,Laane2,Lääne MV
 23211,7000582-1,Valgu,58.81836131,24.59124568,23211,,Märjamaa vald,,6520034.00,534158.18,Rapla3,Rapla MV
 24115,7800033-1,Altmäe,58.21906944,26.46790746,24115,,Nõo vald,"Tamsa suunas",6455802.06,645004.01,,Tartu MV
-24116,7800933-1,Tamsa,58.21446774,26.48845915,24116,,Nõo vald,"Pangodi suunas Uuta-Pangodi teel",6455334.50,646230.00,,Tartu MV
-24117,7800930-1,Tamsa,58.21486705,26.48779664,24117,,Nõo vald,"Uuta suunas Uuta-Pangodi teel",6455377.50,646189.43,,Tartu MV
-24118,7800855-1,Savipera,58.2047706,26.52026458,24118,,Nõo vald,"Uuta suunas",6454325.00,648138.68,,Tartu MV
+24116,7800933-1,Tamsa,58.21446774,26.48845915,24116,,Nõo vald,"Pangodi suunas",6455334.50,646230.00,,Tartu MV
+24117,7800930-1,Tamsa,58.21486705,26.48779664,24117,,Nõo vald,"Elva suunas",6455377.50,646189.43,,Tartu MV
 24119,7800856-1,Savipera,58.20461961,26.52040276,24119,,Nõo vald,"Pangodi suunas",6454308.50,648147.43,,Tartu MV
 24121,7800720-1,Puukooli,58.19558891,26.46136663,24121,,Nõo vald,"Etsaste suunas",6453174.50,644715.81,,Tartu MV
 24122,7800719-1,Puukooli,58.19572123,26.46172466,24122,,Nõo vald,"Elva suunas",6453190.00,644736.31,,Tartu MV
@@ -4021,7 +4030,7 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 24127,7800927-1,Tammistu mõis,58.43585967,26.911685,24127,Tammistu,Tartu vald,"Tammistu suunas",6480970.50,670015.62,,Tartu MV
 24129,7800929-1,Tammistu,58.44519467,26.93321557,24129,Tammistu,Tartu vald,"Tähemaa, Koosa suunas",6482064.00,671226.56,,Tartu MV
 24130,7800568-1,Mõru,58.44850237,26.95038594,24130,,Tartu vald,"Tähemaa, Koosa suunas",6482476.01,672212.04,,Tartu MV
-24131,7800921-1,Taabri,58.45582235,26.95855105,24131,,Tartu vald,"Aravuste suunas",6483311.50,672652.37,,Tartu MV
+24131,7800921-1,Taabri,58.45582235,26.95855105,24131,,Tartu vald,"Tammistu suunas",6483311.50,672652.37,,Tartu MV
 29248,7800633-1,Paaslangi,58.14900581,26.18126067,29248,,Elva vald,"Rõngu suunas",6447419.00,628421.87,,Tartu MV
 24136,7800055-1,Aruaia,58.36408404,27.07250496,24136,,Kastre vald,"Vana-Kastre suunas",6473403.50,679765.68,,Tartu MV
 24142,3700294-1,Vanajõe org,58.88576619,22.43893358,24142,,Emmaste vald,,6528438.78,409993.80,,Hiiu MV
@@ -4135,7 +4144,6 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 5511,32705-1,Kolgaküla-Luha,59.53133162,25.71575619,5511,,Kuusalu vald,"",6600547.00,597084.00,Harju4B,Harjumaa ÜTK
 24461,7800582-1,Mäksa,58.37619084,26.98310796,24461,,Kastre vald,"Vana-Kastre suunas",6474514.50,674478.81,,Tartu MV
 24462,7801101-1,Veskimäe,58.37814792,27.01814582,24462,,Kastre vald,"Vana-Kastre suunas",6474823.93,676516.96,,Tartu MV
-24463,7801102-1,Veskimäe,58.37793397,27.01942851,24463,,Kastre vald,"Võõpste suunas",6474803.50,676593.00,,Tartu MV
 24469,4400479-1,Niine,59.38136571,27.82618416,24469,,Narva-Jõesuu linn,"Sillamäe suunas",6588799.08,717358.72,,Ida-Viru MV
 24470,4400478-1,Niine,59.38140833,27.82579507,24470,,Narva-Jõesuu linn,"Sinimäe suunas",6588802.56,717336.37,,Ida-Viru MV
 24471,4400383-1,Liiva,59.37285769,27.84307703,24471,Sinimäe kalmistu,Narva-Jõesuu linn,"Sillamäe suunas",6587907.68,718371.60,,Ida-Viru MV
@@ -4541,7 +4549,7 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 21024,8400739-1,Rahvamaja,58.32804493,25.48286154,21024,,Viljandi vald,"Pärnu mnt suunas",6466231.95,586871.06,,Viljandi MV
 25253,8400577-1,Oiu,58.40033099,25.97695151,25253,,Viljandi vald,"Tartu suunas",6475026.01,615571.94,,Viljandi MV
 25254,8401005-1,Ulge,58.41012553,26.00836124,25254,,Viljandi vald,"Viljandi suunas",6476170.97,617374.94,,Viljandi MV
-80637,7800810-1,Rüütlimäe,58.51946303,26.68778487,80637,,Tartu vald,"Äksi teel Lähte, Kukulinna suunas",6489729.00,656576.18,,Tartu MV
+23963,7801004-1,Uderna tee,58.19263813,26.36294124,23963,,Elva vald,"Rõngu suunas",6452637.95,638942.92,,Tartu MV
 20393,8600522-1,Põrstõ,57.65161788,27.33541391,20393,,Setomaa vald,"Järvemäe suunas",6394883.02,699079.96,,Võru MV
 151752,3700321-1,Hilleste,58.87741819,22.97966961,151752,,Pühalepa vald,,6526909.11,441153.76,,Hiiu MV
 161651,6790087-1,Kaapre tee,58.26506454,24.10900535,161651,,Tõstamaa vald,,6458262.28,506397.82,,Pärnu MV
@@ -4925,6 +4933,7 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 25973,7800713-1,Puiestee,58.17579535,26.33590391,25973,,Elva vald,"Rõngu suunas",6450707.50,637419.06,,Tartu MV
 25974,8200008-1,Aedlinna,58.04739797,26.47495076,25974,,Otepää vald,"Otepää suunas",6436710.01,646122.98,,Valga MV
 25977,8200021-1,Alajaama,58.06648135,26.499643,25977,,Otepää vald,"Otepää suunas",6438888.05,647500.97,,Valga MV
+22978,7801016-1,Uniküla,58.26915562,26.90937555,22978,,Kastre vald,"Roiu suunas",6462414.94,670685.93,,Tartu MV
 25979,8200023-1,Alaküla,58.04141257,26.55274261,25979,,Otepää vald,"Pilkuse suunas",6436215.98,650739.05,,Valga MV
 25980,8200039-1,Anne,57.98429731,26.53618164,25980,,Otepää vald,"Vidrike suunas",6429822.07,650002.06,,Valga MV
 25981,8200040-1,Anne osakond,57.98373696,26.56435607,25981,,Otepää vald,"Pilkuse suunas",6429823.06,651670.01,,Valga MV
@@ -5182,7 +5191,6 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 24267,3700226-1,Ristivälja,58.84841613,22.76776464,24267,,Hiiu vald,"Mäeltse suund",6523884.44,428874.33,,Hiiu MV
 125934,6720011-1,Teater,58.38650356,24.49724261,125934,Teater,Pärnu linn,"Ülejõe suunas",6471890.50,529084.00,"PärnuLinn,PärnuMVLL",Pärnu LV
 26700,3700222-1,Ristivälja tee,58.85355406,22.7826012,26700,,Hiiu vald,"Kärdla suund",6524441.00,429741.00,,Hiiu MV
-24126,7800926-1,Tammistu mõis,58.43563767,26.91117286,24126,Tammistu,Tartu vald,"Aravuste suunas",6480944.50,669986.81,,Tartu MV
 32920,4900129-1,Kalatalu,58.683965,26.35925663,32920,,Jõgeva vald,"Härjanurme suunas",6507320.00,636802.00,1,Jõgeva ÜTK
 158171,24804-1,Kaunissaare tee,59.435433,25.016742,158171,,Jõelähtme vald,,6589058.77,557697.13,Harju2,Harjumaa ÜTK
 26365,6700499-1,Liu,58.27879907,24.25406514,26365,,Pärnu linn,,6459815.03,514905.95,,Pärnu MV
@@ -5224,6 +5232,7 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 143297,8490117-1,Magatsi,58.22940543,25.82174818,143297,,Viljandi vald,"Mustla suunas",6455738.80,607018.10,,Viljandi MV
 26431,5100469-1,Saareotsa,58.72839026,25.56420087,26431,,Türi vald,,6510918.50,590595.62,tartu1,Järvamaa ÜTK
 161767,7801454-1,Aia,58.31993237,26.70396848,161767,,Tõrvandi alevik,,6467561.50,658414.06,,Tartu MV
+22977,7801013-1,Uniküla,58.26946033,26.90892922,22977,,Kastre vald,"Reola, Hammaste suunas",6462447.71,670658.29,,Tartu MV
 26438,7800318-1,Kukemetsa,58.51941967,26.76918921,26438,,Tartu vald,"Tartu suunas",6489917.07,661315.92,,Tartu MV
 153754,11314-1,Kitseküla,59.42004411,24.74262947,153754,,Kesklinn,,6587140.48,542161.78,Harju1,Tallinna TA
 26443,7000270-1,Laukna,58.917257,24.1682,26443,,Märjamaa vald,,6530911.20,509689.95,Rapla3,Rapla MV
@@ -5263,7 +5272,6 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 3933,04502-1,Laaniku,59.36091598,24.61284041,3933,,Nõmme,,6580479.24,534853.59,Harju1,Tallinna TA
 1236,10901-1,Hotell Tallinn,59.43495171,24.73148936,1236,,Kesklinn,,6588794.21,541511.23,Harju1,Tallinna TA
 26491,5100071-1,Jalalõpe,59.05853,25.87791,26491,,Järva vald,,6548143.46,607731.35,,Järvamaa ÜTK
-26492,7800960-1,Tordi,58.41166685,26.92750079,26492,,Tartu vald,"Joora ja Supsi peatuste suunas",6478318.70,671056.10,,Tartu MV
 26494,5100426-1,Rava tee,59.10497983,25.80913291,26494,,Järva vald,,6553207.28,603647.21,,Järvamaa ÜTK
 10470,06803-1,Järve,59.40165856,24.72829094,10470,Järve,Kristiine,,6585083.45,541370.00,Harju1,Tallinna TA
 27737,7400250-1,Kogula,58.2906363,22.28901358,27737,,Saaremaa vald,,6462384.98,399661.05,,Saare MV
@@ -5444,7 +5452,6 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 25357,8400131-1,Järve tee,58.09995662,25.83079745,25357,,Viljandi vald,"Helme suunas",6441340.98,607943.03,,Viljandi MV
 21551,7801113-1,Viira metsavaht,58.3258953,27.0799219,21551,,Kastre vald,"Võnnu suunas",6469174.50,680394.56,,Tartu MV
 26798,6700339-1,Kubja,58.50836777,25.02011562,26798,,Tori vald,,6485807.93,559458.97,,Pärnu MV
-26975,7800966-1,Tornimäe,58.30520582,27.08249247,26975,,Kastre vald,"Võõpste suunas",6466879.50,680650.87,,Tartu MV
 20227,7800140-1,Issaku,58.28316916,27.01583207,20227,,Kastre vald,"Võnnu suunas",6464250.00,676857.18,,Tartu MV
 26803,7801027-1,Uuta,58.22135852,26.44053551,26803,,Nõo vald,"Tamsa, Peedu suunas",6455998.00,643387.18,,Tartu MV
 26805,7800060-1,Aruküla,58.3275106,26.27207686,26805,,Elva vald,"Viljandi suunas",6467466.50,633093.37,,Tartu MV
@@ -5534,7 +5541,6 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 26926,7800716-1,Purreto,58.4915013,26.33448285,26926,,Tartu vald,"Tallinna suunas",6485846.00,636111.98,,Tartu MV
 26928,7801041-1,Valmaotsa,58.4712184,26.36175442,26928,,Tartu vald,"Tallinna suunas",6483643.97,637780.92,,Tartu MV
 26929,6700400-1,Laagitsa,58.40546792,24.00975032,26929,,Pärnu linn,,6473894.96,500570.00,,Pärnu MV
-21940,7800928-1,Tammistu,58.44487873,26.93210072,21940,Tammistu,Tartu vald,"Aravuste suunas",6482026.00,671163.06,,Tartu MV
 31792,4900720-1,Vitsjärve,58.65306263,25.82351596,31792,,Põltsamaa vald,"Esku suunas",6502910.70,605839.30,tartu2,Jõgeva ÜTK
 32739,4900705-1,Veski,58.82212764,26.3227851,32739,,Jõgeva vald,"Kõola peatuse suunas",6522626.00,634155.25,,Jõgeva ÜTK
 32868,4900651-1,Tõivere,58.8070032,26.08586723,32868,,Põltsamaa vald,"Kaisa peatuse suunas",6520492.50,620528.81,tartu2,Jõgeva ÜTK
@@ -5656,8 +5662,7 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 21938,7800636-1,Padari,58.26921799,27.18430492,21938,,Kastre vald,"Võnnu suunas",6463154.50,686803.43,,Tartu MV
 158394,43184-1,Golfi tee,59.302145,24.970012,158394,,Rae vald,,6574172.45,555260.24,Harju2,Harjumaa ÜTK
 21725,7800637-1,Padari,58.26921728,27.18558962,21725,,Kastre vald,"Liispõllu suunas",6463158.00,686878.75,,Tartu MV
-20175,7800800-1,Rõõmu tee,58.40802248,26.9040056,20175,,Luunja vald,"Joora ja Supsi peatuste suunas",6477853.50,669701.68,,Tartu MV
-20502,7800919-1,Sääsküla,58.41054307,26.96213464,20502,,Luunja vald,"Saba peatuse suunas",6478282.50,673084.00,,Tartu MV
+20502,7800919-1,Sääsküla,58.41054307,26.96213464,20502,,Luunja vald,"Kavastu suunas",6478282.50,673084.00,,Tartu MV
 22935,7800173-1,Kaagvere,58.34640279,26.89042347,22935,,Kastre vald,"Sihi ja Vooru peatuste suunas",6470962.50,669204.12,,Tartu MV
 29331,7400267-1,Koki,58.24400299,22.10447413,29331,,Saaremaa vald,,6457484.08,388694.92,,Saare MV
 33064,7400110-1,Jõempa tee,58.37619251,22.33822515,33064,,Saaremaa vald,,6471838.57,402782.46,,Saare MV
@@ -5702,6 +5707,7 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 12953,00123-1,Keskpäeva tee,59.43388457,24.56075458,12953,,Haabersti,,6588582.00,531823.47,Harju1,Tallinna TA
 3678,16603-1,Seli,59.44501434,24.89798168,3678,,Lasnamäe,,6590029.90,550943.97,Harju1,Tallinna TA
 27227,5100187-1,Kuksema tee,59.03095,25.87861505,27227,,Järva-Jaani alev,,6545073.64,607857.81,,Järvamaa ÜTK
+162818,11612-1,Bussijaam (ajutine),59.42672234,24.7727108,162818,,Kesklinn,,6587903.70,543860.96,,Tallinna TA
 162431,6790094-1,Tani tee,58.50457805,24.86008764,162431,,Tori vald,,6485255.14,550137.47,,Pärnu MV
 1167,09404-1,Niidi,59.44946165,24.69903636,1167,,Põhja-Tallinn,,6590390.97,539652.78,Harju1,Tallinna TA
 27237,6701071-1,Tõstamaa kool,58.34320331,23.995303,27237,,Pärnu linn,,6466960.01,499724.93,,Pärnu MV
@@ -5719,7 +5725,6 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 1241,11102-1,Koidu,59.4292298,24.72954999,1241,,Kesklinn,,6588155.60,541408.11,Harju1,Tallinna TA
 12028,18804-1,Kaasiku,59.48549078,24.8416769,12028,,Pirita,,6594497.46,547693.30,Harju1,Tallinna TA
 24182,7800192-1,Kalevi,58.27156083,26.93127267,24182,,Kastre vald,"Uniküla suunas",6462738.50,671958.06,,Tartu MV
-22976,7801130-1,Vooremäe,58.28238609,26.90381478,22976,,Kastre vald,"Sillaotsa suunas",6463873.00,670296.12,,Tartu MV
 24176,7800946-1,Tenso,58.26001109,26.91863191,24176,,Kastre vald,"Lootvina suunas",6461421.00,671272.93,,Tartu MV
 27261,6500571-1,Saabolda,57.87696893,27.76382374,27261,,Setomaa vald,"Saatse suunas",6421296.13,723217.39,,Võru MV
 27262,6500801-1,Võhni,58.0185097,27.32103441,27262,,Räpina vald,"Pindi suunas",6435654.43,696200.02,,Põlva MV
@@ -5800,6 +5805,7 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 27411,7400742-1,Tahula II,58.30170154,22.57786961,27411,,Saaremaa vald,,6463221.50,416624.03,,Saare MV
 27416,7400748-1,Tamse,58.64394792,23.17137039,27416,,Muhu vald,,6500753.94,451887.99,,Saare MV
 27417,7400747-1,Tamse,58.64420212,23.17162376,27417,,Muhu vald,,6500782.07,451903.05,,Saare MV
+162819,11613-1,Bussijaam (ajutine),59.43042206,24.77738857,162819,,Kesklinn,,6588318.91,544121.69,,Tallinna TA
 27428,7400797-1,Tõrise,58.45517766,22.47538361,27428,,Saaremaa vald,,6480442.96,411005.03,,Saare MV
 27441,7400201-1,Kasti,58.25925551,22.63449404,27441,,Saaremaa vald,,6458425.96,419847.08,,Saare MV
 27445,3700307-1,Värssu,58.91670018,22.92536328,27445,,Pühalepa vald,"Kärdla suund",6531332.95,438092.07,,Hiiu MV
@@ -5809,7 +5815,6 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 21769,7800042-1,Aravu,58.22956685,27.38132237,21769,Aravu,Räpina vald,"Konsamäe suunas",6459309.50,698574.25,,Põlva MV
 20401,7800690-1,Poldri,58.32875495,26.74188848,20401,,Kambja vald,"Roiu suunas",6468633.50,660594.25,,Tartu MV
 30316,7800130-1,Igevere,58.27935278,26.81848461,30316,,Kastre vald,"Reola raudteejaama suunas",6463322.00,665309.06,,Tartu MV
-151267,7801355-1,Villemi,58.26057561,26.84834122,151267,,Kastre vald,"Hurda peatuse suunas",6461306.50,667147.93,,Tartu MV
 27468,7800680-1,Piiroja,58.24214729,27.45009955,27468,,Räpina vald,"Veski suunas",6460914.50,702537.75,,Põlva MV
 27473,6500534-1,Reha,57.94833442,27.58575569,27473,,Setomaa vald,"Treski suunas",6428654.77,712242.49,,Võru MV
 149105,5901213-1,Potsu tee,59.54302566,26.14824847,149105,,Haljala vald,"",6602554.00,621506.81,Viru2,Lääne-Viru MV
@@ -5833,12 +5838,10 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 27522,7801111-1,Viira kõrts,58.43125513,27.06780651,27522,,Peipsiääre vald,"Kavastu suunas",6480864.50,679148.93,,Tartu MV
 27524,7400526-1,Paenase,58.61763461,23.19452194,27524,,Muhu vald,,6497806.97,453196.96,,Saare MV
 155963,22426-1,Kõrgemäe,59.21853686,24.95948736,155963,,Kose vald,,6564851.00,554793.93,Harju3,Harjumaa ÜTK
-156414,7801403-1,Uus-Lääniste,58.27076409,27.12500995,156414,,Kastre vald,,6463162.92,683319.49,,Tartu MV
 162433,6790096-1,Rippsilla,58.49607736,24.89906773,162433,,Tori vald,,6484338.22,552422.31,,Pärnu MV
 27532,7800122-1,Härjanurme,58.32442586,26.40018439,27532,,Elva vald,"Ulila suunas",6467384.50,640606.81,,Tartu MV
 1186,09805-1,Sitsi,59.45332392,24.70436769,1186,,Põhja-Tallinn,,6590824.39,539950.67,Harju1,Tallinna TA
-23582,7801052-1,Vana-Kuuste,58.25283772,26.79101266,23582,,Kambja vald,"Rebase, Villemi suunas",6460304.00,663821.56,,Tartu MV
-25369,7801126-1,Voore,58.26272642,26.78468765,25369,,Kambja vald,"Reola raudteejaama suunas",6461389.00,663404.81,,Tartu MV
+25369,7801126-1,Voore,58.26272642,26.78468765,25369,,Kambja vald,"Tartu suunas",6461389.00,663404.81,,Tartu MV
 23577,7800417-1,Lange,58.2921063,26.76388683,23577,,Kastre vald,"Reola raudteejaama suunas",6464608.00,662050.12,,Tartu MV
 26061,7800759-1,Rebase,58.23901642,26.78611286,26061,Rebase,Kambja vald,"Põlva suunas",6458753.99,663598.05,,Tartu MV
 26058,7800880-1,Sirvaku,58.21997078,26.79140827,26058,,Kambja vald,"Põlva suunas",6456647.50,663997.06,,Tartu MV
@@ -5866,7 +5869,6 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 3846,16006-1,Taevakivi,59.44131102,24.86189712,3846,,Lasnamäe,,6589590.51,548902.25,Harju1,Tallinna TA
 27570,7801129-1,Vooremäe,58.28205264,26.90383607,27570,,Kastre vald,"Uniküla suunas",6463835.95,670298.98,,Tartu MV
 27571,7800538-1,Metsavahi,58.42771,26.79407157,27571,,Tartu vald,"Jõhvi maantee suunas",6479771.50,663189.93,,Tartu MV
-27572,7800884-1,Sojamaa,58.47599726,26.62777081,27572,,Tartu vald,"Kärkna, Õvi peatuse suunas",6484753.00,653271.50,,Tartu MV
 27573,5100472-1,Saatre,58.83402885,25.43293921,27573,,Türi vald,,6522512.42,582743.06,tartu1,Järvamaa ÜTK
 1338,12704-1,Maarjamägi,59.45293193,24.80832781,1338,,Kesklinn,,6590847.21,545847.39,Harju1,Tallinna TA
 27577,5100541-1,Tõrvaaugu,58.63067017,25.38446907,27577,,Türi vald,,6499807.75,580412.10,tartu2,Järvamaa ÜTK
@@ -5902,7 +5904,6 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 141664,00701-2,Haabersti,59.4238,24.64901,141664,,Haabersti,,6587503.74,536842.79,Harju1,Tallinna TA
 27675,6700631-1,Oara,58.4671679,24.31461585,27675,,Pärnu linn,,6480810.04,518360.02,,Pärnu MV
 27676,6700944-1,Surju kool,58.24141311,24.72198734,27676,,Saarde vald,,6455851.05,542402.95,,Pärnu MV
-27679,7800821-1,Saba,58.40342351,26.96085256,27679,,Luunja vald,"Sepa peatuse suunas",6477487.00,673044.12,,Tartu MV
 27680,6700549-1,Merilaane,58.03487894,24.61085942,27680,,Häädemeeste vald,,6432783.93,536085.99,,Pärnu MV
 27683,8600512-1,Pulsti,57.72097742,26.6829857,27683,,Antsla vald,"Kikkaoja suunas",6400855.06,659853.03,,Võru MV
 128592,13510-1,Kaubajaama,59.42213149,24.81085464,128592,,Lasnamäe,,6587417.86,546032.18,Harju1,Tallinna TA
@@ -5930,6 +5931,7 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 27713,7400209-1,Kavandi,58.59604048,22.84400286,27713,,Saaremaa vald,,6495699.94,432789.99,,Saare MV
 27714,7400210-1,Kavandi seltsimaja,58.5886438,22.83920891,27714,,Saaremaa vald,,6494881.03,432497.04,,Saare MV
 28256,7400336-1,Küdema,58.48437478,22.28413183,28256,,Mustjala vald,,6483963.50,399926.75,,Saare MV
+20899,7801019-1,Unipiha,58.2552511,26.61269682,20899,,Nõo vald,"Luke, Kolga suunas",6460151.00,653350.12,,Tartu MV
 27718,7400219-1,Keskranna,58.20364178,22.29423739,27718,,Saaremaa vald,,6452691.08,399720.96,,Saare MV
 27720,7400226-1,Kingli tee,58.45937191,23.04439286,27720,,Saaremaa vald,,6480295.99,444223.00,,Saare MV
 27722,7400230-1,Kipi,58.24920944,22.03101989,27722,,Saaremaa vald,,6458187.96,384399.93,,Saare MV
@@ -5984,7 +5986,6 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 23137,7800573-1,Mäeküla,58.23722604,26.71394049,23137,,Kambja vald,"Lalli suunas",6458381.00,659370.56,,Tartu MV
 21467,7800435-1,Lepiku,58.27298723,26.70013595,21467,,Kambja vald,"Tartu suunas",6462328.05,658400.07,,Tartu MV
 20385,7801166-1,Ülenurme,58.31580258,26.71878583,20385,,Kambja vald,"Võru suunas",6467137.00,659300.31,,Tartu MV
-20899,7801019-1,Unipiha,58.2552511,26.61269682,20899,,Nõo vald,"Luke, Kolga suunas Lätiküla teel",6460151.00,653350.12,,Tartu MV
 27832,6700323-1,Koorejaam,58.15883562,24.57383953,27832,,Häädemeeste vald,,6446570.08,533781.02,,Pärnu MV
 27833,6700324-1,Koorejaam,58.15893436,24.57368655,27833,,Häädemeeste vald,,6446581.00,533771.92,,Pärnu MV
 22769,3700302-1,Villemi,58.84523565,22.79137832,22769,,Hiiu vald,"Kogri-Vaemla suund",6523505.44,430230.80,,Hiiu MV
@@ -6065,7 +6066,7 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 155530,23965-1,Tammi,59.38804961,24.84857618,155530,,Rae vald,,6583647.80,548221.55,Harju2,Harjumaa ÜTK
 28957,7800499-1,Maidla,58.20510499,26.80721799,28957,,Kambja vald,"Reola suunas",6455032.00,664994.62,,Tartu MV
 154385,5701106-1,Oru kool,58.99635703,23.71775142,154385,,Lääne-Nigula vald,,6539744.00,483776.84,Laane2,Lääne MV
-156415,7801404-1,Uus-Lääniste,58.27098991,27.12464985,156415,,Kastre vald,,6463187.06,683297.21,,Tartu MV
+156415,7801404-1,Uus-Lääniste,58.27098991,27.12464985,156415,,Kastre vald,"Võnnu suunas",6463187.06,683297.21,,Tartu MV
 24519,5700368-1,Seljaküla,59.06482272,23.91328946,24519,,Lääne-Nigula vald,,6547339.50,495025.87,Laane3,Lääne MV
 28005,8400680-1,Planeedi,58.35837136,25.56494274,28005,,Viljandi linn,"Kesklinna suunas",6469717.97,591600.01,ViljandiLinn,Viljandi MV
 28008,8400222-1,Kirikumõis,58.36240107,25.56443724,28008,,Viljandi linn,"Pargi tänaval",6470165.98,591559.96,ViljandiLinn,Viljandi MV
@@ -6082,7 +6083,6 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 28020,8400470-1,Metalli,58.35358285,25.57383529,28020,,Viljandi linn,"Lõpp peatus",6469196.96,592132.93,ViljandiLinn,Viljandi MV
 22029,7800380-1,Kärkna,58.46028117,26.65241475,22029,,Tartu vald,"Jõgeva maantee suunas",6483060.50,654777.37,,Tartu MV
 28032,6700006-1,Aesoo,58.51987051,25.08050718,28032,,Tori vald,,6487144.05,562958.05,,Pärnu MV
-25691,7801018-1,Unipiha park,58.25531869,26.6124685,25691,,Nõo vald,"Kolga suunas Nõo-Kambja teel",6460158.00,653336.43,,Tartu MV
 20992,7800219-1,Karumaa,58.26736067,26.63894561,20992,,Kambja vald,"Reola suunas",6461559.00,654836.93,,Tartu MV
 148312,7801336-1,Kusta,58.28877477,26.67630434,148312,,Kambja vald,"Reola suunas",6464029.00,656932.62,,Tartu MV
 25275,7800243-1,Keskküla,58.23949301,26.65961133,25275,,Kambja vald,"Tartu suunas",6458505.50,656171.87,,Tartu MV
@@ -6108,6 +6108,7 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 28068,7800305-1,Kopli,58.4645476,26.75767944,28068,,Tartu vald,"Jõhvi maantee suunas",6483783.00,660897.00,,Tartu MV
 156714,"",Orša,54.51946243,30.37284135,156714,,,,6060462.58,913076.58,,MKM
 28070,7800149-1,Joora,58.39761988,26.89531466,28070,,Luunja vald,"Luunja suunas",6476674.00,669244.12,,Tartu MV
+25269,7801020-1,Unipiha,58.25513209,26.61280415,25269,,Nõo vald,"Tartu suunas",6460138.00,653356.93,,Tartu MV
 135319,6500935-1,Ähnioru,58.05669,27.07271,135319,,Põlva vald,"Oru suunas",6439203.18,681345.46,,Põlva MV
 28074,6700771-1,Randivälja,58.46650302,24.78683002,28074,,Tori vald,,6480962.24,545916.98,,Pärnu MV
 25172,7800468-1,Luigemetsa,58.58394549,27.02909469,25172,,Peipsiääre vald,"Alatskivi suunas",6497751.00,676122.12,,Tartu MV
@@ -6226,6 +6227,7 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 28273,3700269-1,Tammela tr,58.90720087,22.79194591,28273,,Pühalepa vald,,6530405.80,430387.86,,Hiiu MV
 28274,7400615-1,Rannaküla,58.61439664,22.87456354,28274,,Saaremaa vald,,6497713.96,434600.93,,Saare MV
 25818,8200161-1,Kasumetsa,58.0809293,26.20803279,25818,,Elva vald,"Valga suunas",6439892.50,630247.06,,Tartu MV
+25691,7801018-1,Unipiha park,58.25531869,26.6124685,25691,,Nõo vald,"Nõo suunas",6460158.00,653336.43,,Tartu MV
 161980,6790089-1,Vainu tee,58.418265,24.64635395,161980,,Sauga vald,,6475502.22,537771.28,,Pärnu MV
 24827,8600331-1,Linnuse,57.86399134,26.99549305,24827,,Võru vald,"Väimela suunas",6417556.07,677749.47,,Võru MV
 23347,8600060-1,Havve,57.77659732,27.08238263,23347,,Võru vald,"Tootsi/Mõisamäe suunas",6408066.07,683348.97,,Võru MV
@@ -6378,13 +6380,12 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 808,00301-1,Tuleraua,59.43139666,24.62213473,808,,Haabersti,,6588335.56,535309.34,Harju1,Tallinna TA
 28545,7400610-1,Randvere teerist,58.28795332,22.40401063,28545,,Kaarma vald,,6461920.00,406396.50,,Saare MV
 28546,7400612-1,Ranna,58.19799181,22.28257641,28546,,Saaremaa vald,,6452079.50,399019.46,,Saare MV
-26887,7800860-1,Sepa,58.40429572,26.98515476,26887,,Luunja vald,"Saba peatuse suunas",6477647.00,674459.18,,Tartu MV
+26887,7800860-1,Sepa,58.40429572,26.98515476,26887,,Luunja vald,"Sääsküla suunas",6477647.00,674459.18,,Tartu MV
 28549,8400321-1,Kõrgemäe,58.36326549,25.61261922,28549,,Viljandi linn,"Järve tn suunas",6470329.01,594377.00,ViljandiLinn,Viljandi MV
 28550,8400320-1,Kõrgemäe,58.36330704,25.61356023,28550,,Viljandi linn,"Viiratsi suunas",6470334.96,594431.95,ViljandiLinn,Viljandi MV
 28560,7800492-1,Lüüsi,58.35299782,27.03312575,28560,,Kastre vald,"Kavastu suunas",6472065.14,677519.09,,Tartu MV
 28562,7800331-1,Kunimäe,58.34408974,26.92642422,28562,,Kastre vald,"Vana-Kastre suunas",6470796.50,671321.50,,Tartu MV
 28565,6700803-1,Riisa,58.47709783,24.99563637,28565,,Tori vald,,6482304.05,558083.96,,Pärnu MV
-22977,7801013-1,Uniküla,58.26946033,26.90892922,22977,,Kastre vald,"Reola, Hammaste suunas (tee 22140)",6462447.71,670658.29,,Tartu MV
 158203,23877-1,Metsavahi tee,59.26091498,24.65172678,158203,,Saku vald,,6569360.50,537173.31,Harju2,Harjumaa ÜTK
 28568,8600382-1,Matsi,57.66031687,26.70133872,28568,,Rõuge vald,"Varstu suunas",6394148.01,661217.94,,Võru MV
 28570,8600400-1,Metstaga,57.65091976,26.74747918,28570,,Rõuge vald,"Pähni suunas",6393214.07,664012.97,,Võru MV
@@ -6399,6 +6400,8 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 26927,6700449-1,Lepaspää,58.382045,24.006218,26927,,Tõstamaa vald,,6471286.12,500363.74,,Pärnu MV
 28588,8401002-1,Ugala,58.36336525,25.58674862,28588,,Viljandi linn,"Kesklinna suunas",6470304.01,592862.97,ViljandiLinn,Viljandi MV
 1172,09505-1,Kari,59.44879949,24.69633171,1172,,Põhja-Tallinn,,6590315.61,539500.13,Harju1,Tallinna TA
+156414,7801403-1,Uus-Lääniste,58.27076409,27.12500995,156414,,Kastre vald,"Lääniste suunas",6463162.92,683319.49,,Tartu MV
+20765,7801017-1,Unipiha park,58.25538111,26.61227282,20765,,Nõo vald,"Luke suuna, Kambja suunas",6460164.50,653324.68,,Tartu MV
 28591,8400177-1,Kantreküla,58.36100478,25.57861001,28591,,Viljandi linn,"Kesklinna suunas",6470029.94,592392.94,ViljandiLinn,Viljandi MV
 28592,8400716-1,Pärnu mnt,58.35895965,25.57113692,28592,,Viljandi linn,"Pärnu mnt suunas",6469791.95,591960.97,ViljandiLinn,Viljandi MV
 28593,8400717-1,Pärnu mnt,58.35898477,25.5719921,28593,,Viljandi linn,"Kesklinna suunas",6469795.92,592010.95,ViljandiLinn,Viljandi MV
@@ -6600,7 +6603,6 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 21461,7800632-1,Paaslangi,58.1488803,26.18150675,21461,,Elva vald,"Valguta suunas",6447405.50,628436.81,,Tartu MV
 31006,6500073-1,Jaanimõisa,58.1387604,27.24373057,31006,,Põlva vald,"Kitseoru suunas",6448808.50,690989.25,,Põlva MV
 20562,7800937-1,Taremetsa,58.18245109,26.14988782,20562,,Elva vald,"Rannaküla suunas",6451082.50,626456.06,,Tartu MV
-20763,7801093-1,Vehendi,58.22498154,26.13576982,20763,,Elva vald,"Limnoloogia suunas",6455790.50,625475.12,,Tartu MV
 24683,7800974-1,Tulimäe,58.19768159,26.21112471,24683,,Elva vald,"Valguta suunas",6452895.00,630000.81,,Tartu MV
 21458,7800448-1,Lobjaku,58.18822537,26.23045432,21458,,Elva vald,"Teedla suunas",6451880.00,631171.87,,Tartu MV
 21318,7800369-1,Käo,58.21780009,26.35704772,21318,,Elva vald,"Elva suunas",6455426.50,638498.06,,Tartu MV
@@ -6628,6 +6630,7 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 26275,7801146-1,Väike-Konguta,58.22617185,26.31681143,26275,,Elva vald,"Elva suunas",6456276.00,636102.56,,Tartu MV
 20042,7800692-1,Pombre,58.2435152,26.29721928,20042,,Elva vald,"Annikoru suunas",6458166.94,634885.92,,Tartu MV
 162021,16018-1,Kosmos (ajutine),59.427407,24.745134,162021,,Kesklinn,,6587962.26,542294.85,,Tallinna TA
+154465,7801031-1,Vahi tööstuspark,58.41766417,26.72159926,154465,,Tartu vald,"Tartu suunas",6478479.50,659004.87,,Tartu MV
 25839,7800731-1,Põllu,58.24763131,26.27743276,25839,,Elva vald,"Konguta suunas",6458585.50,633709.00,,Tartu MV
 128419,7801215-1,Majala,58.24854994,26.36032923,128419,,Elva vald,"Annikoru suunas",6458856.00,638570.31,,Tartu MV
 134760,22351-1,Kuusiku,59.1375,25.08525,134760,,Kose vald,,6555934.53,562121.38,Harju4B,Harjumaa ÜTK
@@ -6740,6 +6743,7 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 24399,8600091-1,Ihatsi,57.71870328,27.1141407,24399,,Rõuge vald,"Holdi suunas",6401712.04,685535.94,,Võru MV
 29200,8200366-1,Märdi,57.98043352,26.40961438,29200,,Otepää vald,"Otepää suunas",6429116.03,642535.02,,Valga MV
 29201,8200367-1,Märdi,57.98006392,26.40965651,29201,,Otepää vald,"Sangaste suunas",6429074.98,642538.99,,Valga MV
+155083,7801031-2,Vahi tööstuspark,58.41766544,26.72175028,155083,,Tartu vald,"Lõpp-peatus",6478480.00,659013.68,,Tartu MV
 29203,8200324-1,Matu,57.99321527,26.41629813,29203,,Otepää vald,"Sangaste suunas",6430552.93,642878.94,,Valga MV
 90556,8600093-1,Illi põik,57.71439194,27.32012116,90556,,Võru vald,"Vastseliina suunas",6401821.00,697822.00,,Võru MV
 25894,8600098-1,Jaama,57.68046848,26.72509776,25894,,Rõuge vald,"Võru suunas",6396448.02,662543.96,,Võru MV
@@ -7072,6 +7076,7 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 939,03802-1,Nõva,59.39051391,24.64240948,939,,Nõmme,,6583792.11,536503.62,Harju1,Tallinna TA
 28211,8600529-1,Pärlijõe,57.67474206,26.87617116,28211,,Rõuge vald,"Krabi suunas",6396187.02,671577.00,,Võru MV
 985,05105-1,Pargi,59.37540313,24.67276521,985,,Nõmme,,6582125.72,538245.35,Harju1,Tallinna TA
+23581,7801051-1,Vana-Kuuste,58.25294338,26.79131613,23581,,Kambja vald,"Tartu suunas",6460316.50,663838.87,,Tartu MV
 26376,7820195-1,Raatuse,58.3823387,26.73229325,26376,,Tartu linn,"linnast väljuv",6474573.67,659789.53,TartuLinn,Tartu LV
 30010,6700390-1,Käära,57.95420259,24.55716785,30010,,Häädemeeste vald,,6423771.08,532988.92,,Pärnu MV
 30012,6700044-1,Anni,58.60853302,25.0794396,30012,,Põhja-Pärnumaa vald,,6497017.02,562736.94,,Pärnu MV
@@ -7207,6 +7212,7 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 30445,5900295-1,Kulina,59.20737712,26.55431605,30445,,Vinni vald,,6565994.00,645887.68,Viru4,Lääne-Viru MV
 30448,6700948-1,Surju tee,58.2363013,24.69500142,30448,,Saarde vald,,6455265.00,540824.00,,Pärnu MV
 30449,5700275-1,Pagasi,58.73453918,23.85983861,30449,,Lääneranna vald,,6510555.50,491882.81,,Pärnu MV
+23582,7801052-1,Vana-Kuuste,58.25283772,26.79101266,23582,,Kambja vald,"Sirvaku, Ignase suunas",6460304.00,663821.56,,Tartu MV
 139068,01004-1,Päevalille,59.42045699,24.64684009,139068,,Haabersti,,6587130.14,536723.20,Harju1,Tallinna TA
 30454,5900009-1,Aburi,59.18095738,26.26642726,30454,,Väike-Maarja vald,,6562461.77,629551.23,Viru5,Lääne-Viru MV
 162261,22126-1,Veskitammi,59.22094505,24.96580839,162261,,Kose vald,,6565124.41,555151.02,Harju3,Harjumaa ÜTK
@@ -7422,7 +7428,6 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 22012,8600745-1,Uusvada,57.76955149,27.48413662,22012,,Setomaa vald,"Kitse suunas",6408452.03,707266.94,,Võru MV
 93483,5900082-1,Marga,59.441068,26.258208,93483,,Haljala vald,,6591405.85,628106.25,Viru2,Lääne-Viru MV
 4766,21716-1,Vanaranna tee,59.34503467,24.18286689,4766,,Paldiski linn,"",6578565.00,510405.00,Harju4A,Harjumaa ÜTK
-31161,7800918-1,Sääsküla,58.41073773,26.96246035,31161,,Luunja vald,"Tordi peatuse suunas",6478305.00,673102.06,,Tartu MV
 31162,6700564-1,Metsavahi,58.0846309,24.59028834,31162,,Häädemeeste vald,,6438314.08,534822.04,,Pärnu MV
 162088,21994-1,Hingu,59.17196982,24.35145378,162088,,Saue vald,,6559324.38,520098.42,Harju4A,Harjumaa ÜTK
 28435,7800395-1,Küti,58.24180938,26.82265625,28435,,Kambja vald,"Vana-Kuuste suunas",6459154.50,665729.50,,Tartu MV
@@ -7444,7 +7449,6 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 31244,5100404-1,Pärnuvälja,58.88157959,25.53546436,31244,,Paide linn,,6527938.50,588541.00,tartu1,Järvamaa ÜTK
 31246,7000039-1,Atla,59.05374998,25.00722117,31246,,Rapla vald,,6546536.81,557795.32,Rapla2,Rapla MV
 146223,7801314-1,Makari,58.48781087,26.68417426,146223,,Tartu vald,"Jõgeva maantee suunas",6486198.00,656507.00,,Tartu MV
-161305,4401171-1,Turg (ajutine),59.39106616,27.77632032,161305,,Sillamäe linn,"Bussijaama suunas",6589717.50,714468.25,,Ida-Viru MV
 23328,7000099-1,Järlepa tee,59.12739304,24.909778,23328,,Rapla vald,,6554659.42,552093.04,Kohila,Rapla MV
 13352,7000214-1,Kuimetsa rahvamaja,59.04466131,25.11668915,13352,,Rapla vald,,6545624.00,564093.00,Rapla2,Rapla MV
 121531,4900075-1,Ilmajaam,58.74812553,26.41510935,121531,,Jõgeva linn,"Vana-Jõgeva suunas",6514577.00,639782.00,1,Jõgeva ÜTK
@@ -7470,6 +7474,7 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 27561,8600761-1,Valgjärve,57.8147594,27.0352666,27561,,Võru vald,"Kose suunas",6412184.38,680356.03,,Võru MV
 31365,6500546-1,Roiu,58.01175195,26.5970974,31365,,Kanepi vald,"Vastsemõisa suunas",6433015.47,653484.77,,Põlva MV
 31366,6500545-1,Roiu,58.0113669,26.59716444,31366,,Kanepi vald,"Kaagvere suunas",6432972.77,653490.39,,Põlva MV
+23898,8200706-1,Veski,57.94662962,25.88135566,23898,,Tõrva vald,"Jeti suunas",6424352.99,611402.06,,Valga MV
 31368,6500103-1,Kaagvere,58.00439946,26.62165497,31368,,Kanepi vald,"Karste kool suunas",6432253.65,654967.35,,Põlva MV
 31369,6500132-1,Karste kool,58.00728933,26.64928702,31369,,Kanepi vald,"Kaagvere suunas",6432639.44,656587.14,,Põlva MV
 31371,6500136-1,Krõntsali,58.05555955,27.38731772,31371,,Räpina vald,"Pahtpää suunas",6439971.50,699904.31,,Põlva MV
@@ -7478,6 +7483,7 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 14575,22179-1,Palvere,59.20733668,25.25703974,14575,,Kose vald,,6563884.31,571808.04,Harju4B,Harjumaa ÜTK
 153077,7000831-1,Hiirepilli,59.14654059,24.73816525,153077,,Kohila vald,,6556671.50,542243.62,Kohila,Rapla MV
 30050,7800066-1,Asusilla,58.3540934,26.5530275,30050,,Tartu linn,"Viljandi suunas",6471017.00,649430.68,,Tartu LV
+20763,7801093-1,Vehendi,58.22498154,26.13576982,20763,,Elva vald,"Rannaküla suunas",6455790.50,625475.12,,Tartu MV
 31397,6700648-1,Orajõe metskond,58.01887892,24.45298557,31397,,Häädemeeste vald,,6430927.97,526771.93,,Pärnu MV
 31398,6700208-1,Kalita,58.0966168,24.92381603,31398,,Saarde vald,,6439870.97,554477.96,,Pärnu MV
 31399,6700734-1,Põldeotsa,58.40616905,24.31023738,31399,,Pärnu linn,,6474014.95,518135.93,,Pärnu MV
@@ -7646,6 +7652,7 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 29126,7800735-1,Päiksi,58.60015098,27.10282798,29126,,Peipsiääre vald,"Alatskivi suunas",6499750.00,680322.75,,Tartu MV
 9111,21105-2,Balti jaam 2 (train station),59.44090786,24.73977327,9111,Tallinn; Balti Jaam,Põhja-Tallinn,,6589462.87,541973.99,Harju1,Tallinna TA
 34073,8290003-1,Karula,57.79911225,26.30911808,34073,,Valga vald,"Rongipeatus ei leia kasutust",6408723.62,637287.88,,Valga MV
+24463,7801102-1,Veskimäe,58.37793397,27.01942851,24463,,Kastre vald,"Kastre suunas",6474803.50,676593.00,,Tartu MV
 31913,5900629-1,Rasivere teerist,59.17789897,26.63184589,31913,,Vinni vald,,6562883.97,650442.31,Viru4,Lääne-Viru MV
 141164,5901166-1,Grossi,59.50014806,26.51973212,141164,,Viru-Nigula vald,,6598511.50,642688.50,Viru3,Lääne-Viru MV
 31916,5900651-1,Roela mõis,59.17306228,26.60059182,31916,,Vinni vald,,6562275.91,648677.54,Viru4,Lääne-Viru MV
@@ -7680,6 +7687,7 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 26086,7820060-1,Kesk kaar,58.365848,26.70412703,26086,,Tartu linn,"raudtee suunas",6472671.70,658217.23,TartuLinn,Tartu LV
 20895,4400056-1,Arvila,59.24534078,27.24292586,20895,,Alutaguse vald,"Kohtla-Järve suunas",6571917.51,684985.31,,Ida-Viru MV
 23214,4400043-1,Apandiku,59.30233318,27.23805367,23214,,Alutaguse vald,"Koltsina suunas",6578245.56,684401.24,,Ida-Viru MV
+151267,7801355-1,Villemi,58.26057561,26.84834122,151267,,Kastre vald,"Vana-Kuuste suunas",6461306.50,667147.93,,Tartu MV
 31961,5700483-1,Virtsu sadam,58.57287,23.51193999,31961,Virtsu,Lääneranna vald,,6492643.34,471604.11,,Pärnu MV
 31962,5700091-1,Virtsu,58.58158,23.52435906,31962,,Lääneranna vald,,6493608.25,472333.53,,Pärnu MV
 161858,7000857-1,Lille,59.11551244,24.69253355,161858,,Kohila vald,,6553187.50,539668.00,Kohila,Rapla MV
@@ -7791,7 +7799,7 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 22319,7800072-1,Toolamaa tee,58.52900395,26.77101238,22319,,Tartu vald,"Jõhvi suunas",6490988.04,661377.98,,Tartu MV
 28227,4400903-1,Kiviõli jaam,59.3528499,26.9660182,28227,Kiviõli,Lüganuse vald,"Keskuse suunas",6583151.19,668671.11,Viru7,Ida-Viru MV
 28229,4400277-1,Kuuse,59.352365,26.958795,28229,,Lüganuse vald,"Kiviõli jaama suunas",6583079.08,668262.99,Viru7,Ida-Viru MV
-152460,4401120-1,Kiviõli jaam,59.35261506,26.96599356,152460,Kiviõli,Lüganuse vald,"Ühispeatus",6583125.00,668670.87,Viru7,Ida-Viru MV
+152460,4401120-1,Kiviõli jaam,59.352551,26.96573,152460,Kiviõli,Kiviõli linn,"Ühispeatus",6583117.20,668656.21,Viru7,Ida-Viru MV
 28349,4400272-1,Jaama tee (perspektiivne),59.35183113,26.94039881,28349,,Lüganuse vald,"Kiviõli jaama suunas",6582973.67,667220.11,Viru7,Ida-Viru MV
 156830,47502-1,Väriheina,59.36375971,24.60310935,156830,,Saue vald,,6580791.00,534297.33,Harju2,Harjumaa ÜTK
 129018,13602-1,Kanali tee,59.40812952,24.80791514,129018,,Kesklinn,,6585856.08,545884.10,Harju1,Tallinna TA
@@ -8028,7 +8036,6 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 32454,4400204-1,Kalda,59.45853,28.055006,32454,,Narva-Jõesuu linn,"Narva suunas",6598143.45,729822.92,,Ida-Viru MV
 28700,4400697-1,Sirgala,59.32051599,27.78020852,28700,,Narva-Jõesuu linn,"",6581883.00,715131.53,,Ida-Viru MV
 32458,4400215-1,Jõesuu kalmistu,59.45312,28.071,32458,,Narva-Jõesuu linn,"Narva suunas",6597596.76,730764.85,,Ida-Viru MV
-150086,7000800-1,Ohulepa mõis,59.06911936,24.56317963,150086,,Rapla vald,,6547950.50,532302.25,Rapla4,Rapla MV
 32463,4400262-1,Sauna,59.397817,27.755722,32463,,Sillamäe linn,"Sadama suunas",6590402.70,713257.55,,Ida-Viru MV
 32464,4400325-1,Kultuurimaja,59.39555769,27.76383807,32464,,Sillamäe linn,"Narva suunas",6590177.24,713732.03,,Ida-Viru MV
 32465,4400326-1,Kultuurimaja,59.39577978,27.76354248,32465,,Sillamäe linn,"Jõhvi suunas",6590201.00,713713.87,,Ida-Viru MV
@@ -8204,6 +8211,7 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 5566,19522-1,Haigla,59.47632,25.01796152,5566,,Maardu linn,,6593614.35,557697.20,Harju2,Harjumaa ÜTK
 22755,5100014-1,Ambla,59.19258275,25.83797,22755,,Ambla alevik,,6563006.97,605031.55,,Järvamaa ÜTK
 33505,6500187-1,Kolossova,57.87655,27.71483,33505,,Setomaa vald,"Vaartsi suunas",6421087.56,720317.33,,Võru MV
+22976,7801130-1,Vooremäe,58.28238609,26.90381478,22976,,Kastre vald,"Roiu suunas",6463873.00,670296.12,,Tartu MV
 162180,7801465-1,Hiieküla,58.37302631,26.64302579,162180,,Tartu linn,,6473328.10,654612.61,,Tartu LV
 20236,7000429-1,Purila tee,59.06816693,24.91580431,20236,,Rapla vald,,6548067.39,552528.15,Rapla1,Rapla MV
 32777,8600196-1,Koigu kool,57.93743147,26.54019615,32777,,Antsla vald,"Koigu suunas",6424614.98,650437.01,,Võru MV
@@ -8287,7 +8295,6 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 33086,8200075-1,Hariduse,58.05639886,26.49311574,33086,,Otepää vald,,6437751.53,647157.71,,Valga MV
 33087,8200076-1,Hariduse,58.05629227,26.49286707,33087,,Otepää vald,,6437739.12,647143.48,,Valga MV
 20680,7400440-1,Muratsi,58.25571388,22.54935544,20680,,Kaarma vald,,6458136.50,414841.81,,Saare MV
-21430,7800809-1,Rüütlivälja,58.51792541,26.68890789,21430,,Tartu vald,"Kukulinna suunas",6489560.50,656648.43,,Tartu MV
 138277,8200767-1,Ööbiku,58.01638894,26.54943738,138277,,Otepää vald,,6433423.50,650649.87,,Valga MV
 92295,8600597-1,Saarlasõ,57.68865214,26.89724751,92295,,Rõuge vald,"Viitina suunas",6397789.00,672766.62,,Võru MV
 140035,7801299-1,Vana-Särje,58.62080523,26.78382815,140035,,Tartu vald,"Jõhvi maantee suunas",6501235.00,661699.68,,Tartu MV
@@ -8327,7 +8334,6 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 21171,4400469-1,Männi,59.36083818,27.45045891,21171,,Jõhvi vald,"Narva suunas",6585357.50,696151.87,,Ida-Viru MV
 153527,4401131-1,Vabaduse,59.3595897,26.9678249,153527,,Lüganuse vald,"PPA juures Erra suunas",6583905.83,668740.58,Viru7,Ida-Viru MV
 155094,"",Druskininkai bussijaam,54.01226403,23.97491455,155094,,,,5984212.56,498350.38,,MKM
-146226,7801317-1,Sootaga,58.49067657,26.70129712,146226,,Tartu vald,"Sootaga mõisa teel",6486557.00,657492.00,,Tartu MV
 1492,16701-1,Tondi mägi,59.45484709,24.88507668,1492,,Lasnamäe,,6591115.50,550197.43,Harju1,Tallinna TA
 33184,,Tallinna sadama a-Term.,59.44470719,24.76192496,33184,,Kesklinn,,6589900.18,543226.00,Harju1,Tallinna TA
 31411,7800028-1,Alatskivi,58.60003034,27.13315371,31411,Alatskivi,Peipsiääre vald,"Tartu suunas",6499818.50,682084.50,,Tartu MV
@@ -8367,7 +8373,6 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 33528,6500490-1,Puntuse,58.17868677,26.6639453,33528,,Kanepi vald,"Vissi suunas",6451748.50,656695.12,,Põlva MV
 33529,6500797-1,Vissi,58.17356632,26.68944125,33529,,Kanepi vald,"Võru-Tartu mnt suunas",6451238.50,658216.87,,Põlva MV
 30852,6500233-1,Kundruse,57.88037293,27.75036142,30852,,Setomaa vald,"Ulitina suunas",6421629.95,722398.64,,Võru MV
-33535,7800252-1,Teedla tee,58.16671878,26.31276138,33535,,Elva vald,"Teedla teel",6449650.00,636093.00,,Tartu MV
 162686,24107-1,Rootsi-Kallavere,59.49012366,25.03314256,162686,,Jõelähtme vald,,6595165.15,558533.90,Harju2,Harjumaa ÜTK
 33537,6500003-1,Aarna,58.06256004,26.96414129,33537,,Põlva vald,"Põlva suunas",6439568.00,674913.31,,Põlva MV
 25692,7800736-1,Liudsepa,58.24804792,26.63801076,25692,,Kambja vald,"Unipiha suunas",6459407.50,654866.68,,Tartu MV
@@ -8803,12 +8808,12 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 80028,8200176-1,Kiisa,58.08899046,26.02205307,80028,,Tõrva vald,,6440444.00,619252.93,,Valga MV
 80029,8200194-1,Kitse,58.05726892,25.97857023,80029,,Tõrva vald,,6436836.00,616793.43,,Valga MV
 80030,8200010-1,Aedniku,58.07039451,25.97813461,80030,,Tõrva vald,,6438296.50,616724.62,,Valga MV
+28900,7800752-1,Rannu apteek,58.25334266,26.18250702,28900,,Elva vald,"Sangla suunas",6459036.00,628117.18,,Tartu MV
 4937,23304-1,Esku,59.22515,24.49365,4937,,Saue vald,"",6565299.50,528186.40,Harju3,Harjumaa ÜTK
 143830,8490171-1,Ekseko,58.33334009,25.64917322,143830,,Viljandi vald,"Mustla suunas",6467049.00,596597.80,,Viljandi MV
 80363,6700498-1,Liu,58.27912024,24.2549589,80363,,Pärnu linn,,6459851.00,514958.25,,Pärnu MV
 80444,6700409-1,Laiksaare kauplus,58.10548027,24.69453554,80444,,Saarde vald,,6440695.00,540947.50,,Pärnu MV
 80495,6700529-1,Mannare,58.55377547,24.85365242,80495,,Tori vald,,6490729.50,549692.62,,Pärnu MV
-80496,6700827-1,Rõusa,58.6736315,25.115431,80496,,Põhja-Pärnumaa vald,,6504301.00,564708.00,,Pärnu MV
 80499,3700271-1,Tammela teerist,58.90735214,22.79112409,80499,,Pühalepa vald,"Käina suund",6530423.50,430340.81,,Hiiu MV
 80500,3700208-1,Pärna,58.70130436,22.52797431,80500,,Emmaste vald,"Viiri suund",6507781.50,414675.90,,Hiiu MV
 80502,3700139-1,Metsalauka,58.719112,22.5650017,80502,,Emmaste vald,"Õngu suund, teerist",6509718.00,416864.25,,Hiiu MV
@@ -8837,8 +8842,8 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 148949,8600924-1,Karamsina,57.8104862,27.4598363,148949,,Setomaa vald,"Obinitsa suunas",6412930.42,705587.56,,Võru MV
 29274,6500760-1,Varesmäe tee,58.0535283,27.5534156,29274,,Setomaa vald,"Laossina suunas",6440252.71,709709.68,,Võru MV
 87215,3700018-1,Emmaste,58.70583463,22.59719676,87215,,Emmaste vald,,6508200.00,418698.25,,Hiiu MV
-87216,6700350-1,Kurgja tee,58.67382941,25.21463956,87216,,Põhja-Pärnumaa vald,,6504423.00,570462.25,,Pärnu MV
-87217,6700828-1,Rõusa,58.67374282,25.11605626,87217,,Põhja-Pärnumaa vald,,6504314.00,564744.06,,Pärnu MV
+87216,6700350-1,Kurgja tee,58.67386379,25.21480346,87216,,Vändra vald,,6504427.00,570471.68,,Pärnu MV
+87217,6700828-1,Rõusa,58.67375303,25.11591436,87217,,Vändra vald,,6504315.00,564735.81,,Pärnu MV
 87351,7000592-1,Valtu,58.96831,24.851607,87351,Valtu,Kehtna vald,,6536896.71,548987.37,Rapla1,Rapla MV
 143377,6501033-1,Tervisepordikeskus,58.07745606,27.06654952,143377,,Põlva vald,,6441497.00,680876.43,,Põlva MV
 29390,8400165-1,Kalmetu kool,58.39164363,25.83498157,29390,,Viljandi vald,"Tartu suunas",6473822.96,607301.04,,Viljandi MV
@@ -8872,6 +8877,7 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 88100,6500563-1,Härghanna,58.0831572,27.321405,88100,,Räpina vald,"Võuküla suunas",6442846.96,695865.51,,Põlva MV
 88124,6500773-1,Verhulitsa,57.93446465,27.65934007,88124,,Setomaa vald,"Lutepää suunas",6427347.50,716677.93,,Võru MV
 88125,7000143-1,Kasti,58.8688428,24.52746418,88125,,Märjamaa vald,,6525626.00,530429.18,Rapla3,Rapla MV
+20228,7801168-1,Ülenurme keskus,58.31511817,26.72093073,20228,,Kambja vald,"Reola suunas",6467065.93,659429.01,,Tartu MV
 88145,6500211-1,Korela tee,57.89138432,27.73465046,88145,,Setomaa vald,"Kundruse suunas",6422802.50,721399.68,,Võru MV
 88146,6500576-1,Saatse,57.88215566,27.79065369,88146,,Setomaa vald,"Saatse muuseumi suunas",6421962.50,724774.25,,Võru MV
 23631,4400163-1,Ilmajaama,59.32909006,27.40125791,23631,,Jõhvi vald,"Tartu suunas",6581682.41,693536.57,,Ida-Viru MV
@@ -8951,7 +8957,6 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 90405,8600301-1,Lauri,57.75738608,26.87225831,90405,,Rõuge vald,,6405373.50,670949.68,,Võru MV
 90409,6500539-1,Risti,58.15022612,26.93847181,90409,,Põlva vald,"Lammi suunas",6449256.00,672971.93,,Põlva MV
 90410,6500157-1,Kiidjärve raudteejaam,58.1298795,26.99432414,90410,,Põlva vald,"Kiidjärve suunas",6447137.50,676358.62,,Põlva MV
-157122,7801413-1,Rõngu kool,58.14934749,26.24583787,157122,,Elva vald,,6447582.50,632221.18,,Tartu MV
 27242,7000611-1,Varbola,59.04531346,24.4502198,27242,,Märjamaa vald,,6545249.85,525841.13,Rapla4,Rapla MV
 90440,8600063-1,Heibri tee,57.68614437,26.91410841,90440,,Rõuge vald,"Viitina suunas",6397553.50,673783.56,,Võru MV
 90441,6500604-1,Siimsilla,57.8785676,27.4491911,90441,,Võru vald,"Orava suunas",6420470.64,704565.82,,Võru MV
@@ -8976,7 +8981,7 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 90657,6500356-1,Meemaste,58.01847704,27.06268535,90657,,Põlva vald,"Peri suunas",6434924.50,680948.50,,Põlva MV
 90666,8600820-1,Võru khk,57.89625042,27.02464072,90666,,Võru vald,,6421223.00,679315.93,,Võru MV
 29099,7400270-1,Kooli,58.28146378,22.54132946,29099,,Kaarma vald,,6461014.00,414433.09,,Saare MV
-90765,7800932-1,Tamsa kabelimägi,58.21472019,26.48978999,90765,,Nõo vald,"Luke suunas Nõo-Tamsa teel",6455365.50,646307.12,,Tartu MV
+90765,7800932-1,Tamsa kabelimägi,58.21472019,26.48978999,90765,,Nõo vald,"Luke suunas",6455365.50,646307.12,,Tartu MV
 90776,6500261-1,Köstrimäe,58.11899859,27.43864005,90776,,Räpina vald,"Tootsi suunas",6447182.00,702568.43,,Põlva MV
 29178,6701217-1,Ünnaste,58.59963,24.909096,29178,,Põhja-Pärnumaa vald,,6495878.73,552850.68,,Pärnu MV
 90778,6500075-1,Jaanisilla,58.13727584,27.41203392,90778,,Räpina vald,"Tootsi suunas",6449135.00,700898.93,,Põlva MV
@@ -8999,7 +9004,7 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 12668,23282-1,Kasemetsa,59.27342812,24.67674047,12668,,Saku vald,"Rong Rapla suunas",6570768.50,538585.93,Harju2,Harjumaa ÜTK
 91188,6500290-1,Leega,57.95725747,26.99150632,91188,,Põlva vald,"Suurküla suunas",6427923.00,677049.93,,Põlva MV
 91199,6500083-1,Joosu,57.93403833,27.04331777,91199,,Põlva vald,"Põlva-Võru mnt suunas",6425477.50,680231.56,,Põlva MV
-91254,7800887-1,Soonurga,58.30666722,26.59632373,91254,,Nõo vald,"Nõgiaru suunas",6465836.00,652168.00,,Tartu MV
+91254,7800887-1,Soonurga,58.30666722,26.59632373,91254,,Nõo vald,"",6465836.00,652168.00,,Tartu MV
 91309,6500593-1,Savimäe,58.20745728,27.31135301,91309,,Põlva vald,"Peterselli suunas",6456645.00,694590.06,,Põlva MV
 91310,6500024-1,Arujärve,58.20335759,27.29114778,91310,,Põlva vald,"Rasina pargi suunas",6456130.50,693426.06,,Põlva MV
 91314,6500519-1,Rasina,58.21087148,27.25614762,91314,,Põlva vald,"Kastmekoja suunas",6456866.00,691330.06,,Põlva MV
@@ -9060,7 +9065,6 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 22869,8400138-1,Kaalukoja,58.25607098,25.84751256,22869,,Viljandi vald,"Mõnnnaste suunas",6458749.01,608449.45,,Viljandi MV
 92187,8200604-1,Sõjatamme,58.04643369,26.45458541,92187,,Otepää vald,"Puka suunas",6436558.50,644925.06,,Valga MV
 92199,5700023-1,Ehmja,58.87305014,23.80708499,92199,,Lääne-Nigula vald,,6525991.00,488872.06,Laane2,Lääne MV
-92252,7800817-1,Saadjärve tee,58.53231281,26.69909389,92252,,Tartu vald,"Saadjärve suunas",6491185.50,657177.06,,Tartu MV
 28352,4400855-1,Säde,59.34743156,26.92579443,28352,,Lüganuse vald,,6582447.70,666411.46,Viru7,Ida-Viru MV
 92296,8600062-1,Heibri tee,57.68622351,26.91399004,92296,,Rõuge vald,"Saarlasõ suunas",6397562.00,673776.12,,Võru MV
 92303,6500078-1,Jantra,57.86503269,27.29869191,92303,,Võru vald,"Madala suunas",6418516.00,695721.43,,Võru MV
@@ -9248,6 +9252,7 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 27021,8401037-1,Valma teerist,58.38688642,25.93519829,27021,,Viljandi vald,"Tartu suunas",6473458.02,613174.94,,Viljandi MV
 27022,8400234-1,Kivisaare,58.37852622,25.94212836,27022,,Viljandi vald,"Viljandi - Tartu mnt suunas",6472538.98,613607.07,,Viljandi MV
 27023,8400235-1,Kivisaare,58.37810994,25.94232616,27023,,Viljandi vald,"Väluste suunas",6472492.97,613619.98,,Viljandi MV
+10524,20105-1,Kardheina tee,59.48148004,24.93346569,10524,,Maardu linn,,6594119.50,552900.37,Harju2,Harjumaa ÜTK
 27025,8400294-1,Tammekõrkja,58.37108718,25.95576978,27025,,Viljandi vald,"Viljandi - Tartu mnt suunas",6471733.97,614428.97,,Viljandi MV
 27026,8401034-1,Valma,58.36631826,25.96157349,27026,,Viljandi vald,"Lõpp peatus",6471212.96,614783.97,,Viljandi MV
 28454,8400053-1,Asu,58.28341623,25.7209378,28454,,Viljandi vald,"Mustla tee suunas",6461596.02,600943.04,,Viljandi MV
@@ -9257,11 +9262,15 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 90609,6500180-1,Kivijärve,58.0346559,27.196274,90609,,Põlva vald,"Uibujärve suunas",6437092.63,688749.45,,Põlva MV
 21824,5100635-1,Väätsa vallamaja,58.89652569,25.4534211,21824,,Türi vald,,6529497.50,583774.75,tartu1,Järvamaa ÜTK
 10348,22903-1,Rae,59.349947,24.058831,10348,,Paldiski linn,"",6579099.52,503346.96,Harju4A,Harjumaa ÜTK
+22973,7800775-1,Roiu,58.29911958,26.86893042,22973,,Kastre vald,"Tartu, Kaagvere suunas",6465647.00,668171.87,,Tartu MV
 25933,7800120-1,Hurda,58.25192842,26.82834493,25933,,Kastre vald,"Vana-Kuuste suunas",6460294.60,666015.80,,Tartu MV
+91457,4900534-1,Rõika,58.67366468,27.03049107,91457,,Peipsiääre vald,"Pala suunas",6507737.50,675751.93,,Tartu MV
+157122,7801413-1,Rõngu kool,58.14934749,26.24583787,157122,,Elva vald,"Rõngu suunas",6447582.50,632221.18,,Tartu MV
 92285,8200091-1,Hundi,57.77648072,26.41628641,92285,,Valga vald,"Antsla suunas",6406429.00,643747.62,,Valga MV
 38066,,Suwalki,54.10529464,22.93872356,38066,,,,5995149.39,430377.81,,MKM
 24644,6700758-1,Rae,58.32357577,24.59777265,24644,,Tahkuranna vald,,6464930.00,535026.37,,Pärnu MV
 28463,8400754-1,Rebase,58.30947846,25.69285564,28463,,Viljandi vald,"Mõnnaste tee suunas",6464455.93,599222.96,,Viljandi MV
+26651,7800799-1,Rõngu kool,58.14936187,26.24601519,26651,,Elva vald,"Pargi tänava suunas",6447584.45,632231.57,,Tartu MV
 155058,09707-1,Rannapargi,59.44176972,24.68748092,155058,,Põhja-Tallinn,,6589527.31,539006.10,Harju1,Tallinna TA
 29783,6500467-1,Pikajärve,58.06763355,26.59610906,29783,,Kanepi vald,"Kitseaia suunas",6439232.50,653185.56,,Põlva MV
 34236,4490010-1,Kohtla-Nõmme,59.36191294,27.18919845,34236,,Kohtla-Nõmme alev,"Rong Tallinna suunas",6584742.00,681305.68,,Ida-Viru MV
@@ -9277,8 +9286,11 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 106775,7400216-1,Kellamäe,58.26915974,22.46379506,106775,,Saaremaa vald,"Suund linnast välja",6459745.50,409854.25,,Saare MV
 25287,8600664-1,Sänna-Mäe,57.7442849,26.80370526,25287,,Rõuge vald,"Võru suunas",6403742.94,666932.96,,Võru MV
 129352,19606-1,Üleoru,59.45693811,24.98748858,129352,,Maardu linn,,6591429.50,556001.93,Harju2,Harjumaa ÜTK
+20175,7800800-1,Rõõmu tee,58.40802248,26.9040056,20175,,Luunja vald,"Tartu suunas",6477853.50,669701.68,,Tartu MV
 32717,8600671-1,Tammsaare,57.84511659,27.18242809,32717,,Võru vald,"Lasva suunas",6415967.00,688933.62,,Võru MV
 1448,15303-1,Uus-Pae,59.43567562,24.81920555,1448,,Lasnamäe,,6588932.39,546487.81,Harju1,Tallinna TA
+80637,7800810-1,Rüütlimäe,58.51946303,26.68778487,80637,,Tartu vald,"Saadjärve suunas",6489729.00,656576.18,,Tartu MV
+21430,7800809-1,Rüütlivälja,58.51792541,26.68890789,21430,,Tartu vald,"Saadjärve suunas",6489560.50,656648.43,,Tartu MV
 158198,8490264-1,Liiva,58.52304708,25.65801831,158198,,Põhja-Sakala vald,"Ülde suunas",6488184.63,596593.56,,Viljandi MV
 141997,7000737-1,Karjamihkli,58.78102995,24.28360181,141997,,Märjamaa vald,,6515760.00,516402.34,Rapla3,Rapla MV
 28459,8400508-1,Mustapali,58.29713442,25.73192646,28459,,Viljandi vald,"Mõnnaste tee suunas",6463140.00,601548.00,,Viljandi MV
@@ -9375,6 +9387,7 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 14744,47036-1,Vibeliku,59.44677089,24.95096799,14744,,Jõelähtme vald,,6590267.00,553947.00,Harju2,Harjumaa ÜTK
 155065,5901247-1,Kivisilla,59.22349266,25.8734672,155065,,Tapa vald,,6566505.00,606963.37,Viru5,Lääne-Viru MV
 10833,21309-1,Aegviidu,59.28518473,25.61307716,10833,Aegviidu,Anija vald,"Rong Tapa suunas",6572989.00,591934.56,Viru5,Harjumaa ÜTK
+80496,6700827-1,Rõusa,58.67361085,25.11574173,80496,,Vändra vald,,6504299.00,564726.06,,Pärnu MV
 28071,7800148-1,Joora,58.39839112,26.89598046,28071,,Luunja vald,"Aovere, Tammistu suunas",6476761.50,669279.31,,Tartu MV
 34225,5990008-1,Kiltsi,59.08777784,26.17656043,34225,,Väike-Maarja vald,"Rong Tartu suunas",6551917.50,624752.93,Viru5,Lääne-Viru MV
 142466,03407-1,Kesk-Mustamäe,59.40310663,24.67949867,142466,,Mustamäe,,6585215.67,538596.85,Harju1,Tallinna TA
@@ -9483,7 +9496,7 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 14741,47014-1,Loovälja tee,59.44547975,24.93191111,14741,,Jõelähtme vald,,6590108.00,552868.00,Harju2,Harjumaa ÜTK
 150288,5100685-1,Änari,58.85208769,25.36144092,150288,,Türi vald,,6524437.50,578574.25,,Järvamaa ÜTK
 26608,7000630-1,Vesiroosi,58.996925,24.811137,26608,Rapla,Rapla linn,,6540055.02,546620.97,Rapla1,Rapla MV
-28900,7800752-1,Rannu apteek,58.25334266,26.18250702,28900,,Elva vald,"Väike-Rakke suunas",6459036.00,628117.18,,Tartu MV
+2877,20102-1,Kardheina tee,59.48138597,24.93217048,2877,,Maardu linn,,6594108.00,552827.12,Harju2,Harjumaa ÜTK
 157658,"",Läägi õpilasliin,58.39863147,22.04188568,157658,,Kihelkonna vald,,6474804.50,385523.43,,Saare MV
 21858,6700256-1,Loomse,58.59688074,24.5099147,21858,,Põhja-Pärnumaa vald,,6495327.06,529647.06,Parnu2,Pärnu MV
 22649,6700257-1,Loomse,58.59654759,24.50999533,22649,,Põhja-Pärnumaa vald,,6495289.99,529652.03,Parnu2,Pärnu MV
@@ -9509,7 +9522,6 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 24048,4400525-1,Olgina,59.39353035,28.13150879,24048,Olgina,Narva-Jõesuu linn,"E20 suunas",6591180.50,734599.12,,Ida-Viru MV
 21625,4400242-1,Küttejõu rist,59.348992,27.017524,21625,,Lüganuse vald,"Irvala teel Keskuse suunas",6582852.49,671617.51,Viru7,Ida-Viru MV
 91453,4900642-1,Torma,58.82013065,26.74080969,91453,,Jõgeva vald,,6523315.00,658295.43,,Jõgeva ÜTK
-91457,4900534-1,Rõika,58.67366468,27.03049107,91457,,Peipsiääre vald,"Pala suunas (Assikvere teel)",6507737.50,675751.93,,Tartu MV
 91458,4900531-1,Rõika,58.67383805,27.03037994,91458,,Peipsiääre vald,"Assikvere suunas",6507756.50,675744.62,,Tartu MV
 91464,4900567-1,Salu,58.70072691,26.99643026,91464,,Peipsiääre vald,"Assikvere suunas",6510660.00,673643.31,,Tartu MV
 91465,4900339-1,Mooritsa,58.73073579,26.51964663,91465,,Jõgeva vald,,6512864.00,645902.37,1,Jõgeva ÜTK
@@ -9902,6 +9914,7 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 137023,4420195-1,Aquaphor,59.368894,28.133393,137023,,Narva linn,,6588447.74,734874.99,,Narva LV
 23320,7800381-1,Kärkna,58.46066625,26.6516101,23320,,Tartu vald,"Kärevere suunas",6483101.50,654728.75,,Tartu MV
 156733,09004-1,Pikakari,59.47115491,24.71951744,156733,,Põhja-Tallinn,,6592819.88,540788.60,Harju1,Tallinna TA
+162826,4401184-1,Lilleoru (perspektiivne),59.37939,27.056977,162826,,Lüganuse vald,"Jõhvi suunas",6586336.98,673705.52,,Ida-Viru MV
 137021,4420193-1,Jantar,59.41914331,28.0438891,137021,,Narva linn,,6593725.50,729458.00,,Narva LV
 23185,8400906-1,Taari,58.4094022,25.66627532,23185,,Viljandi vald,"Viljandi - Põltsamaa mnt suunas",6475542.80,597388.90,,Viljandi MV
 136555,7801278-1,Kuremäe,58.27484695,26.7868256,136555,,Kastre vald,"Reola raudteejaama, Vana-Kuuste suunas",6462743.00,663474.12,,Tartu MV
@@ -9917,6 +9930,7 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 135580,13012-1,Seisukoht,59.42057161,24.79300975,135580,,Lasnamäe,,6587231.98,545021.22,Harju1,Tallinna TA
 153190,8200848-2,Kitse,57.85224886,26.41562988,153190,,Tõlliste vald,"Laatre suunas",6414861.11,643404.74,,Valga MV
 158521,6501070-1,Rõka,58.10370741,27.18014336,158521,,Põlva vald,"Miiaste suunas",6444729.50,687433.12,,Põlva MV
+162827,4401185-1,Lilleoru (perspektiivne),59.380045,27.05759,162827,,Lüganuse vald,"Kiviõli suunas",6586411.46,673737.00,,Ida-Viru MV
 33031,7000092-1,Mõisa,59.067351,24.940908,33031,,Rapla vald,,6547996.43,553969.21,Rapla1,Rapla MV
 20586,7000091-1,Juuru,59.06122197,24.95385927,20586,Juuru,Rapla vald,,6547324.28,554721.74,Rapla1,Rapla MV
 133904,7000662-1,Juuru kalmistu,59.053882,24.95041,133904,Juuru,Rapla vald,,6546503.94,554535.45,Rapla1,Rapla MV
@@ -9944,7 +9958,7 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 127566,5701008-1,Förby teerist,59.00242037,23.15586538,127566,,Vormsi vald,,6540690.50,451490.25,Laane1,Lääne MV
 92278,8200306-1,Lõhmusmäe,57.76681568,26.19110719,92278,,Valga vald,"Lüllemäe suunas",6404893.00,630391.62,,Valga MV
 154956,00172-1,Reisisadama D-terminal,59.44340548,24.76401214,154956,,Kesklinn,,6589756.51,543346.05,Harju1,Tallinna TA
-132310,7801258-1,Rannaküla tee,58.18504668,26.11758241,132310,,Elva vald,"Vallapalu-Rannaküla teel",6451311.00,624547.37,,Tartu MV
+132310,7801258-1,Rannaküla tee,58.18504668,26.11758241,132310,,Elva vald,"",6451311.00,624547.37,,Tartu MV
 23187,8400241-1,Koka,58.41446727,25.6707016,23187,,Viljandi vald,"Saarepeedi suunas",6476113.20,597633.50,,Viljandi MV
 23412,8400634-1,Parastuma,58.29624423,25.4596252,23412,,Viljandi vald,"Heimtali suunas",6462661.04,585587.08,,Viljandi MV
 23413,8400450-1,Maiste,58.35470027,25.5551936,23413,,Viljandi vald,"Viljandi suunas",6469295.93,591038.95,,Viljandi MV
@@ -10169,7 +10183,6 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 21000,8400781-1,Riiska,58.37945885,25.54869728,21000,,Viljandi vald,"Suure-Jaani suunas",6472043.96,590595.07,,Viljandi MV
 131908,3700317-1,Linnumäe,58.98938251,22.76554463,131908,,Pühalepa vald,"Selveri parklas Neste tankla juures",6539586.00,429035.15,,Hiiu MV
 149107,5901215-1,Vainupea tee,59.53875627,26.2321175,149107,,Haljala vald,"",6602233.50,626264.62,Viru2,Lääne-Viru MV
-152672,7801361-1,Tõrvandi tee,58.32239138,26.72057788,152672,,Kambja vald,"Tõrvandi suunas",6467874.50,659375.50,,Tartu MV
 124866,7801175-1,Ülenurme Gümnaasium,58.32185595,26.72124538,124866,,Kambja vald,"Ülenurme suunas",6467816.50,659417.00,,Tartu MV
 92283,8200147-1,Karula rist,57.76145612,26.31229623,92283,,Valga vald,,6404538.50,637621.31,,Valga MV
 28364,5100147-1,Kirisaare,58.97105,25.66411,28364,,Paide linn,,6538078.23,595710.54,"tartu1,tartu2",Järvamaa ÜTK
@@ -10196,7 +10209,6 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 28734,5100327-1,Ollepa tee,58.654889,25.540059,28734,,Türi vald,,6502701.56,589385.56,,Järvamaa ÜTK
 89247,5100326-1,Ollepa tee,58.654991,25.540258,89247,,Türi vald,,6502713.18,589396.85,,Järvamaa ÜTK
 156215,"","Berliin, Flughafen Berlin Brandenburg (Parkla B)",52.36461385,13.51464271,156215,,,,5856079.39,-215381.66,,MKM
-28304,7800069-1,Sae,58.2423323,26.17656223,28304,,Elva vald,"Limnoloogia suunas",6457799.00,627808.12,,Tartu MV
 162777,7820375-2,Eesti Rahva Muuseum,58.39554271,26.74270959,162777,,Tartu linn,"Lõpp-peatus",6476067.94,660338.24,,Tartu LV
 23976,8200579-1,Sihva,58.01162217,26.43657637,23976,,Otepää vald,"Otepää suunas",6432645.07,644003.04,,Valga MV
 20623,8400705-1,Põrguoru,58.27556524,25.60624624,20623,,Viljandi vald,"Paistu suunas",6460555.00,594237.98,,Viljandi MV
@@ -10245,7 +10257,6 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 150342,4401078-1,Sirtsi (perspektiivne),59.27275404,26.90418123,150342,,Lüganuse vald,,6574083.00,665543.00,Viru7,Ida-Viru MV
 23306,7000285-1,Lemmiku,58.900665,24.420865,23306,Märjamaa,Märjamaa vald,,6529127.01,524257.37,Rapla3,Rapla MV
 32006,8200465-1,Puka tee,58.05355252,26.19302935,32006,,Otepää vald,"Valga suunas",6436815.94,629462.03,,Valga MV
-28693,7800586-1,Trulli,58.23214324,26.76197265,28693,,Kambja vald,"Rebase suunas",6457930.50,662212.87,,Tartu MV
 158209,23862-1,Kõrgemäe,59.29735341,24.60875589,158209,,Saku vald,,6573396.50,534685.56,Harju2,Harjumaa ÜTK
 158210,23861-1,Kõrgemäe,59.2968756,24.60919277,158210,,Saku vald,,6573343.50,534710.93,Harju2,Harjumaa ÜTK
 5584,19704-1,Kroodi oja,59.48027399,24.98269465,5584,,Maardu linn,,6594025.00,555692.00,Harju2,Harjumaa ÜTK
@@ -10406,7 +10417,7 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 136709,6500973-1,Pulsti,58.18779133,26.96151906,136709,,Põlva vald,"Mudaku suunas",6453495.50,674143.06,,Põlva MV
 21323,7400368-1,Liiva,58.6053153,23.22957297,21323,,Muhu vald,,6496411.00,455217.78,,Saare MV
 4781,21733-1,Maeru,59.26654221,24.29192647,4781,,Lääne-Harju vald,,6569843.00,516648.43,Harju3,Harjumaa ÜTK
-28975,7800841-1,Sarakuste,58.36728022,26.943806,28975,,Kastre vald,"Võõpste suunas",6473421.45,672225.11,,Tartu MV
+28975,7800841-1,Sarakuste,58.36728022,26.943806,28975,,Kastre vald,"Kastre suunas",6473421.45,672225.11,,Tartu MV
 26897,5100199-1,Kuusna,59.0015199,25.93480863,26897,,Järva vald,,6541888.50,611177.75,,Järvamaa ÜTK
 142405,6501030-1,Vanasaare,58.03841941,26.87172189,142405,,Kanepi vald,"Peraküla suunas",6436644.50,669578.12,,Põlva MV
 116441,5900113-1,Inju,59.26659559,26.36739848,116441,,Vinni vald,,6572195.00,634983.87,Viru1,Lääne-Viru MV
@@ -10549,7 +10560,7 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 28641,4400718-1,Soolepi,59.27530017,27.01712348,28641,,Lüganuse vald,"Oandu suunas",6574650.50,671963.87,Viru7,Ida-Viru MV
 126759,21794-1,Tammermaa tee,59.30290633,24.38395069,126759,,Lääne-Harju vald,,6573920.30,521873.30,Harju3,Harjumaa ÜTK
 135903,43189-1,Rae mõis,59.37959,24.887404,135903,,Rae vald,,6582734.00,550440.33,Harju2,Harjumaa ÜTK
-21550,7800934-1,Tani,58.3407045,27.0772505,21550,,Kastre vald,"Võõpste suunas",6470815.00,680162.56,,Tartu MV
+21550,7800934-1,Tani,58.3407045,27.0772505,21550,,Kastre vald,"Kastre suunas",6470815.00,680162.56,,Tartu MV
 135901,43187-1,Loopera,59.38701901,24.85205062,135901,,Rae vald,,6583535.50,548420.43,Harju2,Harjumaa ÜTK
 119362,8400474-1,Metsakalmistu,58.3691427,25.62436733,119362,,Viljandi linn,"Peetrimõisa suunas",6471000.00,595048.56,ViljandiLinn,Viljandi MV
 119384,7400886-1,Ütsa,58.2216709,22.08308389,119384,,Saaremaa vald,,6455033.50,387368.15,,Saare MV
@@ -10903,7 +10914,7 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 123563,7400901-1,Muratsi 1,58.24362631,22.5672069,123563,,Saaremaa vald,,6456768.00,415860.84,,Saare MV
 21110,7000638-1,Välja,59.000002,24.803887,21110,Rapla,Rapla linn,,6540392.72,546200.18,Rapla1,Rapla MV
 123587,8600831-1,Lillimõisa,57.62278403,27.09607167,123587,,Rõuge vald,"Kuklase suunas",6390990.00,684953.12,,Võru MV
-25268,7800980-1,Tuule,58.3466684,27.07812988,25268,,Kastre vald,"Võõpste suunas",6471480.91,680183.54,,Tartu MV
+25268,7800980-1,Tuule,58.3466684,27.07812988,25268,,Kastre vald,"Kastre suunas",6471480.91,680183.54,,Tartu MV
 28607,6700372-1,Kõnnu,58.721161,24.800233,28607,,Kaisma vald,,6509333.46,546360.72,,Pärnu MV
 10299,23664-1,Lubjamäe,59.51391786,24.84977998,10299,,Viimsi vald,,6597670.00,548112.31,Harju2,Harjumaa ÜTK
 123640,7400903-1,Muratsi 2,58.23445627,22.57311531,123640,,Saaremaa vald,,6455739.50,416186.03,,Saare MV
@@ -10971,7 +10982,7 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 156613,7801405-1,Nigula veski,58.5306541,26.7916462,156613,,Tartu vald,"Tartu suunas",6491221.50,662571.31,,Tartu MV
 26005,8200126-1,Soekõrtsi,57.95785154,26.45090145,26005,,Otepää vald,"Otepää suunas",6426691.06,645068.06,,Valga MV
 130493,29106-1,Leesi teerist,59.4578136,25.45077323,130493,,Kuusalu vald,,6592004.52,582269.94,Harju4B,Harjumaa ÜTK
-24566,7800982-1,Tõlgu,58.3729436,26.97186738,24566,,Kastre vald,"Võõpste suunas",6474124.00,673837.81,,Tartu MV
+24566,7800982-1,Tõlgu,58.3729436,26.97186738,24566,,Kastre vald,"Kastre suunas",6474124.00,673837.81,,Tartu MV
 124490,6701223-1,Leina,58.23439412,24.53303328,124490,,Tahkuranna vald,,6454965.50,531312.00,,Pärnu MV
 124491,6701222-1,Jõulumäe,58.22297012,24.51746406,124491,,Tahkuranna vald,,6453686.00,530407.25,,Pärnu MV
 124523,6701224-1,Leina,58.2343456,24.53282827,124523,,Häädemeeste vald,,6454960.00,531300.00,,Pärnu MV
@@ -11144,7 +11155,7 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 138222,09108-1,Marati,59.45809714,24.67552222,138222,,Põhja-Tallinn,,6591339.30,538309.30,Harju1,Tallinna TA
 139440,5901100-1,Tamsalu Gümnaasium,59.16407738,26.11435505,139440,,Tapa vald,,6560298.50,620920.87,Viru5,Lääne-Viru MV
 30538,8600679-1,Tellisetehas,57.8534176,26.98396226,30538,,Võru linn,"Katariina suunas",6416349.05,677118.07,,Võru MV
-126769,7801197-1,Tiirike,58.21138138,26.49739346,126769,,Nõo vald,"Uuta suunas",6455010.50,646767.56,,Tartu MV
+126769,7801197-1,Tiirike,58.21138138,26.49739346,126769,,Nõo vald,"Elva suunas",6455010.50,646767.56,,Tartu MV
 26142,7800520-1,Meeri tee,58.28116527,26.52450861,26142,,Nõo vald,"Valga suunas",6462837.00,648067.87,,Tartu MV
 29111,7800519-1,Meeri tee,58.28145619,26.52569573,29111,,Nõo vald,"Tartu suunas",6462872.00,648136.25,,Tartu MV
 126777,47039-1,Vahepere,59.43700091,24.57189321,126777,,Harku vald,,6588934.50,532452.62,Harju1,Harjumaa ÜTK
@@ -11189,7 +11200,7 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 127231,"",Rooma,41.909334,12.52834599,127231,,,,4699023.47,-483779.63,,MKM
 127232,"",Maastricht,50.850638,5.70463399,127232,,,,5806543.61,-783548.36,,MKM
 24187,8600380-1,Marati,57.83579959,26.50617878,24187,,Antsla vald,"Antsla suunas",6413227.50,648846.18,,Võru MV
-151266,7801354-1,Villemi,58.2604687,26.84829956,151266,,Kastre vald,"Kamsu peatuse suunas",6461294.50,667146.00,,Tartu MV
+151266,7801354-1,Villemi,58.2604687,26.84829956,151266,,Kastre vald,"Roiu suunas",6461294.50,667146.00,,Tartu MV
 30049,7800663-1,Peedimäe,58.35491711,26.57286916,30049,,Tartu linn,"Tartu suunas",6471153.05,650587.95,,Tartu LV
 13859,47010-1,Vääna,59.38827598,24.40941654,13859,Vääna (Harku vald),Harku vald,,6583439.00,523266.00,Harju2,Harjumaa ÜTK
 127379,6500857-1,Maarja,58.12363183,27.03667539,127379,,Põlva vald,,6446554.50,678882.81,,Põlva MV
@@ -11325,7 +11336,7 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 128430,6500861-1,Praksi,57.99516011,26.81131249,128430,,Kanepi vald,,6431679.50,666214.87,,Põlva MV
 161137,7000855-1,Tammejussi,59.16546616,24.70721393,161137,,Kohila vald,,6558760.50,540450.18,Kohila,Rapla MV
 28033,7800260-1,Kivistiku,58.48924463,27.07265733,28033,,Peipsiääre vald,"Kavastu suunas",6487329.50,679136.25,,Tartu MV
-149324,7801338-1,Ääremetsa tee,58.48823535,26.6621221,149324,,Tartu vald,"Kärkna, Õvi peatuse suunas",6486194.00,655220.00,,Tartu MV
+149324,7801338-1,Ääremetsa tee,58.48823535,26.6621221,149324,,Tartu vald,"Sojamaa suunas",6486194.00,655220.00,,Tartu MV
 128510,6703005-1,Teeääre,58.62013908,25.02107299,128510,,Vändra vald,,6498256.45,559325.27,,Pärnu MV
 128511,6703006-1,Pihlaka,58.59721682,25.04713105,128511,,Põhja-Pärnumaa vald,,6495727.00,560879.00,,Pärnu MV
 27624,6701083-1,Ullaste,58.43379852,24.44615591,27624,,Pärnu linn,,6477137.01,526060.92,PärnuMVLL,Pärnu MV
@@ -11573,7 +11584,7 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 130441,"",Moskva Leningradski,55.77784016,37.65403032,130441,,,,6268168.77,1351884.88,,MKM
 130472,7801234-1,Koordi,58.2655963,26.84042821,130472,,Kastre vald,"Igevere suunas",6461845.50,666660.18,,Tartu MV
 130475,7801236-1,Kamsu,58.25448998,26.86262617,130475,,Kastre vald,"Ignase suunas",6460665.00,668014.62,,Tartu MV
-33534,7801034-1,Valguta seltsimaja,58.17990789,26.19877052,33534,Valguta,Elva vald,"Rannaküla teel",6450892.60,629339.60,,Tartu MV
+33534,7801034-1,Valguta seltsimaja,58.17990789,26.19877052,33534,Valguta,Elva vald,"",6450892.60,629339.60,,Tartu MV
 27717,7400220-1,Keskranna,58.20357058,22.2936974,27717,,Saaremaa vald,,6452683.96,399689.02,,Saare MV
 130488,29105-1,Leesi teerist,59.4579281,25.45098781,130488,,Kuusalu vald,,6592017.54,582281.83,Harju4B,Harjumaa ÜTK
 1108,07807-1,Lilleküla jaam,59.42425005,24.72491146,1108,,Kristiine,,6587598.01,541150.84,Harju1,Tallinna TA
@@ -11654,9 +11665,9 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 24559,7801077-1,Vasula,58.47086588,26.72891314,24559,,Tartu vald,"Kõrveküla suunas",6484417.50,659190.93,,Tartu MV
 137734,4420198-2,Well,59.367758,28.122562,137734,,Narva linn,,6588283.55,734268.08,,Narva LV
 30617,7800875-1,Sipelga,58.19161366,26.41124524,30617,,Elva vald,"Hellenurme suunas",6452625.00,641786.12,,Tartu MV
-130990,7801241-1,Verevi tee,58.37168876,26.15254239,130990,,Elva vald,"Verevi küla suunas",6472153.50,625935.90,,Tartu MV
+130990,7801241-1,Verevi tee,58.37168876,26.15254239,130990,,Elva vald,"",6472153.50,625935.90,,Tartu MV
 12680,23284-1,Kiisa,59.2390162,24.68574788,12680,Kiisa,Saku vald,"Rong Tallinna suunas",6566940.50,539138.68,Harju3,Harjumaa ÜTK
-131009,7801240-1,Toolamaa,58.52725153,26.75307278,131009,,Tartu vald,"Saadjärve, Juula suunas",6490750.00,660341.81,,Tartu MV
+131009,7801240-1,Toolamaa,58.52725153,26.75307278,131009,,Tartu vald,"Saadjärve suunas",6490750.00,660341.81,,Tartu MV
 92479,8200574-1,Seedri,57.94796267,26.21084429,92479,,Valga vald,,6425096.50,630900.87,,Valga MV
 32223,4420004-1,Aiandusühistu Primorski,59.35002632,28.17268609,32223,,Narva linn,,6586488.15,737235.58,,Narva LV
 131021,5701044-1,Asuküla,58.87055289,23.53956549,131021,,Haapsalu linn,,6525788.00,473438.96,Laane1,Lääne MV
@@ -11668,7 +11679,7 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 132821,23240-1,Kurtna tiigi,59.22836707,24.71340179,132821,,Saku vald,,6565770.74,540729.57,Harju3,Harjumaa ÜTK
 131142,7801245-1,Parapalu,58.31213618,27.38396606,131142,,Räpina vald,"Kõivusaare suunas",6468502.00,698265.62,,Põlva MV
 132820,23239-1,Kurtna tiigi,59.22841,24.71367,132820,,Saku vald,,6565775.69,540744.83,Harju3,Harjumaa ÜTK
-131178,7801198-1,Tulba rist,58.26533227,27.16507175,131178,,Kastre vald,"Liispõllu suunas",6462668.80,685696.40,,Tartu MV
+131178,7801198-1,Tulba rist,58.26533227,27.16507175,131178,,Kastre vald,"",6462668.80,685696.40,,Tartu MV
 26991,3700043-1,Isabella,58.94819459,22.52875911,26991,,Hiiu vald,"Lauka suund",6535273.77,415324.51,,Hiiu MV
 4328,21217-6,Estonia 6,59.43316097,24.75263436,4328,Tallinn; Estonia,Kesklinn,,6588608.00,542713.37,Harju1,Tallinna TA
 14583,7000007-1,Aespa,59.20768,24.65695,14583,,Kohila vald,,6563433.46,537529.30,Kohila,Rapla MV
@@ -11735,7 +11746,7 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 25710,6700151-1,Jenseni,58.56579013,24.99079633,25710,,Vändra vald,,6492177.31,557655.71,,Pärnu MV
 134178,6500899-1,Beresje tee,58.0747828,27.5649938,134178,,Setomaa vald,"Võõpsu suunas",6442652.89,710266.59,,Võru MV
 12156,28104-1,Kodasoo küla,59.44602411,25.27303934,12156,,Kuusalu vald,,6590486.70,572217.29,Harju3,Harjumaa ÜTK
-131720,7801252-1,Tiirike,58.21138406,26.4970287,131720,,Nõo vald,"Pangodi, Kääni suunas",6455010.00,646746.12,,Tartu MV
+131720,7801252-1,Tiirike,58.21138406,26.4970287,131720,,Nõo vald,"Pangodii suunas",6455010.00,646746.12,,Tartu MV
 24871,7820085-1,Kesklinn V,58.37745946,26.72763631,24871,,Tartu linn,"Kaubamaja küljel",6474019.59,659539.42,TartuLinn,Tartu LV
 155394,8600960-1,Raudsepa,57.7986134,27.0084102,155394,,Võru vald,"Kasaritsa suunas",6410315.97,678841.92,,Võru MV
 131758,7800508-1,Matto,58.49404184,26.35934141,131758,,Tartu vald,"Puurmani suunas",6486179.50,637550.81,,Tartu MV
@@ -12042,7 +12053,7 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 157175,47231-1,Kõue,59.44321,24.49237,157175,,Harku vald,,6589590.40,527935.01,Harju2,Harjumaa ÜTK
 133858,3700997-1,Heltermaa sadam,58.86605386,23.04613416,133858,Heltermaa,Hiiu maakond,,6525587.00,444968.75,,Hiiu MV
 134191,12912-1,Veduri,59.41668792,24.75305714,134191,,Kesklinn,,6586773.21,542757.97,Harju1,Tallinna TA
-122858,8200256-1,Pikre,57.9100966,25.9028191,122858,,Tõrva vald,,6420321.50,612788.06,,Valga MV
+122858,8200256-1,Pikre,57.9100966,25.9028191,122858,,Tõrva vald,"Tõrva suunas",6420321.50,612788.06,,Valga MV
 141860,8490052-1,Rahetsema,58.30065107,25.55124244,141860,,Viljandi vald,,6463272.30,590946.90,,Viljandi MV
 20639,7800302-1,Koosalaane,58.50777379,27.12941648,20639,,Peipsiääre vald,"Koosa suunas",6489544.00,682346.68,,Tartu MV
 27410,7400741-1,Tahula II,58.30185359,22.57781338,27410,,Saaremaa vald,,6463238.50,416621.09,,Saare MV
@@ -12211,7 +12222,7 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 159204,12231-1,A. Laikmaa,59.436126,24.757309,159204,,Kesklinn,,6588941.28,542974.92,,Tallinna TA
 132923,47305-1,Külakõrtsu,59.22055447,24.532372,132923,,Saue vald,,6564804.50,530401.37,Harju3,Harjumaa ÜTK
 22907,8600102-1,Kase,57.56707154,26.53495097,22907,,Rõuge vald,"Tiitsa suunas",6383381.98,651685.08,,Võru MV
-158794,7801448-1,Tabivere raudteejaam,58.5510881,26.59250682,158794,,Tartu vald,,6493030.30,650892.50,,Tartu MV
+158794,7801448-1,Tabivere raudteejaam,58.5510881,26.59250682,158794,,Tartu vald,"Tartu suunas",6493030.30,650892.50,,Tartu MV
 30172,4900044-1,Eerikvere,58.67896328,26.62728595,30172,,Jõgeva vald,"Palamuse suunas",6507341.00,652358.01,,Jõgeva ÜTK
 30174,4900046-1,Pällusaare,58.68058643,25.91858357,30174,,Põltsamaa vald,"Põltsamaa suunas",6506129.01,611268.01,tartu2,Jõgeva ÜTK
 30175,4900047-1,Pällusaare,58.68088205,25.91859981,30175,,Põltsamaa vald,"Kalme küla suunas",6506161.95,611268.01,tartu2,Jõgeva ÜTK
@@ -12271,7 +12282,7 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 30718,4900570-1,Selli,58.8979162,26.28274968,30718,,Jõgeva vald,"Selli suunas",6530983.50,631556.62,,Jõgeva ÜTK
 30719,4900571-1,Selli,58.89813195,26.28303146,30719,,Jõgeva vald,"Vägeva suunas",6531008.07,631572.04,,Jõgeva ÜTK
 30720,4900575-1,Siimusti,58.72813265,26.34080737,30720,,Jõgeva vald,"Saabuvad bussid",6512199.03,635561.01,1,Jõgeva ÜTK
-30723,4900581-1,Silma,58.56510233,26.69775209,30723,,Tartu vald,"Elistvere mõisa suunas",6494831.50,656952.12,,Tartu MV
+30723,4900581-1,Silma,58.56510233,26.69775209,30723,,Tartu vald,"Elistvere suunas",6494831.50,656952.12,,Tartu MV
 30724,4900580-1,Silma,58.56558662,26.69694132,30724,,Tartu vald,"Juula suunas",6494883.50,656902.81,,Tartu MV
 30973,4900424-1,Pauastvere,58.66982909,25.9963615,30973,,Põltsamaa vald,"Põltsamaa suunas",6505063.00,615813.08,,Jõgeva ÜTK
 30974,4900427-1,Pauastvere,58.66989155,25.99693288,30974,,Põltsamaa vald,"Sulustvere suunas",6505070.94,615846.01,,Jõgeva ÜTK
@@ -12307,7 +12318,7 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 31106,4900745-1,Vägeva,58.90753725,26.27937717,31106,,Jõgeva vald,"Koluvere suunas",6532047.93,631325.93,,Jõgeva ÜTK
 31107,4900752-1,Õuna,58.74934964,26.35419355,31107,,Jõgeva vald,"Jõgeva linna suunas",6514587.92,636252.99,1,Jõgeva ÜTK
 31108,4900754-1,Õuna,58.74975624,26.35358302,31108,,Jõgeva vald,"Kurista suunas",6514631.94,636216.08,1,Jõgeva ÜTK
-31110,4900756-1,Õvanurme,58.56337754,26.63000065,31110,,Tartu vald,"Varbemäe suunas",6494483.00,653020.00,,Tartu MV
+31110,4900756-1,Õvanurme,58.56337754,26.63000065,31110,,Tartu vald,"Elistvere suunas",6494483.00,653020.00,,Tartu MV
 31111,4900761-1,Äksi kirik,58.53194581,26.63401564,31111,,Tartu vald,"Jõgeva suunas",6490994.00,653390.92,,Tartu MV
 28205,5700433-1,Tuuru,58.80896676,23.54686086,28205,,Haapsalu linn,,6518925.50,473813.46,Laane2,Lääne MV
 31128,4900502-1,Ranna mõis,58.73172587,27.09352649,31128,,Peipsiääre vald,"Kallaste suunas",6514364.50,679106.93,,Tartu MV
@@ -12327,16 +12338,16 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 153074,7000847-1,Põikma,59.15114236,24.65291964,153074,,Kohila vald,,6557133.50,537360.37,Kohila,Rapla MV
 25245,8400824-1,Otiküla,58.44813589,25.95291283,25245,,Viljandi vald,"Kaavere suunas",6480307.03,614012.05,,Viljandi MV
 152346,7801350-1,Nõlvakaare,58.40634201,26.75185225,152346,,Tartu vald,"Tartu suunas",6477291.62,660823.08,,Tartu MV
-31169,4900590-1,Sortsimäe,58.5993558,26.43984198,31169,,Tartu vald,"Tõrve suunas",6498069.50,641815.43,,Tartu MV
+31169,4900590-1,Sortsimäe,58.5993558,26.43984198,31169,,Tartu vald,"Puurmani suunas",6498069.50,641815.43,,Tartu MV
 31170,4900591-1,Sortsimäe,58.59955232,26.43919194,31170,,Tartu vald,"Koogi suunas",6498090.00,641776.87,,Tartu MV
 31171,4900592-1,Sulustvere,58.68648327,26.10239052,31171,,Põltsamaa vald,"Põltsamaa suunas",6507104.99,621903.95,,Jõgeva ÜTK
 26393,7820215-1,Rebase,58.36921745,26.74172752,26393,,Tartu linn,"linna sisenev",6473135.98,660400.67,TartuLinn,Tartu LV
 31172,4900595-1,Sulustvere,58.68638037,26.1032295,31172,,Põltsamaa vald,"Kaavere suunas",6507095.06,621952.94,,Jõgeva ÜTK
-31173,4900597-1,Sõõru,58.64640238,26.90544366,31173,,Peipsiääre vald,"Kaiu suunas",6504382.94,668635.99,,Tartu MV
+31173,4900597-1,Sõõru,58.64640238,26.90544366,31173,,Peipsiääre vald,"Saare suunas",6504382.94,668635.99,,Tartu MV
 31174,4900596-1,Sõõru,58.64609295,26.90564343,31174,,Peipsiääre vald,"Nõva suunas",6504349.01,668649.07,,Tartu MV
 32409,5900428-1,Metsiku,59.49333,26.14296,32409,,Haljala vald,,6597010.72,621384.64,Viru2,Lääne-Viru MV
 31202,4900648-1,Truubi,58.58592251,26.46370533,31202,,Tartu vald,"Koogi suunas",6496625.00,643256.81,,Tartu MV
-31203,4900647-1,Truubi,58.58614647,26.46370642,31203,,Tartu vald,"Tõrve suunas",6496649.93,643255.96,,Tartu MV
+31203,4900647-1,Truubi,58.58614647,26.46370642,31203,,Tartu vald,"Puurmani suunas",6496649.93,643255.96,,Tartu MV
 24721,7820035-1,Fi,58.35338124,26.6810383,24721,,Tartu linn,"Tamme pst. suunas",6471230.06,656922.53,TartuLinn,Tartu LV
 159868,7820388-1,Päevakivi,58.34755634,26.68672229,159868,,Tartu linn,"Lõpp-peatus",6470595.13,657281.02,,Tartu LV
 31209,4900667-1,Umbusi,58.583499,26.10041287,31209,,Põltsamaa vald,"Saabuvad bussid",6495636.50,622148.43,,Jõgeva ÜTK
@@ -12675,7 +12686,7 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 157867,7801428-1,Väike-Näki,58.3218174,26.67259109,157867,,Kambja vald,"Lemmatsi suunas",6467697.61,656568.41,,Tartu MV
 139281,6701272-1,Kalli,58.53115911,24.05291817,139281,,Lääneranna vald,,6487895.50,503082.53,,Pärnu MV
 123049,7820042-1,Hiie,58.38316976,26.69673413,123049,,Tartu linn,"Vaksali tn. suunas",6474582.00,657707.37,TartuLinn,Tartu LV
-157868,7801429-1,Väike-Näki,58.32266586,26.6726231,157868,,Kambja vald,"Näki tee suunas",6467792.11,656566.52,,Tartu MV
+157868,7801429-1,Väike-Näki,58.32266586,26.6726231,157868,,Kambja vald,"Ülenurme suunas",6467792.11,656566.52,,Tartu MV
 4913,21936-1,Muusika,59.2176764,24.46928057,4913,,Saue vald,,6564457.00,526800.81,Harju3,Harjumaa ÜTK
 32173,5900272-1,Ugrani,59.16765628,26.26723469,32173,,Väike-Maarja vald,,6560982.50,629647.43,Viru5,Lääne-Viru MV
 139369,5901072-1,Aru,59.26242754,25.73896189,139369,,Tapa vald,,6570634.00,599173.31,Viru5,Lääne-Viru MV
@@ -12887,7 +12898,7 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 3993,19009-1,Pojengi tee,59.48973817,24.87594145,3993,,Pirita,,6594995.47,549628.60,Harju1,Tallinna TA
 29314,7800469-1,Luigemetsa,58.58403361,27.02897861,29314,,Peipsiääre vald,"Välgi suunas",6497760.50,676114.93,,Tartu MV
 27568,7800477-1,Luunja,58.36170006,26.89136793,27568,Luunja,Luunja vald,"Tartu suunas",6472667.08,669185.96,,Tartu MV
-122890,8200281-1,Limbi,57.95690514,25.88646452,122890,,Tõrva vald,,6425505.50,611672.31,,Valga MV
+122890,8200281-1,Limbi,57.95690514,25.88646452,122890,,Tõrva vald,"Tõrva suunas",6425505.50,611672.31,,Valga MV
 157865,7801426-1,Kivimetsa tee,58.35687137,26.65924217,157865,,Kambja vald,"Lemmatsi suunas",6471567.70,655632.06,,Tartu MV
 125643,6701235-1,Kargussaare,58.5867992,25.1696225,125643,,Vändra vald,,6494684.53,568020.06,,Pärnu MV
 157802,7801424-1,Kisla,58.34320503,26.93999529,157802,,Kastre vald,"Kaagvere suunas",6470732.80,672119.80,,Tartu MV
@@ -12990,7 +13001,7 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 158206,23857-1,Kristjani,59.28799448,24.62315449,158206,,Saku vald,,6572361.50,535515.62,Harju2,Harjumaa ÜTK
 158207,23858-1,Kristjani,59.2884588,24.62273413,158207,,Saku vald,,6572413.00,535491.18,Harju2,Harjumaa ÜTK
 158211,23863-1,Lageda tee,59.29985275,24.59325317,158211,,Saku vald,,6573667.00,533799.81,Harju2,Harjumaa ÜTK
-158902,7801452-1,Toominga,58.55794864,26.56732711,158902,,Tartu vald,"Puurmani suunas",6493737.50,649398.43,,Tartu MV
+158902,7801452-1,Toominga,58.55794864,26.56732711,158902,,Tartu vald,"Koogi suunas",6493737.50,649398.43,,Tartu MV
 145421,8490199-1,Marjasalu,58.405675,25.570254,145421,,Viljandi vald,"Viljandi suunas",6474992.38,591787.50,,Viljandi MV
 142127,8490078-1,Mäe,58.36040791,25.64538309,142127,,Viljandi vald,"Väluste teel Viljandi suunas",6470057.40,596301.90,,Viljandi MV
 10796,14308-1,Pirita jõgi,59.44467694,24.91656303,10796,,Jõelähtme vald,,6590006.57,551998.56,Harju1,Harjumaa ÜTK
@@ -13144,7 +13155,7 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 1269,11702-1,Keskturg,59.43131829,24.76936289,1269,,Kesklinn,,6588413.50,543665.06,Harju1,Tallinna TA
 1268,11701-1,Keskturg,59.43039381,24.77163927,1268,,Kesklinn,,6588312.00,543795.43,Harju1,Tallinna TA
 10732,05408-1,Nõmme,59.386339,24.68760927,10732,,Nõmme,"Rong Paldiski suunas",6583352.50,539076.68,Harju1,Tallinna TA
-122891,8200280-1,Limbi,57.95726444,25.88616248,122891,,Tõrva vald,,6425545.00,611653.31,,Valga MV
+122891,8200280-1,Limbi,57.95726444,25.88616248,122891,,Tõrva vald,"Jeti suunas",6425545.00,611653.31,,Valga MV
 150324,8600936-1,Tööstuse,57.87694,26.795,150324,,Võru vald,"Varese suunas",6418483.49,665799.47,,Võru MV
 151687,4401043-1,Jõhvi bussijaam (saabuvad),59.35801708,27.41656394,151687,Jõhvi,Jõhvi vald,"Lõpp peatus",6584945.00,694242.68,,Ida-Viru MV
 32438,5700106-1,Kasemetsa,58.65855511,23.77263732,32438,,Lääneranna vald,,6502106.10,486804.04,,Pärnu MV
@@ -13179,11 +13190,11 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 29992,6700353-1,Kurgja tee,58.67318104,25.20914875,29992,,Põhja-Pärnumaa vald,,6504345.04,570145.06,,Pärnu MV
 31093,6701189-1,Võidula,58.70584634,25.09163059,31093,,Põhja-Pärnumaa vald,,6507865.97,563269.03,,Pärnu MV
 31403,6700766-1,Rahnoja,58.55751446,24.97469066,31403,,Põhja-Pärnumaa vald,,6491241.93,556731.96,,Pärnu MV
-86671,6700352-1,Kurgja tee,58.6740741,25.21487865,86671,,Põhja-Pärnumaa vald,,6504450.50,570475.62,,Pärnu MV
+86671,6700352-1,Kurgja tee,58.67402167,25.2147249,86671,,Vändra vald,,6504444.50,570466.81,,Pärnu MV
 20699,6700267-1,Kergu,58.66911392,24.75592216,20699,,Põhja-Pärnumaa vald,,6503506.93,543859.06,,Pärnu MV
 21859,6700042-1,Annamõisa,58.65705392,24.71555029,21859,,Põhja-Pärnumaa vald,,6502138.05,541531.08,,Pärnu MV
 21860,6700272-1,Kergu kool,58.68050384,24.76278875,21860,,Põhja-Pärnumaa vald,,6504779.99,544243.02,,Pärnu MV
-24572,6700823-1,Ruistuma,58.65958656,24.68401524,24572,,Põhja-Pärnumaa vald,,6502401.03,539697.95,,Pärnu MV
+24572,6700823-1,Ruistuma,58.65895764,24.68493701,24572,,Kaisma vald,,6502331.53,539752.16,,Pärnu MV
 28004,6700605-1,Männimäe,58.695615,24.783422,28004,,Kaisma vald,,6506476.78,545420.07,,Pärnu MV
 28431,6700822-1,Ruistuma,58.65943102,24.68449414,28431,,Põhja-Pärnumaa vald,,6502383.99,539725.92,,Pärnu MV
 123530,6701219-1,Kõnnumäe,58.7187951,24.82499091,123530,,Kaisma vald,,6509087.34,547798.22,,Pärnu MV
@@ -13218,7 +13229,6 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 20608,5700220-1,Martna teerist,58.821435,23.76173799,20608,,Lääne-Nigula vald,,6520250.26,486235.89,Laane3,Lääne MV
 24113,5700379-1,Simmi,58.75962185,23.94750279,24113,,Lääne-Nigula vald,,6513342.00,496961.90,Laane3,Lääne MV
 21313,5700086-1,Kabelimägi,58.78176,23.90605499,21313,,Lääne-Nigula vald,,6515810.44,494566.71,Laane3,Lääne MV
-25269,7801020-1,Unipiha,58.25513209,26.61280415,25269,,Nõo vald,"Tartu suunas Lätiküla teel",6460138.00,653356.93,,Tartu MV
 80800,5900553-1,Pedassaare,59.614977,26.039802,80800,,Haljala vald,,6610375.02,615131.19,Viru2,Lääne-Viru MV
 131980,8200756-1,Linna küla,58.03088943,25.8448094,131980,,Tõrva vald,,6433674.00,608980.50,,Valga MV
 93547,5700034-1,Haeska teerist,58.83151427,23.69517702,93547,,Haapsalu linn,,6521388.50,482395.87,Laane2,Lääne MV
@@ -13530,7 +13540,7 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 27098,4400569-1,Piilsi,58.92503658,26.92053487,27098,,Mustvee vald,"Kalmaküla suunas",6535427.02,668160.50,Viru7,Jõgeva ÜTK
 32525,4400425-1,Metsamajandi,59.35075855,26.81988235,32525,,Lüganuse vald,"Sämi suunas",6582560.00,660375.50,Viru7,Ida-Viru MV
 143814,10706-1,Reisisadama D-terminal,59.44255518,24.7654581,143814,,Kesklinn,,6589662.73,543429.17,Harju1,Tallinna TA
-122523,4900757-1,Õvanurme rist,58.56328554,26.62966702,122523,,Tartu vald,,6494472.00,653001.00,,Tartu MV
+122523,4900757-1,Õvanurme rist,58.56328554,26.62966702,122523,,Tartu vald,"Tabivere, Elistvere suunas",6494472.00,653001.00,,Tartu MV
 24061,4400378-1,Lennujaama,59.38991658,28.10694141,24061,,Vaivara vald,"Narva suunas",6590693.00,733230.50,,Ida-Viru MV
 147589,5901206-1,Toominga,59.24805172,25.67904193,147589,,Tapa vald,,6568946.00,595796.87,Viru5,Lääne-Viru MV
 147588,5901205-1,Toominga,59.24783142,25.67906513,147588,,Tapa vald,,6568921.50,595798.81,Viru5,Lääne-Viru MV
@@ -13747,7 +13757,7 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 29050,7800255-1,Kiriku,58.50325471,26.87655926,29050,,Peipsiääre vald,"Tartu suunas",6488381.50,667644.06,,Tartu MV
 25234,7800264-1,Kliimaski,58.23305002,27.34943189,25234,,Räpina vald,"Sikakurmu suunas",6459603.00,696683.62,,Põlva MV
 25706,7800278-1,Koidumetsa,58.59498457,27.07229992,25706,,Peipsiääre vald,"Välgi suunas",6499093.50,678576.18,,Tartu MV
-25571,7800317-1,Sangla tee,58.33038357,26.18665083,25571,,Elva vald,,6467620.00,628080.68,,Tartu MV
+25571,7800317-1,Sangla tee,58.33038357,26.18665083,25571,,Elva vald,"Väike-Rakke suunas",6467620.00,628080.68,,Tartu MV
 149385,8600918-1,Tummelka,57.67143851,27.11781002,149385,,Rõuge vald,"Plaani suunas",6396463.50,685999.00,,Võru MV
 91591,4900657-1,Tõrve,58.60314371,26.3794338,91591,,Põltsamaa vald,"Ausi peatuse suunas",6498365.00,638290.75,,Jõgeva ÜTK
 26245,7820188-1,Polikliiniku,58.36833346,26.70338666,26245,,Tartu linn,,6472946.56,658162.79,TartuLinn,Tartu LV
@@ -13900,8 +13910,8 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 145582,16908-1,Linnamäe tee,59.44844014,24.86403465,145582,,Lasnamäe,,6590386.22,549013.29,Harju1,Tallinna TA
 27861,7800734-1,Päiksi,58.60022507,27.10366754,27861,,Peipsiääre vald,"Välgi suunas",6499760.50,680371.12,,Tartu MV
 92380,7800721-1,Puusepa rist,58.47723996,27.06803774,92380,,Peipsiääre vald,"Tähemaa, Koosa suunas",6485981.50,678928.25,,Tartu MV
-28305,7800840-1,Sapi tee,58.21563851,26.12938732,28305,,Elva vald,"Limnoloogia suunas",6454738.50,625133.31,,Tartu MV
-22660,7800844-1,Sarapuu,58.46301615,26.9852592,22660,,Tartu vald,"Aravuste suunas",6484181.00,674174.31,,Tartu MV
+28305,7800840-1,Sapi tee,58.21563851,26.12938732,28305,,Elva vald,"Rannaküla suunas",6454738.50,625133.31,,Tartu MV
+22660,7800844-1,Sarapuu,58.46301615,26.9852592,22660,,Tartu vald,"Tammistu suunas",6484181.00,674174.31,,Tartu MV
 142535,11508-1,Vesivärava,59.43252821,24.78202342,142535,,Kesklinn,"",6588556.59,544382.00,Harju1,Tallinna TA
 128376,7820321-1,Turu ring,58.34306297,26.73696764,128376,,Tartu linn,"Võru tn suunas",6470214.00,660241.18,,Tartu LV
 145725,6790031-1,Kõmsi kool,58.6252131,23.6326278,145725,,Lääneranna vald,,6498428.50,478657.71,,Pärnu MV
@@ -14033,7 +14043,7 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 21146,8400316-1,Kõpu,58.32672693,25.30679948,21146,,Põhja-Sakala vald,"Pärnu suunas",6465870.70,576561.00,,Viljandi MV
 22521,7800915-1,Särgla,58.57644763,26.92300617,22521,,Peipsiääre vald,"Välgi suunas",6496643.00,669994.12,,Tartu MV
 20229,7800917-1,Sääsekõrva,58.37758033,26.95079018,20229,,Luunja vald,"Luunja suunas",6474585.50,672583.00,,Tartu MV
-90767,7800931-1,Tamsa kabelimägi,58.21470752,26.48929004,90767,,Nõo vald,"Elva suunas Nõo-Tamsa teel",6455363.00,646277.81,,Tartu MV
+90767,7800931-1,Tamsa kabelimägi,58.21470752,26.48929004,90767,,Nõo vald,"Elva suunas",6455363.00,646277.81,,Tartu MV
 29505,7800935-1,Tani,58.34052952,27.07705255,29505,,Kastre vald,"Võnnu suunas",6470795.00,680151.87,,Tartu MV
 20811,7800936-1,Taremetsa,58.18231114,26.15019501,20811,,Elva vald,"Valguta suunas",6451067.50,626474.62,,Tartu MV
 26584,7800888-1,Soo,58.30594526,26.59603696,26584,,Nõo vald,"Valga suunas",6465755.00,652154.31,,Tartu MV
@@ -14043,7 +14053,7 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 26650,7801033-1,Valgeristi,58.29518143,26.58098853,26650,,Nõo vald,"Valga suunas",6464523.00,651318.87,,Tartu MV
 31784,7800987-1,Tõravere,58.25939911,26.47607439,31784,,Nõo vald,"Tartu suunas",6460308.50,645317.87,,Tartu MV
 28178,7801144-1,Võõpste,58.35542439,27.07604069,28178,,Kastre vald,"Vana-Kastre suunas",6472449.50,680016.62,,Tartu MV
-22060,7801150-1,Võsivere tee,58.34685403,26.43412197,22060,,Elva vald,"Võsivere suunas",6469952.50,642503.43,,Tartu MV
+22060,7801150-1,Võsivere tee,58.34685403,26.43412197,22060,,Elva vald,"",6469952.50,642503.43,,Tartu MV
 145993,16011-1,Mustakivisilla,59.43998053,24.86641645,145993,,Lasnamäe,,6589445.60,549160.56,Harju1,Tallinna TA
 145994,16012-1,Mustakivisilla,59.44015509,24.86620187,145994,,Lasnamäe,,6589464.88,549148.14,Harju1,Tallinna TA
 128557,7801221-1,Kaatsi,58.21136063,26.76414189,128557,,Kambja vald,"Kambja suunas",6455623.00,662435.56,,Tartu MV
@@ -14244,7 +14254,7 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 147430,7801323-1,Seljamaa,58.48031252,26.63530547,147430,,Tartu vald,"Lähte suunas",6485250.50,653691.87,,Tartu MV
 147432,7801325-1,Nigula tee,58.52832945,26.77330669,147432,,Tartu vald,"Jõhvi maantee suunas",6490918.50,661514.62,,Tartu MV
 147433,7801326-1,Nigula tee,58.52818727,26.77281762,147433,,Tartu vald,"Nigula suunas",6490901.50,661486.81,,Tartu MV
-147431,7801324-1,Seljamaa,58.48056924,26.63571074,147431,,Tartu vald,"Kärkna, Õvi peatuse suunas",6485280.00,653714.37,,Tartu MV
+147431,7801324-1,Seljamaa,58.48056924,26.63571074,147431,,Tartu vald,"Kärkna, Kärevere suunas",6485280.00,653714.37,,Tartu MV
 26420,8200615-1,Tagula,57.85540104,26.37697696,26420,,Tõlliste vald,"Antsla suunas",6415130.00,641098.62,,Valga MV
 27216,8200027-1,Allee,57.82539977,26.10674405,27216,,Valga vald,"Tartu suunas",6411254.00,625168.00,,Valga MV
 27217,8200252-1,Laane,57.83703025,26.12502983,27217,,Valga vald,"Valga suunas",6412583.01,626213.02,,Valga MV
@@ -15165,9 +15175,9 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 152151,4401112-1,Promenaadi (perspektiivne),59.3989344,27.76436375,152151,,Sillamäe linn,"Sadama suunas",6590554.50,713740.75,,Ida-Viru MV
 5580,24004-1,Vana-Muuga tee,59.47910784,25.00048338,5580,,Jõelähtme vald,"",6593910.00,556702.00,Harju2,Harjumaa ÜTK
 128862,47102-1,Nurme tee,59.45342635,24.91369777,128862,,Jõelähtme vald,"",6590979.00,551822.75,Harju2,Harjumaa ÜTK
-5582,24001-1,Lepalinnu,59.4793718,24.99168576,5582,,Jõelähtme vald,"",6593932.00,556203.00,Harju2,Harjumaa ÜTK
+5582,24001-1,Lepalinnu,59.47935382,24.99109299,5582,,Jõelähtme vald,"",6593929.50,556169.43,Harju2,Harjumaa ÜTK
 27906,8200493-1,Raudsepa,58.07910196,25.90614036,27906,,Tõrva vald,"Riidaja suunas",6439142.92,612450.04,,Valga MV
-5581,24002-1,Lepalinnu,59.4794402,24.99094661,5581,,Jõelähtme vald,"",6593939.00,556161.00,Harju2,Harjumaa ÜTK
+5581,24002-1,Lepalinnu,59.47945634,24.99178527,5581,,Jõelähtme vald,"",6593941.50,556208.50,Harju2,Harjumaa ÜTK
 24223,4400502-1,Sarapuu,59.38155557,28.12953297,24223,,Narva-Jõesuu linn,"Soldina suunas",6589842.09,734569.15,,Ida-Viru MV
 152153,4401114-1,Mere (perspektiivne),59.39757229,27.76969653,152153,,Sillamäe linn,"Sadama suunas",6590420.00,714051.75,,Ida-Viru MV
 32398,4400496-1,Lydia Koidula,59.44199444,28.01379722,32398,,Narva-Jõesuu linn,"Sadama suunas",6596164.11,727600.33,,Ida-Viru MV
@@ -15182,7 +15192,7 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 32392,4400072-1,Auga,59.43070821,27.99592684,32392,,Narva-Jõesuu linn,"Parklas",6594848.50,726663.06,,Ida-Viru MV
 32401,4400201-1,Kajaka,59.44947189,28.0244235,32401,,Narva-Jõesuu linn,"Auga suunas",6597031.75,728152.22,,Ida-Viru MV
 28029,8200394-1,Oru,58.07394655,25.953908,28029,,Tõrva vald,"Pikasilla suunas",6438650.05,615283.96,,Valga MV
-151233,7801353-1,Roiu kauplus,58.300924,26.86761862,151233,,Kastre vald,"Roiu, Kurepalu suunas",6465844.50,668086.43,,Tartu MV
+151233,7801353-1,Roiu kauplus,58.300924,26.86761862,151233,,Kastre vald,"Tartu suunas",6465844.50,668086.43,,Tartu MV
 27886,3700289-1,Vahtrepa teerist,58.87153874,22.96042741,27886,,Pühalepa vald,"Heltermaa suund",6526271.34,440033.93,,Hiiu MV
 33330,5100495-1,Sinimetsa,59.07365,25.85345,33330,,Järva vald,,6549788.03,606281.96,,Järvamaa ÜTK
 28030,8200395-1,Oru,58.07375478,25.95352431,28030,,Tõrva vald,"Riidaja suunas",6438628.04,615261.95,,Valga MV
@@ -15303,10 +15313,10 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 148445,4401066-1,Pargi,59.354109,26.9865756,148445,,Lüganuse vald,"Vabaduse tn suunas",6583343.19,669833.16,Viru7,Ida-Viru MV
 148346,4401057-1,Kiviõli jaam,59.35278006,26.9680358,148346,,Lüganuse vald,"Lepa teel Savala suunas",6583148.50,668786.12,Viru7,Ida-Viru MV
 23893,8200238-1,Kährioru,57.89562978,25.96025946,23893,,Tõrva vald,,6418808.94,616238.92,,Valga MV
-23894,8200631-1,Tasaste,57.89837166,25.93812649,23894,,Tõrva vald,,6419076.06,614918.03,,Valga MV
-23895,8200015-1,Aitsra,57.9043474,25.92680888,23895,,Tõrva vald,,6419722.02,614228.04,,Valga MV
-23896,8200207-1,Kooli,57.91813166,25.87222413,23896,,Tõrva vald,,6421165.05,610950.07,,Valga MV
-23897,8200213-1,Koorküla,57.92763658,25.87812427,23897,,Tõrva vald,,6422233.05,611269.99,,Valga MV
+23894,8200631-1,Tasaste,57.89837166,25.93812649,23894,,Tõrva vald,"Tõrva suunas",6419076.06,614918.03,,Valga MV
+23895,8200015-1,Aitsra,57.9043474,25.92680888,23895,,Tõrva vald,"Tõrva suunas",6419722.02,614228.04,,Valga MV
+23896,8200207-1,Kooli,57.91813166,25.87222413,23896,,Tõrva vald,"Valga suunas",6421165.05,610950.07,,Valga MV
+23897,8200213-1,Koorküla,57.92763658,25.87812427,23897,,Tõrva vald,"Valga suunas",6422233.05,611269.99,,Valga MV
 27740,8200242-1,Käärikmäe,57.95476952,25.96952683,27740,,Tõrva vald,"Tõrva suunas",6425409.07,616594.92,,Valga MV
 30164,4900031-1,Annikvere väljad,58.64836461,26.03571708,30164,,Põltsamaa vald,"Kaliküla suunas",6502741.97,618168.03,,Jõgeva ÜTK
 30165,4900033-1,Annikvere väljad,58.64870489,26.0352549,30165,,Põltsamaa vald,"Puhu Risti suunas",6502779.04,618140.06,,Jõgeva ÜTK
@@ -15335,9 +15345,9 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 26391,7820211-1,Nisu,58.37308889,26.68539208,26391,,Tartu linn,"Ilmatsalu tn. suunas",6473433.50,657089.37,TartuLinn,Tartu LV
 32537,4400851-1,Vana-Varinurme,59.35575811,26.90763188,32537,,Lüganuse vald,"Sämi suunas",6583329.50,665338.87,Viru7,Ida-Viru MV
 28951,8200240-1,Käärikmäe,57.95451907,25.96937866,28951,,Tõrva vald,"Valga suunas",6425380.93,616586.97,,Valga MV
-80004,8200206-1,Kooli,57.91805351,25.87231485,80004,,Tõrva vald,,6421156.50,610955.68,,Valga MV
-80005,8200210-1,Koorküla,57.92741086,25.8781727,80005,,Tõrva vald,,6422208.00,611273.56,,Valga MV
-80006,8200231-1,Kuusiku,57.93527473,25.88207607,80006,,Tõrva vald,,6423090.00,611480.18,,Valga MV
+80004,8200206-1,Kooli,57.91805351,25.87231485,80004,,Tõrva vald,"Tõrva suunas",6421156.50,610955.68,,Valga MV
+80005,8200210-1,Koorküla,57.92741086,25.8781727,80005,,Tõrva vald,"Tõrva suunas",6422208.00,611273.56,,Valga MV
+80006,8200231-1,Kuusiku,57.93527473,25.88207607,80006,,Tõrva vald,"Tõrva suunas",6423090.00,611480.18,,Valga MV
 28360,4400406-1,Vana-Sillaotsa,59.33798238,27.00979728,28360,,Lüganuse vald,"Savala suunas",6581607.50,671233.37,Viru7,Ida-Viru MV
 80007,8200241-1,Käärikmäe,57.95414708,25.96936918,80007,,Tõrva vald,,6425339.50,616587.62,,Valga MV
 80008,8200525-1,Ristimäe,57.94143509,25.98981005,80008,,Tõrva vald,,6423960.00,617839.37,,Valga MV
@@ -15347,8 +15357,8 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 80011,8200026-1,Alamõisa,57.94689091,26.03657586,80011,,Tõrva vald,"Tõrva suunas",6424650.50,620589.62,,Valga MV
 80012,8200526-1,Ristimäe,57.94150806,25.98945519,80012,,Tõrva vald,,6423967.50,617818.12,,Valga MV
 80013,8200243-1,Käärikmäe,57.95426761,25.96912873,80013,,Tõrva vald,,6425352.50,616573.00,,Valga MV
-80014,8200014-1,Aitsra,57.90417619,25.92683271,80014,,Tõrva vald,,6419703.00,614230.00,,Valga MV
-80015,8200632-1,Tasaste,57.89829852,25.93788267,80015,,Tõrva vald,,6419067.50,614903.81,,Valga MV
+80014,8200014-1,Aitsra,57.90417619,25.92683271,80014,,Tõrva vald,"Valga suunas",6419703.00,614230.00,,Valga MV
+80015,8200632-1,Tasaste,57.89829852,25.93788267,80015,,Tõrva vald,"Valga suunas",6419067.50,614903.81,,Valga MV
 150483,4401087-1,Aruvälja,59.30676234,26.99800359,150483,,Lüganuse vald,"Savala suunas",6578103.00,670718.25,Viru7,Ida-Viru MV
 80016,8200239-1,Kährioru,57.8954637,25.96028859,80016,,Tõrva vald,,6418790.50,616241.18,,Valga MV
 12045,21826-1,Keila algkool,59.3106317,24.41379857,12045,Keila,Keila linn,,6574791.00,523568.37,Harju3,Harjumaa ÜTK
@@ -15426,7 +15436,7 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 80001,8200083-1,Holdre,57.9455813,25.73913795,80001,,Tõrva vald,"Taagepera suunas",6424009.00,602985.81,,Valga MV
 80003,8200299-1,Luhe,57.95878195,25.70074976,80003,,Tõrva vald,"Taagepera suunas",6425420.50,600675.81,,Valga MV
 80021,8200018-1,Ala,58.01033456,25.70110521,80021,,Tõrva vald,,6431161.00,600551.25,,Valga MV
-92140,8200424-1,Patküla,57.98032322,25.91200324,92140,,Tõrva vald,,6428155.50,613109.37,,Valga MV
+92140,8200424-1,Patküla,57.98032322,25.91200324,92140,,Tõrva vald,"Savi suunas",6428155.50,613109.37,,Valga MV
 92141,8200729-1,Võndi,57.9746562,25.87029374,92141,,Helme vald,"Taagepera suunas",6427455.00,610660.18,,Valga MV
 92142,8200626-1,Tamme,57.96668405,25.86000892,92142,,Tõrva vald,"Taagepera suunas",6426550.50,610076.43,,Valga MV
 22368,7800452-1,Lohu,58.29477737,26.92371605,22368,,Kastre vald,"Roiu suunas",6465302.50,671402.37,,Tartu MV
@@ -15437,8 +15447,8 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 92145,8200235-1,Kõrtsi,57.94173215,25.7569995,92145,,Tõrva vald,"Taagepera suunas",6423608.00,604054.50,,Valga MV
 92146,8200222-1,Väikekuke,57.94100782,25.83126761,92146,,Tõrva vald,,6423645.00,608454.00,,Valga MV
 92147,8200577-1,Side,57.93449977,25.86592957,92147,,Tõrva vald,,6422977.00,610526.43,,Valga MV
-92148,8200708-1,Veski,57.94651702,25.88168444,92148,,Tõrva vald,,6424341.00,611421.87,,Valga MV
-92149,8200564-1,Salve,57.96870886,25.89297056,92149,,Tõrva vald,,6426830.50,612020.25,,Valga MV
+92148,8200708-1,Veski,57.94651702,25.88168444,92148,,Tõrva vald,"Tõrva suunas",6424341.00,611421.87,,Valga MV
+92149,8200564-1,Salve,57.96870886,25.89297056,92149,,Tõrva vald,"Tõrva suunas",6426830.50,612020.25,,Valga MV
 92455,8200609-1,Taagepera metskond,58.00371707,25.66012942,92455,,Tõrva vald,,6430363.50,598147.93,,Valga MV
 92456,8200608-1,Taagepera metskond,58.00370117,25.65997219,92456,,Tõrva vald,,6430361.50,598138.68,,Valga MV
 92457,8200612-1,Taga-Holdre,57.96086334,25.74466156,92457,,Tõrva vald,,6425719.00,603268.56,,Valga MV
@@ -15551,7 +15561,7 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 20666,4400816-1,Vadi,58.99881514,26.94787793,20666,,Mustvee vald,"Lohusuu suunas",6543706.03,669372.82,Viru7,Jõgeva ÜTK
 27800,4400345-1,Kõrvemetsa,58.89971185,26.74772119,27800,,Mustvee vald,,6532188.11,658331.38,,Jõgeva ÜTK
 27801,4400789-1,Töökoda,58.90330528,26.79007181,27801,,Mustvee vald,"Rakvere-Luige mnt suunas",6532688.76,660753.70,Viru7,Jõgeva ÜTK
-21657,8200230-1,Kuusiku,57.93517805,25.88189758,21657,,Tõrva vald,,6423078.94,611469.92,,Valga MV
+21657,8200230-1,Kuusiku,57.93517805,25.88189758,21657,,Tõrva vald,"Koorküla suunas",6423078.94,611469.92,,Valga MV
 27803,4400753-1,Teadussaare,58.9332764,26.78192734,27803,,Mustvee vald,"Laekannu suunas",6536004.80,660146.30,Viru7,Jõgeva ÜTK
 27804,4400339-1,Kõrgemäe,58.94356305,26.77455535,27804,,Mustvee vald,"Ulvi suunas",6537132.05,659674.78,Viru7,Jõgeva ÜTK
 27805,4400338-1,Kõrgemäe,58.94364284,26.77464815,27805,,Mustvee vald,"Laekannu suunas",6537141.15,659679.75,Viru7,Jõgeva ÜTK
@@ -15665,7 +15675,7 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 31969,5700183-1,Kõmsi,58.62163476,23.63403532,31969,,Lääneranna vald,,6498029.50,478737.31,,Pärnu MV
 32585,5700041-1,Hanila,58.61508279,23.59866978,32585,,Lääneranna vald,,6497311.50,476678.21,,Pärnu MV
 23886,8200057-1,Asu,57.8892688,26.05670584,23886,,Tõrva vald,"Tõrva suunas",6418272.04,621977.94,,Valga MV
-122859,8200257-1,Pikre,57.90993729,25.90266295,122859,,Tõrva vald,,6420303.50,612779.31,,Valga MV
+122859,8200257-1,Pikre,57.90993729,25.90266295,122859,,Tõrva vald,"Valga suunas",6420303.50,612779.31,,Valga MV
 21177,8200438-1,Pikasilla,58.08256608,26.05401106,21177,,Tõrva vald,"Rõngu suunas",6439786.07,621159.02,,Valga MV
 21179,8200163-1,Kaubi,58.10258617,26.01098482,21179,,Tõrva vald,"Mustla suunas",6441937.95,618554.98,,Valga MV
 21180,8200162-1,Kaubi,58.10213088,26.01082431,21180,,Tõrva vald,"Pikasilla suunas",6441886.98,618547.04,,Valga MV
@@ -15692,7 +15702,7 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 21651,8200657-1,Tuleviku,57.97768281,25.98384762,21651,,Tõrva vald,,6427984.97,617366.99,,Valga MV
 21652,8200111-1,Jõgeveste,57.98575072,26.03623227,21652,,Tõrva vald,"Soontaga ja Rulli suunas",6428976.01,620437.92,,Valga MV
 21653,8200062-1,Barclay de Tolly,57.99833123,26.0326062,21653,,Tõrva vald,"Jõgeveste suunas",6430370.05,620181.06,,Valga MV
-21658,8200423-1,Patküla,57.98020041,25.91271636,21658,,Tõrva vald,,6428143.03,613151.94,,Valga MV
+21658,8200423-1,Patküla,57.98020041,25.91271636,21658,,Tõrva vald,"Tõrva suunas",6428143.03,613151.94,,Valga MV
 21659,8200082-1,Helme,58.01398519,25.88196956,21659,,Tõrva vald,"Tõrva suunas",6431852.97,611227.95,,Valga MV
 21661,8200141-1,Karjatnurme,58.00729492,25.77161094,21661,,Tõrva vald,"Karksi-Nuia suunas",6430930.45,604726.79,,Valga MV
 21662,8200017-1,Ala,58.01204881,25.69455024,21662,,Tõrva vald,"Tõrva suunas",6431342.06,600159.05,,Valga MV
@@ -15705,8 +15715,8 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 23674,8200610-1,Taagepera tee,58.03022929,25.65154929,23674,,Tõrva vald,"Karksi-Nuia suunas",6433302.95,597568.08,,Valga MV
 142561,8490089-1,Arussaare,58.637251,25.690253,142561,,Põhja-Sakala vald,"Viljandi - Tallinn mnt suunas",6500947.54,598150.61,,Viljandi MV
 23675,8200611-1,Taagepera tee,58.02993121,25.65172033,23675,,Tõrva vald,"Tõrva suunas",6433270.01,597579.00,,Valga MV
-23899,8200565-1,Salve,57.9686184,25.89270799,23899,,Tõrva vald,,6426819.99,612005.00,,Valga MV
-23900,8200422-1,Patküla,57.97977018,25.91206918,23900,,Tõrva vald,,6428094.04,613115.03,,Valga MV
+23899,8200565-1,Salve,57.9686184,25.89270799,23899,,Tõrva vald,"Jeti suunas",6426819.99,612005.00,,Valga MV
+23900,8200422-1,Patküla,57.97977018,25.91206918,23900,,Tõrva vald,"Koorküla suunas",6428094.04,613115.03,,Valga MV
 23901,8200081-1,Helme,58.01405468,25.8821946,23901,,Tõrva vald,"Viljandi suunas",6431861.08,611241.03,,Valga MV
 27007,8200234-1,Kõrtsi,57.94163023,25.75720441,27007,,Tõrva vald,"Tõrva suunas",6423596.97,604066.93,,Valga MV
 32089,4400376-1,Lemmaku,59.01032379,27.13699575,32089,,Alutaguse vald,"Rannapungerja suunas",6545479.41,680171.13,Viru7,Ida-Viru MV
@@ -18048,7 +18058,7 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 159023,7400450-2,Mõisa(peatus väljumiseks),58.30520531,22.45904818,159023,,Kaarma vald,,6463765.50,409667.96,,Saare MV
 159028,23720-1,Ämmamägi,59.46144996,24.91214275,159028,,Viimsi vald,,6591871.59,551722.40,Harju2,Harjumaa ÜTK
 158403,7801442-1,Riiviku,58.17518303,26.59166791,158403,,Kambja vald,,6451192.00,652460.93,,Tartu MV
-123531,6701220-1,Kõnnuveski,58.73030498,24.85362818,123531,,Kaisma vald,,6510390.00,549441.00,,Pärnu MV
+123531,6701220-1,Kõnnuveski,58.73052612,24.85392764,123531,,Kaisma vald,,6510414.85,549458.03,,Pärnu MV
 28204,6700961-1,Säästla,58.64315149,25.07933828,28204,,Vändra vald,,6500872.27,562669.01,,Pärnu MV
 20190,8600686-1,Tiilige,57.6277249,27.2943767,20190,,Rõuge vald,"Leimani suunas",6392103.94,696763.21,,Võru MV
 123528,6701221-1,Linnamaa,58.70942381,24.7995707,123528,,Kaisma vald,,6508025.78,546337.94,,Pärnu MV
@@ -18064,7 +18074,6 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 147558,6790047-1,Sauna,58.63079664,24.33310626,147558,,Halinga vald,,6499040.00,519348.55,,Pärnu MV
 25664,6701036-1,Tootsi raudteejaam,58.56798029,24.80959041,25664,Tootsi Pärnumaa,Tootsi alev,,6492279.72,547108.73,,Pärnu MV
 29895,6700917-1,Sohlu,58.66474623,24.80211501,29895,,Kaisma vald,,6503051.61,546544.89,,Pärnu MV
-21218,6700952-1,Suurejõe,58.61604752,25.10283849,21218,,Vändra vald,,6497876.00,564083.00,,Pärnu MV
 32382,4420027-1,Jaam pole kasutatud,59.36928221,28.19835018,32382,,Narva linn,,6588720.14,738558.62,,Narva LV
 32380,4420029-1,Jaam pole kasutatud,59.36929607,28.19914275,32380,Narva,Narva linn,,6588724.50,738603.50,,Narva LV
 27032,8600687-1,Tiilige,57.6275588,27.2922246,27032,,Rõuge vald,"Misso suunas",6392079.15,696635.68,,Võru MV

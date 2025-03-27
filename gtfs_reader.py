@@ -13,6 +13,8 @@ routes_df = pd.read_csv("gtfs_data/routes.txt")
 trips_df = pd.read_csv("gtfs_data/trips.txt")
 stop_times_df = pd.read_csv("gtfs_data/stop_times.txt")
 stops_df = pd.read_csv("gtfs_data/stops.txt")
+calendar_df = pd.read_csv("gtfs_data/calendar.txt")
+calendar_dates_df = pd.read_csv("gtfs_data/calendar_dates.txt")
 
 # Kuvame transpordiettevõtted
 print("Saadaolevad transpordiettevõtted:")
@@ -47,3 +49,14 @@ merged_data = filtered_stop_times.merge(stops_df, on="stop_id")
 
 # Kuvame peatused ja ajad
 print(merged_data[['trip_id', 'stop_id', 'stop_name', 'arrival_time', 'departure_time']])
+
+# Kalendri ja erandite kuvamine**
+selected_service_id = filtered_trips[filtered_trips['trip_id'] == int(selected_trip_id)]['service_id'].values[0]
+service_info = calendar_df[calendar_df['service_id'] == selected_service_id]
+exception_info = calendar_dates_df[calendar_dates_df['service_id'] == selected_service_id]
+
+print("\nTavapärased teenuse päevad:")
+print(service_info[['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday', 'start_date', 'end_date']])
+
+print("\nErandid (lisa- või tühistatud teenused):")
+print(exception_info[['date', 'exception_type']])
