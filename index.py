@@ -3,6 +3,8 @@ import streamlit as st
 from route import gtfs_view as route_view
 from trip import gtfs_view as trip_view
 from search_by_line import gtfs_view as line_view
+from authority import gtfs_view as authority_view
+
 
 def local_css(file_name):
     with open(file_name) as f:
@@ -11,7 +13,7 @@ def local_css(file_name):
 local_css("style.css")
 
 st.sidebar.title("Menüü")
-page = st.sidebar.selectbox("Vali leht", ["Avaleht", "Route ID", "Trip ID", "Liini number"])
+page = st.sidebar.selectbox("Vali leht", ["Avaleht", "Route ID", "Trip ID", "Liini number", "Authority"])
 
 if page == "Avaleht":
     st.title("Tere tulemast GTFS andmete vaaturisse! 👋")
@@ -30,6 +32,9 @@ elif page == "Trip ID":
     trip_view()
 elif page == "Liini number":
     line_view()
+elif page == "Authority":
+    authority_view()
+
 
 
 
