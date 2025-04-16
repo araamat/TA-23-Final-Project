@@ -1,4 +1,4 @@
-# streamlit
-# pandas
-# folium
-pip freeze > [requirements.txt](http://_vscodecontentref_/2)
+streamlit
+pandas
+folium
+# pip freeze > [requirements.txt](http://_vscodecontentref_/2)
