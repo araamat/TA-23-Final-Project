@@ -44,3 +44,4 @@ def gtfs_view():
         st.components.v1.html(m._repr_html_(), height=600)
     elif selected_authority:
         st.warning("Selles vallas ei leitud ühtegi peatust.")
+# tundub väga oluline
