@@ -11,12 +11,12 @@ agency_id,agency_name,agency_url,agency_timezone,agency_phone,agency_lang
 100056,Ekspressbussiliinid osaühing,http://www.peatus.ee,Europe/Tallinn,"",et
 82,ELRON,http://www.elron.ee,Europe/Tallinn,1447,et
 100043,Estonian Lines OÜ,http://www.peatus.ee,Europe/Tallinn,+372 5188493,et
-804,Esvil-Reisid AS,http://www.peatus.ee,Europe/Tallinn,+372 6004353,et
 100086,FlixBus Estonia OÜ,http://www.peatus.ee,Europe/Tallinn,6708401,""
 100084,Flixbus Polska sp.o.o,https://www.flixbus.ee/,Europe/Tallinn,"",""
 60,GoBus AS,http://www.gobus.ee,Europe/Tallinn,+372 736 2290,et
 295,HANSABUSS AS,http://www.hansabuss.ee,Europe/Tallinn,+372 6713260,et
 787,Kalle Bussid OÜ,http://www.peatus.ee,Europe/Tallinn,+372 5177354,et
+100002,Kihnu Veeteed AS,http://www.veeteed.com,Europe/Tallinn,+372 4431069,et
 100073,MEELIS HEEK,http://www.peatus.ee,Europe/Tallinn,+372 5265204,et
 317,MK Reis OÜ,http://www.reis.ee,Europe/Tallinn,+372 5101872,et
 100027,NAJA OÜ,http://www.peatus.ee,Europe/Tallinn,+372 5540170,et
@@ -27,7 +27,6 @@ agency_id,agency_name,agency_url,agency_timezone,agency_phone,agency_lang
 100025,OV Ida-Bus OÜ,http://www.peatus.ee,Europe/Tallinn,+372 5358 6017,et
 100075,OÜ Baltic Shuttle,http://www.peatus.ee,Europe/Tallinn,+372 53048877,et
 100032,Piiroja Invest OÜ,http://www.peatus.ee,Europe/Tallinn,56699550,et
-100036,PRESTO osaühing,http://www.presto.ee,Europe/Tallinn,4475177,et
 42,Rannu Rukkilill E.S.T. OÜ,http://www.peatus.ee,Europe/Tallinn,+ 372 3351263,et
 100060,Saaremaa vald,http://saaremaavald.ee,Europe/Tallinn,4550530,""
 50,SEBE Aktsiaselts,http://www.sebe.ee,Europe/Tallinn,+372 6064969,et

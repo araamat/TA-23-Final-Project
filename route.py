@@ -5,7 +5,7 @@ import folium
 from folium import plugins
 
 def gtfs_view():
-    GTFS_ZIP = "26022025.zip"
+    GTFS_ZIP = "gtfs.zip"
 
     with zipfile.ZipFile(GTFS_ZIP, 'r') as z:
         z.extractall("gtfs_data")

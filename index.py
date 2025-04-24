@@ -1,4 +1,28 @@
 import streamlit as st
+import os
+import time
+import requests
+
+# ✅ GTFS allalaadimise seadistus
+GTFS_ZIP = "gtfs.zip"
+GTFS_URL = "https://peatus.ee/gtfs/gtfs.zip"
+
+def needs_update(filepath, hours=24):
+    if not os.path.exists(filepath):
+        return True
+    last_modified = os.path.getmtime(filepath)
+    return (time.time() - last_modified) > hours * 3600
+
+def download_latest_gtfs():
+    st.info("Laadin uusimat GTFS andmestikku...")
+    response = requests.get(GTFS_URL)
+    with open(GTFS_ZIP, "wb") as f:
+        f.write(response.content)
+    st.success("GTFS andmestik uuendatud!")
+
+# ✅ Kontroll ja allalaadimine
+if needs_update(GTFS_ZIP):
+    download_latest_gtfs()
 
 # Vaated eraldi failidest
 from route import gtfs_view as route_view
@@ -23,7 +47,7 @@ page = st.sidebar.selectbox("Vali leht", [
     "Route ID", 
     "Trip ID", 
     "Liini number", 
-    "Authority"
+    "Peatused"
 ])
 
 # Vaate valik
@@ -44,11 +68,8 @@ elif page == "Trip ID":
     trip_view()
 elif page == "Liini number":
     line_view()
-elif page == "Authority":
+elif page == "Peatused":
     authority_view()
-
-
-
 
 
 
