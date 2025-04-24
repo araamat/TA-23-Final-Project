@@ -17,13 +17,15 @@ with open(GTFS_ZIP, "wb") as f:
     f.write(r.content)
 
 # Load secrets
+# Load secrets from secrets.toml
 with open(os.path.expanduser("~/.streamlit/secrets.toml")) as f:
     lines = f.readlines()
     data = {}
     for line in lines:
         if "=" in line:
             key, val = line.strip().split("=", 1)
-    data[key.strip()] = val.strip().strip('"').replace("\n", "")
+            data[key.strip()] = val.strip().strip('"').replace("\\n", "\n")
+
 credentials_dict = {
         "type": "service_account",
         "project_id": data["project_id"],
