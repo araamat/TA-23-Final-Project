@@ -46,23 +46,21 @@ local_css("style.css")
 
 # Sidebar
 with st.sidebar:
-    st.title("GTFS Vaatur")
+    st.title("Eesti ühistranspordi avaandmed")
     if os.path.exists(GTFS_ZIP):
         est_time = datetime.fromtimestamp(os.path.getmtime(GTFS_ZIP), ZoneInfo("Europe/Tallinn"))
-        st.caption(f"📅 Viimati uuendatud: {est_time.strftime('%Y-%m-%d %H:%M:%S')}")
+        st.caption(f"📅 GTFS uuendati: {est_time.strftime('%Y-%m-%d %H:%M:%S')}")
 
     go_home = st.button("🏠 Avaleht")
-    page = st.selectbox("📂 Vali otsingu alus", ["", "Liini number", "Peatused",  "Route ID", "Trip ID"])
+    page = st.selectbox("📂 Vali otsingu alus", ["", "Liininumber",  "Route ID", "Trip ID", "Peatuste kuuluvus"])
 
 # Avaleht kuvatakse nupu või tühja valiku puhul
 if go_home or not page:
-    st.title("Tere tulemast Eesti ühistranspordi andmestiku (GTFS) analüüsi ja valideerimise tööriista ! 👋")
+    st.title("Eesti ühistranspordiregistri avaandmete (GTFS) analüüsi ja valideerimise rakendus ! 👋")
     st.markdown("""
-        🚍 See rakendus võimaldab sul:
-        - Otsida transpordiliine `route_id`, `trip_id` või liini numbri järgi  
-        - Vaadata seotud peatusi ja ajagraafikuid  
-        - Näha visuaalselt kaardil marsruuti  
-        - Kontrollida liinide teeninduspäevi ja erandeid  
+        🚍 **See rakendus võimaldab lihtsalt ja kiiresti:**
+        - leida seoseid GTFS-tekstifailide vahel, otsides ühistranspordiliine erinevate parameetrite järgi (nt route_id, trip_id või liini number);  
+        - grupeerida peatuseid nende haldaja või kohaliku omavalitsuse kuuluvuse alusel.
 
         👉 Kasutamiseks vali vasakult lehelt sobiv andmetüüp.
     """)
@@ -70,7 +68,7 @@ elif page == "Route ID":
     route_view()
 elif page == "Trip ID":
     trip_view()
-elif page == "Liini number":
+elif page == "Liininumber":
     line_view()
-elif page == "Peatused":
+elif page == "Peatuste kuuluvus":
     authority_view()

@@ -154,3 +154,5 @@ def gtfs_view():
                     st.markdown(f"- {row['date'].date()} — **{muutus}**")
         else:
             st.warning("Selle liiniga ei leitud sõite.")
+
+
