@@ -1,70 +1,24 @@
-/* Üldine taust ja font */
-html, body, [class*="css"] {
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #f3f4f6;
-    color: #1f2937;
-}
-
 /* Pealkirjad */
-h1, h2, h3 {
-    color: #2563eb;
-    font-weight: 600;
-}
-
-/* Tekstiväljad */
-input[type="text"], .stTextInput input {
-    border: 2px solid #93c5fd;
-    border-radius: 8px;
-    padding: 0.5rem;
-    background-color: #ffffff;
-    transition: 0.3s ease-in-out;
-}
-
-input[type="text"]:focus, .stTextInput input:focus {
-    border-color: #3b82f6;
-    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.3);
-}
-
-/* Valikukastid */
-.stSelectbox div {
-    border-radius: 8px;
-    padding: 0.2rem;
-}
-
-/* Nupud */
-.stButton > button {
-    background-color: #3b82f6;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    padding: 0.5rem 1rem;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-}
-
-.stButton > button:hover {
-    background-color: #2563eb;
-}
-
-/* Andmetabelid */
-.stDataFrame {
-    background-color: white;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    padding: 10px;
-    overflow: hidden;
-}
-
-/* Kaardid ja kastid */
-.css-1v0mbdj {
-    background-color: #ffffff;
-    border-radius: 12px;
-    padding: 20px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+h1 {
+  color: #4f46e5;
+  font-weight: bold;
+  text-align: center;
 }
 
 /* Sidebar */
-.css-1544g2n {
-    background-color: #e0e7ff !important;
-    border-right: 1px solid #c7d2fe;
+.css-1d391kg {  /* võib sõltuda Streamliti versioonist, testitav inspect-elementiga */
+  background-color: #f1f5f9;
+}
+
+/* Üldine tekstistiil */
+body, p, div {
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}
+
+/* Nupud */
+button {
+  background-color: #4f46e5 !important;
+  color: white !important;
+  border-radius: 12px !important;
 }
