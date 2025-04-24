@@ -4,7 +4,7 @@ import time
 import requests
 
 # ✅ GTFS allalaadimise seadistus
-GTFS_ZIP = "26022025.zip"
+GTFS_ZIP = "gtfs.zip"
 GTFS_URL = "https://peatus.ee/gtfs/gtfs.zip"
 
 def needs_update(filepath, hours=24):
