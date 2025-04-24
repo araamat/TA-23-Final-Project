@@ -16,7 +16,7 @@ r = requests.get(GTFS_URL)
 with open(GTFS_ZIP, "wb") as f:
     f.write(r.content)
 
-# Load secrets from secrets.toml manually
+# Load secrets from secrets.toml
 secrets_file = os.path.expanduser("~/.streamlit/secrets.toml")
 data = {}
 with open(secrets_file) as f:
