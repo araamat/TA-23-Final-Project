@@ -6,6 +6,7 @@ import time
 from datetime import datetime
 from zoneinfo import ZoneInfo
 import requests
+from upload import upload_to_drive
 
 # ✅ GTFS allalaadimise seadistus
 GTFS_ZIP = "gtfs.zip"
@@ -50,6 +51,9 @@ with st.sidebar:
     if os.path.exists(GTFS_ZIP):
         est_time = datetime.fromtimestamp(os.path.getmtime(GTFS_ZIP), ZoneInfo("Europe/Tallinn"))
         st.caption(f"📅 GTFS uuendati: {est_time.strftime('%Y-%m-%d %H:%M:%S')}")
+    if st.button("Salvesta GTFS Google Drive’i"):
+        file_id, file_name = upload_to_drive("gtfs.zip")
+        st.success(f"✅ Fail **{file_name}** salvestati Drive’i!")
 
     go_home = st.button("🏠 Avaleht")
     page = st.selectbox("📂 Vali otsingu alus", ["", "Liininumber",  "Route ID", "Trip ID", "Peatuste kuuluvus"])
@@ -72,3 +76,5 @@ elif page == "Liininumber":
     line_view()
 elif page == "Peatuste kuuluvus":
     authority_view()
+    
+
