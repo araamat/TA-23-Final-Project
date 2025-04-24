@@ -6,7 +6,7 @@ from zoneinfo import ZoneInfo
 import requests
 
 # ✅ GTFS allalaadimise seadistus
-GTFS_ZIP = "26022025.zip"
+GTFS_ZIP = "gtfs.zip"
 GTFS_URL = "https://peatus.ee/gtfs/gtfs.zip"
 
 def needs_update(filepath, hours=24):
@@ -42,24 +42,19 @@ def local_css(file_name):
 
 local_css("style.css")
 
-# Menüünavigatsioon
-st.sidebar.title("Menüü")
-page = st.sidebar.selectbox("Vali leht", [
-    "Avaleht", 
-    "Route ID", 
-    "Trip ID", 
-    "Liini number", 
-    "Authority"
-])
-
-# Vaate valik
-if page == "Avaleht":
-    st.title("Tere tulemast GTFS andmete vaaturisse! 👋")
-
+# Sidebar
+with st.sidebar:
+    st.title("GTFS Vaatur")
     if os.path.exists(GTFS_ZIP):
         est_time = datetime.fromtimestamp(os.path.getmtime(GTFS_ZIP), ZoneInfo("Europe/Tallinn"))
-        st.info(f"📅 Andmestik uuendati: `{est_time.strftime('%Y-%m-%d %H:%M:%S')}` (Eesti aeg)")
+        st.caption(f"📅 Viimati uuendatud: {est_time.strftime('%Y-%m-%d %H:%M:%S')}")
 
+    go_home = st.button("🏠 Avaleht")
+    page = st.selectbox("📂 Vali otsingu alus", ["", "Liini number", "Peatused",  "Route ID", "Trip ID"])
+
+# Avaleht kuvatakse nupu või tühja valiku puhul
+if go_home or not page:
+    st.title("Tere tulemast Eesti ühistranspordi andmestiku (GTFS) analüüsi ja valideerimise tööriista ! 👋")
     st.markdown("""
         🚍 See rakendus võimaldab sul:
         - Otsida transpordiliine `route_id`, `trip_id` või liini numbri järgi  
@@ -67,7 +62,7 @@ if page == "Avaleht":
         - Näha visuaalselt kaardil marsruuti  
         - Kontrollida liinide teeninduspäevi ja erandeid  
 
-        👉 Kasutamiseks vali vasakult lehelt sobiv valik.
+        👉 Kasutamiseks vali vasakult lehelt sobiv andmetüüp.
     """)
 elif page == "Route ID":
     route_view()
@@ -75,5 +70,5 @@ elif page == "Trip ID":
     trip_view()
 elif page == "Liini number":
     line_view()
-elif page == "Authority":
+elif page == "Peatused":
     authority_view()

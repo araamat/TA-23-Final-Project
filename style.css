@@ -1,24 +1,78 @@
-/* Pealkirjad */
-h1 {
-  color: #4f46e5;
-  font-weight: bold;
-  text-align: center;
+/* ========== ÜLDINE ========== */
+body, p, div, label, input, select, textarea {
+  font-family: 'Segoe UI', sans-serif !important;
+  color: #333 !important;
+  font-size: 15px !important;
+  line-height: 1.6 !important;
 }
 
-/* Sidebar */
-.css-1d391kg {  /* võib sõltuda Streamliti versioonist, testitav inspect-elementiga */
-  background-color: #f1f5f9;
+/* ========== PEALKIRJAD ========== */
+h1, h2, h3 {
+  color: #4f46e5 !important;
+  font-weight: bold !important;
+  text-align: center !important;
 }
 
-/* Üldine tekstistiil */
-body, p, div {
-  font-family: 'Segoe UI', sans-serif;
-  color: #333;
+/* ========== SIDEBAR ========== */
+section[data-testid="stSidebar"] {
+  background-color: #f1f5f9 !important;
+  padding: 1rem !important;
+}
+section[data-testid="stSidebar"] h1 {
+  font-size: 1.4rem !important;
 }
 
-/* Nupud */
+/* ========== NUPUD ========== */
 button {
-  background-color: #4f46e5 !important;
-  color: white !important;
-  border-radius: 12px !important;
+  background-color: #ffffff !important;
+  color: #1f2937 !important;
+  border: 1px solid #d1d5db !important;
+  border-radius: 8px !important;
+  padding: 0.45rem 1.2rem !important;
+  font-weight: 500 !important;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05) !important;
+  transition: all 0.2s ease !important;
 }
+
+button:hover {
+  background-color: #f3f4f6 !important;
+  border-color: #9ca3af !important;
+  color: #111827 !important;
+}
+
+/* ========== TABELID ========== */
+table {
+  width: 100% !important;
+  border-collapse: collapse !important;
+  font-size: 14px !important;
+}
+
+thead th {
+  background-color: #e5e7eb !important;
+  color: #111827 !important;
+  font-weight: 600 !important;
+}
+
+td, th {
+  padding: 0.5rem 0.75rem !important;
+  border-bottom: 1px solid #e5e7eb !important;
+  text-align: left !important;
+}
+
+/* ========== INPUT VÄLJAD ========== */
+input, select, textarea {
+  border: 1px solid #d1d5db !important;
+  border-radius: 6px !important;
+  padding: 0.4rem 0.75rem !important;
+}
+
+/* ========== VALIKUD ========== */
+.css-1v0mbdj, .css-1wa3eu0-placeholder {
+  font-size: 15px !important;
+  color: #374151 !important;
+}
+
+iframe {
+  margin-bottom: -2rem !important;
+}
+
