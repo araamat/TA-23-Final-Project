@@ -1,4 +1,5 @@
 venv/
+.streamlit/
 node_modules
 echo "service_account.json" >> .gitignore
 echo "gtfs-app-c632489fa3c7.json" >> .gitignore
