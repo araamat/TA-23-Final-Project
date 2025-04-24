@@ -47,7 +47,7 @@ local_css("style.css")
 
 # Sidebar
 with st.sidebar:
-    st.title("Eesti ühistranspordi avaandmed 1")
+    st.title("Eesti ühistranspordi avaandmed")
     if os.path.exists(GTFS_ZIP):
         est_time = datetime.fromtimestamp(os.path.getmtime(GTFS_ZIP), ZoneInfo("Europe/Tallinn"))
         st.caption(f"📅 GTFS uuendati: {est_time.strftime('%Y-%m-%d %H:%M:%S')}")
