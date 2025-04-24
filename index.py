@@ -1,10 +1,12 @@
 import streamlit as st
 import os
 import time
+from datetime import datetime
+from zoneinfo import ZoneInfo
 import requests
 
 # ✅ GTFS allalaadimise seadistus
-GTFS_ZIP = "gtfs.zip"
+GTFS_ZIP = "26022025.zip"
 GTFS_URL = "https://peatus.ee/gtfs/gtfs.zip"
 
 def needs_update(filepath, hours=24):
@@ -55,8 +57,8 @@ if page == "Avaleht":
     st.title("Tere tulemast GTFS andmete vaaturisse! 👋")
 
     if os.path.exists(GTFS_ZIP):
-        last_updated = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(os.path.getmtime(GTFS_ZIP)))
-        st.info(f"📅 GTFS andmestik uuendati viimati: `{last_updated}`")
+        est_time = datetime.fromtimestamp(os.path.getmtime(GTFS_ZIP), ZoneInfo("Europe/Tallinn"))
+        st.info(f"📅 Andmestik uuendati: `{est_time.strftime('%Y-%m-%d %H:%M:%S')}` (Eesti aeg)")
 
     st.markdown("""
         🚍 See rakendus võimaldab sul:
@@ -67,7 +69,6 @@ if page == "Avaleht":
 
         👉 Kasutamiseks vali vasakult lehelt sobiv valik.
     """)
-
 elif page == "Route ID":
     route_view()
 elif page == "Trip ID":
