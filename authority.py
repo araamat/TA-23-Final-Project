@@ -15,7 +15,7 @@ def gtfs_view():
 
     search_type = st.radio("Vali tunnus, mille järgi soovid peatusi grupeerida:", ["Asutus (authority)", "Vald/Linn (stop_area)"])
 
-    if search_type == "Asutus (authority)":
+    if search_type == "Asutus":
         if 'authority' not in stops_df.columns:
             st.error("Failis 'stops.txt' puudub veerg 'authority'.")
             return
@@ -26,7 +26,7 @@ def gtfs_view():
 
         filtered_stops = stops_df[stops_df['authority'] == selected_authority] if selected_authority else pd.DataFrame()
 
-    elif search_type == "Vald/Linn (stop_area)":
+    elif search_type == "Kohalik omavalitsus":
         if 'stop_area' not in stops_df.columns:
             st.error("Failis 'stops.txt' puudub veerg 'stop_area'.")
             return

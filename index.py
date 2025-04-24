@@ -1,3 +1,5 @@
+
+
 import streamlit as st
 import os
 import time
@@ -40,6 +42,7 @@ def local_css(file_name):
     except FileNotFoundError:
         st.warning("style.css ei leitud. Kujundus võib olla vaikimisi.")
 
+local_css("style.css")
 
 # Sidebar
 with st.sidebar:
