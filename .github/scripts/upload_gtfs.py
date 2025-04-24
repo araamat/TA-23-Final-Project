@@ -23,9 +23,8 @@ with open(os.path.expanduser("~/.streamlit/secrets.toml")) as f:
     for line in lines:
         if "=" in line:
             key, val = line.strip().split("=", 1)
-            data[key.strip()] = val.strip().strip('"').replace("\n", "
-")
-    credentials_dict = {
+    data[key.strip()] = val.strip().strip('"').replace("\n", "")
+credentials_dict = {
         "type": "service_account",
         "project_id": data["project_id"],
         "private_key_id": data["private_key_id"],
