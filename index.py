@@ -4,7 +4,7 @@ import time
 import requests
 
 # ✅ GTFS allalaadimise seadistus
-GTFS_ZIP = "gtfs.zip"
+GTFS_ZIP = "26022025.zip"
 GTFS_URL = "https://peatus.ee/gtfs/gtfs.zip"
 
 def needs_update(filepath, hours=24):
@@ -47,12 +47,17 @@ page = st.sidebar.selectbox("Vali leht", [
     "Route ID", 
     "Trip ID", 
     "Liini number", 
-    "Peatused"
+    "Authority"
 ])
 
 # Vaate valik
 if page == "Avaleht":
     st.title("Tere tulemast GTFS andmete vaaturisse! 👋")
+
+    if os.path.exists(GTFS_ZIP):
+        last_updated = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(os.path.getmtime(GTFS_ZIP)))
+        st.info(f"📅 GTFS andmestik uuendati viimati: `{last_updated}`")
+
     st.markdown("""
         🚍 See rakendus võimaldab sul:
         - Otsida transpordiliine `route_id`, `trip_id` või liini numbri järgi  
@@ -62,47 +67,12 @@ if page == "Avaleht":
 
         👉 Kasutamiseks vali vasakult lehelt sobiv valik.
     """)
+
 elif page == "Route ID":
     route_view()
 elif page == "Trip ID":
     trip_view()
 elif page == "Liini number":
     line_view()
-elif page == "Peatused":
+elif page == "Authority":
     authority_view()
-
-
-
-# import streamlit as st
-# from route_1 import gtfs_view
-# from trip import gtfs_view
-
-# # Lae CSS
-# def local_css(file_name):
-#     with open(file_name) as f:
-#         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
-
-# local_css("style.css")
-
-# # Navigeerimine
-# st.sidebar.title("Menüü")
-
-# page = st.sidebar.selectbox("Vali leht", ["Avaleht", "Route ID", "Trip ID"])
-
-
-# if page == "Avaleht":
-#     st.title("Tere tulemast GTFS andmete vaaturisse! 👋")
-#     st.markdown("""
-#         🚍 See rakendus võimaldab sul:
-#         - Otsida transpordiliine `route_id` või `trip_id` järgi  
-#         - Vaadata seotud peatusi ja ajagraafikuid  
-#         - Näha visuaalselt kaardil marsruuti  
-#         - Kontrollida liinide teeninduspäevi ja erandeid  
-
-#         👉 Kasutamiseks vali vasakult lehelt **GTFS Liiniandmed**.
-#     """)
-
-# elif page == "Route ID" or page == "Trip ID":
-#     gtfs_view()
-    
-
