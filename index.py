@@ -73,7 +73,7 @@ if view == "home" and not page:
         - 📊 **Tulevane plaan**  
           Peatuste postrite genereerimine.
 
-        See tööriist on mõeldud ühistranspordiosakonna töötajatele, kuid sobib ka nii transpordiplaneerijale, kui ka arendajale, kes soovib kiiresti sisu näha ja andmeid mõtestada – ilma käsitsi **.zip** faile avamata.
+        See tööriist on mõeldud ühistranspordiosakonna töötajatele, kuid sobib ka nii transpordiplaneerijale, kes soovib kiiresti näha seoseid avaandmetes, ilma käsitsi **.zip** faile avamata.
     """)
 
 elif view == "history":

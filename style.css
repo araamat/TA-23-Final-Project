@@ -75,3 +75,14 @@ input, select, textarea {
 iframe {
   margin-bottom: -2rem !important;
 }
+
+/* Ühtne laius nuppudele */
+button[kind="secondary"] {
+    width: 100% !important;
+    text-align: left; /* valikuline – joondab ikooni ja teksti vasakule */
+}
+
+/* Ühtne laius selectboxile */
+.css-1cpxqw2 {  /* Streamliti .selectbox wrapper klass sidebaris */
+    width: 100% !important;
+}
