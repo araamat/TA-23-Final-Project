@@ -60,7 +60,6 @@ def gtfs_view():
             st.warning("Selle peatuse jaoks ei leitud väljumisi.")
             return
 
-        # Kaart weekday võtmete ja nimetuste vahel
         weekday_columns = {
             "monday": "E",
             "tuesday": "T",
@@ -85,27 +84,50 @@ def gtfs_view():
             # Koondame samade aegadega päevad
             seen = {}
             for weekday, times in weekday_departures.items():
-                time_str = ", ".join(times)
+                time_strs = [t.strip() for t in times if t]
+                if not time_strs:
+                    continue
+                time_str = ", ".join(time_strs)
                 if time_str in seen:
                     seen[time_str].append(weekday)
-                elif time_str:
+                else:
                     seen[time_str] = [weekday]
 
             for time_str, weekdays in seen.items():
                 output_rows.append({
                     "Liini nr": route,
-                    "Tripi nimi": trip_name,
-                    "Päevad": ", ".join(weekdays),
+                    "Liini nimetus": trip_name,
+                    "Liin on käigus": ", ".join(weekdays),
                     "Väljumised": time_str,
-                    "Marsruut": desc
+                    "Liini info": desc
                 })
 
-        poster_df = pd.DataFrame(output_rows, columns=["Liini nr", "Tripi nimi", "Päevad", "Väljumised", "Marsruut"])
+        # Puhver: iga väljumisaeg eraldi reale
+        flat_rows = []
+        for row in output_rows:
+            line = f"'{row['Liini nr']}" if "-" in str(row['Liini nr']) else row['Liini nr']
+            weekdays = row["Liin on käigus"].split(", ")
+            times = row["Väljumised"].split(", ")
 
-        st.subheader("📄 Väljumised grupeeritult nädalapäevade järgi")
+            for time in times:
+                flat_rows.append({
+                    "Väljumine": time.strip(),
+                    "Liini nr": line,
+                    "Liini nimetus": row["Liini nimetus"],
+                    "Liin on käigus": ", ".join(weekdays),
+                    "Liini info": row["Liini info"]
+                })
+
+        poster_df = pd.DataFrame(flat_rows)
+        poster_df["Väljumine"] = pd.to_datetime(poster_df["Väljumine"], format="%H:%M", errors="coerce")
+        poster_df = poster_df.sort_values("Väljumine")
+        poster_df["Väljumine"] = poster_df["Väljumine"].dt.strftime("%H:%M")
+        poster_df = poster_df[["Väljumine", "Liini nr", "Liini nimetus", "Liin on käigus", "Liini info"]]
+
+        st.subheader("📄 Väljumised rea kaupa")
         st.dataframe(poster_df, use_container_width=True, hide_index=True)
 
-        # CSV salvestus koos päise infoga, UTF-8 BOM
+        # CSV salvestus
         csv_buffer = io.StringIO()
         csv_writer = csv.writer(csv_buffer, quoting=csv.QUOTE_ALL)
 
