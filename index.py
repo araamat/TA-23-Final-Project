@@ -54,7 +54,11 @@ with st.sidebar:
 
     if os.path.exists(GTFS_ZIP):
         est_time = datetime.fromtimestamp(os.path.getmtime(GTFS_ZIP), ZoneInfo("Europe/Tallinn"))
-        st.caption(f"📅 GTFS uuendati: {est_time.strftime('**%H:%M:%S %d.%m.%Y**')}")
+        st.markdown(
+            f"📅 **GTFS uuendati:**<br>{est_time.strftime('%H:%M:%S %d.%m.%Y')}",
+            unsafe_allow_html=True
+        )
+
 
     if st.button("🏠 Avaleht"):
         st.session_state.view = "home"
