@@ -28,15 +28,25 @@ def gtfs_view():
 
     st.title("🚏 Route ID järgi seoste filtreerimine")
 
-    selected_route_id = st.text_input("**Sisesta route_id ja vajuta Enter**")
+    # Tekstiväli ja Otsi-nupp eraldatud CSS-wrapperiga
+    st.text_input("**Sisesta route_id:**", key="route_input", placeholder="nt 2112 või E1")
 
-    if selected_route_id:
-        filtered_routes = routes_df[routes_df['route_id'].str.contains(selected_route_id, na=False)]
+    st.markdown('<div class="otsi-wrapper">', unsafe_allow_html=True)
+    search_clicked = st.button("🔍 Otsi", key="otsi_button")
+    st.markdown('</div>', unsafe_allow_html=True)
+
+
+    if search_clicked and st.session_state.get("route_input"):
+        st.session_state["submitted_route"] = st.session_state["route_input"]
+
+    if "submitted_route" in st.session_state and st.session_state["submitted_route"]:
+        selected_route_id = st.session_state["submitted_route"]
+        filtered_routes = routes_df[routes_df['route_id'].astype(str).str.contains(selected_route_id, na=False)]
+
         if filtered_routes.empty:
             st.warning(f"Ei leitud liine route_id-ga **{selected_route_id}**.")
             return
 
-        # Lühenda route_short_name visuaalselt
         def wrap_text(value):
             if len(value) > 10:
                 return value[:10] + "\n" + value[10:]
@@ -51,11 +61,9 @@ def gtfs_view():
         selected_route = st.selectbox("**Vali täpne Route ID**", filtered_routes['route_id'].values)
         filtered_trips = trips_df[trips_df['route_id'] == selected_route]
 
-        # Tripide tabel: lisame trip_long_name ja eemaldame komad
         if not filtered_trips.empty:
             trips_display = filtered_trips[['trip_id', 'service_id', 'trip_headsign', 'trip_long_name']].copy()
             trips_display = trips_display.astype(str)
-
             st.write(f"**Seotud reisid liinil:** {selected_route}")
             st.dataframe(trips_display, use_container_width=True, hide_index=True)
 
@@ -63,39 +71,30 @@ def gtfs_view():
         stop_times = stop_times_df[stop_times_df['trip_id'] == selected_trip]
         stop_data = stop_times.merge(stops_df, on="stop_id").sort_values("stop_sequence")
 
-        # 1. Peatused
         if not stop_data.empty:
             st.write("### Valitud reisiga seotud peatused ja nende andmestik")
             cols = ['stop_sequence', 'stop_id', 'stop_code', 'stop_name', 'arrival_time', 'departure_time']
-            existing_cols = [col for col in cols if col in stop_data.columns]  # kui mõni puudub
+            existing_cols = [col for col in cols if col in stop_data.columns]
             st.dataframe(stop_data[existing_cols].astype(str), use_container_width=True, hide_index=True)
 
-
-        # 2. Teenindusperiood
         st.write("**Teenindusperiood**")
         service_id = filtered_trips[filtered_trips['trip_id'] == selected_trip]['service_id'].values[0]
         service_info = calendar_df[calendar_df['service_id'] == service_id]
         if not service_info.empty:
             row = service_info.iloc[0]
             day_labels = {
-                'monday': 'E',
-                'tuesday': 'T',
-                'wednesday': 'K',
-                'thursday': 'N',
-                'friday': 'R',
-                'saturday': 'L',
-                'sunday': 'P'
+                'monday': 'E', 'tuesday': 'T', 'wednesday': 'K', 'thursday': 'N',
+                'friday': 'R', 'saturday': 'L', 'sunday': 'P'
             }
             days = ", ".join([label for day, label in day_labels.items() if row[day] == 1])
             st.markdown(
                 f"- **Algus**: {row['start_date'].strftime('%d.%m.%Y')}  \n"
                 f"- **Lõpp**: {row['end_date'].strftime('%d.%m.%Y')}  \n"
-                f"- **Käigus päevadel**: {' '.join(days)}"
+                f"- **Käigus päevadel**: {days}"
             )
         else:
             st.info("Teenindusperioodi andmed puuduvad.")
 
-        # 3. Erandid
         st.write("**Teenindusperioodi erandid**")
         exceptions = calendar_dates_df[calendar_dates_df['service_id'] == service_id]
         if exceptions.empty:
@@ -103,10 +102,8 @@ def gtfs_view():
         else:
             for _, row in exceptions.iterrows():
                 muutus = "Muudetud" if row['exception_type'] == 1 else "Tühistatud"
-                st.markdown(f"- {row['date'].strftime('%d.%m.%Y')} — **{muutus}**"
-)
+                st.markdown(f"- {row['date'].strftime('%d.%m.%Y')} — **{muutus}**")
 
-        # 4. Kaart viimasena
         if not stop_data.empty:
             st.write("### Peatused kaardil")
             m = folium.Map(location=[stop_data.iloc[0]['stop_lat'], stop_data.iloc[0]['stop_lon']], zoom_start=13)

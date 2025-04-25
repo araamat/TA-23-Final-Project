@@ -134,3 +134,23 @@ section[data-testid="stSidebar"] .css-1v0mbdj {
   margin-top: 0rem !important;
   padding-top: 0rem !important;
 }
+
+/* Ainult “🔍 Otsi” nupu wrapperi sees olev nupp */
+.otsi-wrapper button {
+  background-color: #4f46e5 !important;
+  color: white !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  border-radius: 6px !important;
+  padding: 0.4rem 1.2rem !important;
+  margin: 0 auto 1rem auto !important;
+  display: block !important;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08) !important;
+  border: none !important;
+  cursor: pointer;
+}
+
+.otsi-wrapper button:hover {
+  background-color: #3730a3 !important;
+}
+
