@@ -11,7 +11,7 @@ def gtfs_view():
 
     stops_df = pd.read_csv("gtfs_data/stops.txt")
 
-    st.title("🚏 Grupeeri ühistranspordi peatuseid")
+    st.title("🚏 Peatuste filtreerimine kuuluvse järgi")
 
     search_type = st.radio("**Vali tunnus, mille järgi soovid peatusi grupeerida:**", ["Haldaja", "Kohalik omavalitsus"])
 

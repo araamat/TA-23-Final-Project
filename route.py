@@ -56,7 +56,7 @@ def gtfs_view():
             trips_display = filtered_trips[['trip_id', 'service_id', 'trip_headsign', 'trip_long_name']].copy()
             trips_display = trips_display.astype(str)
 
-            st.write(f"**Seotud reisid liinil: **{selected_route}")
+            st.write(f"**Seotud reisid liinil:** {selected_route}")
             st.dataframe(trips_display, use_container_width=True, hide_index=True)
 
         selected_trip = st.selectbox("**Liini Trip ID valik:**", filtered_trips['trip_id'].values)
