@@ -50,61 +50,18 @@ def show_history_view():
 [⬇️ Laadi alla]({download_url})
 """, unsafe_allow_html=True)
 
-def show_history_view():
-    st.title("📂 GTFS-failide ajalugu Google Drive'is")
+def list_gtfs_files_from_drive():
+    key_data = dict(secrets["gcp_service_account"])  # tee koopia!
+    key_data["private_key"] = key_data["private_key"].replace("\\n", "\n")
 
-    st.markdown("Sisesta otsingusse osa failinimest (nt `gtfs_25042025`) ja vajuta **Enter**.")
-    filter_text = st.text_input("🔍 Filtreeri failinime järgi", placeholder="Näiteks: gtfs_25042025")
-    st.caption("💡 Filtrit rakendatakse pärast Enter-klahvi vajutamist.")
+    creds = service_account.Credentials.from_service_account_info(key_data)
+    service = build("drive", "v3", credentials=creds)
 
-    with st.spinner("🔄 Laen GTFS-faile Google Drive'ist..."):
-        files = list_gtfs_files_from_drive()
-        if not files:
-            st.warning("❌ Ühtegi GTFS-faili ei leitud.")
-            return
+    results = service.files().list(
+        q=f"'{secrets['folder_id']}' in parents and name contains 'gtfs_' and mimeType='application/zip'",
+        pageSize=100,
+        fields="files(id, name, createdTime)"
+    ).execute()
 
-        # Filtreeri failid vastavalt otsingule
-        filtered_files = [f for f in sorted(files, key=lambda x: x['createdTime'], reverse=True)
-                          if filter_text.lower() in f['name'].lower()]
-
-        if not filtered_files:
-            st.info("ℹ️ Filtreerimisele vastavaid faile ei leitud.")
-            return
-
-        # Leheküljestamine
-        files_per_page = 10
-        total_pages = (len(filtered_files) - 1) // files_per_page + 1
-
-        page = st.number_input("📄 Lehekülg", min_value=1, max_value=total_pages, step=1, help="Vaheta lehekülge, et näha rohkem faile")
-
-        start = (page - 1) * files_per_page
-        end = start + files_per_page
-
-        for f in filtered_files[start:end]:
-            created = datetime.strptime(f['createdTime'], "%Y-%m-%dT%H:%M:%S.%fZ")
-            formatted_date = created.strftime("%d.%m.%Y")
-            download_url = f"https://drive.google.com/uc?id={f['id']}&export=download"
-
-            with st.expander(f"📁 {f['name']}"):
-                st.markdown(f"""
-**Loodud:** {formatted_date}  
-[⬇️ Laadi fail alla]({download_url})
-""", unsafe_allow_html=True)
-
-
-
-# def list_gtfs_files_from_drive():
-#     key_data = dict(secrets["gcp_service_account"])  # tee koopia!
-#     key_data["private_key"] = key_data["private_key"].replace("\\n", "\n")
-
-#     creds = service_account.Credentials.from_service_account_info(key_data)
-#     service = build("drive", "v3", credentials=creds)
-
-#     results = service.files().list(
-#         q=f"'{secrets['folder_id']}' in parents and name contains 'gtfs_' and mimeType='application/zip'",
-#         pageSize=100,
-#         fields="files(id, name, createdTime)"
-#     ).execute()
-
-#     return results.get('files', [])
+    return results.get('files', [])
 
