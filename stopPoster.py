@@ -3,6 +3,7 @@ import pandas as pd
 import zipfile
 from datetime import datetime, date
 import io
+import csv
 
 GTFS_ZIP = "gtfs.zip"
 
@@ -79,20 +80,27 @@ def gtfs_view():
             st.subheader("📄 Väljumised grupeeritult")
             st.dataframe(poster_df, use_container_width=True, hide_index=True)
 
-            # CSV fail koos päise infoga
+            # CSV fail koos UTF-8 BOM-iga ja päiseinfoga
             csv_buffer = io.StringIO()
-            csv_buffer.write(f"Peatus: {stop_info['stop_name']}\n")
-            csv_buffer.write(f"Stop Code: {stop_code}\n")
-            csv_buffer.write(f"Kuupäev: {kuupäev.strftime('%d.%m.%Y')}\n\n")
-            poster_df.to_csv(csv_buffer, index=False, quoting=1)  # quoting=1 => csv.QUOTE_ALL
-            csv_data = csv_buffer.getvalue().encode("utf-8")
+            csv_writer = csv.writer(csv_buffer, quoting=csv.QUOTE_ALL)
+
+            csv_writer.writerow([f"Peatus: {stop_info['stop_name']}"])
+            csv_writer.writerow([f"Stop Code: {stop_code}"])
+            csv_writer.writerow([f"Kuupäev: {kuupäev.strftime('%d.%m.%Y')}"])
+            csv_writer.writerow([])
+
+            csv_writer.writerow(poster_df.columns.tolist())
+            for row in poster_df.itertuples(index=False):
+                csv_writer.writerow(list(row))
+
+            csv_data = '\ufeff' + csv_buffer.getvalue()
+            csv_bytes = csv_data.encode('utf-8')
 
             st.download_button(
                 "⬇️ Laadi poster CSV-na alla",
-                csv_data,
+                csv_bytes,
                 file_name=f"poster_{stop_info['stop_name']}.csv",
                 mime="text/csv"
             )
     else:
         st.error("Andmete laadimine ebaõnnestus. Kontrollige, kas `gtfs.zip` fail on olemas ja sisaldab kõiki vajalikke andmeid.")
-
