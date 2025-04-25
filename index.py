@@ -52,7 +52,7 @@ with st.sidebar:
     if st.button("📂 GTFS ajalugu"):
         st.session_state["view"] = "history"
 
-    page = st.selectbox("📂 Vali otsingu alus", ["", "Liininumber",  "Route ID", "Trip ID", "Peatuste kuuluvus"])
+    page = st.selectbox("🔍 Vali filtreerimise alus", ["", "Liininumber",  "Route ID", "Trip ID", "Peatuste kuuluvus"])
 
 if "view" not in st.session_state:
     st.session_state["view"] = "home"

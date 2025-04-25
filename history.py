@@ -12,7 +12,7 @@ import toml
 secrets = st.secrets
 
 def show_history_view():
-    st.title("📂 GTFS Ajalugu")
+    st.title("📂 Avaandmete (GTFS) ajalugu")
 
     filter_text = st.text_input("🔍**Filtreeri failinime järgi** (gtfs_DDMMYYYY, kus  DD on päev, MM kuu ja YYYY aasta.)")
 
