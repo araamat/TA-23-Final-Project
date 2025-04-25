@@ -6,11 +6,15 @@ from zoneinfo import ZoneInfo
 import requests
 
 from history import show_history_view
+from route import gtfs_view as route_view
+from trip import gtfs_view as trip_view
+from search_by_line import gtfs_view as line_view
+from authority import gtfs_view as authority_view
 
 GTFS_ZIP = "gtfs.zip"
 GTFS_URL = "https://peatus.ee/gtfs/gtfs.zip"
 
-
+# --- Andmefaili uuendamine ---
 def needs_update(filepath, hours=24):
     if not os.path.exists(filepath):
         return True
@@ -27,39 +31,59 @@ def download_latest_gtfs():
 if needs_update(GTFS_ZIP):
     download_latest_gtfs()
 
-from route import gtfs_view as route_view
-from trip import gtfs_view as trip_view
-from search_by_line import gtfs_view as line_view
-from authority import gtfs_view as authority_view
-
+# --- CSS ---
 def local_css(file_name):
     try:
         with open(file_name) as f:
             st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
     except FileNotFoundError:
-        st.warning("style.css ei leitud. Kujundus võib olla vaikimisi.")
+        st.warning("style.css ei leitud.")
 
 local_css("style.css")
 
+# --- session_state ---
+if "view" not in st.session_state:
+    st.session_state.view = "home"
+if "filter" not in st.session_state:
+    st.session_state.filter = ""
+
+# --- Sidebar ---
+# --- Sidebar ---
 with st.sidebar:
     st.title("Eesti ühistranspordi avaandmed 🚍")
+
     if os.path.exists(GTFS_ZIP):
         est_time = datetime.fromtimestamp(os.path.getmtime(GTFS_ZIP), ZoneInfo("Europe/Tallinn"))
-        st.caption(f"📅 Avaandmete faili GTFS-i uuendati: {est_time.strftime('**%H:%M:%S %d-%m-%Y**')}")
+        st.caption(f"📅 GTFS uuendati: {est_time.strftime('**%H:%M:%S %d-%m-%Y**')}")
 
     if st.button("🏠 Avaleht"):
-        st.session_state["view"] = "home"
+        st.session_state.view = "home"
+        st.session_state.filter = ""
+        st.session_state["filter_select"] = ""  # ← tühista selectbox visuaalselt
+
     if st.button("📂 GTFS ajalugu"):
-        st.session_state["view"] = "history"
+        st.session_state.view = "history"
+        st.session_state.filter = ""
+        st.session_state["filter_select"] = ""
 
-    page = st.selectbox("🔍 Vali filtreerimise alus", ["", "Liininumber",  "Route ID", "Trip ID", "Peatuste kuuluvus"])
+    # Filtri valik selectboxis (visuaalselt seotud session_state'ga)
+    selected = st.selectbox(
+        "🔍 Vali filtreerimise alus",
+        ["", "Liininumber", "Route ID", "Trip ID", "Peatuste kuuluvus"],
+        key="filter_select"
+    )
 
-if "view" not in st.session_state:
-    st.session_state["view"] = "home"
+    # Kui kasutaja teeb valiku, liigume filtrivaatesse
+    if selected and st.session_state.view != "history":
+        st.session_state.view = "filter"
+        st.session_state.filter = selected
 
-view = st.session_state["view"]
 
-if view == "home" and not page:
+# --- Vaadete renderdamine ---
+view = st.session_state.view
+filter_view = st.session_state.filter
+
+if view == "home":
     st.title("Eesti ühistranspordi avaandmete (GTFS) analüüsi tööriist")
     st.markdown("""
         - 📂 **Sirvi GTFS ajaloo faile**  
@@ -78,11 +102,13 @@ if view == "home" and not page:
 
 elif view == "history":
     show_history_view()
-elif page == "Route ID":
-    route_view()
-elif page == "Trip ID":
-    trip_view()
-elif page == "Liininumber":
-    line_view()
-elif page == "Peatuste kuuluvus":
-    authority_view()
+
+elif view == "filter":
+    if filter_view == "Route ID":
+        route_view()
+    elif filter_view == "Trip ID":
+        trip_view()
+    elif filter_view == "Liininumber":
+        line_view()
+    elif filter_view == "Peatuste kuuluvus":
+        authority_view()

@@ -34,7 +34,7 @@ def show_history_view():
         files_per_page = 10
         total_pages = (len(filtered_files) - 1) // files_per_page + 1
 
-        page = st.number_input("Ühel leheküljel kuvatakse 10 viimast faili", min_value=1, max_value=total_pages, step=1)
+        page = st.number_input("Ühel leheküljel kuvatakse 10 faili", min_value=1, max_value=total_pages, step=1)
 
         start = (page - 1) * files_per_page
         end = start + files_per_page

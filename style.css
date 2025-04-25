@@ -106,34 +106,3 @@ button[kind="secondary"]:hover {
 .css-1wa3eu0 {
     font-size: 16px; 
 }
-
-/* Sidebar nupud ühtlaseks, kaasa arvatud ikooniga */
-section[data-testid="stSidebar"] button {
-  width: 100% !important;
-  height: 40px !important;
-  text-align: left !important;
-  font-size: 15px !important;
-  padding: 0.4rem 1rem !important;
-  border-radius: 10px !important;
-  margin-bottom: 10px;
-  background-color: #f0f2f6 !important;
-  color: #1f2937 !important;
-  border: 1px solid #d1d5db !important;
-  box-shadow: none !important;
-  transition: background-color 0.3s ease;
-}
-
-/* Hover efekt nuppudele */
-section[data-testid="stSidebar"] button:hover {
-  background-color: #e2e8f0 !important;
-  color: #111827 !important;
-}
-
-/* Selectbox laiuse ja fonti kohendamine */
-section[data-testid="stSidebar"] .css-1cpxqw2 {
-  width: 100% !important;
-}
-
-section[data-testid="stSidebar"] .css-1wa3eu0 {
-  font-size: 15px !important;
-}
