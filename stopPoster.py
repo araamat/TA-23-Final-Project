@@ -82,6 +82,23 @@ def gtfs_view():
                 st.subheader("📄 Väljumised grupeeritult")
                 st.dataframe(poster_df, use_container_width=True, hide_index=True)
 
-                # CSV genereerimine, hoides apostroofi liini numbri ees
-                csv = poster_df.to_csv(index=False).encode("utf-8")
-                st.download_button("⬇️ Laadi poster CSV-na alla", csv, file_name=f"poster_{stop_info['stop_name']}.csv", mime="text/csv")
+                # CSV fail koos päise infoga
+                import io
+
+                csv_buffer = io.StringIO()
+
+                csv_buffer.write(f"Peatus: {stop_info['stop_name']}\n")
+                csv_buffer.write(f"Stop Code: {stop_code}\n")
+                csv_buffer.write(f"Kuupäev: {kuupäev.strftime('%d.%m.%Y')}\n\n")
+
+                # Lisa tabeli andmed (Excel ei muuda liini 12-2, kui me ümbritseme jutumärkidega)
+                poster_df.to_csv(csv_buffer, index=False, quoting=1)  # quoting=1 == csv.QUOTE_ALL
+
+                csv_data = csv_buffer.getvalue().encode("utf-8")
+
+                st.download_button(
+                    "⬇️ Laadi poster CSV-na alla",
+                    csv_data,
+                    file_name=f"poster_{stop_info['stop_name']}.csv",
+                    mime="text/csv"
+                )
