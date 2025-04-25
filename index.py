@@ -75,7 +75,7 @@ with st.sidebar:
         st.session_state.filter = ""
         st.session_state["filter_select"] = ""
         
-    if st.button("📂 Peatuse postri genereerimine"):
+    if st.button("📄 Peatuse postri genereerimine"):
         st.session_state.view = "poster"
         st.session_state.filter = ""
         st.session_state["filter_select"] = ""
@@ -108,8 +108,8 @@ if view == "home":
           Analüüsi, kuidas erinevad GTFS **.txt** failid omavahel seotud on (nt trips.txt, routes.txt, stop_times.txt).
         - 🗺️ **Grupeeri peatuseid**  
           Filtreeri ja koonda andmeid vastavalt haldurile või kohaliku omavalitsuse kuuluvusele.
-        - 📊 **Tulevane plaan**  
-          Peatuste postrite genereerimine.
+        - 📊 **Peatuste postrite genereerimine**  
+          Peatuste kohta info kogumine .CSV faili.
 
         See tööriist on mõeldud ühistranspordiosakonna töötajatele, kuid sobib ka nii transpordiplaneerijale, kes soovib kiiresti näha seoseid avaandmetes, ilma käsitsi **.zip** faile avamata.
     """)
