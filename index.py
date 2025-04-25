@@ -55,32 +55,37 @@ with st.sidebar:
     if os.path.exists(GTFS_ZIP):
         est_time = datetime.fromtimestamp(os.path.getmtime(GTFS_ZIP), ZoneInfo("Europe/Tallinn"))
         st.markdown(
-            f"📅 **GTFS uuendati:**<br>{est_time.strftime('%H:%M:%S %d.%m.%Y')}",
+            f"""
+            <div style="text-align: center; margin-bottom: 1rem; margin-top: 0.5rem;">
+                📅 <strong>GTFS uuendati:</strong><br>
+                {est_time.strftime('%H:%M:%S %d.%m.%Y')}
+            </div>
+            """,
             unsafe_allow_html=True
         )
-
 
     if st.button("🏠 Avaleht"):
         st.session_state.view = "home"
         st.session_state.filter = ""
-        st.session_state["filter_select"] = ""  # ← tühista selectbox visuaalselt
+        st.session_state["filter_select"] = ""
 
     if st.button("📂 GTFS ajalugu"):
         st.session_state.view = "history"
         st.session_state.filter = ""
         st.session_state["filter_select"] = ""
 
-    # Filtri valik selectboxis (visuaalselt seotud session_state'ga)
+    # Filtri valik (pealkiri + selectbox)
+    st.markdown('<div class="filter-label">🔍 Vali filtreerimise alus</div>', unsafe_allow_html=True)
     selected = st.selectbox(
-        "🔍 Vali filtreerimise alus",
+        "",
         ["", "Liininumber", "Route ID", "Trip ID", "Peatuste kuuluvus"],
         key="filter_select"
     )
 
-    # Kui kasutaja teeb valiku, liigume filtrivaatesse
     if selected:
         st.session_state.view = "filter"
         st.session_state.filter = selected
+
 
 
 

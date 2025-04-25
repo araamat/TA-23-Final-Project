@@ -106,3 +106,31 @@ button[kind="secondary"]:hover {
 .css-1wa3eu0 {
     font-size: 16px; 
 }
+
+
+/* Eemalda nuppude wrapper-div'ide vahed külgribal */
+section[data-testid="stSidebar"] > div > div:has(button) {
+  margin-top: 0rem !important;
+  margin-bottom: 0rem !important;
+  padding: 0rem !important;
+}
+
+/* Nupule endale tihedam padding */
+section[data-testid="stSidebar"] button {
+  padding-top: 0.3rem !important;
+  padding-bottom: 0.3rem !important;
+  margin: 0rem !important;
+}
+
+.filter-label {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 0rem;
+  margin-top: 0.5rem;
+}
+
+/* Selectbox wrapper – eemaldab tühja ruumi pealt */
+section[data-testid="stSidebar"] .css-1v0mbdj {
+  margin-top: 0rem !important;
+  padding-top: 0rem !important;
+}
