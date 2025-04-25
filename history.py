@@ -14,7 +14,7 @@ secrets = st.secrets
 def show_history_view():
     st.title("📂 GTFS Ajalugu")
 
-    filter_text = st.text_input("🔍**Filtreeri failinime järgi**(gtfs_DDMMYYYY, kus  DD on päev, MM kuu ja YYYY aasta.)")
+    filter_text = st.text_input("🔍**Filtreeri failinime järgi** (gtfs_DDMMYYYY, kus  DD on päev, MM kuu ja YYYY aasta.)")
 
     with st.spinner("Laen GTFS-faile Google Drive'ist..."):
         files = list_gtfs_files_from_drive()
