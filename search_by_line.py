@@ -109,7 +109,7 @@ def gtfs_view():
             st.dataframe(stop_seq[cols], use_container_width=True, hide_index=True)
 
         # 2. Teenindusperiood
-        st.write("**Reisi teenindusperiood**")
+        st.write("**Teenindusperiood**")
         cal = calendar_df[calendar_df['service_id'] == service_id]
         if not cal.empty:
             cal_row = cal.iloc[0]
