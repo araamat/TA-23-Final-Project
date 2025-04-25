@@ -43,12 +43,15 @@ def gtfs_view():
         if peatus and kuupäev:
             stop_info = stops[stops['stop_name'] == peatus].iloc[0]
             stop_ids = stops[stops['stop_name'] == peatus]['stop_id'].tolist()
+            stop_code = stop_info.get("stop_code", "—")
 
-            st.markdown(f"**📍 Peatus:** {stop_info['stop_name']}")
-            st.markdown(f"**🆔 Stop ID:** {', '.join(map(str, stop_ids))}")
-            st.markdown(f"**🔢 Stop Code:** {stop_info.get('stop_code', '—')}")
+            # Kuvame postri päise
+            st.markdown(f"### 🚌 Eesti Ühistransport")
+            st.markdown(f"#### 📍 Peatus: **{stop_info['stop_name']}**")
+            st.markdown(f"#### 🔢 Stop Code: **{stop_code}**")
+            st.markdown(f"#### 📅 Kuupäev: **{kuupäev.strftime('%d.%m.%Y')}**")
 
-            # Väljumiste leidmine
+            # Andmete laadimine
             relevant_times = stop_times[stop_times['stop_id'].isin(stop_ids)]
             enriched = relevant_times.merge(trips, on="trip_id").merge(routes, on="route_id")
 
@@ -59,23 +62,26 @@ def gtfs_view():
             if enriched.empty:
                 st.warning(f"Sel kuupäeval ({kuupäev.strftime('%d.%m.%Y')}) ei leitud selle peatuse väljumisi.")
             else:
-                # Gruppide loogika
-                grouped = enriched.groupby(["route_short_name", "trip_headsign", "route_desc"])
+                # Gruppimine
+                grouped = enriched.groupby(["route_short_name", "trip_long_name", "route_desc"])
 
                 output_rows = []
-                for (route, headsign, desc), group in grouped:
+                for (route, trip_name, desc), group in grouped:
                     times = ", ".join(group['departure_time'].tolist())
+                    # lisame ' enne väärtust, et vältida Exceli "kuupäevastamist"
+                    route_clean = f"'{route}" if "-" in str(route) else str(route)
                     output_rows.append({
-                        "Liini nr": route,
-                        "Sihtkoht": headsign,
-                        "Marsruut": desc,
-                        "Väljumised": times
+                        "Liini nr": route_clean,
+                        "Tripi nimi": trip_name,
+                        "Väljumised": times,
+                        "Marsruut": desc
                     })
 
-                poster_df = pd.DataFrame(output_rows)
+                poster_df = pd.DataFrame(output_rows, columns=["Liini nr", "Tripi nimi", "Väljumised", "Marsruut"])
 
                 st.subheader("📄 Väljumised grupeeritult")
                 st.dataframe(poster_df, use_container_width=True, hide_index=True)
 
+                # CSV genereerimine, hoides apostroofi liini numbri ees
                 csv = poster_df.to_csv(index=False).encode("utf-8")
-                st.download_button("⬇️ Laadi poster CSV-na alla", csv, file_name=f"poster_{peatus}.csv", mime="text/csv")
+                st.download_button("⬇️ Laadi poster CSV-na alla", csv, file_name=f"poster_{stop_info['stop_name']}.csv", mime="text/csv")
