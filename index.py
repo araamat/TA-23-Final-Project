@@ -63,9 +63,10 @@ if view == "home" and not page:
     st.title("Eesti ühistranspordiregistri avaandmete (GTFS) analüüsi ja valideerimise rakendus")
     st.markdown("""
         🚍 **See rakendus võimaldab lihtsalt ja kiiresti:**
-        - leida seoseid GTFS-tekstifailide vahel, otsides ühistranspordiliine erinevate parameetrite järgi (nt route_id, trip_id või liini number);  
+        - leida GTFS ajaloo faile;
+        - leida seoseid GTFS .txt failide vahel, otsides ühistranspordiliine erinevate parameetrite järgi (nt route_id, trip_id või liini number);  
         - grupeerida peatuseid nende haldaja või kohaliku omavalitsuse kuuluvuse alusel.
-        👉 Kasutamiseks vali vasakult lehelt sobiv andmetüüp.
+        
     """)
 
 elif view == "history":
