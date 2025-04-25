@@ -28,9 +28,20 @@ def gtfs_view():
 
     st.title("🚍 Trip ID järgi seoste filtreerimine")
 
-    selected_trip_id = st.text_input("**Sisesta Trip ID ja vajuta Enter**")
+    # Tekstiväli ja nupp
+    st.text_input("**Sisesta Trip ID:**", key="trip_input", placeholder="nt 1220349 või midagi sarnast")
 
-    if selected_trip_id:
+    # Otsi-nupp — ainult selle wrapperile antakse klass
+    st.markdown('<div class="otsi-wrapper">', unsafe_allow_html=True)
+    otsi_klikitud = st.button("🔍 Otsi", key="trip_otsi_button")
+    st.markdown('</div>', unsafe_allow_html=True)
+
+    # Kui otsitud
+    if otsi_klikitud and st.session_state.get("trip_input"):
+        st.session_state["submitted_trip"] = st.session_state["trip_input"]
+
+    if "submitted_trip" in st.session_state and st.session_state["submitted_trip"]:
+        selected_trip_id = st.session_state["submitted_trip"]
         filtered_trips = trips_df[trips_df['trip_id'].astype(str).str.contains(str(selected_trip_id), na=False)]
         if filtered_trips.empty:
             st.warning(f"Ei leitud sõite trip_id-ga **{selected_trip_id}**.")

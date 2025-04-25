@@ -135,7 +135,7 @@ section[data-testid="stSidebar"] .css-1v0mbdj {
   padding-top: 0rem !important;
 }
 
-/* Ainult “🔍 Otsi” nupu wrapperi sees olev nupp */
+/* Ainult “🔍 Otsi” nupule klass, et teisi mitte muuta */
 .otsi-wrapper button {
   background-color: #4f46e5 !important;
   color: white !important;
@@ -153,4 +153,3 @@ section[data-testid="stSidebar"] .css-1v0mbdj {
 .otsi-wrapper button:hover {
   background-color: #3730a3 !important;
 }
-
