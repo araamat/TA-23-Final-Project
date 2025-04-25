@@ -5,8 +5,11 @@ from googleapiclient.discovery import build
 from datetime import datetime
 import toml
 
-# Lae secrets käsitsi kui st.secrets ei tööta
-secrets = toml.load("secrets.toml")
+# Lokaalseks
+# secrets = toml.load("secrets.toml")
+
+#Streamlit jaoks:
+secrets = st.secrets
 
 def show_history_view():
     st.title("📂 GTFS Ajalugu")
