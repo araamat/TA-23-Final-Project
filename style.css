@@ -76,13 +76,64 @@ iframe {
   margin-bottom: -2rem !important;
 }
 
-/* Ühtne laius nuppudele */
+/* Ühtlusta kõik sidebar nupud */
 button[kind="secondary"] {
     width: 100% !important;
-    text-align: left; /* valikuline – joondab ikooni ja teksti vasakule */
+    height: 40px; /* madalamad nupud */
+    text-align: left !important;
+    padding-left: 12px;
+    font-size: 16px;
+    border-radius: 10px; /* ümarad servad */
+    margin-bottom: 8px; /* nupud natuke eraldi */
+    background-color: #f0f2f6;
+    color: #31333f;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover efekt */
+button[kind="secondary"]:hover {
+    background-color: #dce0ea;
+    color: black;
 }
 
 /* Ühtne laius selectboxile */
-.css-1cpxqw2 {  /* Streamliti .selectbox wrapper klass sidebaris */
+.css-1cpxqw2 { /* selectbox wrapper */
     width: 100% !important;
+}
+
+/* Sidebar selectbox ja label */
+.css-1wa3eu0 {
+    font-size: 16px; 
+}
+
+/* Sidebar nupud ühtlaseks, kaasa arvatud ikooniga */
+section[data-testid="stSidebar"] button {
+  width: 100% !important;
+  height: 40px !important;
+  text-align: left !important;
+  font-size: 15px !important;
+  padding: 0.4rem 1rem !important;
+  border-radius: 10px !important;
+  margin-bottom: 10px;
+  background-color: #f0f2f6 !important;
+  color: #1f2937 !important;
+  border: 1px solid #d1d5db !important;
+  box-shadow: none !important;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover efekt nuppudele */
+section[data-testid="stSidebar"] button:hover {
+  background-color: #e2e8f0 !important;
+  color: #111827 !important;
+}
+
+/* Selectbox laiuse ja fonti kohendamine */
+section[data-testid="stSidebar"] .css-1cpxqw2 {
+  width: 100% !important;
+}
+
+section[data-testid="stSidebar"] .css-1wa3eu0 {
+  font-size: 15px !important;
 }
