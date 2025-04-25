@@ -60,12 +60,15 @@ if "view" not in st.session_state:
 view = st.session_state["view"]
 
 if view == "home" and not page:
-    st.title("Eesti ühistranspordiregistri avaandmete (GTFS) analüüsi ja valideerimise rakendus")
+    st.title("Eesti ühistranspordiregistri avaandmete (GTFS) analüüsi tööriist")
     st.markdown("""
-        🚍 **See rakendus võimaldab lihtsalt ja kiiresti:**
-        - leida GTFS ajaloo faile;
-        - leida seoseid GTFS .txt failide vahel, otsides ühistranspordiliine erinevate parameetrite järgi (nt route_id, trip_id või liini number);  
-        - grupeerida peatuseid nende haldaja või kohaliku omavalitsuse kuuluvuse alusel.
+       - 📂 **Sirvi GTFS ajaloo faile** – laadib automaatselt failid Google Drive'ist ja kuvab need mugavas ajateljes;
+        - 🔍 **Otsi ja analüüsi liine** – leia ühendused `route_id`, `trip_id`, liininumbri või muude parameetrite alusel;
+        - 🔗 **Uuri failide vahelisi seoseid** – analüüsi, kuidas erinevad GTFS `.txt` failid omavahel seotud on (nt `trips.txt`, `routes.txt`, `stop_times.txt`);
+        - 🗺️ **Grupeeri peatuseid** – filtreeri ja koonda andmeid vastavalt haldurile või kohaliku omavalitsuse kuuluvusele;
+        - 📊 **Tulevane plaan**: peatuste postrite genereeriine.
+
+See tööriist on mõeldud ühistranspordiosakonna töötajatele, kuid sobib ka nii transpordiplaneerijale, kui ka arendajale, kes soovib kiiresti sisu näha ja andmeid mõtestada – ilma käsitsi `.zip` faile avamata.
         
     """)
 
