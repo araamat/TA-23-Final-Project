@@ -26,7 +26,7 @@ def load_data():
 def gtfs_view():
     routes_df, trips_df, stop_times_df, stops_df, calendar_df, calendar_dates_df = load_data()
 
-    st.title("🚏 Liinid route_id järgi")
+    st.title("🚏 Route ID järgi seoste filtreerimine")
 
     selected_route_id = st.text_input("**Sisesta route_id ja vajuta Enter**")
 
@@ -56,7 +56,7 @@ def gtfs_view():
             trips_display = filtered_trips[['trip_id', 'service_id', 'trip_headsign', 'trip_long_name']].copy()
             trips_display = trips_display.astype(str)
 
-            st.write(f"**Seotud reisid liinil**{selected_route}**")
+            st.write(f"**Seotud reisid liinil: **{selected_route}")
             st.dataframe(trips_display, use_container_width=True, hide_index=True)
 
         selected_trip = st.selectbox("**Liini Trip ID valik:**", filtered_trips['trip_id'].values)
@@ -102,7 +102,7 @@ def gtfs_view():
             st.info("Erandid puuduvad.")
         else:
             for _, row in exceptions.iterrows():
-                muutus = "Lisatud" if row['exception_type'] == 1 else "Tühistatud"
+                muutus = "Muudetud" if row['exception_type'] == 1 else "Tühistatud"
                 st.markdown(f"- {row['date'].strftime('%d.%m.%Y')} — **{muutus}**"
 )
 
