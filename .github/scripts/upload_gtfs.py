@@ -42,7 +42,7 @@ credentials_dict = {
 # Upload to Google Drive
 creds = service_account.Credentials.from_service_account_info(credentials_dict)
 service = build("drive", "v3", credentials=creds)
-filename = f"gtfs_{datetime.datetime.now().strftime('%d%m%Y_%H%M')}.zip"
+filename = f"gtfs_{datetime.datetime.now().strftime('%d%m%Y')}.zip"
 file_metadata = {"name": filename, "parents": [FOLDER_ID]}
 media = MediaFileUpload(GTFS_ZIP, mimetype="application/zip")
 file = service.files().create(body=file_metadata, media_body=media, fields="id").execute()
