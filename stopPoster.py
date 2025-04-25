@@ -41,38 +41,41 @@ def gtfs_view():
         kuupäev = st.date_input("Vali kuupäev ajaplaani jaoks:", value=datetime.today())
 
         if peatus and kuupäev:
+            stop_info = stops[stops['stop_name'] == peatus].iloc[0]
             stop_ids = stops[stops['stop_name'] == peatus]['stop_id'].tolist()
-            st.markdown(f"**📍 Peatus:** {peatus}")
-            st.markdown(f"**🆔 Stop ID:** {', '.join(map(str, stop_ids))}")
 
-            # Otsi vastavad väljumised
+            st.markdown(f"**📍 Peatus:** {stop_info['stop_name']}")
+            st.markdown(f"**🆔 Stop ID:** {', '.join(map(str, stop_ids))}")
+            st.markdown(f"**🔢 Stop Code:** {stop_info.get('stop_code', '—')}")
+
+            # Väljumiste leidmine
             relevant_times = stop_times[stop_times['stop_id'].isin(stop_ids)]
             enriched = relevant_times.merge(trips, on="trip_id").merge(routes, on="route_id")
 
-            # Lisa kuupäeva filter (kalendri kontroll)
             enriched['departure_time'] = pd.to_datetime(enriched['departure_time'], format='%H:%M:%S', errors='coerce')
-            enriched = enriched.sort_values("departure_time")
+            enriched = enriched.sort_values(["route_short_name", "trip_headsign", "departure_time"])
             enriched['departure_time'] = enriched['departure_time'].dt.strftime('%H:%M')
 
             if enriched.empty:
                 st.warning(f"Sel kuupäeval ({kuupäev.strftime('%d.%m.%Y')}) ei leitud selle peatuse väljumisi.")
             else:
-                # Kuvame postri andmed
-                poster_df = enriched[["departure_time", "route_short_name", "trip_headsign", "trip_id", "route_desc"]]
-                poster_df = poster_df.rename(columns={
-                    "departure_time": "Väljumine",
-                    "route_short_name": "Liini nr",
-                    "trip_headsign": "Sihtkoht",
-                    "trip_id": "Trip ID",
-                    "route_desc": "Marsruut"
-                })
+                # Gruppide loogika
+                grouped = enriched.groupby(["route_short_name", "trip_headsign", "route_desc"])
 
-                st.subheader("📄 Väljumised")
+                output_rows = []
+                for (route, headsign, desc), group in grouped:
+                    times = ", ".join(group['departure_time'].tolist())
+                    output_rows.append({
+                        "Liini nr": route,
+                        "Sihtkoht": headsign,
+                        "Marsruut": desc,
+                        "Väljumised": times
+                    })
+
+                poster_df = pd.DataFrame(output_rows)
+
+                st.subheader("📄 Väljumised grupeeritult")
                 st.dataframe(poster_df, use_container_width=True, hide_index=True)
 
-                # CSV allalaadimise nupp
                 csv = poster_df.to_csv(index=False).encode("utf-8")
                 st.download_button("⬇️ Laadi poster CSV-na alla", csv, file_name=f"poster_{peatus}.csv", mime="text/csv")
-    else:
-        st.error("Andmete laadimine ebaõnnestus. Kontrollige, kas `gtfs.zip` fail on olemas ja sisaldab kõiki vajalikud andmeid.")
-
