@@ -75,7 +75,7 @@ with st.sidebar:
         st.session_state["filter_select"] = ""
 
     # Filtri valik (pealkiri + selectbox)
-    st.markdown('<div class="filter-label">🔍 Vali filtreerimise alus</div>', unsafe_allow_html=True)
+    st.markdown('<div class="filter-label">🔍 Vali filtreerimise alus: </div>', unsafe_allow_html=True)
     selected = st.selectbox(
         "",
         ["", "Liininumber", "Route ID", "Trip ID", "Peatuste kuuluvus"],
