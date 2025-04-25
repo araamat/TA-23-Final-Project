@@ -114,19 +114,19 @@ def gtfs_view():
         if not cal.empty:
             cal_row = cal.iloc[0]
             day_map = {
-                'monday': 'Esmaspäev',
-                'tuesday': 'Teisipäev',
-                'wednesday': 'Kolmapäev',
-                'thursday': 'Neljapäev',
-                'friday': 'Reede',
-                'saturday': 'Laupäev',
-                'sunday': 'Pühapäev'
+                'monday': 'E',
+                'tuesday': 'T',
+                'wednesday': 'K',
+                'thursday': 'N',
+                'friday': 'R',
+                'saturday': 'L',
+                'sunday': 'P'
             }
             days = ", ".join([day_map[day] for day in day_map if day in cal_row and cal_row[day] == 1])
 
             st.markdown(
-                f"- **Algus**: {cal_row['start_date'].date()}  \n"
-                f"- **Lõpp**: {cal_row['end_date'].date()}  \n"
+                f"- **Algus**: {cal_row['start_date'].strftime('%d.%m.%Y')}  \n"
+                f"- **Lõpp**: {cal_row['end_date'].strftime('%d.%m.%Y')}  \n"
                 f"- **Liin käigus päevadel**: {days}"
             )
         else:
@@ -139,8 +139,8 @@ def gtfs_view():
             st.info("Erandid puuduvad.")
         else:
             for _, row in exceptions.iterrows():
-                muutus = "Lisatud" if row['exception_type'] == 1 else "Liin ei ole käigus"
-                st.markdown(f"- {row['date'].date()} — **{muutus}**")
+                muutus = "Lisatud" if row['exception_type'] == 1 else "Tühistatud"
+                st.markdown(f"- {row['date'].strftime('%d.%m.%Y')} — **{muutus}**")
 
         # 4. KAART kõige viimasena
         if not stop_seq.empty:

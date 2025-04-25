@@ -10,7 +10,6 @@ def load_data():
     with zipfile.ZipFile(GTFS_ZIP, 'r') as z:
         z.extractall("gtfs_data")
 
-    agency_df = pd.read_csv("gtfs_data/agency.txt")
     routes_df = pd.read_csv("gtfs_data/routes.txt")
     trips_df = pd.read_csv("gtfs_data/trips.txt")
     stop_times_df = pd.read_csv("gtfs_data/stop_times.txt")
@@ -37,55 +36,77 @@ def gtfs_view():
             st.warning(f"Ei leitud liine route_id-ga **{selected_route_id}**.")
             return
 
-        st.write(f"**Seotud liinid route_id-ga**: {selected_route_id}")
-        st.dataframe(filtered_routes[['route_id', 'route_short_name', 'route_long_name']], hide_index=True)
+        # Lühenda route_short_name visuaalselt
+        def wrap_text(value):
+            if len(value) > 10:
+                return value[:10] + "\n" + value[10:]
+            return value
 
-        selected_route = st.selectbox("**Vali täpne route_id**", filtered_routes['route_id'].values)
+        filtered_routes_display = filtered_routes.copy()
+        filtered_routes_display['route_short_name'] = filtered_routes_display['route_short_name'].astype(str).apply(wrap_text)
+
+        st.write(f"**Seotud liinid Route ID-ga**: {selected_route_id}")
+        st.dataframe(filtered_routes_display[['route_id', 'route_short_name', 'route_long_name']], hide_index=True, use_container_width=True)
+
+        selected_route = st.selectbox("**Vali täpne Route ID**", filtered_routes['route_id'].values)
         filtered_trips = trips_df[trips_df['route_id'] == selected_route]
 
-        st.write(f"### Seotud sõidud liinil **{selected_route}**")
-        st.dataframe(filtered_trips[['trip_id', 'service_id', 'trip_headsign']], hide_index=True)
+        # Tripide tabel: lisame trip_long_name ja eemaldame komad
+        if not filtered_trips.empty:
+            trips_display = filtered_trips[['trip_id', 'service_id', 'trip_headsign', 'trip_long_name']].copy()
+            trips_display = trips_display.astype(str)
 
-        selected_trip = st.selectbox("**Vali Trip ID**", filtered_trips['trip_id'].values)
+            st.write(f"**Seotud reisid liinil**{selected_route}**")
+            st.dataframe(trips_display, use_container_width=True, hide_index=True)
+
+        selected_trip = st.selectbox("**Liini Trip ID valik:**", filtered_trips['trip_id'].values)
         stop_times = stop_times_df[stop_times_df['trip_id'] == selected_trip]
         stop_data = stop_times.merge(stops_df, on="stop_id").sort_values("stop_sequence")
 
-        # 1. Peatused tabelina
+        # 1. Peatused
         if not stop_data.empty:
-            st.write("### Peatused ja väljumisajad")
-            cols = ['stop_sequence', 'stop_id', 'stop_name', 'arrival_time', 'departure_time']
-            st.dataframe(stop_data[cols], use_container_width=True, hide_index=True)
+            st.write("### Valitud reisiga seotud peatused ja nende andmestik")
+            cols = ['stop_sequence', 'stop_id', 'stop_code', 'stop_name', 'arrival_time', 'departure_time']
+            existing_cols = [col for col in cols if col in stop_data.columns]  # kui mõni puudub
+            st.dataframe(stop_data[existing_cols].astype(str), use_container_width=True, hide_index=True)
+
 
         # 2. Teenindusperiood
-        st.write("### Teenindusperiood")
+        st.write("**Teenindusperiood**")
         service_id = filtered_trips[filtered_trips['trip_id'] == selected_trip]['service_id'].values[0]
         service_info = calendar_df[calendar_df['service_id'] == service_id]
         if not service_info.empty:
             row = service_info.iloc[0]
             day_labels = {
-                'monday': 'E', 'tuesday': 'T', 'wednesday': 'K', 'thursday': 'N',
-                'friday': 'R', 'saturday': 'L', 'sunday': 'P'
+                'monday': 'E',
+                'tuesday': 'T',
+                'wednesday': 'K',
+                'thursday': 'N',
+                'friday': 'R',
+                'saturday': 'L',
+                'sunday': 'P'
             }
-            days = [label for day, label in day_labels.items() if row[day] == 1]
+            days = ", ".join([label for day, label in day_labels.items() if row[day] == 1])
             st.markdown(
-                f"- **Algus**: {row['start_date'].date()}  \n"
-                f"- **Lõpp**: {row['end_date'].date()}  \n"
+                f"- **Algus**: {row['start_date'].strftime('%d.%m.%Y')}  \n"
+                f"- **Lõpp**: {row['end_date'].strftime('%d.%m.%Y')}  \n"
                 f"- **Käigus päevadel**: {' '.join(days)}"
             )
         else:
             st.info("Teenindusperioodi andmed puuduvad.")
 
         # 3. Erandid
-        st.write("### Teenindusperioodi erandid")
+        st.write("**Teenindusperioodi erandid**")
         exceptions = calendar_dates_df[calendar_dates_df['service_id'] == service_id]
         if exceptions.empty:
             st.info("Erandid puuduvad.")
         else:
             for _, row in exceptions.iterrows():
                 muutus = "Lisatud" if row['exception_type'] == 1 else "Tühistatud"
-                st.markdown(f"- {row['date'].date()} — **{muutus}**")
+                st.markdown(f"- {row['date'].strftime('%d.%m.%Y')} — **{muutus}**"
+)
 
-        # 4. Kaart VIIMASENA
+        # 4. Kaart viimasena
         if not stop_data.empty:
             st.write("### Peatused kaardil")
             m = folium.Map(location=[stop_data.iloc[0]['stop_lat'], stop_data.iloc[0]['stop_lon']], zoom_start=13)
