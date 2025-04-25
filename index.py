@@ -10,6 +10,7 @@ from route import gtfs_view as route_view
 from trip import gtfs_view as trip_view
 from search_by_line import gtfs_view as line_view
 from authority import gtfs_view as authority_view
+from stopPoster import gtfs_view as stop_poster_view
 
 GTFS_ZIP = "gtfs.zip"
 GTFS_URL = "https://peatus.ee/gtfs/gtfs.zip"
@@ -73,6 +74,11 @@ with st.sidebar:
         st.session_state.view = "history"
         st.session_state.filter = ""
         st.session_state["filter_select"] = ""
+        
+    if st.button("📂 Peatuse postri genereerimine"):
+        st.session_state.view = "poster"
+        st.session_state.filter = ""
+        st.session_state["filter_select"] = ""
 
     # Filtri valik (pealkiri + selectbox)
     st.markdown('<div class="filter-label">🔍 Vali filtreerimise alus: </div>', unsafe_allow_html=True)
@@ -85,8 +91,6 @@ with st.sidebar:
     if selected:
         st.session_state.view = "filter"
         st.session_state.filter = selected
-
-
 
 
 # --- Vaadete renderdamine ---
@@ -112,6 +116,9 @@ if view == "home":
 
 elif view == "history":
     show_history_view()
+    
+elif view == "poster":
+    stop_poster_view()
 
 elif view == "filter":
     if filter_view == "Route ID":
