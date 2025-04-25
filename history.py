@@ -5,10 +5,10 @@ from googleapiclient.discovery import build
 from datetime import datetime
 import toml
 
-# Lokaalseks
+# Lokaalses serveris pean kasutama seda:
 # secrets = toml.load("secrets.toml")
 
-#Streamlit jaoks:
+#Streamlit impordi puhul:
 secrets = st.secrets
 
 def show_history_view():
@@ -50,11 +50,9 @@ def show_history_view():
 [⬇️ Laadi alla]({download_url})
 """, unsafe_allow_html=True)
 
-
 def list_gtfs_files_from_drive():
-    key_data = secrets["gcp_service_account"]
+    key_data = dict(secrets["gcp_service_account"])  # tee koopia!
     key_data["private_key"] = key_data["private_key"].replace("\\n", "\n")
-
 
     creds = service_account.Credentials.from_service_account_info(key_data)
     service = build("drive", "v3", credentials=creds)
@@ -62,6 +60,22 @@ def list_gtfs_files_from_drive():
     results = service.files().list(
         q=f"'{secrets['folder_id']}' in parents and name contains 'gtfs_' and mimeType='application/zip'",
         pageSize=100,
-        fields="files(id, name, createdTime)").execute()
+        fields="files(id, name, createdTime)"
+    ).execute()
 
     return results.get('files', [])
+
+# def list_gtfs_files_from_drive():
+#     key_data = secrets["gcp_service_account"]
+#     key_data["private_key"] = key_data["private_key"].replace("\\n", "\n")
+
+
+#     creds = service_account.Credentials.from_service_account_info(key_data)
+#     service = build("drive", "v3", credentials=creds)
+
+#     results = service.files().list(
+#         q=f"'{secrets['folder_id']}' in parents and name contains 'gtfs_' and mimeType='application/zip'",
+#         pageSize=100,
+#         fields="files(id, name, createdTime)").execute()
+
+#     return results.get('files', [])
