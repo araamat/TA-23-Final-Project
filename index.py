@@ -74,9 +74,10 @@ with st.sidebar:
     )
 
     # Kui kasutaja teeb valiku, liigume filtrivaatesse
-    if selected and st.session_state.view != "history":
+    if selected:
         st.session_state.view = "filter"
         st.session_state.filter = selected
+
 
 
 # --- Vaadete renderdamine ---
