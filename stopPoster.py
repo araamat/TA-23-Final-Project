@@ -4,6 +4,8 @@ import zipfile
 from datetime import date
 import io
 import csv
+import qrcode
+from PIL import Image
 
 GTFS_ZIP = "gtfs.zip"
 
@@ -49,6 +51,28 @@ def gtfs_view():
         st.markdown(f"#### 🔢 Stop Code: **{stop_code}**")
         st.markdown(f"#### 📅 Genereeritud: **{date.today().strftime('%d.%m.%Y')}**")
 
+        # QR-KOOD
+        stop_id = stop_info['stop_id']
+        stop_code_url = stop_info.get("stop_code", "").replace(" ", "%20")
+        link = f"https://web.peatus.ee/pysakit/estonia%3A{stop_id}#{stop_code_url}"
+
+        qr = qrcode.QRCode(
+            version=1,
+            error_correction=qrcode.constants.ERROR_CORRECT_L,
+            box_size=4,
+            border=2,
+        )
+        qr.add_data(link)
+        qr.make(fit=True)
+        img = qr.make_image(fill_color="black", back_color="white")
+        buffer = io.BytesIO()
+        img.save(buffer, format="PNG")
+        buffer.seek(0)
+
+        st.image(buffer, caption="QR-kood peatuse lingiga", width=120)
+        st.markdown(f"[Ava link eraldi ↗️]({link})")
+
+        # LAE VÄLJUMISED
         relevant_times = stop_times[stop_times['stop_id'].isin(stop_ids)]
         enriched = relevant_times.merge(trips, on="trip_id").merge(routes, on="route_id").merge(calendar, on="service_id")
 
@@ -81,7 +105,7 @@ def gtfs_view():
                     if row.get(day_key) == 1:
                         weekday_departures[abbrev].append(row['departure_time'])
 
-            # Koondame samade aegadega päevad
+            # Koondame
             seen = {}
             for weekday, times in weekday_departures.items():
                 time_strs = [t.strip() for t in times if t]
@@ -102,7 +126,7 @@ def gtfs_view():
                     "Liini info": desc
                 })
 
-        # Puhver: iga väljumisaeg eraldi reale
+        # TABELI TEKITAMINE
         flat_rows = []
         for row in output_rows:
             line = f"'{row['Liini nr']}" if "-" in str(row['Liini nr']) else row['Liini nr']
@@ -124,10 +148,10 @@ def gtfs_view():
         poster_df["Väljumine"] = poster_df["Väljumine"].dt.strftime("%H:%M")
         poster_df = poster_df[["Väljumine", "Liini nr", "Liini nimetus", "Liin on käigus", "Liini info"]]
 
-        st.subheader("📄 Väljumised rea kaupa")
+        st.subheader("📄 Väljumised")
         st.dataframe(poster_df, use_container_width=True, hide_index=True)
 
-        # CSV salvestus
+        # CSV fail salvestus
         csv_buffer = io.StringIO()
         csv_writer = csv.writer(csv_buffer, quoting=csv.QUOTE_ALL)
 
