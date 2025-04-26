@@ -75,16 +75,16 @@ with st.sidebar:
         st.session_state.filter = ""
         st.session_state["filter_select"] = ""
         
-    if st.button("📄 Peatuse postri genereerimine"):
+    if st.button("📄 Ühistranspordi peatuse info"):
         st.session_state.view = "poster"
         st.session_state.filter = ""
         st.session_state["filter_select"] = ""
 
     # Filtri valik (pealkiri + selectbox)
-    st.markdown('<div class="filter-label">🔍 Vali filtreerimise alus: </div>', unsafe_allow_html=True)
+    st.markdown('<div class="filter-label">🔍 Otsi ja analüüsi liine: </div>', unsafe_allow_html=True)
     selected = st.selectbox(
         "",
-        ["", "Liininumber", "Route ID", "Trip ID", "Peatuste kuuluvus"],
+        ["", "Liininumbri järgi", "Route ID järgi", "Trip ID järgi", "Peatuste kuuluvuse järgi"],
         key="filter_select"
     )
 
@@ -102,14 +102,14 @@ if view == "home":
     st.markdown("""
         - 📂 **Sirvi GTFS ajaloo faile**  
           Laadib automaatselt failid Google Drive'ist ja kuvab need mugavas ajateljes.
+        - 📊 **Ühistranspordi peatuse info**  
+          Peatuste kohta info koondamine, postri ja QR koodi genereerimise võimalus.
         - 🔍 **Otsi ja analüüsi liine**  
           Leia ühendused **route_id, trip_id, liininumbri** või muude parameetrite alusel.
         - 🔗 **Uuri failide vahelisi seoseid**  
           Analüüsi, kuidas erinevad GTFS **.txt** failid omavahel seotud on (nt trips.txt, routes.txt, stop_times.txt).
         - 🗺️ **Grupeeri peatuseid**  
           Filtreeri ja koonda andmeid vastavalt haldurile või kohaliku omavalitsuse kuuluvusele.
-        - 📊 **Peatuste postrite genereerimine**  
-          Peatuste kohta info kogumine .CSV faili.
 
         See tööriist on mõeldud ühistranspordiosakonna töötajatele, kuid sobib ka nii transpordiplaneerijale, kes soovib kiiresti näha seoseid avaandmetes, ilma käsitsi **.zip** faile avamata.
     """)
@@ -121,11 +121,11 @@ elif view == "poster":
     stop_poster_view()
 
 elif view == "filter":
-    if filter_view == "Route ID":
+    if filter_view == "Route ID järgi":
         route_view()
-    elif filter_view == "Trip ID":
+    elif filter_view == "Trip ID järgi":
         trip_view()
-    elif filter_view == "Liininumber":
+    elif filter_view == "Liininumbri järgi":
         line_view()
-    elif filter_view == "Peatuste kuuluvus":
+    elif filter_view == "Peatuste kuuluvuse järgi":
         authority_view()

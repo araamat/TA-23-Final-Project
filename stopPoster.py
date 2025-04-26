@@ -1,12 +1,20 @@
 import streamlit as st
 import pandas as pd
 import zipfile
-from datetime import date
 import io
 import csv
 import qrcode
-from PIL import Image
 import base64
+from PIL import Image
+from datetime import date
+from reportlab.lib.pagesizes import A4
+from reportlab.platypus import (
+    SimpleDocTemplate, Table, TableStyle, Paragraph, Spacer, Image as RLImage,
+    Frame, PageTemplate
+)
+from reportlab.lib import colors
+from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
+from reportlab.lib.units import mm
 
 GTFS_ZIP = "gtfs.zip"
 
@@ -23,18 +31,137 @@ def load_gtfs_data():
         st.error(f"Viga GTFS andmete laadimisel: {e}")
         return None, None, None, None, None
 
+def smart_wrap_text(text, max_length=30):
+    lines = []
+    current_line = ""
+
+    for char in text:
+        current_line += char
+        if len(current_line) >= max_length:
+            last_space = current_line.rfind(" ")
+            last_dash = current_line.rfind("-")
+            split_pos = max(last_space, last_dash)
+
+            if split_pos != -1:
+                lines.append(current_line[:split_pos+1].strip())
+                current_line = current_line[split_pos+1:].strip()
+            else:
+                lines.append(current_line.strip())
+                current_line = ""
+
+    if current_line:
+        lines.append(current_line.strip())
+
+    return "<br/>".join(lines)
+
+def first_page_header(canvas, doc, stop_info, stop_code, qr_img, kuupaev):
+    canvas.saveState()
+    canvas.setFont('Helvetica-Bold', 16)
+    canvas.drawString(20 * mm, A4[1] - 30 * mm, f"Peatus: {stop_info['stop_name']}")
+    canvas.setFont('Helvetica', 10)
+    canvas.drawString(20 * mm, A4[1] - 40 * mm, f"Stop Code: {stop_code}")
+    canvas.drawString(20 * mm, A4[1] - 48 * mm, f"Kehtiv alates: {kuupaev.strftime('%d.%m.%Y')}")
+    if qr_img:
+        qr_rl = RLImage(qr_img, width=40*mm, height=40*mm)
+        qr_rl.drawOn(canvas, A4[0] - 60 * mm, A4[1] - 60 * mm)
+    canvas.restoreState()
+
+def later_pages_header(canvas, doc, stop_info, kuupaev):
+    canvas.saveState()
+    canvas.setFont('Helvetica', 10)
+    canvas.drawString(20 * mm, A4[1] - 20 * mm, f"Peatus: {stop_info['stop_name']} — {kuupaev.strftime('%d.%m.%Y')}")
+    canvas.restoreState()
+
+def generate_pdf(stop_info, stop_code, qr_img, poster_df, kuupaev):
+    buffer = io.BytesIO()
+    styles = getSampleStyleSheet()
+
+    qr_buffer = io.BytesIO()
+    qr_img.resize((100, 100)).save(qr_buffer, format="PNG")
+    qr_buffer.seek(0)
+
+    elements = []
+
+    first_frame = Frame(20*mm, 20*mm, A4[0]-40*mm, A4[1]-80*mm, id='first_frame')
+    later_frame = Frame(20*mm, 20*mm, A4[0]-40*mm, A4[1]-40*mm, id='later_frame')
+
+    doc = SimpleDocTemplate(buffer, pagesize=A4,
+                             rightMargin=20*mm, leftMargin=20*mm,
+                             topMargin=20*mm, bottomMargin=20*mm)
+
+    doc.addPageTemplates([
+        PageTemplate(id='First', frames=[first_frame],
+                     onPage=lambda canvas, doc: first_page_header(canvas, doc, stop_info, stop_code, qr_buffer, kuupaev)),
+        PageTemplate(id='Later', frames=[later_frame],
+                     onPage=lambda canvas, doc: later_pages_header(canvas, doc, stop_info, kuupaev))
+    ])
+
+    table_data = [["Väljumine", "Liini nr", "Liini nimetus", "Liini informatsioon"]]
+
+    para_style = ParagraphStyle(
+        name='Normal_wrap',
+        parent=styles['Normal'],
+        fontName='Helvetica',
+        fontSize=9,
+        wordWrap='CJK',
+        splitLongWords=True,
+        allowWidows=1,
+        allowOrphans=1
+    )
+
+    center_style = ParagraphStyle(
+        name='Center',
+        parent=para_style,
+        alignment=1
+    )
+
+    for idx, row in poster_df.iterrows():
+        liini_info_text = str(row['Liini info']) if pd.notna(row['Liini info']) else ""
+        liini_info = f"<b>{row['Liin on käigus']}</b><br/>{liini_info_text.replace('<br>', '<br />')}"
+        table_data.append([
+            Paragraph(str(row["Väljumine"]), center_style),
+            Paragraph(str(row["Liini nr"]), center_style),
+            Paragraph(smart_wrap_text(str(row["Liini nimetus"]), max_length=35), para_style),
+            Paragraph(liini_info, para_style)
+        ])
+
+    table = Table(table_data, repeatRows=1, colWidths=[20*mm, 20*mm, 65*mm, 65*mm])
+    table.setStyle(TableStyle([
+        ('GRID', (0,0), (-1,-1), 0.5, colors.grey),
+        ('BACKGROUND', (0,0), (-1,0), colors.lightgrey),
+        ('FONTNAME', (0,0), (-1,-1), 'Helvetica'),
+        ('FONTSIZE', (0,0), (-1,-1), 9),
+        ('ALIGN', (0,0), (1,-1), 'CENTER'),
+        ('VALIGN', (0,0), (-1,-1), 'TOP')
+    ]))
+
+    elements.append(table)
+    doc.build(elements)
+    buffer.seek(0)
+    return buffer
+
+
 def gtfs_view():
-    st.title("🖨️ Peatuse ajaplaani postri genereerimine")
+    st.title("📍 Ühistranspordi peatuse info")
 
     stops, stop_times, trips, routes, calendar = load_gtfs_data()
 
     if stops is not None:
         peatused = sorted(stops['stop_name'].unique())
-        peatus = st.selectbox("Vali peatus:", ["— Vali peatus —"] + peatused)
+        peatus = st.selectbox("**Vali peatus**:", ["— Vali peatus —"] + peatused)
 
         if peatus == "— Vali peatus —":
             st.info("Palun vali peatus.")
             return
+
+        # Valik ja vormindus
+        kuupaev = st.date_input("**Vali kuupäev, mis seisuga peatuse infot kuvatakse:**", value=date.today())
+        kuupaev = pd.to_datetime(kuupaev)
+        kuupaev_kuvana = kuupaev.strftime("%d.%m.%Y")
+
+        # Arvutame nädala alguse ja lõpu
+        nadal_algus = kuupaev - pd.to_timedelta(kuupaev.weekday(), unit='D')  # Esmaspäev
+        nadal_lopp = nadal_algus + pd.Timedelta(days=6)  # Pühapäev
 
         filtered_stops = stops[stops['stop_name'] == peatus]
         if filtered_stops.empty:
@@ -51,12 +178,12 @@ def gtfs_view():
 
         cols = st.columns([3, 1])
 
-        with cols[0]:  # Vasakul tekstid
+        with cols[0]:
             st.markdown(f"### 📍 Peatus: **{stop_info['stop_name']}**")
             st.markdown(f"### 🔢 Stop Code: **{stop_code}**")
-            st.markdown(f"### 📅 Genereeritud: **{date.today().strftime('%d.%m.%Y')}**")
+            st.markdown(f"### 📅 Kehtiv alates: **{kuupaev_kuvana}**")
 
-        with cols[1]:  # Paremal QR, link ja download link keskel
+        with cols[1]:
             qr = qrcode.QRCode(
                 version=1,
                 error_correction=qrcode.constants.ERROR_CORRECT_L,
@@ -72,24 +199,48 @@ def gtfs_view():
 
             st.markdown("<div style='text-align: center;'>", unsafe_allow_html=True)
             st.image(buffer.getvalue(), width=120)
-            st.markdown(f"<div style='margin-top: 8px;'><a href='{qr_link}' target='_blank' style='text-decoration: none;'>↗️ Ava link </a></div>", unsafe_allow_html=True)
-
-            # QR-pildi baasil allalaaditav link
+            st.markdown(f"<a href='{qr_link}' target='_blank'>↗️ Ava link</a>", unsafe_allow_html=True)
             b64 = base64.b64encode(buffer.getvalue()).decode()
             href = f'<a href="data:image/png;base64,{b64}" download="qr_{stop_info["stop_name"]}.png">⬇️ Lae alla QR</a>'
-            st.markdown(f"<div style='margin-top: 8px;'>{href}</div>", unsafe_allow_html=True)
+            st.markdown(f"<div>{href}</div>", unsafe_allow_html=True)
             st.markdown("</div>", unsafe_allow_html=True)
 
-        # --- Väljumised ---
+        # Kalendri andmed
+        calendar['start_date'] = pd.to_datetime(calendar['start_date'], format='%Y%m%d')
+        calendar['end_date'] = pd.to_datetime(calendar['end_date'], format='%Y%m%d')
+
+        sobivad_teenused = calendar[
+            (calendar['start_date'] <= nadal_lopp) &
+            (calendar['end_date'] >= nadal_algus)
+        ]
+
+        sobivad_teenused = sobivad_teenused[
+            (sobivad_teenused['monday'] == 1) |
+            (sobivad_teenused['tuesday'] == 1) |
+            (sobivad_teenused['wednesday'] == 1) |
+            (sobivad_teenused['thursday'] == 1) |
+            (sobivad_teenused['friday'] == 1) |
+            (sobivad_teenused['saturday'] == 1) |
+            (sobivad_teenused['sunday'] == 1)
+        ]
+
+        if sobivad_teenused.empty:
+            st.warning("Sellel nädalal ei ole valitud peatuses väljumisi.")
+            return
+
+        sobivad_service_id = sobivad_teenused['service_id'].unique()
+
         relevant_times = stop_times[stop_times['stop_id'].isin(stop_ids)]
-        enriched = relevant_times.merge(trips, on="trip_id").merge(routes, on="route_id").merge(calendar, on="service_id")
+        enriched = relevant_times.merge(trips, on="trip_id")
+        enriched = enriched[enriched['service_id'].isin(sobivad_service_id)]
+        enriched = enriched.merge(routes, on="route_id").merge(calendar, on="service_id")
 
         enriched['departure_time'] = pd.to_datetime(enriched['departure_time'], format='%H:%M:%S', errors='coerce')
-        enriched = enriched.sort_values(["route_short_name", "trip_headsign", "departure_time"])
+        enriched = enriched.sort_values(["departure_time", "route_short_name", "trip_long_name"])
         enriched['departure_time'] = enriched['departure_time'].dt.strftime('%H:%M')
 
         if enriched.empty:
-            st.warning("Selle peatuse jaoks ei leitud väljumisi.")
+            st.warning("Selle peatuse jaoks ei leitud väljumisi valitud nädala jooksul.")
             return
 
         weekday_columns = {
@@ -103,66 +254,41 @@ def gtfs_view():
         }
 
         output_rows = []
-        grouped = enriched.groupby(["route_short_name", "trip_long_name", "route_desc"])
 
-        for (route, trip_name, desc), group in grouped:
-            weekday_departures = {v: [] for v in weekday_columns.values()}
+        for _, row in enriched.iterrows():
+            weekdays = []
+            for day, abbrev in weekday_columns.items():
+                if row.get(day) == 1:
+                    weekdays.append(abbrev)
 
-            for _, row in group.iterrows():
-                for day_key, abbrev in weekday_columns.items():
-                    if row.get(day_key) == 1:
-                        weekday_departures[abbrev].append(row['departure_time'])
+            output_rows.append({
+                "Väljumine": row['departure_time'],
+                "Liini nr": f"'{row['route_short_name']}" if "-" in str(row['route_short_name']) else row['route_short_name'],
+                "Liini nimetus": row['trip_long_name'],
+                "Liin on käigus": ", ".join(weekdays),
+                "Liini info": row['route_desc']
+            })
 
-            seen = {}
-            for weekday, times in weekday_departures.items():
-                time_strs = [t.strip() for t in times if t]
-                if not time_strs:
-                    continue
-                time_str = ", ".join(time_strs)
-                if time_str in seen:
-                    seen[time_str].append(weekday)
-                else:
-                    seen[time_str] = [weekday]
-
-            for time_str, weekdays in seen.items():
-                output_rows.append({
-                    "Liini nr": route,
-                    "Liini nimetus": trip_name,
-                    "Liin on käigus": ", ".join(weekdays),
-                    "Väljumised": time_str,
-                    "Liini info": desc
-                })
-
-        flat_rows = []
-        for row in output_rows:
-            line = f"'{row['Liini nr']}" if "-" in str(row['Liini nr']) else row['Liini nr']
-            weekdays = row["Liin on käigus"].split(", ")
-            times = row["Väljumised"].split(", ")
-
-            for time in times:
-                flat_rows.append({
-                    "Väljumine": time.strip(),
-                    "Liini nr": line,
-                    "Liini nimetus": row["Liini nimetus"],
-                    "Liin on käigus": ", ".join(weekdays),
-                    "Liini info": row["Liini info"]
-                })
-
-        poster_df = pd.DataFrame(flat_rows)
-        poster_df["Väljumine"] = pd.to_datetime(poster_df["Väljumine"], format="%H:%M", errors='coerce')
-        poster_df = poster_df.sort_values("Väljumine")
-        poster_df["Väljumine"] = poster_df["Väljumine"].dt.strftime("%H:%M")
+        poster_df = pd.DataFrame(output_rows)
         poster_df = poster_df[["Väljumine", "Liini nr", "Liini nimetus", "Liin on käigus", "Liini info"]]
 
         st.subheader("📄 Väljumised")
         st.dataframe(poster_df, use_container_width=True, hide_index=True)
+
+        pdf_buffer = generate_pdf(stop_info, stop_code, img, poster_df, kuupaev)
+        st.download_button(
+            "⬇️ Laadi poster PDF-na alla",
+            data=pdf_buffer,
+            file_name=f"poster_{stop_info['stop_name']}.pdf",
+            mime="application/pdf"
+        )
 
         csv_buffer = io.StringIO()
         csv_writer = csv.writer(csv_buffer, quoting=csv.QUOTE_ALL)
 
         csv_writer.writerow([f"Peatus: {stop_info['stop_name']}"])
         csv_writer.writerow([f"Stop Code: {stop_code}"])
-        csv_writer.writerow([f"Genereeritud: {date.today().strftime('%d.%m.%Y')}"])
+        csv_writer.writerow([f"Kehtiv alates: {kuupaev_kuvana}"])
         csv_writer.writerow([])
 
         csv_writer.writerow(poster_df.columns.tolist())
