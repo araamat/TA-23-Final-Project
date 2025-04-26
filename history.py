@@ -1,20 +1,20 @@
-
 import streamlit as st
 from google.oauth2 import service_account
 from googleapiclient.discovery import build
 from datetime import datetime
 import toml
+from pytz import timezone  # <-- Lisatud Eesti aja jaoks
 
 # Lokaalses serveris pean kasutama seda:
 # secrets = toml.load("secrets.toml")
 
-#Streamlit impordi puhul:
+# Streamlit impordi puhul:
 secrets = st.secrets
 
 def show_history_view():
     st.title("📂 Avaandmete (GTFS) ajalugu")
 
-    filter_text = st.text_input("🔍**Filtreeri failinime järgi** (gtfs_DDMMYYYY, kus  DD on päev, MM kuu ja YYYY aasta.)")
+    filter_text = st.text_input("🔍**Filtreeri failinime järgi** (gtfs_DDMMYYYY, kus DD on päev, MM kuu ja YYYY aasta.)")
 
     with st.spinner("Laen GTFS-faile Google Drive'ist..."):
         files = list_gtfs_files_from_drive()
@@ -41,14 +41,18 @@ def show_history_view():
 
         for f in filtered_files[start:end]:
             created = datetime.strptime(f['createdTime'], "%Y-%m-%dT%H:%M:%S.%fZ")
-            formatted_date = created.strftime("%d.%m.%y")
+            # Eesti ajavöönd
+            est = timezone('Europe/Tallinn')
+            created = created.replace(tzinfo=timezone('UTC')).astimezone(est)
+            formatted_date = created.strftime("%d.%m.%Y %H:%M")  # Täielik aasta ja kellaaeg
+
             download_url = f"https://drive.google.com/uc?id={f['id']}&export=download"
 
             with st.expander(f"📁 {f['name']}"):
                 st.markdown(f"""
-**Loodud:** {formatted_date}  
-[⬇️ Laadi alla]({download_url})
-""", unsafe_allow_html=True)
+                    **Loodud:** {formatted_date}  
+                    [⬇️ Laadi alla]({download_url})
+                    """, unsafe_allow_html=True)
 
 def list_gtfs_files_from_drive():
     key_data = dict(secrets["gcp_service_account"])  # tee koopia!
@@ -64,4 +68,5 @@ def list_gtfs_files_from_drive():
     ).execute()
 
     return results.get('files', [])
+
 
