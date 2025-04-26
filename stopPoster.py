@@ -6,19 +6,18 @@ import io
 import csv
 import qrcode
 from PIL import Image
+import base64
 
 GTFS_ZIP = "gtfs.zip"
 
 def load_gtfs_data():
     try:
-        st.info("Laen GTFS andmeid...")
         with zipfile.ZipFile(GTFS_ZIP, 'r') as z:
             stops = pd.read_csv(z.open("stops.txt"))
             stop_times = pd.read_csv(z.open("stop_times.txt"))
             trips = pd.read_csv(z.open("trips.txt"))
             routes = pd.read_csv(z.open("routes.txt"))
             calendar = pd.read_csv(z.open("calendar.txt"))
-        st.info("Andmed laetud edukalt!")
         return stops, stop_times, trips, routes, calendar
     except Exception as e:
         st.error(f"Viga GTFS andmete laadimisel: {e}")
@@ -46,33 +45,42 @@ def gtfs_view():
         stop_ids = filtered_stops['stop_id'].tolist()
         stop_code = stop_info.get("stop_code", "—")
 
-        st.markdown(f"### 🚌 Eesti Ühistransport")
-        st.markdown(f"#### 📍 Peatus: **{stop_info['stop_name']}**")
-        st.markdown(f"#### 🔢 Stop Code: **{stop_code}**")
-        st.markdown(f"#### 📅 Genereeritud: **{date.today().strftime('%d.%m.%Y')}**")
-
-        # QR-KOOD
         stop_id = stop_info['stop_id']
         stop_code_url = stop_info.get("stop_code", "").replace(" ", "%20")
-        link = f"https://web.peatus.ee/pysakit/estonia%3A{stop_id}#{stop_code_url}"
+        qr_link = f"https://web.peatus.ee/pysakit/estonia%3A{stop_id}#{stop_code_url}"
 
-        qr = qrcode.QRCode(
-            version=1,
-            error_correction=qrcode.constants.ERROR_CORRECT_L,
-            box_size=4,
-            border=2,
-        )
-        qr.add_data(link)
-        qr.make(fit=True)
-        img = qr.make_image(fill_color="black", back_color="white")
-        buffer = io.BytesIO()
-        img.save(buffer, format="PNG")
-        buffer.seek(0)
+        cols = st.columns([3, 1])
 
-        st.image(buffer, caption="QR-kood peatuse lingiga", width=120)
-        st.markdown(f"[Ava link eraldi ↗️]({link})")
+        with cols[0]:  # Vasakul tekstid
+            st.markdown(f"### 📍 Peatus: **{stop_info['stop_name']}**")
+            st.markdown(f"### 🔢 Stop Code: **{stop_code}**")
+            st.markdown(f"### 📅 Genereeritud: **{date.today().strftime('%d.%m.%Y')}**")
 
-        # LAE VÄLJUMISED
+        with cols[1]:  # Paremal QR, link ja download link keskel
+            qr = qrcode.QRCode(
+                version=1,
+                error_correction=qrcode.constants.ERROR_CORRECT_L,
+                box_size=4,
+                border=2,
+            )
+            qr.add_data(qr_link)
+            qr.make(fit=True)
+            img = qr.make_image(fill_color="black", back_color="white")
+            buffer = io.BytesIO()
+            img.save(buffer, format="PNG")
+            buffer.seek(0)
+
+            st.markdown("<div style='text-align: center;'>", unsafe_allow_html=True)
+            st.image(buffer.getvalue(), width=120)
+            st.markdown(f"<div style='margin-top: 8px;'><a href='{qr_link}' target='_blank' style='text-decoration: none;'>↗️ Ava link </a></div>", unsafe_allow_html=True)
+
+            # QR-pildi baasil allalaaditav link
+            b64 = base64.b64encode(buffer.getvalue()).decode()
+            href = f'<a href="data:image/png;base64,{b64}" download="qr_{stop_info["stop_name"]}.png">⬇️ Lae alla QR</a>'
+            st.markdown(f"<div style='margin-top: 8px;'>{href}</div>", unsafe_allow_html=True)
+            st.markdown("</div>", unsafe_allow_html=True)
+
+        # --- Väljumised ---
         relevant_times = stop_times[stop_times['stop_id'].isin(stop_ids)]
         enriched = relevant_times.merge(trips, on="trip_id").merge(routes, on="route_id").merge(calendar, on="service_id")
 
@@ -105,7 +113,6 @@ def gtfs_view():
                     if row.get(day_key) == 1:
                         weekday_departures[abbrev].append(row['departure_time'])
 
-            # Koondame
             seen = {}
             for weekday, times in weekday_departures.items():
                 time_strs = [t.strip() for t in times if t]
@@ -126,7 +133,6 @@ def gtfs_view():
                     "Liini info": desc
                 })
 
-        # TABELI TEKITAMINE
         flat_rows = []
         for row in output_rows:
             line = f"'{row['Liini nr']}" if "-" in str(row['Liini nr']) else row['Liini nr']
@@ -143,7 +149,7 @@ def gtfs_view():
                 })
 
         poster_df = pd.DataFrame(flat_rows)
-        poster_df["Väljumine"] = pd.to_datetime(poster_df["Väljumine"], format="%H:%M", errors="coerce")
+        poster_df["Väljumine"] = pd.to_datetime(poster_df["Väljumine"], format="%H:%M", errors='coerce')
         poster_df = poster_df.sort_values("Väljumine")
         poster_df["Väljumine"] = poster_df["Väljumine"].dt.strftime("%H:%M")
         poster_df = poster_df[["Väljumine", "Liini nr", "Liini nimetus", "Liin on käigus", "Liini info"]]
@@ -151,7 +157,6 @@ def gtfs_view():
         st.subheader("📄 Väljumised")
         st.dataframe(poster_df, use_container_width=True, hide_index=True)
 
-        # CSV fail salvestus
         csv_buffer = io.StringIO()
         csv_writer = csv.writer(csv_buffer, quoting=csv.QUOTE_ALL)
 
