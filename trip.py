@@ -94,7 +94,7 @@ def gtfs_view():
             st.info("Erandid puuduvad.")
         else:
             for _, row in exceptions.iterrows():
-                muutus = "Muudetud" if row['exception_type'] == 1 else "Tühistatud"
+                muutus = "Reis erandkorras käigus" if row['exception_type'] == 1 else "Tühistatud"
                 st.markdown(f"- {row['date'].strftime('%d.%m.%Y')} — **{muutus}**")
 
         # 4. Kaart viimasena
