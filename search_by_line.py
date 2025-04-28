@@ -60,96 +60,149 @@ def gtfs_view():
 
     st.title("🚍 Liininumbri järgi seoste filtreerimine")
 
-    otsi = st.text_input("Sisesta konkreetne liininumber, kui soovid sorteeritud tulemusi")
+    # Session state algseadistus
+    if "otsi_input" not in st.session_state:
+        st.session_state.otsi_input = ""
+    if "otsi_tehtud" not in st.session_state:
+        st.session_state.otsi_tehtud = False
+    if "sorted_routes" not in st.session_state:
+        st.session_state.sorted_routes = []
+    if "valik" not in st.session_state:
+        st.session_state.valik = None
+    if "automaatne_valik" not in st.session_state:
+        st.session_state.automaatne_valik = False
 
-    # Sorteerimine vastavalt sisestatud liinile
-    sorted_routes = custom_sort(routes_df['valik'], otsi)
-    valik = st.selectbox(
-        "**Vali liin**",
-        ["— Vali liin —"] + list(sorted_routes if otsi else routes_df['valik'])
-    )
+    with st.form("line_search_form"):
+        otsi = st.text_input("🔍 Sisesta liininumber:", placeholder="Nt 5 või 198B", key="otsi_input")
+        search_clicked = st.form_submit_button("🔍 Otsi")
 
-    if valik and valik != "— Vali liin —":
-        valik_df = routes_df[routes_df['valik'] == valik]
-        if valik_df.empty:
-            st.warning("Valitud liini ei leitud.")
-            return
+    if search_clicked and otsi:
+        otsi_lower = otsi.lower().strip()
 
-        route_id = valik_df['route_id'].iloc[0]
-        st.markdown(f"**Valitud liin {valik}**\n**Route ID-ga:** {route_id}")
+        # VÕTAME ainult need, mille route_short_name algab õigesti
+        filtered_routes = routes_df[routes_df['route_short_name'].str.lower().str.startswith(otsi_lower)]
 
-        relevant_trips = trips_df[trips_df['route_id'] == route_id]
-        if relevant_trips.empty:
-            st.warning("Selle liiniga ei leitud sõite.")
-            return
+        if filtered_routes.empty:
+            # Kui mitte midagi ei leitud
+            st.session_state.sorted_routes = []
+            st.session_state.valik = None
+            st.session_state.otsi_tehtud = False
+            st.session_state.automaatne_valik = False
+            st.warning("❌ Sellist liini ei leitud. Palun proovi uuesti.")
+        else:
+            sorted_routes = custom_sort(filtered_routes['valik'], otsi_lower)
 
-        relevant_trips['trip_label'] = relevant_trips['trip_id'].astype(str) + " (" + relevant_trips['trip_long_name'] + ")"
-        trip_valik = st.selectbox(
-            "**Liini Trip ID valik:**",
-            relevant_trips['trip_label'],
-            key="trip_select",
-            placeholder="Vali Trip ID",
-            label_visibility="visible"
+            täpsed_vasted = [v for v in sorted_routes if v.split(" ")[0].lower() == otsi_lower]
+
+            if len(täpsed_vasted) == 1:
+                st.session_state.valik = täpsed_vasted[0]
+                st.session_state.otsi_tehtud = True
+                st.session_state.automaatne_valik = True
+            else:
+                st.session_state.sorted_routes = sorted_routes
+                st.session_state.valik = None
+                st.session_state.otsi_tehtud = True
+                st.session_state.automaatne_valik = False
+
+
+    # Kuvame õiged teated vastavalt olukorrale
+    if not st.session_state.otsi_tehtud and not st.session_state.valik:
+        st.info("Sisesta liininumber")
+    elif st.session_state.sorted_routes and not st.session_state.valik:
+        st.success("✅ Nüüd vali sobiv liin allolevast nimekirjast!")
+    elif st.session_state.otsi_tehtud and st.session_state.valik and st.session_state.automaatne_valik:
+        st.info(f"Leiti ainult üks vaste: **{st.session_state.valik}**")
+
+    # Kui mitu vastet ja valikut pole veel tehtud
+    if st.session_state.sorted_routes and len(st.session_state.sorted_routes) > 0 and not st.session_state.valik:
+        valikud = ["— Vali liin —"] + list(st.session_state.sorted_routes)
+        selected = st.selectbox(
+            "**Vali liin:**",
+            valikud,
+            index=0,
+            key="vali_liin"
         )
 
-        selected_trip = relevant_trips[relevant_trips['trip_label'] == trip_valik].iloc[0]
-        trip_id = selected_trip['trip_id']
-        service_id = selected_trip['service_id']
+        if selected != "— Vali liin —":
+            st.session_state.valik = selected
+            st.session_state.automaatne_valik = False
+            st.rerun()
 
-        st.markdown(f"**Valitud Trip ID:** {trip_id} — **{selected_trip['trip_long_name']}**")
+    # Kui valik on tehtud
+    if st.session_state.valik and st.session_state.valik != "— Vali liin —":
+        valik_df = routes_df[routes_df['valik'] == st.session_state.valik]
+        if not valik_df.empty:
+            route_id = valik_df['route_id'].iloc[0]
+            st.success(f"Valitud liin: {st.session_state.valik} (Route ID: {route_id})")
 
-        stop_seq = stop_times_df[stop_times_df['trip_id'] == trip_id].merge(stops_df, on="stop_id").sort_values("stop_sequence")
+            relevant_trips = trips_df[trips_df['route_id'] == route_id]
+            if relevant_trips.empty:
+                st.warning("Selle liiniga ei leitud sõite.")
+                return
 
-        if not stop_seq.empty:
-            # 1. Peatuste andmed tabelina
-            st.write("### Valitud reisiga seotud peatused ja nende andmestik")
-            cols = ['stop_sequence', 'stop_id', 'stop_name', 'stop_code', 'arrival_time', 'departure_time']
-            cols = [col for col in cols if col in stop_seq.columns]
-            stop_seq[cols] = stop_seq[cols].astype(str)
-            st.dataframe(stop_seq[cols], use_container_width=True, hide_index=True)
-
-        # 2. Teenindusperiood
-        st.write("**Teenindusperiood**")
-        cal = calendar_df[calendar_df['service_id'] == service_id]
-        if not cal.empty:
-            cal_row = cal.iloc[0]
-            day_map = {
-                'monday': 'E',
-                'tuesday': 'T',
-                'wednesday': 'K',
-                'thursday': 'N',
-                'friday': 'R',
-                'saturday': 'L',
-                'sunday': 'P'
-            }
-            days = ", ".join([day_map[day] for day in day_map if day in cal_row and cal_row[day] == 1])
-
-            st.markdown(
-                f"- **Algus**: {cal_row['start_date'].strftime('%d.%m.%Y')}  \n"
-                f"- **Lõpp**: {cal_row['end_date'].strftime('%d.%m.%Y')}  \n"
-                f"- **Liin käigus päevadel**: {days}"
+            relevant_trips['trip_label'] = relevant_trips['trip_id'].astype(str) + " (" + relevant_trips['trip_long_name'] + ")"
+            trip_valik = st.selectbox(
+                "**Liini Trip ID valik:**",
+                relevant_trips['trip_label'],
+                key="trip_select",
+                placeholder="Vali Trip ID",
+                label_visibility="visible"
             )
-        else:
-            st.info("Teeninduspäevad puuduvad.")
 
-        # 3. Erandid
-        st.write("**Teenindusperioodi erandid**")
-        exceptions = calendar_dates_df[calendar_dates_df['service_id'] == service_id]
-        if exceptions.empty:
-            st.info("Erandid puuduvad.")
-        else:
-            for _, row in exceptions.iterrows():
-                muutus = "Reis erandkorras käigus" if row['exception_type'] == 1 else "Tühistatud"
-                st.markdown(f"- {row['date'].strftime('%d.%m.%Y')} — **{muutus}**")
+            selected_trip = relevant_trips[relevant_trips['trip_label'] == trip_valik].iloc[0]
+            trip_id = selected_trip['trip_id']
+            service_id = selected_trip['service_id']
 
-        # 4. KAART kõige viimasena
-        if not stop_seq.empty:
-            st.write("### Peatused kaardil")
-            m = folium.Map(location=[stop_seq.iloc[0]['stop_lat'], stop_seq.iloc[0]['stop_lon']], zoom_start=13)
-            for _, row in stop_seq.iterrows():
-                folium.Marker(
-                    location=[row['stop_lat'], row['stop_lon']],
-                    popup=row['stop_name'],
-                    icon=folium.Icon(color='blue', icon='info-sign')
-                ).add_to(m)
-            st_folium(m, height=400, width="100%")
+            st.markdown(f"**Valitud Trip ID:** {trip_id} — **{selected_trip['trip_long_name']}**")
+
+            stop_seq = stop_times_df[stop_times_df['trip_id'] == trip_id].merge(stops_df, on="stop_id").sort_values("stop_sequence")
+
+            if not stop_seq.empty:
+                st.write("### Valitud reisiga seotud peatused ja nende andmestik")
+                cols = ['stop_sequence', 'stop_id', 'stop_name', 'stop_code', 'arrival_time', 'departure_time']
+                cols = [col for col in cols if col in stop_seq.columns]
+                stop_seq[cols] = stop_seq[cols].astype(str)
+                st.dataframe(stop_seq[cols], use_container_width=True, hide_index=True)
+
+            st.write("**Teenindusperiood**")
+            cal = calendar_df[calendar_df['service_id'] == service_id]
+            if not cal.empty:
+                cal_row = cal.iloc[0]
+                day_map = {
+                    'monday': 'E',
+                    'tuesday': 'T',
+                    'wednesday': 'K',
+                    'thursday': 'N',
+                    'friday': 'R',
+                    'saturday': 'L',
+                    'sunday': 'P'
+                }
+                days = ", ".join([day_map[day] for day in day_map if day in cal_row and cal_row[day] == 1])
+
+                st.markdown(
+                    f"- **Algus**: {cal_row['start_date'].strftime('%d.%m.%Y')}  \n"
+                    f"- **Lõpp**: {cal_row['end_date'].strftime('%d.%m.%Y')}  \n"
+                    f"- **Liin käigus päevadel**: {days}"
+                )
+            else:
+                st.info("Teeninduspäevad puuduvad.")
+
+            st.write("**Teenindusperioodi erandid**")
+            exceptions = calendar_dates_df[calendar_dates_df['service_id'] == service_id]
+            if exceptions.empty:
+                st.info("Erandid puuduvad.")
+            else:
+                for _, row in exceptions.iterrows():
+                    muutus = "Reis erandkorras käigus" if row['exception_type'] == 1 else "Tühistatud"
+                    st.markdown(f"- {row['date'].strftime('%d.%m.%Y')} — **{muutus}**")
+
+            if not stop_seq.empty:
+                st.write("### Peatused kaardil")
+                m = folium.Map(location=[stop_seq.iloc[0]['stop_lat'], stop_seq.iloc[0]['stop_lon']], zoom_start=13)
+                for _, row in stop_seq.iterrows():
+                    folium.Marker(
+                        location=[row['stop_lat'], row['stop_lon']],
+                        popup=row['stop_name'],
+                        icon=folium.Icon(color='blue', icon='info-sign')
+                    ).add_to(m)
+                st_folium(m, height=400, width="100%")

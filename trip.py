@@ -28,13 +28,13 @@ def gtfs_view():
 
     st.title("🚍 Trip ID järgi seoste filtreerimine")
 
-    # Tekstiväli ja nupp
-    st.text_input("**Sisesta Trip ID:**", key="trip_input", placeholder="nt 1220349 või midagi sarnast")
+    with st.form("trip_search_form"):
+        trip_input = st.text_input("**Sisesta Trip ID:**", placeholder="nt 1220349 või midagi sarnast")
+        otsi_klikitud = st.form_submit_button("🔍 Otsi")
 
-    # Otsi-nupp — ainult selle wrapperile antakse klass
-    st.markdown('<div class="otsi-wrapper">', unsafe_allow_html=True)
-    otsi_klikitud = st.button("🔍 Otsi", key="trip_otsi_button")
-    st.markdown('</div>', unsafe_allow_html=True)
+    if otsi_klikitud and trip_input:
+     st.session_state["submitted_trip"] = trip_input
+
 
     # Kui otsitud
     if otsi_klikitud and st.session_state.get("trip_input"):

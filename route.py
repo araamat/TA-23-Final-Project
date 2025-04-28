@@ -28,12 +28,13 @@ def gtfs_view():
 
     st.title("🚏 Route ID järgi seoste filtreerimine")
 
-    # Tekstiväli ja Otsi-nupp eraldatud CSS-wrapperiga
-    st.text_input("**Sisesta route_id:**", key="route_input", placeholder="nt dc6d5ccae7f41a36dd71c4b569278734 või midagi sarnast")
+    with st.form("route_search_form"):
+        route_input = st.text_input("**Sisesta route_id:**", placeholder="nt dc6d5ccae7f41a36dd71c4b569278734 või midagi sarnast")
+        search_clicked = st.form_submit_button("🔍 Otsi")
+        
+    if search_clicked and route_input:
+        st.session_state["submitted_route"] = route_input
 
-    st.markdown('<div class="otsi-wrapper">', unsafe_allow_html=True)
-    search_clicked = st.button("🔍 Otsi", key="otsi_button")
-    st.markdown('</div>', unsafe_allow_html=True)
 
 
     if search_clicked and st.session_state.get("route_input"):

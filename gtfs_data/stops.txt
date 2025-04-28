@@ -1368,7 +1368,6 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 5338,24802-1,Maardu mõis,59.42549228,25.01737774,5338,,Jõelähtme vald,,6587952.00,557750.00,Harju2,Harjumaa ÜTK
 5340,24902-1,Saha,59.42528683,24.99433371,5340,,Jõelähtme vald,,6587909.50,556442.37,Harju2,Harjumaa ÜTK
 5342,25102-1,Lagedi mõis,59.41622103,24.94481658,5342,,Jõelähtme vald,,6586859.00,553646.00,Harju2,Harjumaa ÜTK
-161549,4401172-1,Sputnik (perspektiivne),59.38736612,27.74745265,161549,,Sillamäe linn,,6589214.00,712853.50,,Ida-Viru MV
 5362,24401-1,Kostivere tee,59.45079033,25.06395546,5362,,Jõelähtme vald,,6590811.00,560349.00,Harju2,Harjumaa ÜTK
 5363,24502-1,Linnake,59.4472727,25.09120728,5363,,Jõelähtme vald,,6590444.00,561901.00,Harju2,Harjumaa ÜTK
 5364,24501-1,Linnake,59.44824108,25.08700694,5364,,Jõelähtme vald,,6590548.00,561661.00,Harju2,Harjumaa ÜTK
@@ -7441,7 +7440,6 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 31197,6700321-1,Kooperatiiv,58.60621623,24.50106999,31197,,Põhja-Pärnumaa vald,,6496362.95,529125.06,,Pärnu MV
 31198,6701167-1,Vihtra tee,58.64691446,25.02963749,31198,,Põhja-Pärnumaa vald,,6501245.98,559777.06,,Pärnu MV
 158860,4401161-1,Illuka (perspektiivne),59.2289979,27.50235976,158860,,Illuka vald,,6570843.50,699866.18,,Ida-Viru MV
-161551,4401173-1,Sputnik (perspektiivne),59.3874,27.74792,161551,,Sillamäe linn,,6589219.25,712879.80,,Ida-Viru MV
 31235,8600040-1,Autobussijaam,57.85096375,27.00393448,31235,,Võru linn,"Autopesula kõrval",6416128.93,678315.00,,Võru MV
 31236,8600041-1,Autobussijaam,57.85075088,27.00381612,31236,,Võru linn,"Maxima ja Postimaja peatuste suunas",6416104.93,678309.04,,Võru MV
 31237,8600720-1,Turu,57.83866693,27.0079936,31237,,Võru linn,"Paju suunas",6414771.50,678617.18,,Võru MV
@@ -10298,6 +10296,7 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 5138,22155-1,Viskla,59.21260093,25.20687441,5138,,Kose vald,,6564418.00,568932.12,Harju4B,Harjumaa ÜTK
 25502,5100354-1,Peetri kool,58.94425,25.83375,25502,,Peetri alevik,,6535348.53,605546.58,"tartu1,tartu2",Järvamaa ÜTK
 30214,7800528-1,Akvarelli,58.35976336,26.79669553,30214,,Luunja vald,"Tartu suunas",6472216.68,663658.54,,Tartu MV
+161549,4401172-1,Sputnik,59.38736612,27.74745265,161549,,Sillamäe linn,"Sisenev suund",6589214.00,712853.50,,Ida-Viru MV
 22181,8200720-1,Villemsilla,58.03044663,26.17495645,22181,,Otepää vald,"Rõngu suunas",6434209.08,628478.93,,Valga MV
 5562,19517-1,Maardu kalmistu,59.46780749,25.01317053,5562,,Maardu linn,,6592662.00,557440.00,Harju2,Harjumaa ÜTK
 135985,5701065-1,Uugla,58.99395,23.75877499,135985,,Lääne-Nigula vald,,6539466.68,486133.83,Laane2,Lääne MV
@@ -10397,6 +10396,7 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 117253,8200335-1,Metsoja,57.7289455,26.37564918,117253,,Valga vald,"Koobassaare suunas",6401051.50,641518.56,,Valga MV
 25829,8200391-1,Nõuni,58.12686675,26.52188502,25829,,Otepää vald,"Otepää suunas",6445657.99,648560.03,,Valga MV
 138473,09110-1,Marati,59.45803667,24.67541214,138473,,Põhja-Tallinn,,6591332.50,538303.12,Harju1,Tallinna TA
+161551,4401173-1,Sputnik,59.3874,27.74792,161551,,Sillamäe linn,"Väljuv suund",6589219.25,712879.80,,Ida-Viru MV
 22327,7800396-1,Küti,58.24169074,26.82273837,22327,,Kambja vald,"Uniküla suunas",6459141.50,665734.87,,Tartu MV
 142492,7801307-1,Laanemetsa,58.475902,27.05709628,142492,,Peipsiääre vald,"Tammistu suunas",6485803.50,678297.37,,Tartu MV
 33542,7800560-1,Lammiku,58.46898148,26.61980077,33542,,Tartu vald,"Kärevere suunas",6483954.00,652837.37,,Tartu MV
@@ -12539,8 +12539,8 @@ stop_id,stop_code,stop_name,stop_lat,stop_lon,zone_id,alias,stop_area,stop_desc,
 32460,4400066-1,Metalli,59.39552606,27.72569525,32460,,Sillamäe linn,"Lõpp peatus",6590052.80,711568.50,,Ida-Viru MV
 133458,4400947-1,Metalli,59.39568225,27.72592558,133458,,Sillamäe linn,"Algpeatus",6590070.90,711580.60,,Ida-Viru MV
 133462,4400948-1,Kutsekooli,59.39029126,27.79105037,133462,,Sillamäe linn,"Parklas",6589678.50,715308.80,,Ida-Viru MV
-32479,4400002-1,Kannuka,59.3917537,27.79705861,32479,,Sillamäe linn,"Algpeatus",6589860.46,715640.45,,Ida-Viru MV
-32478,4400001-1,Kannuka,59.39305644,27.79710288,32478,,Sillamäe linn,"Lõpp peatus",6590005.50,715634.75,,Ida-Viru MV
+32479,4400002-1,Kannuka,59.3917537,27.79705861,32479,,Sillamäe linn,"Gagarini tänava suunas",6589860.46,715640.45,,Ida-Viru MV
+32478,4400001-1,Kannuka,59.39305644,27.79710288,32478,,Sillamäe linn,"Reveli tänava suunas",6590005.50,715634.75,,Ida-Viru MV
 21739,5100510-1,Kooli,58.7825,25.433611,21739,,Türi vald,,6516775.03,582904.50,tartu1,Järvamaa ÜTK
 20079,5100243-1,Linnu,58.794705,25.423552,20079,,Türi linn,,6518121.78,582294.03,tartu1,Järvamaa ÜTK
 22432,5100244-1,Linnu,58.79528777,25.42421637,22432,,Türi linn,,6518187.50,582331.06,tartu1,Järvamaa ÜTK
