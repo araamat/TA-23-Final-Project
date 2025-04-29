@@ -11,6 +11,7 @@ from trip import gtfs_view as trip_view
 from search_by_line import gtfs_view as line_view
 from authority import gtfs_view as authority_view
 from stopPoster import gtfs_view as stop_poster_view
+from search_by_stop_pair import gtfs_view as stop_pair_view
 
 GTFS_ZIP = "gtfs.zip"
 GTFS_URL = "https://peatus.ee/gtfs/gtfs.zip"
@@ -48,7 +49,7 @@ if "view" not in st.session_state:
 if "filter" not in st.session_state:
     st.session_state.filter = ""
 
-# --- Sidebar ---
+
 # --- Sidebar ---
 with st.sidebar:
     st.title("Eesti ühistranspordi avaandmed 🚍")
@@ -79,6 +80,12 @@ with st.sidebar:
         st.session_state.view = "poster"
         st.session_state.filter = ""
         st.session_state["filter_select"] = ""
+    
+    if st.button("🔁 Otsing kahe peatuse vahel"):
+        st.session_state.view = "stop_pair"
+        st.session_state.filter = ""
+        st.session_state["filter_select"] = ""
+
 
     # Filtri valik (pealkiri + selectbox)
     st.markdown('<div class="filter-label">🔍 Otsi ja analüüsi liine: </div>', unsafe_allow_html=True)
@@ -119,6 +126,9 @@ elif view == "history":
     
 elif view == "poster":
     stop_poster_view()
+    
+elif view == "stop_pair":
+    stop_pair_view()
 
 elif view == "filter":
     if filter_view == "Route ID järgi":
