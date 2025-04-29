@@ -94,11 +94,11 @@ def gtfs_view():
     st.dataframe(centered_style(final_df), use_container_width=True, hide_index=True)
 
     # Liinikaart
-    if st.checkbox("**- avab liini peatuste kuvamise nii tabelis kui ka kaardil**"):
+    if st.checkbox("**:arrow_left: avab liini peatuste kuvamise nii tabelis kui ka kaardil**"):
         trip_options = enriched[['trip_id', 'trip_long_name']].drop_duplicates()
         trip_options['valik'] = trip_options['trip_id'].astype(str) + " — " + trip_options['trip_long_name']
         valik_dict = dict(zip(trip_options['valik'], trip_options['trip_id']))
-        valitud_valik = st.selectbox("Vali Trip", list(valik_dict.keys()))
+        valitud_valik = st.selectbox("**Vali Trip**", list(valik_dict.keys()))
         trip_valik = valik_dict[valitud_valik]
 
         stops_for_map = stop_times[stop_times['trip_id'] == trip_valik].merge(stops, on="stop_id").sort_values("stop_sequence")
