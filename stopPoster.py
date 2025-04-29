@@ -141,7 +141,7 @@ def generate_pdf(stop_info, stop_code, qr_img, poster_df, kuupaev):
     return buffer
 
 def gtfs_view():
-    st.title("📍 Ühistranspordi peatuse info")
+    st.title("🚏 Ühistranspordi peatuse info")
 
     stops, stop_times, trips, routes, calendar = load_gtfs_data()
 
@@ -267,8 +267,19 @@ def gtfs_view():
         for row in poster_df.itertuples(index=False):
             csv_writer.writerow(list(row))
 
-        csv_data = '\ufeff' + csv_buffer.getvalue()
-        st.download_button("⬇️ Laadi poster CSV-na alla", csv_data.encode('utf-8'), file_name=f"poster_{stop_info['stop_name']}.csv", mime="text/csv")
+                # Peatuse asukoha kuvamine kaardil foliumiga
+        if 'stop_lat' in stop_info and 'stop_lon' in stop_info:
+            st.subheader("🗺️ Peatuse asukoht kaardil")
+            import folium
+            from streamlit_folium import st_folium
+
+            m = folium.Map(location=[stop_info['stop_lat'], stop_info['stop_lon']], zoom_start=15)
+            folium.Marker(
+                location=[stop_info['stop_lat'], stop_info['stop_lon']],
+                popup=stop_info['stop_name'],
+                icon=folium.Icon(color='blue', icon='info-sign')
+            ).add_to(m)
+            st_folium(m, height=400, width="100%")
 
     else:
         st.error("GTFS andmete laadimine ebaõnnestus.")
