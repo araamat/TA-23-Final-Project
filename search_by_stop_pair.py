@@ -46,7 +46,7 @@ def gtfs_view():
     lopp_peatus = stops[stops['stop_id'] == lopp_stop_id].iloc[0]
 
     st.markdown(f"**Algpeatus:** {alg_peatus['stop_name']} ({alg_peatus.get('stop_code', '')})")
-    st.markdown(f"**Lõpppeatus:** {lopp_peatus['stop_name']} ({lopp_peatus.get('stop_code', '')})")
+    st.markdown(f"**Sihtpeatus:** {lopp_peatus['stop_name']} ({lopp_peatus.get('stop_code', '')})")
 
     # Leia sobivad tripid
     alg_trips = stop_times[stop_times['stop_id'] == alg_stop_id][['trip_id', 'departure_time', 'stop_sequence']]
