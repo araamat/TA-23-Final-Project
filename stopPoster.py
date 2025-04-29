@@ -140,56 +140,55 @@ def generate_pdf(stop_info, stop_code, qr_img, poster_df, kuupaev):
     buffer.seek(0)
     return buffer
 
-
 def gtfs_view():
     st.title("📍 Ühistranspordi peatuse info")
 
     stops, stop_times, trips, routes, calendar = load_gtfs_data()
 
     if stops is not None:
-        peatused = sorted(stops['stop_name'].unique())
-        peatus = st.selectbox("**Vali peatus**:", ["— Vali peatus —"] + peatused)
+        # Peatuste kuvamine koos stop_code ja stop_desc
+        def format_peatus(row):
+            code = row.get("stop_code", "—")
+            desc = row.get("stop_desc", "")
+            desc = "" if pd.isna(desc) else desc
+            return f"{row['stop_name']} ({code}{', ' + desc if desc else ''})"
 
-        if peatus == "— Vali peatus —":
+        stops['peatus_valik'] = stops.apply(format_peatus, axis=1)
+        peatus_dict = dict(zip(stops['peatus_valik'], stops['stop_id']))
+
+        valitud_peatus_valik = st.selectbox("**Vali peatus**:", ["— Vali peatus —"] + list(peatus_dict.keys()))
+        if valitud_peatus_valik == "— Vali peatus —":
             st.info("Palun vali peatus.")
             return
 
-        # Valik ja vormindus
-        kuupaev = st.date_input("**Vali kuupäev, mis seisuga peatuse infot kuvatakse:**", value=date.today())
-        kuupaev = pd.to_datetime(kuupaev)
-        kuupaev_kuvana = kuupaev.strftime("%d.%m.%Y")
+        stop_id = peatus_dict[valitud_peatus_valik]
+        filtered_stops = stops[stops['stop_id'] == stop_id]
 
-        # Arvutame nädala alguse ja lõpu
-        nadal_algus = kuupaev - pd.to_timedelta(kuupaev.weekday(), unit='D')  # Esmaspäev
-        nadal_lopp = nadal_algus + pd.Timedelta(days=6)  # Pühapäev
-
-        filtered_stops = stops[stops['stop_name'] == peatus]
         if filtered_stops.empty:
             st.warning("Valitud peatus ei leitud andmetest.")
             return
 
         stop_info = filtered_stops.iloc[0]
-        stop_ids = filtered_stops['stop_id'].tolist()
         stop_code = stop_info.get("stop_code", "—")
 
-        stop_id = stop_info['stop_id']
+        # Kuupäev ja nädalavahemik
+        kuupaev = st.date_input("**Vali kuupäev, mis seisuga peatuse infot kuvatakse:**", value=date.today())
+        kuupaev = pd.to_datetime(kuupaev)
+        kuupaev_kuvana = kuupaev.strftime("%d.%m.%Y")
+        nadal_algus = kuupaev - pd.to_timedelta(kuupaev.weekday(), unit='D')
+        nadal_lopp = nadal_algus + pd.Timedelta(days=6)
+
+        # QR kood ja peatusinfo
         stop_code_url = stop_info.get("stop_code", "").replace(" ", "%20")
         qr_link = f"https://web.peatus.ee/pysakit/estonia%3A{stop_id}#{stop_code_url}"
 
         cols = st.columns([3, 1])
-
         with cols[0]:
             st.markdown(f"### 📍 Peatus: **{stop_info['stop_name']}**")
             st.markdown(f"### 🔢 Stop Code: **{stop_code}**")
             st.markdown(f"### 📅 Kehtiv alates: **{kuupaev_kuvana}**")
-
         with cols[1]:
-            qr = qrcode.QRCode(
-                version=1,
-                error_correction=qrcode.constants.ERROR_CORRECT_L,
-                box_size=4,
-                border=2,
-            )
+            qr = qrcode.QRCode(version=1, error_correction=qrcode.constants.ERROR_CORRECT_L, box_size=4, border=2)
             qr.add_data(qr_link)
             qr.make(fit=True)
             img = qr.make_image(fill_color="black", back_color="white")
@@ -197,31 +196,24 @@ def gtfs_view():
             img.save(buffer, format="PNG")
             buffer.seek(0)
 
-            st.markdown("<div style='text-align: center;'>", unsafe_allow_html=True)
             st.image(buffer.getvalue(), width=120)
             st.markdown(f"<a href='{qr_link}' target='_blank'>↗️ Ava link</a>", unsafe_allow_html=True)
             b64 = base64.b64encode(buffer.getvalue()).decode()
             href = f'<a href="data:image/png;base64,{b64}" download="qr_{stop_info["stop_name"]}.png">⬇️ Lae alla QR</a>'
-            st.markdown(f"<div>{href}</div>", unsafe_allow_html=True)
-            st.markdown("</div>", unsafe_allow_html=True)
+            st.markdown(href, unsafe_allow_html=True)
 
-        # Kalendri andmed
+        # Kalendri filtreerimine
         calendar['start_date'] = pd.to_datetime(calendar['start_date'], format='%Y%m%d')
         calendar['end_date'] = pd.to_datetime(calendar['end_date'], format='%Y%m%d')
-
         sobivad_teenused = calendar[
             (calendar['start_date'] <= nadal_lopp) &
-            (calendar['end_date'] >= nadal_algus)
-        ]
-
-        sobivad_teenused = sobivad_teenused[
-            (sobivad_teenused['monday'] == 1) |
-            (sobivad_teenused['tuesday'] == 1) |
-            (sobivad_teenused['wednesday'] == 1) |
-            (sobivad_teenused['thursday'] == 1) |
-            (sobivad_teenused['friday'] == 1) |
-            (sobivad_teenused['saturday'] == 1) |
-            (sobivad_teenused['sunday'] == 1)
+            (calendar['end_date'] >= nadal_algus) &
+            (
+                (calendar['monday'] == 1) | (calendar['tuesday'] == 1) |
+                (calendar['wednesday'] == 1) | (calendar['thursday'] == 1) |
+                (calendar['friday'] == 1) | (calendar['saturday'] == 1) |
+                (calendar['sunday'] == 1)
+            )
         ]
 
         if sobivad_teenused.empty:
@@ -229,12 +221,10 @@ def gtfs_view():
             return
 
         sobivad_service_id = sobivad_teenused['service_id'].unique()
-
-        relevant_times = stop_times[stop_times['stop_id'].isin(stop_ids)]
+        relevant_times = stop_times[stop_times['stop_id'] == stop_id]
         enriched = relevant_times.merge(trips, on="trip_id")
         enriched = enriched[enriched['service_id'].isin(sobivad_service_id)]
         enriched = enriched.merge(routes, on="route_id").merge(calendar, on="service_id")
-
         enriched['departure_time'] = pd.to_datetime(enriched['departure_time'], format='%H:%M:%S', errors='coerce')
         enriched = enriched.sort_values(["departure_time", "route_short_name", "trip_long_name"])
         enriched['departure_time'] = enriched['departure_time'].dt.strftime('%H:%M')
@@ -244,65 +234,42 @@ def gtfs_view():
             return
 
         weekday_columns = {
-            "monday": "E",
-            "tuesday": "T",
-            "wednesday": "K",
-            "thursday": "N",
-            "friday": "R",
-            "saturday": "L",
-            "sunday": "P"
+            "monday": "E", "tuesday": "T", "wednesday": "K",
+            "thursday": "N", "friday": "R", "saturday": "L", "sunday": "P"
         }
 
         output_rows = []
-
         for _, row in enriched.iterrows():
-            weekdays = []
-            for day, abbrev in weekday_columns.items():
-                if row.get(day) == 1:
-                    weekdays.append(abbrev)
-
+            weekdays = [abbr for day, abbr in weekday_columns.items() if row.get(day) == 1]
+            liin_info = row['route_desc'] if pd.notna(row['route_desc']) else ""
             output_rows.append({
                 "Väljumine": row['departure_time'],
                 "Liini nr": f"'{row['route_short_name']}" if "-" in str(row['route_short_name']) else row['route_short_name'],
                 "Liini nimetus": row['trip_long_name'],
                 "Liin on käigus": ", ".join(weekdays),
-                "Liini info": row['route_desc']
+                "Liini info": liin_info
             })
 
         poster_df = pd.DataFrame(output_rows)
-        poster_df = poster_df[["Väljumine", "Liini nr", "Liini nimetus", "Liin on käigus", "Liini info"]]
-
         st.subheader("📄 Väljumised")
         st.dataframe(poster_df, use_container_width=True, hide_index=True)
 
         pdf_buffer = generate_pdf(stop_info, stop_code, img, poster_df, kuupaev)
-        st.download_button(
-            "⬇️ Laadi poster PDF-na alla",
-            data=pdf_buffer,
-            file_name=f"poster_{stop_info['stop_name']}.pdf",
-            mime="application/pdf"
-        )
+        st.download_button("⬇️ Laadi poster PDF-na alla", data=pdf_buffer, file_name=f"poster_{stop_info['stop_name']}.pdf", mime="application/pdf")
 
         csv_buffer = io.StringIO()
         csv_writer = csv.writer(csv_buffer, quoting=csv.QUOTE_ALL)
-
         csv_writer.writerow([f"Peatus: {stop_info['stop_name']}"])
         csv_writer.writerow([f"Stop Code: {stop_code}"])
         csv_writer.writerow([f"Kehtiv alates: {kuupaev_kuvana}"])
         csv_writer.writerow([])
-
         csv_writer.writerow(poster_df.columns.tolist())
         for row in poster_df.itertuples(index=False):
             csv_writer.writerow(list(row))
 
         csv_data = '\ufeff' + csv_buffer.getvalue()
-        csv_bytes = csv_data.encode('utf-8')
+        st.download_button("⬇️ Laadi poster CSV-na alla", csv_data.encode('utf-8'), file_name=f"poster_{stop_info['stop_name']}.csv", mime="text/csv")
 
-        st.download_button(
-            "⬇️ Laadi poster CSV-na alla",
-            csv_bytes,
-            file_name=f"poster_{stop_info['stop_name']}.csv",
-            mime="text/csv"
-        )
     else:
         st.error("GTFS andmete laadimine ebaõnnestus.")
+
