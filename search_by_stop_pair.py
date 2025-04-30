@@ -12,12 +12,13 @@ def load_gtfs_data():
         trips = pd.read_csv(z.open("trips.txt"))
         routes = pd.read_csv(z.open("routes.txt"))
         calendar = pd.read_csv(z.open("calendar.txt"))
-    return stops, stop_times, trips, routes, calendar
+        agency = pd.read_csv(z.open("agency.txt"))
+    return stops, stop_times, trips, routes, calendar, agency
 
 def gtfs_view():
     st.title("🔁 Otsing kahe peatuse vahel")
 
-    stops, stop_times, trips, routes, calendar = load_gtfs_data()
+    stops, stop_times, trips, routes, calendar, agency = load_gtfs_data()
 
     def format_peatus(row):
         code = row.get("stop_code", "—")
@@ -48,7 +49,6 @@ def gtfs_view():
     st.markdown(f"**Algpeatus:** {alg_peatus['stop_name']} ({alg_peatus.get('stop_code', '')})")
     st.markdown(f"**Sihtpeatus:** {lopp_peatus['stop_name']} ({lopp_peatus.get('stop_code', '')})")
 
-    # Leia sobivad tripid
     alg_trips = stop_times[stop_times['stop_id'] == alg_stop_id][['trip_id', 'departure_time', 'stop_sequence']]
     lopp_trips = stop_times[stop_times['stop_id'] == lopp_stop_id][['trip_id', 'arrival_time', 'stop_sequence']]
 
@@ -59,41 +59,37 @@ def gtfs_view():
         st.warning("Ei leitud liine, mis läbivad valitud peatused õiges järjekorras.")
         return
 
-    enriched = sobivad.merge(trips, on='trip_id').merge(routes, on='route_id').merge(calendar, on='service_id')
+    enriched = (
+        sobivad
+        .merge(trips, on='trip_id')
+        .merge(routes, on='route_id')
+        .merge(calendar, on='service_id')
+        .merge(agency, on='agency_id')
+    )
 
     enriched['Väljumine'] = enriched['departure_time']
     enriched['Saabumine'] = enriched['arrival_time']
     enriched['Trip ID'] = enriched['trip_id'].astype(str).str.replace(",", "")
-    enriched['Liini nimetus (trip_long_name)'] = enriched['trip_long_name']
+    enriched['Liini nimetus'] = enriched['trip_long_name']
+    enriched['Vedaja'] = enriched['agency_name']
+    enriched['Liin'] = enriched['route_short_name']
 
-    # Käigusolevad päevad
-    def paevad(row):
-        paevad = []
-        if row['monday'] == 1: paevad.append('E')
-        if row['tuesday'] == 1: paevad.append('T')
-        if row['wednesday'] == 1: paevad.append('K')
-        if row['thursday'] == 1: paevad.append('N')
-        if row['friday'] == 1: paevad.append('R')
-        if row['saturday'] == 1: paevad.append('L')
-        if row['sunday'] == 1: paevad.append('P')
-        return ", ".join(paevad)
+    # Uus veergude formaadis paevade jaotus
+    enriched['E'] = enriched['monday'].apply(lambda x: 'E' if x == 1 else '')
+    enriched['T'] = enriched['tuesday'].apply(lambda x: 'T' if x == 1 else '')
+    enriched['K'] = enriched['wednesday'].apply(lambda x: 'K' if x == 1 else '')
+    enriched['N'] = enriched['thursday'].apply(lambda x: 'N' if x == 1 else '')
+    enriched['R'] = enriched['friday'].apply(lambda x: 'R' if x == 1 else '')
+    enriched['L'] = enriched['saturday'].apply(lambda x: 'L' if x == 1 else '')
+    enriched['P'] = enriched['sunday'].apply(lambda x: 'P' if x == 1 else '')
 
-    enriched['Käigus päevadel'] = enriched.apply(paevad, axis=1)
-
-    final_df = enriched[['Väljumine', 'Saabumine', 'Käigus päevadel', 'Trip ID', 'Liini nimetus (trip_long_name)']]
+    final_df = enriched[['Väljumine', 'Saabumine','Liini nimetus','Liin','Vedaja', 'E', 'T', 'K', 'N', 'R', 'L', 'P', 'Trip ID']]
     final_df = final_df.sort_values('Väljumine')
 
-    # Keskjoondus CSS lahendus Streamlit tabelis
-    def centered_style(df):
-        return df.style.set_properties(
-            subset=['Väljumine', 'Saabumine', 'Trip ID'],
-            **{'text-align': 'center'}
-        )
-
+    
     st.markdown(f"### ✅ Leitud {len(final_df)} sõitu kahe peatuse vahel:")
-    st.dataframe(centered_style(final_df), use_container_width=True, hide_index=True)
+    st.dataframe(final_df, use_container_width=True, hide_index=True)
 
-    # Liinikaart
     if st.checkbox("**:arrow_left: avab liini peatuste kuvamise nii tabelis kui ka kaardil**"):
         trip_options = enriched[['trip_id', 'trip_long_name']].drop_duplicates()
         trip_options['valik'] = trip_options['trip_id'].astype(str) + " — " + trip_options['trip_long_name']
@@ -116,7 +112,7 @@ def gtfs_view():
             })
             st.dataframe(peatusetabel, use_container_width=True, hide_index=True)
 
-            st.subheader("🗺️ Valitud liini peatused kaardil")
+            st.subheader("🗌️ Valitud liini peatused kaardil")
             keskpunkt = [stops_for_map.iloc[0]['stop_lat'], stops_for_map.iloc[0]['stop_lon']]
             m = folium.Map(location=keskpunkt, zoom_start=13)
             for idx, row in stops_for_map.iterrows():
