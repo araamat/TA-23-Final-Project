@@ -32,6 +32,11 @@ def download_latest_gtfs():
 
 if needs_update(GTFS_ZIP):
     download_latest_gtfs()
+elif not os.path.exists("gtfs_data"):
+    # Kui gtfs_data puudub, kuid zip on olemas (nt pärast restarti Streamlit Cloudis)
+    with zipfile.ZipFile(GTFS_ZIP, 'r') as zip_ref:
+        zip_ref.extractall("gtfs_data")
+
 
 # --- CSS ---
 def local_css(file_name):
