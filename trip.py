@@ -1,27 +1,25 @@
 import streamlit as st
 import pandas as pd
-import zipfile
 import folium
 from streamlit_folium import st_folium
+import os
 
-@st.cache_data
+@st.cache_data(ttl=86400)
 def load_data():
-    GTFS_ZIP = "gtfs.zip"
-    with zipfile.ZipFile(GTFS_ZIP, 'r') as z:
-        z.extractall("gtfs_data")
-
-    trips_df = pd.read_csv("gtfs_data/trips.txt")
-    routes_df = pd.read_csv("gtfs_data/routes.txt")
-    stop_times_df = pd.read_csv("gtfs_data/stop_times.txt")
-    stops_df = pd.read_csv("gtfs_data/stops.txt")
-    calendar_df = pd.read_csv("gtfs_data/calendar.txt")
-    calendar_dates_df = pd.read_csv("gtfs_data/calendar_dates.txt")
+    base_path = "gtfs_data"
+    trips_df = pd.read_csv(os.path.join(base_path, "trips.txt"))
+    routes_df = pd.read_csv(os.path.join(base_path, "routes.txt"))
+    stop_times_df = pd.read_csv(os.path.join(base_path, "stop_times.txt"))
+    stops_df = pd.read_csv(os.path.join(base_path, "stops.txt"))
+    calendar_df = pd.read_csv(os.path.join(base_path, "calendar.txt"))
+    calendar_dates_df = pd.read_csv(os.path.join(base_path, "calendar_dates.txt"))
 
     calendar_df['start_date'] = pd.to_datetime(calendar_df['start_date'], format='%Y%m%d')
     calendar_df['end_date'] = pd.to_datetime(calendar_df['end_date'], format='%Y%m%d')
     calendar_dates_df['date'] = pd.to_datetime(calendar_dates_df['date'], format='%Y%m%d')
 
     return trips_df, routes_df, stop_times_df, stops_df, calendar_df, calendar_dates_df
+
 
 def gtfs_view():
     trips_df, routes_df, stop_times_df, stops_df, calendar_df, calendar_dates_df = load_data()

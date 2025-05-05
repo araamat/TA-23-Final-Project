@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-import zipfile
+import os
 import io
 import csv
 import qrcode
@@ -16,20 +16,21 @@ from reportlab.lib import colors
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 from reportlab.lib.units import mm
 
-GTFS_ZIP = "gtfs.zip"
 
+@st.cache_data(ttl=86400)
 def load_gtfs_data():
     try:
-        with zipfile.ZipFile(GTFS_ZIP, 'r') as z:
-            stops = pd.read_csv(z.open("stops.txt"))
-            stop_times = pd.read_csv(z.open("stop_times.txt"))
-            trips = pd.read_csv(z.open("trips.txt"))
-            routes = pd.read_csv(z.open("routes.txt"))
-            calendar = pd.read_csv(z.open("calendar.txt"))
+        base_path = "gtfs_data"
+        stops = pd.read_csv(os.path.join(base_path, "stops.txt"))
+        stop_times = pd.read_csv(os.path.join(base_path, "stop_times.txt"))
+        trips = pd.read_csv(os.path.join(base_path, "trips.txt"))
+        routes = pd.read_csv(os.path.join(base_path, "routes.txt"))
+        calendar = pd.read_csv(os.path.join(base_path, "calendar.txt"))
         return stops, stop_times, trips, routes, calendar
     except Exception as e:
         st.error(f"Viga GTFS andmete laadimisel: {e}")
         return None, None, None, None, None
+
 
 def smart_wrap_text(text, max_length=30):
     lines = []
@@ -146,7 +147,6 @@ def gtfs_view():
     stops, stop_times, trips, routes, calendar = load_gtfs_data()
 
     if stops is not None:
-        # Peatuste kuvamine koos stop_code ja stop_desc
         def format_peatus(row):
             code = row.get("stop_code", "—")
             desc = row.get("stop_desc", "")
@@ -171,14 +171,12 @@ def gtfs_view():
         stop_info = filtered_stops.iloc[0]
         stop_code = stop_info.get("stop_code", "—")
 
-        # Kuupäev ja nädalavahemik
         kuupaev = st.date_input("**Vali kuupäev, mis seisuga peatuse infot kuvatakse:**", value=date.today())
         kuupaev = pd.to_datetime(kuupaev)
         kuupaev_kuvana = kuupaev.strftime("%d.%m.%Y")
         nadal_algus = kuupaev - pd.to_timedelta(kuupaev.weekday(), unit='D')
         nadal_lopp = nadal_algus + pd.Timedelta(days=6)
 
-        # QR kood ja peatusinfo
         stop_code_url = stop_info.get("stop_code", "").replace(" ", "%20")
         qr_link = f"https://web.peatus.ee/pysakit/estonia%3A{stop_id}#{stop_code_url}"
 
@@ -202,7 +200,6 @@ def gtfs_view():
             href = f'<a href="data:image/png;base64,{b64}" download="qr_{stop_info["stop_name"]}.png">⬇️ Lae alla QR</a>'
             st.markdown(href, unsafe_allow_html=True)
 
-        # Kalendri filtreerimine
         calendar['start_date'] = pd.to_datetime(calendar['start_date'], format='%Y%m%d')
         calendar['end_date'] = pd.to_datetime(calendar['end_date'], format='%Y%m%d')
         sobivad_teenused = calendar[
@@ -254,9 +251,16 @@ def gtfs_view():
         st.subheader("📄 Väljumised")
         st.dataframe(poster_df, use_container_width=True, hide_index=True)
 
+               # --- PDF allalaadimine
         pdf_buffer = generate_pdf(stop_info, stop_code, img, poster_df, kuupaev)
-        st.download_button("⬇️ Laadi poster PDF-na alla", data=pdf_buffer, file_name=f"poster_{stop_info['stop_name']}.pdf", mime="application/pdf")
+        st.download_button(
+            "⬇️ Laadi poster PDF-na alla",
+            data=pdf_buffer,
+            file_name=f"poster_{stop_info['stop_name']}.pdf",
+            mime="application/pdf"
+        )
 
+        # --- CSV allalaadimine UTF-8-sig kodeeringus
         csv_buffer = io.StringIO()
         csv_writer = csv.writer(csv_buffer, quoting=csv.QUOTE_ALL)
         csv_writer.writerow([f"Peatus: {stop_info['stop_name']}"])
@@ -267,7 +271,14 @@ def gtfs_view():
         for row in poster_df.itertuples(index=False):
             csv_writer.writerow(list(row))
 
-                # Peatuse asukoha kuvamine kaardil foliumiga
+        st.download_button(
+            "⬇️ Laadi poster CSV-na alla",
+            data=csv_buffer.getvalue().encode("utf-8-sig"),  # ← see tagab täpitähed Excelis
+            file_name=f"poster_{stop_info['stop_name']}.csv",
+            mime="text/csv"
+        )
+
+        # Kaart
         if 'stop_lat' in stop_info and 'stop_lon' in stop_info:
             st.subheader("🗺️ Peatuse asukoht kaardil")
             import folium
@@ -283,4 +294,3 @@ def gtfs_view():
 
     else:
         st.error("GTFS andmete laadimine ebaõnnestus.")
-

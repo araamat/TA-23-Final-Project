@@ -1,21 +1,19 @@
 import streamlit as st
 import pandas as pd
-import zipfile
 import folium
 from streamlit_folium import st_folium
+import os
 
-@st.cache_data
+@st.cache_data(ttl=86400)
 def load_data():
-    GTFS_ZIP = "gtfs.zip"
-    with zipfile.ZipFile(GTFS_ZIP, 'r') as z:
-        routes_df = pd.read_csv(z.open("routes.txt"))
-        trips_df = pd.read_csv(z.open("trips.txt"))
-        stop_times_df = pd.read_csv(z.open("stop_times.txt"))
-        stops_df = pd.read_csv(z.open("stops.txt"))
-        calendar_df = pd.read_csv(z.open("calendar.txt"))
-        calendar_dates_df = pd.read_csv(z.open("calendar_dates.txt"))
+    base_path = "gtfs_data"
+    routes_df = pd.read_csv(os.path.join(base_path, "routes.txt"))
+    trips_df = pd.read_csv(os.path.join(base_path, "trips.txt"))
+    stop_times_df = pd.read_csv(os.path.join(base_path, "stop_times.txt"))
+    stops_df = pd.read_csv(os.path.join(base_path, "stops.txt"))
+    calendar_df = pd.read_csv(os.path.join(base_path, "calendar.txt"))
+    calendar_dates_df = pd.read_csv(os.path.join(base_path, "calendar_dates.txt"))
 
-    # Andmete kohandused
     routes_df['route_short_name'] = routes_df['route_short_name'].astype(str)
     routes_df['valik'] = routes_df['route_short_name'] + " (" + routes_df['route_long_name'] + ")"
     calendar_df['start_date'] = pd.to_datetime(calendar_df['start_date'], format='%Y%m%d')
@@ -23,6 +21,7 @@ def load_data():
     calendar_dates_df['date'] = pd.to_datetime(calendar_dates_df['date'], format='%Y%m%d')
 
     return routes_df, trips_df, stop_times_df, stops_df, calendar_df, calendar_dates_df
+
 
 def custom_sort(valikud, otsi):
     otsi = otsi.lower().strip()

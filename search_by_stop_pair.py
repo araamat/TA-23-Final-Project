@@ -1,19 +1,20 @@
 import streamlit as st
 import pandas as pd
-import zipfile
 import folium
 from streamlit_folium import st_folium
+import os
 
-@st.cache_data
+@st.cache_data(ttl=86400)
 def load_gtfs_data():
-    with zipfile.ZipFile("gtfs.zip", 'r') as z:
-        stops = pd.read_csv(z.open("stops.txt"))
-        stop_times = pd.read_csv(z.open("stop_times.txt"))
-        trips = pd.read_csv(z.open("trips.txt"))
-        routes = pd.read_csv(z.open("routes.txt"))
-        calendar = pd.read_csv(z.open("calendar.txt"))
-        agency = pd.read_csv(z.open("agency.txt"))
+    base_path = "gtfs_data"
+    stops = pd.read_csv(os.path.join(base_path, "stops.txt"))
+    stop_times = pd.read_csv(os.path.join(base_path, "stop_times.txt"))
+    trips = pd.read_csv(os.path.join(base_path, "trips.txt"))
+    routes = pd.read_csv(os.path.join(base_path, "routes.txt"))
+    calendar = pd.read_csv(os.path.join(base_path, "calendar.txt"))
+    agency = pd.read_csv(os.path.join(base_path, "agency.txt"))
     return stops, stop_times, trips, routes, calendar, agency
+
 
 def gtfs_view():
     st.title("🔁 Otsing kahe peatuse vahel")

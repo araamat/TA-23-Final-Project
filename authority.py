@@ -1,15 +1,15 @@
 import streamlit as st
 import pandas as pd
-import zipfile
 import folium
+import os
+
+def load_data():
+    base_path = "gtfs_data"
+    stops_df = pd.read_csv(os.path.join(base_path, "stops.txt"))
+    return stops_df
 
 def gtfs_view():
-    GTFS_ZIP = "gtfs.zip"
-
-    with zipfile.ZipFile(GTFS_ZIP, 'r') as z:
-        z.extractall("gtfs_data")
-
-    stops_df = pd.read_csv("gtfs_data/stops.txt")
+    stops_df = load_data()
 
     st.title("🚏 Peatuste filtreerimine kuuluvse järgi")
 
