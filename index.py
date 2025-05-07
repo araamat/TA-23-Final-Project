@@ -140,7 +140,7 @@ with st.sidebar:
             unsafe_allow_html=True
         )
         
-    if st.button("🔄 Uuenda GTFS-i avaandmestikku"):
+    if st.button(":inbox_tray: Uuenda GTFS-i avaandmestikku"):
             st.session_state.force_reload = True
             st.rerun()
 
