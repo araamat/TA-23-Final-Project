@@ -15,7 +15,6 @@ def load_gtfs_data():
     agency = pd.read_csv(os.path.join(base_path, "agency.txt"))
     return stops, stop_times, trips, routes, calendar, agency
 
-
 def gtfs_view():
     st.title("🔁 Otsing kahe peatuse vahel")
 
@@ -75,7 +74,6 @@ def gtfs_view():
     enriched['Vedaja'] = enriched['agency_name']
     enriched['Liin'] = enriched['route_short_name']
 
-    # Uus veergude formaadis paevade jaotus
     enriched['E'] = enriched['monday'].apply(lambda x: 'E' if x == 1 else '')
     enriched['T'] = enriched['tuesday'].apply(lambda x: 'T' if x == 1 else '')
     enriched['K'] = enriched['wednesday'].apply(lambda x: 'K' if x == 1 else '')
@@ -84,10 +82,9 @@ def gtfs_view():
     enriched['L'] = enriched['saturday'].apply(lambda x: 'L' if x == 1 else '')
     enriched['P'] = enriched['sunday'].apply(lambda x: 'P' if x == 1 else '')
 
-    final_df = enriched[['Väljumine', 'Saabumine','Liini nimetus','Liin','Vedaja', 'E', 'T', 'K', 'N', 'R', 'L', 'P', 'Trip ID']]
+    final_df = enriched[['Liin', 'Väljumine', 'Saabumine', 'Liini nimetus', 'Vedaja', 'E', 'T', 'K', 'N', 'R', 'L', 'P', 'Trip ID']]
     final_df = final_df.sort_values('Väljumine')
 
-    
     st.markdown(f"### ✅ Leitud {len(final_df)} sõitu kahe peatuse vahel:")
     st.dataframe(final_df, use_container_width=True, hide_index=True)
 
