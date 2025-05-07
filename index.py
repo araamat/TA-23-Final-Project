@@ -104,7 +104,7 @@ with st.sidebar:
         st.session_state.filter = ""
         st.session_state["filter_select"] = ""
 
-    if st.button("📄 Ühistranspordi peatuse info"):
+    if st.button("🚏 Ühistranspordi peatuse info"):
         st.session_state.view = "poster"
         st.session_state.filter = ""
         st.session_state["filter_select"] = ""
