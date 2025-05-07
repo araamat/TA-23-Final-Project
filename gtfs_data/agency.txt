@@ -1,5 +1,4 @@
 agency_id,agency_name,agency_url,agency_timezone,agency_phone,agency_lang
-71,Aktsiaselts Hansa Bussiliinid,http://www.hansaliinid.ee/,Europe/Tallinn,+372 4334302,et
 31,Aktsiaselts MK Autobuss,http://www.peatus.ee,Europe/Tallinn,"",et
 100063,Alukvik OÜ,http://www.alukvik.ee,Europe/Tallinn,"",""
 632,Arilix OÜ,http://www.vaikebussid.ee,Europe/Tallinn,+372 5172166,et

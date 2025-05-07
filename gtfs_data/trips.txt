@@ -511,7 +511,7 @@ d46dea5f67b5c5a31d11fb68bf3c330e,169372,1473523,Tartu bussijaam,Koosa - Puusepa 
 5bb302872a52a5a5f64f47d38b1b34e9,169588,1139551,Kõpu,Viljandi - Tohvri - Vanaveski - Kõpu,A>B,50167,0
 5bb302872a52a5a5f64f47d38b1b34e9,169598,1627704,Kõpu,Viljandi - Tohvri - Vanaveski - Kõpu,A2>B,50168,0
 5b4b0a0a0ca981351777060da1051722,169766,1473542,Sadala,Tartu - Vedu - Voore - Torma - (Sadala),A>C>B,65640,0
-fa4eed6d620726826d02315734cffc78,169816,1470078,Tartu bussijaam,Tartu - Lennujaam - Uhti keskus - Tartu,A>C>A,61415,0
+027809f6fec195d151ec512b08ad19cf,169816,1470078,Tartu bussijaam,Tartu - Lennujaam - Uhti keskus - Tartu,A>C>A,61415,0
 1e4c441b87e331cc8a82da343015a30f,169942,1473546,Nõva,Tartu - Tammistu - Koosa - Alatskivi - Kokora - (Nõva),A>C>B,65627,0
 7884375fbcb1f253abbb1c3592f03bce,169950,1473547,Tartu bussijaam,Nõva - Alatskivi - Koosa - Tammistu - Tartu,B>C>A,65628,0
 c3d04df54ef07cc1bb8fd7055ee1b584,170083,1283204,KURESSAARE,Kuressaare-Randvere-Mustjala-(Tagaranna tellim) Kuressaare,A>B,49911,0
@@ -1583,7 +1583,7 @@ ffa29823540bdb48f452c445307b49c7,189385,1240152,Uku,Viljandi - Mustla - Ämmuste
 8b0ca360ae136b918aed7303c84f0ce6,189667,1278410,Rakvere bussijaam,Sõmeru - Näpi - Rakvere,B4>A,55973,1
 8b0ca360ae136b918aed7303c84f0ce6,189668,1278413,Sõmeru,Rakvere - Näpi - Sõmeru,A>B4,55969,1
 8b0ca360ae136b918aed7303c84f0ce6,189668,1278414,Rakvere bussijaam,Sõmeru - Rakvere,B2>A,55971,1
-b4e7b8bf66b70b5464213d9e725b337e,189689,1949960,Metalli,Kannuka - Metalli,A>B,60364,0
+b4e7b8bf66b70b5464213d9e725b337e,189689,1955823,Metalli,Kannuka - Metalli,A>B,60364,0
 83b0c8f50750fe4c64f6eee3e488749e,189728,1254976,KURESSAARE,Kuressaare-Viidu-Lümanda-Viidu-Kuressaare,A>B,54479,0
 79105834bf7c78c78d62581bfb8586c1,189763,1278421,Põlula,Rakvere - Näpi - Sõmeru - Vaeküla - Põlula,A>B1,56079,1
 79105834bf7c78c78d62581bfb8586c1,189763,1278422,Rakvere bussijaam,Põlula - Ulvi - Vaeküla - Rakvere,B1>A,56080,1
@@ -3212,46 +3212,46 @@ df153bac0f7235f0fe7ddde99c1ff6d3,209558,1644786,Tartu bussijaam,Viljandi - Tartu
 df153bac0f7235f0fe7ddde99c1ff6d3,209560,1644787,Viljandi bussijaam,Tartu - Viljandi,B>A,65291,0
 df153bac0f7235f0fe7ddde99c1ff6d3,209577,1390875,Tartu bussijaam,Viljandi - Tartu,A>B,65290,0
 df153bac0f7235f0fe7ddde99c1ff6d3,209578,1390876,Viljandi bussijaam,Tartu - Viljandi,B>A,65291,0
-5c4164429e5e041251a099db16e3960f,210179,1949961,Tehase,Gagarini - Tehase,A5>B5,64376,0
-5c4164429e5e041251a099db16e3960f,210179,1949963,Tehase,Gagarini - Tehase,A5>B5,64376,0
-5c4164429e5e041251a099db16e3960f,210179,1949964,Tehase,Gagarini - Tehase,A5>B5,64376,0
-5c4164429e5e041251a099db16e3960f,210179,1949966,Tehase,Gagarini - Tehase,A5>B5,64376,0
-5c4164429e5e041251a099db16e3960f,210180,1949969,Tehase,Gagarini - Tehase,A5>B5,64376,0
-5c4164429e5e041251a099db16e3960f,210180,1949971,Tehase,Gagarini - Tehase,A5>B5,64376,0
-5c4164429e5e041251a099db16e3960f,210179,1949962,J. Gagarini,Tehase - Gagarini,B5>A5,64377,0
-5c4164429e5e041251a099db16e3960f,210179,1949965,J. Gagarini,Tehase - Gagarini,B5>A5,64377,0
-5c4164429e5e041251a099db16e3960f,210179,1949967,J. Gagarini,Tehase - Gagarini,B5>A5,64377,0
-5c4164429e5e041251a099db16e3960f,210180,1949968,J. Gagarini,Tehase - Gagarini,B5>A5,64377,0
-5c4164429e5e041251a099db16e3960f,210180,1949970,J. Gagarini,Tehase - Gagarini,B5>A5,64377,0
-5c4164429e5e041251a099db16e3960f,210181,1949972,J. Gagarini,Tehase - Gagarini,B5>A5,64377,0
-dee93fa4be031fc96cb1f88451754051,210193,1949973,Plastiku,Kannuka - Plastiku,A>B,59682,0
-dee93fa4be031fc96cb1f88451754051,210193,1949974,Plastiku,Kannuka - Plastiku,A>B,59682,0
-dee93fa4be031fc96cb1f88451754051,210193,1949975,Plastiku,Kannuka - Plastiku,A>B,59682,0
-dee93fa4be031fc96cb1f88451754051,210193,1949976,Plastiku,Kannuka - Plastiku,A>B,59682,0
-207339071cf4cfb8ed227dda5de8c74f,210197,1949977,Tehase,Kannuka - Tehase,A5>B5,64378,0
-207339071cf4cfb8ed227dda5de8c74f,210197,1949979,Tehase,Kannuka - Tehase,A5>B5,64378,0
-207339071cf4cfb8ed227dda5de8c74f,210197,1949981,Tehase,Kannuka - Tehase,A5>B5,64378,0
-207339071cf4cfb8ed227dda5de8c74f,210197,1949982,Tehase,Kannuka - Tehase,A5>B5,64378,0
-207339071cf4cfb8ed227dda5de8c74f,210198,1949986,Tehase,Kannuka - Tehase,A5>B5,64378,0
-207339071cf4cfb8ed227dda5de8c74f,210198,1949992,Tehase,Kannuka - Tehase,A5>B5,64378,0
-207339071cf4cfb8ed227dda5de8c74f,210198,1949994,Tehase,Kannuka - Tehase,A5>B5,64378,0
-207339071cf4cfb8ed227dda5de8c74f,210199,1949997,Tehase,Kannuka - Tehase,A5>B5,64378,0
-207339071cf4cfb8ed227dda5de8c74f,210199,1949999,Tehase,Kannuka - Tehase,A5>B5,64378,0
-207339071cf4cfb8ed227dda5de8c74f,210197,1949978,Kannuka,Tehase - Kannuka,B5>A5,64379,0
-207339071cf4cfb8ed227dda5de8c74f,210197,1949980,Kannuka,Tehase - Kannuka,B5>A5,64379,0
-207339071cf4cfb8ed227dda5de8c74f,210197,1949983,Kannuka,Tehase - Kannuka,B5>A5,64379,0
-207339071cf4cfb8ed227dda5de8c74f,210198,1949984,Kannuka,Tehase - Kannuka,B5>A5,64379,0
-207339071cf4cfb8ed227dda5de8c74f,210198,1949985,Kannuka,Tehase - Kannuka,B5>A5,64379,0
-207339071cf4cfb8ed227dda5de8c74f,210198,1949987,Kannuka,Tehase - Kannuka,B5>A5,64379,0
-207339071cf4cfb8ed227dda5de8c74f,210198,1949988,Kannuka,Tehase - Kannuka,B5>A5,64379,0
-207339071cf4cfb8ed227dda5de8c74f,210198,1949989,Kannuka,Tehase - Kannuka,B5>A5,64379,0
-207339071cf4cfb8ed227dda5de8c74f,210198,1949990,Kannuka,Tehase - Kannuka,B5>A5,64379,0
-207339071cf4cfb8ed227dda5de8c74f,210199,1949996,Kannuka,Tehase - Kannuka,B5>A5,64379,0
-207339071cf4cfb8ed227dda5de8c74f,210199,1949998,Kannuka,Tehase - Kannuka,B5>A5,64379,0
-207339071cf4cfb8ed227dda5de8c74f,210198,1949991,Kannuka,Plastiku - Kannuka,B6>A5,64380,0
-207339071cf4cfb8ed227dda5de8c74f,210198,1949995,Kannuka,Plastiku - Kannuka,B6>A5,64380,0
-207339071cf4cfb8ed227dda5de8c74f,210198,1949993,Kannuka,Metalli - Kannuka,B7>A5,64381,0
-08e0b109cc04da2c5a2242b58e678df0,210218,1950000,Tehase,Kannuka - Vanalinn - Tehase,A>B,54436,0
+5c4164429e5e041251a099db16e3960f,210179,1955824,Tehase,Gagarini - Tehase,A5>B5,64376,0
+5c4164429e5e041251a099db16e3960f,210179,1955826,Tehase,Gagarini - Tehase,A5>B5,64376,0
+5c4164429e5e041251a099db16e3960f,210179,1955827,Tehase,Gagarini - Tehase,A5>B5,64376,0
+5c4164429e5e041251a099db16e3960f,210179,1955829,Tehase,Gagarini - Tehase,A5>B5,64376,0
+5c4164429e5e041251a099db16e3960f,210180,1955832,Tehase,Gagarini - Tehase,A5>B5,64376,0
+5c4164429e5e041251a099db16e3960f,210180,1955834,Tehase,Gagarini - Tehase,A5>B5,64376,0
+5c4164429e5e041251a099db16e3960f,210179,1955825,J. Gagarini,Tehase - Gagarini,B5>A5,64377,0
+5c4164429e5e041251a099db16e3960f,210179,1955828,J. Gagarini,Tehase - Gagarini,B5>A5,64377,0
+5c4164429e5e041251a099db16e3960f,210179,1955830,J. Gagarini,Tehase - Gagarini,B5>A5,64377,0
+5c4164429e5e041251a099db16e3960f,210180,1955831,J. Gagarini,Tehase - Gagarini,B5>A5,64377,0
+5c4164429e5e041251a099db16e3960f,210180,1955833,J. Gagarini,Tehase - Gagarini,B5>A5,64377,0
+5c4164429e5e041251a099db16e3960f,210181,1955835,J. Gagarini,Tehase - Gagarini,B5>A5,64377,0
+dee93fa4be031fc96cb1f88451754051,210193,1955836,Plastiku,Kannuka - Plastiku,A>B,59682,0
+dee93fa4be031fc96cb1f88451754051,210193,1955837,Plastiku,Kannuka - Plastiku,A>B,59682,0
+dee93fa4be031fc96cb1f88451754051,210193,1955838,Plastiku,Kannuka - Plastiku,A>B,59682,0
+dee93fa4be031fc96cb1f88451754051,210193,1955839,Plastiku,Kannuka - Plastiku,A>B,59682,0
+207339071cf4cfb8ed227dda5de8c74f,210197,1955840,Tehase,Kannuka - Tehase,A5>B5,64378,0
+207339071cf4cfb8ed227dda5de8c74f,210197,1955842,Tehase,Kannuka - Tehase,A5>B5,64378,0
+207339071cf4cfb8ed227dda5de8c74f,210197,1955844,Tehase,Kannuka - Tehase,A5>B5,64378,0
+207339071cf4cfb8ed227dda5de8c74f,210197,1955845,Tehase,Kannuka - Tehase,A5>B5,64378,0
+207339071cf4cfb8ed227dda5de8c74f,210198,1955849,Tehase,Kannuka - Tehase,A5>B5,64378,0
+207339071cf4cfb8ed227dda5de8c74f,210198,1955855,Tehase,Kannuka - Tehase,A5>B5,64378,0
+207339071cf4cfb8ed227dda5de8c74f,210198,1955857,Tehase,Kannuka - Tehase,A5>B5,64378,0
+207339071cf4cfb8ed227dda5de8c74f,210199,1955860,Tehase,Kannuka - Tehase,A5>B5,64378,0
+207339071cf4cfb8ed227dda5de8c74f,210199,1955862,Tehase,Kannuka - Tehase,A5>B5,64378,0
+207339071cf4cfb8ed227dda5de8c74f,210197,1955841,Kannuka,Tehase - Kannuka,B5>A5,64379,0
+207339071cf4cfb8ed227dda5de8c74f,210197,1955843,Kannuka,Tehase - Kannuka,B5>A5,64379,0
+207339071cf4cfb8ed227dda5de8c74f,210197,1955846,Kannuka,Tehase - Kannuka,B5>A5,64379,0
+207339071cf4cfb8ed227dda5de8c74f,210198,1955847,Kannuka,Tehase - Kannuka,B5>A5,64379,0
+207339071cf4cfb8ed227dda5de8c74f,210198,1955848,Kannuka,Tehase - Kannuka,B5>A5,64379,0
+207339071cf4cfb8ed227dda5de8c74f,210198,1955850,Kannuka,Tehase - Kannuka,B5>A5,64379,0
+207339071cf4cfb8ed227dda5de8c74f,210198,1955851,Kannuka,Tehase - Kannuka,B5>A5,64379,0
+207339071cf4cfb8ed227dda5de8c74f,210198,1955852,Kannuka,Tehase - Kannuka,B5>A5,64379,0
+207339071cf4cfb8ed227dda5de8c74f,210198,1955853,Kannuka,Tehase - Kannuka,B5>A5,64379,0
+207339071cf4cfb8ed227dda5de8c74f,210199,1955859,Kannuka,Tehase - Kannuka,B5>A5,64379,0
+207339071cf4cfb8ed227dda5de8c74f,210199,1955861,Kannuka,Tehase - Kannuka,B5>A5,64379,0
+207339071cf4cfb8ed227dda5de8c74f,210198,1955854,Kannuka,Plastiku - Kannuka,B6>A5,64380,0
+207339071cf4cfb8ed227dda5de8c74f,210198,1955858,Kannuka,Plastiku - Kannuka,B6>A5,64380,0
+207339071cf4cfb8ed227dda5de8c74f,210198,1955856,Kannuka,Metalli - Kannuka,B7>A5,64381,0
+08e0b109cc04da2c5a2242b58e678df0,210218,1955863,Tehase,Kannuka - Vanalinn - Tehase,A>B,54436,0
 86ac740d0573abd119d42c448e75a54e,210466,1864884,Paide bussijaam 6,Ardu kauplus- Mustla-Nõmme - Tarbja - Paide,B>A,58462,0
 86ac740d0573abd119d42c448e75a54e,210466,1864883,Ardu kauplus,Paide - Mustla-Nõmme - Ardu kauplus,A>B1,58474,0
 171dbe591f4963b71c942bf54d39aff7,210467,1852059,Paide bussijaam 6,Paide - Tarbja - Pikaküla - Anna - Paide,A>B,59684,0
@@ -7106,6 +7106,8 @@ e3ac8884e488089e6857c880bcd163f9,240668,1715957,Kiideva,Haapsalu - Kiideva,A>B12
 e3ac8884e488089e6857c880bcd163f9,240668,1715959,Kiideva,Haapsalu - Kiideva,A>B12,63781,0
 e3ac8884e488089e6857c880bcd163f9,240674,1715962,Haapsalu bussijaam,Panga - Haapsalu,B11>A,63778,0
 e3ac8884e488089e6857c880bcd163f9,240674,1715961,Panga,Haapsalu - Panga,A>B11,63780,0
+f0b608c97ba07ee8ed21faf9bdccf4ba,240911,1716492,Alavere,Alavere - Uuearu - Vetla - Voose - Alavere,A>B,57782,0
+f0b608c97ba07ee8ed21faf9bdccf4ba,240912,1716493,Alavere,Alavere - Lükati - Kehra - Alavere,A>B1,57609,0
 1d0fd3343d86e8ea41b1de80ee25f5d2,240918,1918949,Võru bussijaam,Mõniste - Saru - (Karisöödi) - Varstu - Rõuge - Võru,A>E>B,63799,0
 4ec99a89fec25bc75f06198ad18cce10,240919,1918950,Võru bussijaam,Võru - Mõniste - Saru - Antsla - Osula - Võru,A>J>B,64275,0
 de8ba58ef5425e5a9081efc50ef1c592,240921,1918951,Mõniste,Võru - Rõuge - Varstu - (Karisöödi) - Saru - Mõniste,A>H>B,64308,0
@@ -9412,18 +9414,18 @@ d0114168b3cd24d341bd8a2438e6e567,246187,1780776,Kadaka,Priisle - Kadaka,B1>A,461
 d0114168b3cd24d341bd8a2438e6e567,246188,1780777,Kadaka,Priisle - Kadaka,B1>A,46125,1
 d0114168b3cd24d341bd8a2438e6e567,246192,1780780,Kadaka,Priisle - Kadaka,B1>A,46125,1
 fa7441dc8a9bd696c442cbd8e405d56c,246203,1918999,Värska,Värska - Orava - Koidula - Värska - Podmotsa - Värska,A>E>B,64201,0
-5c4164429e5e041251a099db16e3960f,265159,1950831,Tehase,Tehase - Ranna - Kannuka - Polikliinik - Tehase,A>B,,0
-5c4164429e5e041251a099db16e3960f,265159,1950832,Tehase,Tehase - Ranna - Kannuka - Polikliinik - Tehase,A>B,,0
-5c4164429e5e041251a099db16e3960f,265160,1950836,Tehase,Tehase - Ranna - Kannuka - Polikliinik - Tehase,A>B,,0
-5c4164429e5e041251a099db16e3960f,265160,1950838,Tehase,Tehase - Ranna - Kannuka - Polikliinik - Tehase,A>B,,0
-5c4164429e5e041251a099db16e3960f,265160,1950840,Tehase,Tehase - Ranna - Kannuka - Polikliinik - Tehase,A>B,,0
-5c4164429e5e041251a099db16e3960f,265173,1950841,Tehase,Tehase - Ranna - Kannuka - Polikliinik - Tehase,A>B,,0
-5c4164429e5e041251a099db16e3960f,265173,1950842,Tehase,Tehase - Ranna - Kannuka - Polikliinik - Tehase,A>B,,0
-5c4164429e5e041251a099db16e3960f,265159,1950834,Plastiku,Tehase - Ranna - Kannuka - Polikliinik - Tehase - Plastiku,A>B1,,0
-5c4164429e5e041251a099db16e3960f,265159,1950835,Plastiku,Tehase - Ranna - Kannuka - Polikliinik - Tehase - Plastiku,A>B1,,0
-5c4164429e5e041251a099db16e3960f,265159,1950833,Metalli,Tehase - Ranna - Kannuka - Polikliinik - Tehase - Metalli,A>B2,,0
-5c4164429e5e041251a099db16e3960f,265160,1950837,Sputniku,Tehase - Ranna - Kannuka - Polikliinik - Tehase - Sputnik,A>B3,,0
-5c4164429e5e041251a099db16e3960f,265160,1950839,Sputniku,Tehase - Ranna - Kannuka - Polikliinik - Tehase - Sputnik,A>B3,,0
+5c4164429e5e041251a099db16e3960f,265159,1955935,Tehase,Tehase - Ranna - Kannuka - Polikliinik - Tehase,A>B,,0
+5c4164429e5e041251a099db16e3960f,265159,1955936,Tehase,Tehase - Ranna - Kannuka - Polikliinik - Tehase,A>B,,0
+5c4164429e5e041251a099db16e3960f,265160,1955942,Tehase,Tehase - Ranna - Kannuka - Polikliinik - Tehase,A>B,,0
+5c4164429e5e041251a099db16e3960f,265160,1955944,Tehase,Tehase - Ranna - Kannuka - Polikliinik - Tehase,A>B,,0
+5c4164429e5e041251a099db16e3960f,265173,1955945,Tehase,Tehase - Ranna - Kannuka - Polikliinik - Tehase,A>B,,0
+5c4164429e5e041251a099db16e3960f,265173,1955946,Tehase,Tehase - Ranna - Kannuka - Polikliinik - Tehase,A>B,,0
+5c4164429e5e041251a099db16e3960f,265159,1955938,Plastiku,Tehase - Ranna - Kannuka - Polikliinik - Tehase - Plastiku,A>B1,,0
+5c4164429e5e041251a099db16e3960f,265159,1955939,Plastiku,Tehase - Ranna - Kannuka - Polikliinik - Tehase - Plastiku,A>B1,,0
+5c4164429e5e041251a099db16e3960f,265159,1955937,Metalli,Tehase - Ranna - Kannuka - Polikliinik - Tehase - Metalli,A>B2,,0
+5c4164429e5e041251a099db16e3960f,265160,1955940,Sputniku,Tehase - Ranna - Kannuka - Polikliinik - Tehase - Sputnik,A>B3,,0
+5c4164429e5e041251a099db16e3960f,265160,1955941,Sputniku,Tehase - Ranna - Kannuka - Polikliinik - Tehase - Sputnik,A>B3,,0
+5c4164429e5e041251a099db16e3960f,265160,1955943,Sputniku,Tehase - Ranna - Kannuka - Polikliinik - Tehase - Sputnik,A>B3,,0
 7fcb6eb62316057d3ba6f2fe544b73c0,246338,1919000,Koidula piiripunkt,Põlva - Kauksi - Räpina - Värska - Koidula,A>C>B,64204,0
 302043a3cbb37df326d8d4f39bca38a5,246345,1765623,Tartu bussijaam,Narva - Jõhvi - Tartu,B>A,52977,0
 bbff61e0c10d0881e5383d2bca7b5fd4,246356,1774957,Kallavere,Tallinn - Loovälja - Maardu,A>B,60017,1
@@ -9745,21 +9747,21 @@ cb14d8ca3043ce1d1586ea8d7a97b0cd,246479,1928514,Põlva bussijaam,Ahja - Rasina -
 a0372481ddb1bba72e19963b6701da26,246684,1795506,Elva,Tartu - Elva (kiirliin),A>C>B,65510,0
 7bc73956740dbc8dc9e2fa6794ec554d,246685,1795507,Tartu bussijaam,Räpina - Mehikoorma - Rasina - Võnnu - Võõpste - Tartu,B>C2>A,65341,0
 bb0c173ece82c1c1a0e36912c102bb34,246686,1795508,Tartu bussijaam,Räpina - Mehikoorma - Järvselja - Võnnu - Võõpste - Tartu,B>C1>A,65343,0
-ea4fce27337a8e46b2843a74cca9e34b,265189,1950037,Vaivara jaam,Tehase - Kannuka - Turg - Vaivara jaam,A>B,,0
-ea4fce27337a8e46b2843a74cca9e34b,265189,1950044,Vaivara jaam,Tehase - Kannuka - Turg - Vaivara jaam,A>B,,0
-ea4fce27337a8e46b2843a74cca9e34b,265516,1950051,Vaivara jaam,Tehase - Kannuka - Turg - Vaivara jaam,A>B,,0
-ea4fce27337a8e46b2843a74cca9e34b,265516,1950052,Vaivara jaam,Tehase - Kannuka - Turg - Vaivara jaam,A>B,,0
-ea4fce27337a8e46b2843a74cca9e34b,265189,1950038,Tehase,Vaivara jaam - Turg - Kannuka - Tehase,B>A,,0
-ea4fce27337a8e46b2843a74cca9e34b,265189,1950040,Tehase,Vaivara jaam - Turg - Kannuka - Tehase,B>A,,0
-ea4fce27337a8e46b2843a74cca9e34b,265189,1950042,Tehase,Vaivara jaam - Turg - Kannuka - Tehase,B>A,,0
-ea4fce27337a8e46b2843a74cca9e34b,265189,1950045,Tehase,Vaivara jaam - Turg - Kannuka - Tehase,B>A,,0
-ea4fce27337a8e46b2843a74cca9e34b,265516,1950050,Tehase,Vaivara jaam - Turg - Kannuka - Tehase,B>A,,0
-ea4fce27337a8e46b2843a74cca9e34b,265189,1950039,Vaivara jaam,Tehase - Kannuka - Turg - Kesalille - Vaivara jaam,A>C>B,,0
-ea4fce27337a8e46b2843a74cca9e34b,265515,1950048,Vaivara jaam,Plastiku - Tehase - Kannuka - Turg - Vaivara jaam,A1>B,,0
-ea4fce27337a8e46b2843a74cca9e34b,265515,1950049,Vaivara jaam,Metalli - Tehase - Kannuka - Turg - Vaivara jaam,A2>B,,0
-ea4fce27337a8e46b2843a74cca9e34b,265189,1950041,Vaivara jaam,Sputniku - Tehase - Kannuka - Turg - Vaivara jaam,A3>B,,0
-ea4fce27337a8e46b2843a74cca9e34b,265515,1950047,Plastiku,Vaivara jaam - Turg - Kannuka - Tehase - Plastiku,B>A2,,0
-ea4fce27337a8e46b2843a74cca9e34b,265189,1950043,Sputniku,Vaivara jaam - Turg - Kesalille - Kannuka - Tehase - Sputniku,B>C>A3,,0
+ea4fce27337a8e46b2843a74cca9e34b,265189,1955956,Vaivara jaam,Tehase - Kannuka - Turg - Vaivara jaam,A>B,,0
+ea4fce27337a8e46b2843a74cca9e34b,265189,1955963,Vaivara jaam,Tehase - Kannuka - Turg - Vaivara jaam,A>B,,0
+ea4fce27337a8e46b2843a74cca9e34b,265516,1955971,Vaivara jaam,Tehase - Kannuka - Turg - Vaivara jaam,A>B,,0
+ea4fce27337a8e46b2843a74cca9e34b,265516,1955972,Vaivara jaam,Tehase - Kannuka - Turg - Vaivara jaam,A>B,,0
+ea4fce27337a8e46b2843a74cca9e34b,265189,1955957,Tehase,Vaivara jaam - Turg - Kannuka - Tehase,B>A,,0
+ea4fce27337a8e46b2843a74cca9e34b,265189,1955959,Tehase,Vaivara jaam - Turg - Kannuka - Tehase,B>A,,0
+ea4fce27337a8e46b2843a74cca9e34b,265189,1955961,Tehase,Vaivara jaam - Turg - Kannuka - Tehase,B>A,,0
+ea4fce27337a8e46b2843a74cca9e34b,265189,1955964,Tehase,Vaivara jaam - Turg - Kannuka - Tehase,B>A,,0
+ea4fce27337a8e46b2843a74cca9e34b,265516,1955970,Tehase,Vaivara jaam - Turg - Kannuka - Tehase,B>A,,0
+ea4fce27337a8e46b2843a74cca9e34b,265189,1955958,Vaivara jaam,Tehase - Kannuka - Turg - Kesalille - Vaivara jaam,A>C>B,,0
+ea4fce27337a8e46b2843a74cca9e34b,265515,1955968,Vaivara jaam,Plastiku - Tehase - Kannuka - Turg - Vaivara jaam,A1>B,,0
+ea4fce27337a8e46b2843a74cca9e34b,265515,1955969,Vaivara jaam,Metalli - Tehase - Kannuka - Turg - Vaivara jaam,A2>B,,0
+ea4fce27337a8e46b2843a74cca9e34b,265189,1955960,Vaivara jaam,Sputniku - Tehase - Kannuka - Turg - Kesalille - Vaivara jaam,A3>C>B,,0
+ea4fce27337a8e46b2843a74cca9e34b,265515,1955967,Plastiku,Vaivara jaam - Turg - Kannuka - Tehase - Plastiku,B>A2,,0
+ea4fce27337a8e46b2843a74cca9e34b,265189,1955962,Sputniku,Vaivara jaam - Turg - Kesalille - Kannuka - Tehase - Sputniku,B>C>A3,,0
 685577e99ecd6cd560385df44fe70f26,246792,1767469,KURESSAARE,Lümanda-Kotlandi-Koki-Koimla-Lümanda-Kõrkküla-Kuressaare,A>B,47528,0
 a7f2aa5c987e0b8725018b4b525696d9,246793,1767470,Säästu,Kihelkonna-Kärla-Kuressaare,A>B,53889,0
 930f023f5191ec2262d6ff09a82359f0,246882,1919007,Kesklinn,Kesklinn - Väimela - Parksepa - Haigla - Kesklinn,A>J>B,64239,0
@@ -9877,15 +9879,15 @@ e174345c84a399908b7d8d46e02ef193,247408,1919087,Võru bussijaam,Võru - Vastseli
 6f49721c01257f437194b8f802c7bc37,247582,1919111,Seminari väljak,Seminari väljak - KEK - Haigla - KEK - Seminari väljak,C>K>E,64375,0
 6f49721c01257f437194b8f802c7bc37,247582,1919112,Seminari väljak,Seminari väljak - KEK - Haigla - KEK - Seminari väljak,C>K>E,64375,0
 6f49721c01257f437194b8f802c7bc37,247582,1919113,Seminari väljak,Seminari väljak - KEK - Haigla - KEK - Seminari väljak,C>K>E,64375,0
-207339071cf4cfb8ed227dda5de8c74f,265183,1950843,Tehase,Tehase - Polikliinik - Kannuka - Ranna - Tehase,A>B,,0
-207339071cf4cfb8ed227dda5de8c74f,265183,1950845,Tehase,Tehase - Polikliinik - Kannuka - Ranna - Tehase,A>B,,0
-207339071cf4cfb8ed227dda5de8c74f,265183,1950846,Tehase,Tehase - Polikliinik - Kannuka - Ranna - Tehase,A>B,,0
-207339071cf4cfb8ed227dda5de8c74f,265183,1950848,Tehase,Tehase - Polikliinik - Kannuka - Ranna - Tehase,A>B,,0
-207339071cf4cfb8ed227dda5de8c74f,265184,1950849,Tehase,Tehase - Polikliinik - Kannuka - Ranna - Tehase,A>B,,0
-207339071cf4cfb8ed227dda5de8c74f,265185,1950850,Plastiku,Tehase - Polikliinik - Kannuka - Ranna - Tehase - Plastiku,A>B1,,0
-207339071cf4cfb8ed227dda5de8c74f,265185,1950851,Tehase,Plastiku - Tehase - Polikliinik - Kannuka - Ranna - Tehase,A1>B,,0
-207339071cf4cfb8ed227dda5de8c74f,265183,1950844,Tehase,Sputnik - Tehase - Polikliinik - Kannuka - Ranna - Tehase,A3>B,,0
-207339071cf4cfb8ed227dda5de8c74f,265183,1950847,Tehase,Sputnik - Tehase - Polikliinik - Kannuka - Ranna - Tehase,A3>B,,0
+207339071cf4cfb8ed227dda5de8c74f,265183,1955949,Tehase,Tehase - Polikliinik - Kannuka - Ranna - Tehase,A>B,,0
+207339071cf4cfb8ed227dda5de8c74f,265183,1955950,Tehase,Tehase - Polikliinik - Kannuka - Ranna - Tehase,A>B,,0
+207339071cf4cfb8ed227dda5de8c74f,265183,1955952,Tehase,Tehase - Polikliinik - Kannuka - Ranna - Tehase,A>B,,0
+207339071cf4cfb8ed227dda5de8c74f,265184,1955953,Tehase,Tehase - Polikliinik - Kannuka - Ranna - Tehase,A>B,,0
+207339071cf4cfb8ed227dda5de8c74f,265185,1955954,Plastiku,Tehase - Polikliinik - Kannuka - Ranna - Tehase - Plastiku,A>B1,,0
+207339071cf4cfb8ed227dda5de8c74f,265185,1955955,Tehase,Plastiku - Tehase - Polikliinik - Kannuka - Ranna - Tehase,A1>B,,0
+207339071cf4cfb8ed227dda5de8c74f,265183,1955947,Tehase,Sputnik - Tehase - Polikliinik - Kannuka - Ranna - Tehase,A3>B,,0
+207339071cf4cfb8ed227dda5de8c74f,265183,1955948,Tehase,Sputnik - Tehase - Polikliinik - Kannuka - Ranna - Tehase,A3>B,,0
+207339071cf4cfb8ed227dda5de8c74f,265183,1955951,Tehase,Sputnik - Tehase - Polikliinik - Kannuka - Ranna - Tehase,A3>B,,0
 b4ffc86409021b44c0bd9acf0ba18c0a,247854,1796435,Sadama,Keila - Keila-Joa - Lohusalu - Paldiski,A>B,51803,0
 b4ffc86409021b44c0bd9acf0ba18c0a,247854,1796437,Sadama,Keila - Keila-Joa - Lohusalu - Paldiski,A>B,51803,0
 b4ffc86409021b44c0bd9acf0ba18c0a,247854,1796439,Sadama,Keila - Keila-Joa - Lohusalu - Paldiski,A>B,51803,0
@@ -11366,11 +11368,6 @@ d98b13c4178b9035753bf08ee5610b24,250316,1825545,Rannu,Tartu - Ulila - Puhja - Ri
 24f8de58779aa13ac807f1a8d8b24c00,250409,1839642,Balti jaam (train station),Keskuse - Balti jaam,A>B,64796,1
 24f8de58779aa13ac807f1a8d8b24c00,250409,1839644,Balti jaam (train station),Keskuse - Balti jaam,A>B,64796,1
 24f8de58779aa13ac807f1a8d8b24c00,250409,1839646,Balti jaam (train station),Keskuse - Balti jaam,A>B,64796,1
-e9a11207746c08f796f5e220cb7bd374,250466,1805695,Tartu,Piusa- Tartu,B1>A,37798,0
-e9a11207746c08f796f5e220cb7bd374,250467,1805696,Tartu,Piusa- Tartu,B1>A,37798,0
-e9a11207746c08f796f5e220cb7bd374,250468,1805697,Tartu,Piusa- Tartu,B1>A,37798,0
-e9a11207746c08f796f5e220cb7bd374,250469,1805698,Piusa,Tartu - Piusa,A>B1,37796,0
-e9a11207746c08f796f5e220cb7bd374,250470,1805699,Piusa,Tartu - Piusa,A>B1,37796,0
 24f8de58779aa13ac807f1a8d8b24c00,250477,1847083,Keskuse,Balti jaam - Keskuse,B>A,64795,1
 24f8de58779aa13ac807f1a8d8b24c00,250477,1847085,Keskuse,Balti jaam - Keskuse,B>A,64795,1
 24f8de58779aa13ac807f1a8d8b24c00,250477,1847087,Keskuse,Balti jaam - Keskuse,B>A,64795,1
@@ -23854,6 +23851,8 @@ e02fc209286f1bbad7dd4aae3f77dc2a,260744,1922915,Balti jaam (train station),Nõva
 e02fc209286f1bbad7dd4aae3f77dc2a,260744,1922919,Balti jaam (train station),Nõva - Harju-Risti - Padise - Ämari - Keila - Harku - Tallinn,B>A,49587,0
 e02fc209286f1bbad7dd4aae3f77dc2a,260743,1922911,Padise,Tallinn - Harku - Keila - Ämari - Padise,A>B2,51456,0
 e02fc209286f1bbad7dd4aae3f77dc2a,260743,1922913,Padise,Tallinn - Harku - Keila - Ämari - Padise,A>B2,51456,0
+2f8563dd39def0daae544c4ff2d234f5,260959,1955864,Aegviidu,Pillapalu - Aegviidu,A>B,,0
+2f8563dd39def0daae544c4ff2d234f5,260959,1955865,Pillapalu küla,Aegviidu - Pillapalu,B>A,,0
 e7809afd68349494df627b0586f4d3ef,260748,1917041,Tartu bussijaam,(Kärgandi tee) - Välgi -  Vara - Tartu,B>C>A,65618,0
 b023e576b3322eb89f991debe34ac77e,260794,1911879,Balti jaam (train station),Mõigu - Balti jaam,B>A,61776,1
 b023e576b3322eb89f991debe34ac77e,260794,1911881,Balti jaam (train station),Mõigu - Balti jaam,B>A,61776,1
@@ -28441,124 +28440,6 @@ bcf96e10686903e9b4a53e351331d035,263421,1932243,Paide bussijaam 6,Tartu bussijaa
 432df6826f7d34ad85d85e68af318b26,263528,1934211,Kostivere,Tallinn - Loo - Lagedi kool - Kostivere,A>B,59755,0
 432df6826f7d34ad85d85e68af318b26,263528,1934213,Kostivere,Tallinn - Loo - Lagedi kool - Kostivere,A>B,59755,0
 432df6826f7d34ad85d85e68af318b26,263528,1934215,Kostivere,Tallinn - Loo - Lagedi kool - Kostivere,A>B,59755,0
-abc6c9f10daf9d3812543888ae0c8a2e,263598,1933033,Maleva,Männiku - Kopli,A>B,47807,1
-abc6c9f10daf9d3812543888ae0c8a2e,263598,1933035,Maleva,Männiku - Kopli,A>B,47807,1
-abc6c9f10daf9d3812543888ae0c8a2e,263598,1933037,Maleva,Männiku - Kopli,A>B,47807,1
-abc6c9f10daf9d3812543888ae0c8a2e,263598,1933039,Maleva,Männiku - Kopli,A>B,47807,1
-abc6c9f10daf9d3812543888ae0c8a2e,263598,1933041,Maleva,Männiku - Kopli,A>B,47807,1
-abc6c9f10daf9d3812543888ae0c8a2e,263598,1933043,Maleva,Männiku - Kopli,A>B,47807,1
-abc6c9f10daf9d3812543888ae0c8a2e,263598,1933045,Maleva,Männiku - Kopli,A>B,47807,1
-abc6c9f10daf9d3812543888ae0c8a2e,263598,1933047,Maleva,Männiku - Kopli,A>B,47807,1
-abc6c9f10daf9d3812543888ae0c8a2e,263599,1933052,Maleva,Männiku - Kopli,A>B,47807,1
-abc6c9f10daf9d3812543888ae0c8a2e,263599,1933054,Maleva,Männiku - Kopli,A>B,47807,1
-abc6c9f10daf9d3812543888ae0c8a2e,263599,1933056,Maleva,Männiku - Kopli,A>B,47807,1
-abc6c9f10daf9d3812543888ae0c8a2e,263599,1933058,Maleva,Männiku - Kopli,A>B,47807,1
-abc6c9f10daf9d3812543888ae0c8a2e,263600,1933063,Maleva,Männiku - Kopli,A>B,47807,1
-abc6c9f10daf9d3812543888ae0c8a2e,263600,1933065,Maleva,Männiku - Kopli,A>B,47807,1
-abc6c9f10daf9d3812543888ae0c8a2e,263600,1933067,Maleva,Männiku - Kopli,A>B,47807,1
-abc6c9f10daf9d3812543888ae0c8a2e,263600,1933069,Maleva,Männiku - Kopli,A>B,47807,1
-abc6c9f10daf9d3812543888ae0c8a2e,263600,1933071,Maleva,Männiku - Kopli,A>B,47807,1
-abc6c9f10daf9d3812543888ae0c8a2e,263600,1933073,Maleva,Männiku - Kopli,A>B,47807,1
-abc6c9f10daf9d3812543888ae0c8a2e,263600,1933075,Maleva,Männiku - Kopli,A>B,47807,1
-abc6c9f10daf9d3812543888ae0c8a2e,263600,1933077,Maleva,Männiku - Kopli,A>B,47807,1
-abc6c9f10daf9d3812543888ae0c8a2e,263601,1933082,Maleva,Männiku - Kopli,A>B,47807,1
-abc6c9f10daf9d3812543888ae0c8a2e,263601,1933084,Maleva,Männiku - Kopli,A>B,47807,1
-abc6c9f10daf9d3812543888ae0c8a2e,263601,1933086,Maleva,Männiku - Kopli,A>B,47807,1
-abc6c9f10daf9d3812543888ae0c8a2e,263601,1933088,Maleva,Männiku - Kopli,A>B,47807,1
-abc6c9f10daf9d3812543888ae0c8a2e,263601,1933090,Maleva,Männiku - Kopli,A>B,47807,1
-abc6c9f10daf9d3812543888ae0c8a2e,263601,1933092,Maleva,Männiku - Kopli,A>B,47807,1
-abc6c9f10daf9d3812543888ae0c8a2e,263601,1933094,Maleva,Männiku - Kopli,A>B,47807,1
-abc6c9f10daf9d3812543888ae0c8a2e,263601,1933096,Maleva,Männiku - Kopli,A>B,47807,1
-abc6c9f10daf9d3812543888ae0c8a2e,263601,1933098,Maleva,Männiku - Kopli,A>B,47807,1
-abc6c9f10daf9d3812543888ae0c8a2e,263602,1933102,Maleva,Männiku - Kopli,A>B,47807,1
-abc6c9f10daf9d3812543888ae0c8a2e,263602,1933104,Maleva,Männiku - Kopli,A>B,47807,1
-abc6c9f10daf9d3812543888ae0c8a2e,263602,1933106,Maleva,Männiku - Kopli,A>B,47807,1
-abc6c9f10daf9d3812543888ae0c8a2e,263602,1933108,Maleva,Männiku - Kopli,A>B,47807,1
-abc6c9f10daf9d3812543888ae0c8a2e,263602,1933110,Maleva,Männiku - Kopli,A>B,47807,1
-abc6c9f10daf9d3812543888ae0c8a2e,263602,1933112,Maleva,Männiku - Kopli,A>B,47807,1
-abc6c9f10daf9d3812543888ae0c8a2e,263602,1933114,Maleva,Männiku - Kopli,A>B,47807,1
-abc6c9f10daf9d3812543888ae0c8a2e,263602,1933116,Maleva,Männiku - Kopli,A>B,47807,1
-abc6c9f10daf9d3812543888ae0c8a2e,263603,1933120,Maleva,Männiku - Kopli,A>B,47807,1
-abc6c9f10daf9d3812543888ae0c8a2e,263603,1933122,Maleva,Männiku - Kopli,A>B,47807,1
-abc6c9f10daf9d3812543888ae0c8a2e,263603,1933124,Maleva,Männiku - Kopli,A>B,47807,1
-abc6c9f10daf9d3812543888ae0c8a2e,263603,1933126,Maleva,Männiku - Kopli,A>B,47807,1
-abc6c9f10daf9d3812543888ae0c8a2e,263604,1933130,Maleva,Männiku - Kopli,A>B,47807,1
-abc6c9f10daf9d3812543888ae0c8a2e,263604,1933132,Maleva,Männiku - Kopli,A>B,47807,1
-abc6c9f10daf9d3812543888ae0c8a2e,263604,1933134,Maleva,Männiku - Kopli,A>B,47807,1
-abc6c9f10daf9d3812543888ae0c8a2e,263604,1933136,Maleva,Männiku - Kopli,A>B,47807,1
-abc6c9f10daf9d3812543888ae0c8a2e,263604,1933138,Maleva,Männiku - Kopli,A>B,47807,1
-abc6c9f10daf9d3812543888ae0c8a2e,263604,1933140,Maleva,Männiku - Kopli,A>B,47807,1
-abc6c9f10daf9d3812543888ae0c8a2e,263604,1933142,Maleva,Männiku - Kopli,A>B,47807,1
-abc6c9f10daf9d3812543888ae0c8a2e,263604,1933144,Maleva,Männiku - Kopli,A>B,47807,1
-abc6c9f10daf9d3812543888ae0c8a2e,263604,1933146,Maleva,Männiku - Kopli,A>B,47807,1
-abc6c9f10daf9d3812543888ae0c8a2e,263605,1933150,Maleva,Männiku - Kopli,A>B,47807,1
-abc6c9f10daf9d3812543888ae0c8a2e,263605,1933152,Maleva,Männiku - Kopli,A>B,47807,1
-abc6c9f10daf9d3812543888ae0c8a2e,263605,1933154,Maleva,Männiku - Kopli,A>B,47807,1
-abc6c9f10daf9d3812543888ae0c8a2e,263605,1933156,Maleva,Männiku - Kopli,A>B,47807,1
-abc6c9f10daf9d3812543888ae0c8a2e,263605,1933158,Maleva,Männiku - Kopli,A>B,47807,1
-abc6c9f10daf9d3812543888ae0c8a2e,263605,1933160,Maleva,Männiku - Kopli,A>B,47807,1
-abc6c9f10daf9d3812543888ae0c8a2e,263605,1933162,Maleva,Männiku - Kopli,A>B,47807,1
-abc6c9f10daf9d3812543888ae0c8a2e,263605,1933149,Männiku,Autobussikoondis - Männiku,B1>A,9418,1
-abc6c9f10daf9d3812543888ae0c8a2e,263598,1933032,Männiku,Kopli - Männiku,B>A,47809,1
-abc6c9f10daf9d3812543888ae0c8a2e,263598,1933034,Männiku,Kopli - Männiku,B>A,47809,1
-abc6c9f10daf9d3812543888ae0c8a2e,263598,1933036,Männiku,Kopli - Männiku,B>A,47809,1
-abc6c9f10daf9d3812543888ae0c8a2e,263598,1933038,Männiku,Kopli - Männiku,B>A,47809,1
-abc6c9f10daf9d3812543888ae0c8a2e,263598,1933040,Männiku,Kopli - Männiku,B>A,47809,1
-abc6c9f10daf9d3812543888ae0c8a2e,263598,1933042,Männiku,Kopli - Männiku,B>A,47809,1
-abc6c9f10daf9d3812543888ae0c8a2e,263598,1933044,Männiku,Kopli - Männiku,B>A,47809,1
-abc6c9f10daf9d3812543888ae0c8a2e,263598,1933046,Männiku,Kopli - Männiku,B>A,47809,1
-abc6c9f10daf9d3812543888ae0c8a2e,263598,1933048,Männiku,Kopli - Männiku,B>A,47809,1
-abc6c9f10daf9d3812543888ae0c8a2e,263599,1933051,Männiku,Kopli - Männiku,B>A,47809,1
-abc6c9f10daf9d3812543888ae0c8a2e,263599,1933053,Männiku,Kopli - Männiku,B>A,47809,1
-abc6c9f10daf9d3812543888ae0c8a2e,263599,1933055,Männiku,Kopli - Männiku,B>A,47809,1
-abc6c9f10daf9d3812543888ae0c8a2e,263599,1933057,Männiku,Kopli - Männiku,B>A,47809,1
-abc6c9f10daf9d3812543888ae0c8a2e,263599,1933059,Männiku,Kopli - Männiku,B>A,47809,1
-abc6c9f10daf9d3812543888ae0c8a2e,263600,1933062,Männiku,Kopli - Männiku,B>A,47809,1
-abc6c9f10daf9d3812543888ae0c8a2e,263600,1933064,Männiku,Kopli - Männiku,B>A,47809,1
-abc6c9f10daf9d3812543888ae0c8a2e,263600,1933066,Männiku,Kopli - Männiku,B>A,47809,1
-abc6c9f10daf9d3812543888ae0c8a2e,263600,1933068,Männiku,Kopli - Männiku,B>A,47809,1
-abc6c9f10daf9d3812543888ae0c8a2e,263600,1933070,Männiku,Kopli - Männiku,B>A,47809,1
-abc6c9f10daf9d3812543888ae0c8a2e,263600,1933072,Männiku,Kopli - Männiku,B>A,47809,1
-abc6c9f10daf9d3812543888ae0c8a2e,263600,1933074,Männiku,Kopli - Männiku,B>A,47809,1
-abc6c9f10daf9d3812543888ae0c8a2e,263600,1933076,Männiku,Kopli - Männiku,B>A,47809,1
-abc6c9f10daf9d3812543888ae0c8a2e,263600,1933078,Männiku,Kopli - Männiku,B>A,47809,1
-abc6c9f10daf9d3812543888ae0c8a2e,263601,1933081,Männiku,Kopli - Männiku,B>A,47809,1
-abc6c9f10daf9d3812543888ae0c8a2e,263601,1933083,Männiku,Kopli - Männiku,B>A,47809,1
-abc6c9f10daf9d3812543888ae0c8a2e,263601,1933085,Männiku,Kopli - Männiku,B>A,47809,1
-abc6c9f10daf9d3812543888ae0c8a2e,263601,1933087,Männiku,Kopli - Männiku,B>A,47809,1
-abc6c9f10daf9d3812543888ae0c8a2e,263601,1933089,Männiku,Kopli - Männiku,B>A,47809,1
-abc6c9f10daf9d3812543888ae0c8a2e,263601,1933091,Männiku,Kopli - Männiku,B>A,47809,1
-abc6c9f10daf9d3812543888ae0c8a2e,263601,1933093,Männiku,Kopli - Männiku,B>A,47809,1
-abc6c9f10daf9d3812543888ae0c8a2e,263601,1933095,Männiku,Kopli - Männiku,B>A,47809,1
-abc6c9f10daf9d3812543888ae0c8a2e,263601,1933097,Männiku,Kopli - Männiku,B>A,47809,1
-abc6c9f10daf9d3812543888ae0c8a2e,263602,1933101,Männiku,Kopli - Männiku,B>A,47809,1
-abc6c9f10daf9d3812543888ae0c8a2e,263602,1933103,Männiku,Kopli - Männiku,B>A,47809,1
-abc6c9f10daf9d3812543888ae0c8a2e,263602,1933105,Männiku,Kopli - Männiku,B>A,47809,1
-abc6c9f10daf9d3812543888ae0c8a2e,263602,1933107,Männiku,Kopli - Männiku,B>A,47809,1
-abc6c9f10daf9d3812543888ae0c8a2e,263602,1933109,Männiku,Kopli - Männiku,B>A,47809,1
-abc6c9f10daf9d3812543888ae0c8a2e,263602,1933111,Männiku,Kopli - Männiku,B>A,47809,1
-abc6c9f10daf9d3812543888ae0c8a2e,263602,1933113,Männiku,Kopli - Männiku,B>A,47809,1
-abc6c9f10daf9d3812543888ae0c8a2e,263602,1933115,Männiku,Kopli - Männiku,B>A,47809,1
-abc6c9f10daf9d3812543888ae0c8a2e,263602,1933117,Männiku,Kopli - Männiku,B>A,47809,1
-abc6c9f10daf9d3812543888ae0c8a2e,263603,1933121,Männiku,Kopli - Männiku,B>A,47809,1
-abc6c9f10daf9d3812543888ae0c8a2e,263603,1933123,Männiku,Kopli - Männiku,B>A,47809,1
-abc6c9f10daf9d3812543888ae0c8a2e,263603,1933125,Männiku,Kopli - Männiku,B>A,47809,1
-abc6c9f10daf9d3812543888ae0c8a2e,263603,1933127,Männiku,Kopli - Männiku,B>A,47809,1
-abc6c9f10daf9d3812543888ae0c8a2e,263604,1933131,Männiku,Kopli - Männiku,B>A,47809,1
-abc6c9f10daf9d3812543888ae0c8a2e,263604,1933133,Männiku,Kopli - Männiku,B>A,47809,1
-abc6c9f10daf9d3812543888ae0c8a2e,263604,1933135,Männiku,Kopli - Männiku,B>A,47809,1
-abc6c9f10daf9d3812543888ae0c8a2e,263604,1933137,Männiku,Kopli - Männiku,B>A,47809,1
-abc6c9f10daf9d3812543888ae0c8a2e,263604,1933139,Männiku,Kopli - Männiku,B>A,47809,1
-abc6c9f10daf9d3812543888ae0c8a2e,263604,1933141,Männiku,Kopli - Männiku,B>A,47809,1
-abc6c9f10daf9d3812543888ae0c8a2e,263604,1933143,Männiku,Kopli - Männiku,B>A,47809,1
-abc6c9f10daf9d3812543888ae0c8a2e,263604,1933145,Männiku,Kopli - Männiku,B>A,47809,1
-abc6c9f10daf9d3812543888ae0c8a2e,263605,1933151,Männiku,Kopli - Männiku,B>A,47809,1
-abc6c9f10daf9d3812543888ae0c8a2e,263605,1933153,Männiku,Kopli - Männiku,B>A,47809,1
-abc6c9f10daf9d3812543888ae0c8a2e,263605,1933155,Männiku,Kopli - Männiku,B>A,47809,1
-abc6c9f10daf9d3812543888ae0c8a2e,263605,1933157,Männiku,Kopli - Männiku,B>A,47809,1
-abc6c9f10daf9d3812543888ae0c8a2e,263605,1933159,Männiku,Kopli - Männiku,B>A,47809,1
-abc6c9f10daf9d3812543888ae0c8a2e,263605,1933161,Männiku,Kopli - Männiku,B>A,47809,1
-abc6c9f10daf9d3812543888ae0c8a2e,263605,1933163,Männiku,Kopli - Männiku,B>A,47809,1
 6d22e5ce3bb6bf4daf2e48d45662d3d3,263606,1933166,Võru bussijaam,Võru - Nõnova - Lasva -(Pikakannu)-(Madala )- Võru,A>I>B,65163,0
 710b0640e268c7d9e65ad142e6dc8138,263607,1933167,Põlva bussijaam,Kanepi - Saverna - Krootuse - Põlva,A>C>B,40081,0
 f951b89fe23cb1991f7b72cffc497260,263608,1933168,Kanepi,Põlva - Puskaru - Varbuse - Kanepi,A>F>B,62657,0
@@ -29441,7 +29322,6 @@ bcf5acaaf7ab32ef2bd08df39bd12c2a,264215,1940344,Aegviidu,Tallinn - Aegviidu,A>B,
 bcf5acaaf7ab32ef2bd08df39bd12c2a,264216,1940345,Aegviidu,Tallinn - Aegviidu,A>B,37785,0
 bcf5acaaf7ab32ef2bd08df39bd12c2a,264219,1940348,Aegviidu,Tallinn - Aegviidu,A>B,37785,0
 bcf5acaaf7ab32ef2bd08df39bd12c2a,264220,1940349,Aegviidu,Tallinn - Aegviidu,A>B,37785,0
-bcf5acaaf7ab32ef2bd08df39bd12c2a,264222,1940351,Aegviidu,Tallinn - Aegviidu,A>B,37785,0
 bcf5acaaf7ab32ef2bd08df39bd12c2a,264192,1940321,Tallinn,Aegviidu - Tallinn,B>A,37786,0
 bcf5acaaf7ab32ef2bd08df39bd12c2a,264194,1940323,Tallinn,Aegviidu - Tallinn,B>A,37786,0
 bcf5acaaf7ab32ef2bd08df39bd12c2a,264197,1940326,Tallinn,Aegviidu - Tallinn,B>A,37786,0
@@ -29457,45 +29337,10 @@ bcf5acaaf7ab32ef2bd08df39bd12c2a,264212,1940341,Tallinn,Aegviidu - Tallinn,B>A,3
 bcf5acaaf7ab32ef2bd08df39bd12c2a,264217,1940346,Tallinn,Aegviidu - Tallinn,B>A,37786,0
 bcf5acaaf7ab32ef2bd08df39bd12c2a,264218,1940347,Tallinn,Aegviidu - Tallinn,B>A,37786,0
 bcf5acaaf7ab32ef2bd08df39bd12c2a,264221,1940350,Tallinn,Aegviidu - Tallinn,B>A,37786,0
-bcf5acaaf7ab32ef2bd08df39bd12c2a,264224,1940353,Aegviidu,Tallinn - Aegviidu,A>B,37785,0
-bcf5acaaf7ab32ef2bd08df39bd12c2a,264226,1940355,Aegviidu,Tallinn - Aegviidu,A>B,37785,0
-bcf5acaaf7ab32ef2bd08df39bd12c2a,264227,1940356,Aegviidu,Tallinn - Aegviidu,A>B,37785,0
-bcf5acaaf7ab32ef2bd08df39bd12c2a,264230,1940359,Aegviidu,Tallinn - Aegviidu,A>B,37785,0
-bcf5acaaf7ab32ef2bd08df39bd12c2a,264231,1940360,Aegviidu,Tallinn - Aegviidu,A>B,37785,0
-bcf5acaaf7ab32ef2bd08df39bd12c2a,264233,1940362,Aegviidu,Tallinn - Aegviidu,A>B,37785,0
-bcf5acaaf7ab32ef2bd08df39bd12c2a,264236,1940365,Aegviidu,Tallinn - Aegviidu,A>B,37785,0
-bcf5acaaf7ab32ef2bd08df39bd12c2a,264239,1940368,Aegviidu,Tallinn - Aegviidu,A>B,37785,0
-bcf5acaaf7ab32ef2bd08df39bd12c2a,264241,1940370,Aegviidu,Tallinn - Aegviidu,A>B,37785,0
-bcf5acaaf7ab32ef2bd08df39bd12c2a,264244,1940373,Aegviidu,Tallinn - Aegviidu,A>B,37785,0
-bcf5acaaf7ab32ef2bd08df39bd12c2a,264245,1940374,Aegviidu,Tallinn - Aegviidu,A>B,37785,0
-bcf5acaaf7ab32ef2bd08df39bd12c2a,264246,1940375,Aegviidu,Tallinn - Aegviidu,A>B,37785,0
-bcf5acaaf7ab32ef2bd08df39bd12c2a,264247,1940376,Aegviidu,Tallinn - Aegviidu,A>B,37785,0
-bcf5acaaf7ab32ef2bd08df39bd12c2a,264250,1940379,Aegviidu,Tallinn - Aegviidu,A>B,37785,0
-bcf5acaaf7ab32ef2bd08df39bd12c2a,264251,1940380,Aegviidu,Tallinn - Aegviidu,A>B,37785,0
-bcf5acaaf7ab32ef2bd08df39bd12c2a,264253,1940382,Aegviidu,Tallinn - Aegviidu,A>B,37785,0
-bcf5acaaf7ab32ef2bd08df39bd12c2a,264223,1940352,Tallinn,Aegviidu - Tallinn,B>A,37786,0
-bcf5acaaf7ab32ef2bd08df39bd12c2a,264225,1940354,Tallinn,Aegviidu - Tallinn,B>A,37786,0
-bcf5acaaf7ab32ef2bd08df39bd12c2a,264228,1940357,Tallinn,Aegviidu - Tallinn,B>A,37786,0
-bcf5acaaf7ab32ef2bd08df39bd12c2a,264229,1940358,Tallinn,Aegviidu - Tallinn,B>A,37786,0
-bcf5acaaf7ab32ef2bd08df39bd12c2a,264232,1940361,Tallinn,Aegviidu - Tallinn,B>A,37786,0
-bcf5acaaf7ab32ef2bd08df39bd12c2a,264234,1940363,Tallinn,Aegviidu - Tallinn,B>A,37786,0
-bcf5acaaf7ab32ef2bd08df39bd12c2a,264235,1940364,Tallinn,Aegviidu - Tallinn,B>A,37786,0
-bcf5acaaf7ab32ef2bd08df39bd12c2a,264237,1940366,Tallinn,Aegviidu - Tallinn,B>A,37786,0
-bcf5acaaf7ab32ef2bd08df39bd12c2a,264238,1940367,Tallinn,Aegviidu - Tallinn,B>A,37786,0
-bcf5acaaf7ab32ef2bd08df39bd12c2a,264240,1940369,Tallinn,Aegviidu - Tallinn,B>A,37786,0
-bcf5acaaf7ab32ef2bd08df39bd12c2a,264242,1940371,Tallinn,Aegviidu - Tallinn,B>A,37786,0
-bcf5acaaf7ab32ef2bd08df39bd12c2a,264243,1940372,Tallinn,Aegviidu - Tallinn,B>A,37786,0
-bcf5acaaf7ab32ef2bd08df39bd12c2a,264248,1940377,Tallinn,Aegviidu - Tallinn,B>A,37786,0
-bcf5acaaf7ab32ef2bd08df39bd12c2a,264249,1940378,Tallinn,Aegviidu - Tallinn,B>A,37786,0
-bcf5acaaf7ab32ef2bd08df39bd12c2a,264252,1940381,Tallinn,Aegviidu - Tallinn,B>A,37786,0
 35491a75aa66b54f7f202786f7f61307,264266,1940391,Narva,Tallinn - Narva (ekspress),A>B,37765,0
 35491a75aa66b54f7f202786f7f61307,264269,1940394,Narva,Tallinn - Narva (ekspress),A>B,37765,0
 35491a75aa66b54f7f202786f7f61307,264267,1940392,Tallinn,Narva - Tallinn,B>A,37766,0
 35491a75aa66b54f7f202786f7f61307,264268,1940393,Tallinn,Narva - Tallinn,B>A,37766,0
-35491a75aa66b54f7f202786f7f61307,264270,1940395,Narva,Tallinn - Narva (ekspress),A>B,37765,0
-35491a75aa66b54f7f202786f7f61307,264273,1940398,Narva,Tallinn - Narva (ekspress),A>B,37765,0
-35491a75aa66b54f7f202786f7f61307,264271,1940396,Tallinn,Narva - Tallinn,B>A,37766,0
-35491a75aa66b54f7f202786f7f61307,264272,1940397,Tallinn,Narva - Tallinn,B>A,37766,0
 57a1103ce3c18cad3f8b5e935790cad1,264295,1940418,Tallinn,Tartu - Tallinn,B2>A2,64225,0
 57a1103ce3c18cad3f8b5e935790cad1,264297,1940420,Tallinn,Tartu - Tallinn,B2>A2,64225,0
 57a1103ce3c18cad3f8b5e935790cad1,264298,1940421,Tallinn,Tartu - Tallinn,B2>A2,64225,0
@@ -29517,598 +29362,8 @@ bcf5acaaf7ab32ef2bd08df39bd12c2a,264252,1940381,Tallinn,Aegviidu - Tallinn,B>A,3
 80ab22dbfa8cfed6c4701871892e87c3,264366,1940485,Valga,Tallinn - Tartu/Valga,A>B,48796,0
 80ab22dbfa8cfed6c4701871892e87c3,264368,1940487,Valga,Tallinn - Tartu/Valga,A>B,48796,0
 80ab22dbfa8cfed6c4701871892e87c3,264372,1940491,Valga,Tallinn - Tartu/Valga,A>B,48796,0
-80ab22dbfa8cfed6c4701871892e87c3,264376,1940495,Tallinn,Valga - Tallinn,B>A,48806,0
-80ab22dbfa8cfed6c4701871892e87c3,264377,1940496,Tallinn,Valga - Tallinn,B>A,48806,0
-80ab22dbfa8cfed6c4701871892e87c3,264378,1940497,Tallinn,Valga - Tallinn,B>A,48806,0
-80ab22dbfa8cfed6c4701871892e87c3,264373,1940492,Valga,Tallinn - Tartu/Valga,A>B,48796,0
-80ab22dbfa8cfed6c4701871892e87c3,264374,1940493,Valga,Tallinn - Tartu/Valga,A>B,48796,0
-80ab22dbfa8cfed6c4701871892e87c3,264375,1940494,Valga,Tallinn - Tartu/Valga,A>B,48796,0
-80ab22dbfa8cfed6c4701871892e87c3,264379,1940498,Valga,Tallinn - Tartu/Valga,A>B,48796,0
 1e8ff333d66a208095a65ea3944107a8,264383,1940501,Lasila kool,Tamsalu - Karitsa - Rakvere - Lasila,A>B2,56027,1
-571c9c6659c3d0ff1b9e831826ac8910,264410,1940506,Seli,Pelguranna - Seli,B>A,60901,1
-571c9c6659c3d0ff1b9e831826ac8910,264410,1940508,Seli,Pelguranna - Seli,B>A,60901,1
-571c9c6659c3d0ff1b9e831826ac8910,264410,1940510,Seli,Pelguranna - Seli,B>A,60901,1
-571c9c6659c3d0ff1b9e831826ac8910,264410,1940512,Seli,Pelguranna - Seli,B>A,60901,1
-571c9c6659c3d0ff1b9e831826ac8910,264410,1940514,Seli,Pelguranna - Seli,B>A,60901,1
-571c9c6659c3d0ff1b9e831826ac8910,264410,1940516,Seli,Pelguranna - Seli,B>A,60901,1
-571c9c6659c3d0ff1b9e831826ac8910,264410,1940518,Seli,Pelguranna - Seli,B>A,60901,1
-571c9c6659c3d0ff1b9e831826ac8910,264410,1940520,Seli,Pelguranna - Seli,B>A,60901,1
-571c9c6659c3d0ff1b9e831826ac8910,264411,1940523,Seli,Pelguranna - Seli,B>A,60901,1
-571c9c6659c3d0ff1b9e831826ac8910,264411,1940525,Seli,Pelguranna - Seli,B>A,60901,1
-571c9c6659c3d0ff1b9e831826ac8910,264411,1940527,Seli,Pelguranna - Seli,B>A,60901,1
-571c9c6659c3d0ff1b9e831826ac8910,264411,1940529,Seli,Pelguranna - Seli,B>A,60901,1
-571c9c6659c3d0ff1b9e831826ac8910,264411,1940531,Seli,Pelguranna - Seli,B>A,60901,1
-571c9c6659c3d0ff1b9e831826ac8910,264411,1940533,Seli,Pelguranna - Seli,B>A,60901,1
-571c9c6659c3d0ff1b9e831826ac8910,264411,1940535,Seli,Pelguranna - Seli,B>A,60901,1
-571c9c6659c3d0ff1b9e831826ac8910,264411,1940537,Seli,Pelguranna - Seli,B>A,60901,1
-571c9c6659c3d0ff1b9e831826ac8910,264411,1940539,Seli,Pelguranna - Seli,B>A,60901,1
-571c9c6659c3d0ff1b9e831826ac8910,264412,1940543,Seli,Pelguranna - Seli,B>A,60901,1
-571c9c6659c3d0ff1b9e831826ac8910,264412,1940545,Seli,Pelguranna - Seli,B>A,60901,1
-571c9c6659c3d0ff1b9e831826ac8910,264412,1940547,Seli,Pelguranna - Seli,B>A,60901,1
-571c9c6659c3d0ff1b9e831826ac8910,264412,1940549,Seli,Pelguranna - Seli,B>A,60901,1
-571c9c6659c3d0ff1b9e831826ac8910,264412,1940551,Seli,Pelguranna - Seli,B>A,60901,1
-571c9c6659c3d0ff1b9e831826ac8910,264412,1940553,Seli,Pelguranna - Seli,B>A,60901,1
-571c9c6659c3d0ff1b9e831826ac8910,264412,1940555,Seli,Pelguranna - Seli,B>A,60901,1
-571c9c6659c3d0ff1b9e831826ac8910,264412,1940557,Seli,Pelguranna - Seli,B>A,60901,1
-571c9c6659c3d0ff1b9e831826ac8910,264413,1940561,Seli,Pelguranna - Seli,B>A,60901,1
-571c9c6659c3d0ff1b9e831826ac8910,264413,1940563,Seli,Pelguranna - Seli,B>A,60901,1
-571c9c6659c3d0ff1b9e831826ac8910,264413,1940565,Seli,Pelguranna - Seli,B>A,60901,1
-571c9c6659c3d0ff1b9e831826ac8910,264413,1940567,Seli,Pelguranna - Seli,B>A,60901,1
-571c9c6659c3d0ff1b9e831826ac8910,264413,1940569,Seli,Pelguranna - Seli,B>A,60901,1
-571c9c6659c3d0ff1b9e831826ac8910,264413,1940571,Seli,Pelguranna - Seli,B>A,60901,1
-571c9c6659c3d0ff1b9e831826ac8910,264413,1940573,Seli,Pelguranna - Seli,B>A,60901,1
-571c9c6659c3d0ff1b9e831826ac8910,264413,1940575,Seli,Pelguranna - Seli,B>A,60901,1
-571c9c6659c3d0ff1b9e831826ac8910,264414,1940579,Seli,Pelguranna - Seli,B>A,60901,1
-571c9c6659c3d0ff1b9e831826ac8910,264414,1940581,Seli,Pelguranna - Seli,B>A,60901,1
-571c9c6659c3d0ff1b9e831826ac8910,264414,1940585,Seli,Pelguranna - Seli,B>A,60901,1
-571c9c6659c3d0ff1b9e831826ac8910,264414,1940587,Seli,Pelguranna - Seli,B>A,60901,1
-571c9c6659c3d0ff1b9e831826ac8910,264415,1940590,Seli,Pelguranna - Seli,B>A,60901,1
-571c9c6659c3d0ff1b9e831826ac8910,264415,1940592,Seli,Pelguranna - Seli,B>A,60901,1
-571c9c6659c3d0ff1b9e831826ac8910,264415,1940594,Seli,Pelguranna - Seli,B>A,60901,1
-571c9c6659c3d0ff1b9e831826ac8910,264415,1940596,Seli,Pelguranna - Seli,B>A,60901,1
-571c9c6659c3d0ff1b9e831826ac8910,264415,1940598,Seli,Pelguranna - Seli,B>A,60901,1
-571c9c6659c3d0ff1b9e831826ac8910,264415,1940600,Seli,Pelguranna - Seli,B>A,60901,1
-571c9c6659c3d0ff1b9e831826ac8910,264415,1940602,Seli,Pelguranna - Seli,B>A,60901,1
-571c9c6659c3d0ff1b9e831826ac8910,264415,1940604,Seli,Pelguranna - Seli,B>A,60901,1
-571c9c6659c3d0ff1b9e831826ac8910,264416,1940609,Seli,Pelguranna - Seli,B>A,60901,1
-571c9c6659c3d0ff1b9e831826ac8910,264416,1940611,Seli,Pelguranna - Seli,B>A,60901,1
-571c9c6659c3d0ff1b9e831826ac8910,264416,1940613,Seli,Pelguranna - Seli,B>A,60901,1
-571c9c6659c3d0ff1b9e831826ac8910,264416,1940615,Seli,Pelguranna - Seli,B>A,60901,1
-571c9c6659c3d0ff1b9e831826ac8910,264416,1940617,Seli,Pelguranna - Seli,B>A,60901,1
-571c9c6659c3d0ff1b9e831826ac8910,264416,1940619,Seli,Pelguranna - Seli,B>A,60901,1
-571c9c6659c3d0ff1b9e831826ac8910,264416,1940621,Seli,Pelguranna - Seli,B>A,60901,1
-571c9c6659c3d0ff1b9e831826ac8910,264416,1940623,Seli,Pelguranna - Seli,B>A,60901,1
-571c9c6659c3d0ff1b9e831826ac8910,264417,1940627,Seli,Pelguranna - Seli,B>A,60901,1
-571c9c6659c3d0ff1b9e831826ac8910,264417,1940629,Seli,Pelguranna - Seli,B>A,60901,1
-571c9c6659c3d0ff1b9e831826ac8910,264417,1940631,Seli,Pelguranna - Seli,B>A,60901,1
-571c9c6659c3d0ff1b9e831826ac8910,264417,1940633,Seli,Pelguranna - Seli,B>A,60901,1
-571c9c6659c3d0ff1b9e831826ac8910,264417,1940635,Seli,Pelguranna - Seli,B>A,60901,1
-571c9c6659c3d0ff1b9e831826ac8910,264417,1940637,Seli,Pelguranna - Seli,B>A,60901,1
-571c9c6659c3d0ff1b9e831826ac8910,264417,1940639,Seli,Pelguranna - Seli,B>A,60901,1
-571c9c6659c3d0ff1b9e831826ac8910,264417,1940641,Seli,Pelguranna - Seli,B>A,60901,1
-571c9c6659c3d0ff1b9e831826ac8910,264418,1940644,Seli,Pelguranna - Seli,B>A,60901,1
-571c9c6659c3d0ff1b9e831826ac8910,264418,1940646,Seli,Pelguranna - Seli,B>A,60901,1
-571c9c6659c3d0ff1b9e831826ac8910,264418,1940648,Seli,Pelguranna - Seli,B>A,60901,1
-571c9c6659c3d0ff1b9e831826ac8910,264418,1940650,Seli,Pelguranna - Seli,B>A,60901,1
-571c9c6659c3d0ff1b9e831826ac8910,264418,1940652,Seli,Pelguranna - Seli,B>A,60901,1
-571c9c6659c3d0ff1b9e831826ac8910,264418,1940654,Seli,Pelguranna - Seli,B>A,60901,1
-571c9c6659c3d0ff1b9e831826ac8910,264418,1940656,Seli,Pelguranna - Seli,B>A,60901,1
-571c9c6659c3d0ff1b9e831826ac8910,264418,1940658,Seli,Pelguranna - Seli,B>A,60901,1
-571c9c6659c3d0ff1b9e831826ac8910,264419,1940663,Seli,Pelguranna - Seli,B>A,60901,1
-571c9c6659c3d0ff1b9e831826ac8910,264419,1940665,Seli,Pelguranna - Seli,B>A,60901,1
-571c9c6659c3d0ff1b9e831826ac8910,264419,1940667,Seli,Pelguranna - Seli,B>A,60901,1
-571c9c6659c3d0ff1b9e831826ac8910,264419,1940669,Seli,Pelguranna - Seli,B>A,60901,1
-571c9c6659c3d0ff1b9e831826ac8910,264419,1940671,Seli,Pelguranna - Seli,B>A,60901,1
-571c9c6659c3d0ff1b9e831826ac8910,264419,1940673,Seli,Pelguranna - Seli,B>A,60901,1
-571c9c6659c3d0ff1b9e831826ac8910,264419,1940675,Seli,Pelguranna - Seli,B>A,60901,1
-571c9c6659c3d0ff1b9e831826ac8910,264410,1940505,Supelranna,Seli - Pelguranna,A>B,60900,1
-571c9c6659c3d0ff1b9e831826ac8910,264410,1940507,Supelranna,Seli - Pelguranna,A>B,60900,1
-571c9c6659c3d0ff1b9e831826ac8910,264410,1940509,Supelranna,Seli - Pelguranna,A>B,60900,1
-571c9c6659c3d0ff1b9e831826ac8910,264410,1940511,Supelranna,Seli - Pelguranna,A>B,60900,1
-571c9c6659c3d0ff1b9e831826ac8910,264410,1940513,Supelranna,Seli - Pelguranna,A>B,60900,1
-571c9c6659c3d0ff1b9e831826ac8910,264410,1940515,Supelranna,Seli - Pelguranna,A>B,60900,1
-571c9c6659c3d0ff1b9e831826ac8910,264410,1940517,Supelranna,Seli - Pelguranna,A>B,60900,1
-571c9c6659c3d0ff1b9e831826ac8910,264410,1940519,Supelranna,Seli - Pelguranna,A>B,60900,1
-571c9c6659c3d0ff1b9e831826ac8910,264411,1940524,Supelranna,Seli - Pelguranna,A>B,60900,1
-571c9c6659c3d0ff1b9e831826ac8910,264411,1940526,Supelranna,Seli - Pelguranna,A>B,60900,1
-571c9c6659c3d0ff1b9e831826ac8910,264411,1940528,Supelranna,Seli - Pelguranna,A>B,60900,1
-571c9c6659c3d0ff1b9e831826ac8910,264411,1940530,Supelranna,Seli - Pelguranna,A>B,60900,1
-571c9c6659c3d0ff1b9e831826ac8910,264411,1940532,Supelranna,Seli - Pelguranna,A>B,60900,1
-571c9c6659c3d0ff1b9e831826ac8910,264411,1940534,Supelranna,Seli - Pelguranna,A>B,60900,1
-571c9c6659c3d0ff1b9e831826ac8910,264411,1940536,Supelranna,Seli - Pelguranna,A>B,60900,1
-571c9c6659c3d0ff1b9e831826ac8910,264411,1940538,Supelranna,Seli - Pelguranna,A>B,60900,1
-571c9c6659c3d0ff1b9e831826ac8910,264412,1940542,Supelranna,Seli - Pelguranna,A>B,60900,1
-571c9c6659c3d0ff1b9e831826ac8910,264412,1940544,Supelranna,Seli - Pelguranna,A>B,60900,1
-571c9c6659c3d0ff1b9e831826ac8910,264412,1940546,Supelranna,Seli - Pelguranna,A>B,60900,1
-571c9c6659c3d0ff1b9e831826ac8910,264412,1940548,Supelranna,Seli - Pelguranna,A>B,60900,1
-571c9c6659c3d0ff1b9e831826ac8910,264412,1940550,Supelranna,Seli - Pelguranna,A>B,60900,1
-571c9c6659c3d0ff1b9e831826ac8910,264412,1940552,Supelranna,Seli - Pelguranna,A>B,60900,1
-571c9c6659c3d0ff1b9e831826ac8910,264412,1940554,Supelranna,Seli - Pelguranna,A>B,60900,1
-571c9c6659c3d0ff1b9e831826ac8910,264412,1940556,Supelranna,Seli - Pelguranna,A>B,60900,1
-571c9c6659c3d0ff1b9e831826ac8910,264413,1940560,Supelranna,Seli - Pelguranna,A>B,60900,1
-571c9c6659c3d0ff1b9e831826ac8910,264413,1940562,Supelranna,Seli - Pelguranna,A>B,60900,1
-571c9c6659c3d0ff1b9e831826ac8910,264413,1940564,Supelranna,Seli - Pelguranna,A>B,60900,1
-571c9c6659c3d0ff1b9e831826ac8910,264413,1940566,Supelranna,Seli - Pelguranna,A>B,60900,1
-571c9c6659c3d0ff1b9e831826ac8910,264413,1940568,Supelranna,Seli - Pelguranna,A>B,60900,1
-571c9c6659c3d0ff1b9e831826ac8910,264413,1940570,Supelranna,Seli - Pelguranna,A>B,60900,1
-571c9c6659c3d0ff1b9e831826ac8910,264413,1940572,Supelranna,Seli - Pelguranna,A>B,60900,1
-571c9c6659c3d0ff1b9e831826ac8910,264413,1940574,Supelranna,Seli - Pelguranna,A>B,60900,1
-571c9c6659c3d0ff1b9e831826ac8910,264414,1940578,Supelranna,Seli - Pelguranna,A>B,60900,1
-571c9c6659c3d0ff1b9e831826ac8910,264414,1940580,Supelranna,Seli - Pelguranna,A>B,60900,1
-571c9c6659c3d0ff1b9e831826ac8910,264414,1940584,Supelranna,Seli - Pelguranna,A>B,60900,1
-571c9c6659c3d0ff1b9e831826ac8910,264414,1940586,Supelranna,Seli - Pelguranna,A>B,60900,1
-571c9c6659c3d0ff1b9e831826ac8910,264415,1940591,Supelranna,Seli - Pelguranna,A>B,60900,1
-571c9c6659c3d0ff1b9e831826ac8910,264415,1940593,Supelranna,Seli - Pelguranna,A>B,60900,1
-571c9c6659c3d0ff1b9e831826ac8910,264415,1940595,Supelranna,Seli - Pelguranna,A>B,60900,1
-571c9c6659c3d0ff1b9e831826ac8910,264415,1940597,Supelranna,Seli - Pelguranna,A>B,60900,1
-571c9c6659c3d0ff1b9e831826ac8910,264415,1940599,Supelranna,Seli - Pelguranna,A>B,60900,1
-571c9c6659c3d0ff1b9e831826ac8910,264415,1940601,Supelranna,Seli - Pelguranna,A>B,60900,1
-571c9c6659c3d0ff1b9e831826ac8910,264415,1940603,Supelranna,Seli - Pelguranna,A>B,60900,1
-571c9c6659c3d0ff1b9e831826ac8910,264415,1940605,Supelranna,Seli - Pelguranna,A>B,60900,1
-571c9c6659c3d0ff1b9e831826ac8910,264416,1940608,Supelranna,Seli - Pelguranna,A>B,60900,1
-571c9c6659c3d0ff1b9e831826ac8910,264416,1940610,Supelranna,Seli - Pelguranna,A>B,60900,1
-571c9c6659c3d0ff1b9e831826ac8910,264416,1940612,Supelranna,Seli - Pelguranna,A>B,60900,1
-571c9c6659c3d0ff1b9e831826ac8910,264416,1940614,Supelranna,Seli - Pelguranna,A>B,60900,1
-571c9c6659c3d0ff1b9e831826ac8910,264416,1940616,Supelranna,Seli - Pelguranna,A>B,60900,1
-571c9c6659c3d0ff1b9e831826ac8910,264416,1940618,Supelranna,Seli - Pelguranna,A>B,60900,1
-571c9c6659c3d0ff1b9e831826ac8910,264416,1940620,Supelranna,Seli - Pelguranna,A>B,60900,1
-571c9c6659c3d0ff1b9e831826ac8910,264416,1940622,Supelranna,Seli - Pelguranna,A>B,60900,1
-571c9c6659c3d0ff1b9e831826ac8910,264417,1940626,Supelranna,Seli - Pelguranna,A>B,60900,1
-571c9c6659c3d0ff1b9e831826ac8910,264417,1940628,Supelranna,Seli - Pelguranna,A>B,60900,1
-571c9c6659c3d0ff1b9e831826ac8910,264417,1940630,Supelranna,Seli - Pelguranna,A>B,60900,1
-571c9c6659c3d0ff1b9e831826ac8910,264417,1940632,Supelranna,Seli - Pelguranna,A>B,60900,1
-571c9c6659c3d0ff1b9e831826ac8910,264417,1940634,Supelranna,Seli - Pelguranna,A>B,60900,1
-571c9c6659c3d0ff1b9e831826ac8910,264417,1940636,Supelranna,Seli - Pelguranna,A>B,60900,1
-571c9c6659c3d0ff1b9e831826ac8910,264417,1940638,Supelranna,Seli - Pelguranna,A>B,60900,1
-571c9c6659c3d0ff1b9e831826ac8910,264417,1940640,Supelranna,Seli - Pelguranna,A>B,60900,1
-571c9c6659c3d0ff1b9e831826ac8910,264418,1940645,Supelranna,Seli - Pelguranna,A>B,60900,1
-571c9c6659c3d0ff1b9e831826ac8910,264418,1940647,Supelranna,Seli - Pelguranna,A>B,60900,1
-571c9c6659c3d0ff1b9e831826ac8910,264418,1940649,Supelranna,Seli - Pelguranna,A>B,60900,1
-571c9c6659c3d0ff1b9e831826ac8910,264418,1940651,Supelranna,Seli - Pelguranna,A>B,60900,1
-571c9c6659c3d0ff1b9e831826ac8910,264418,1940653,Supelranna,Seli - Pelguranna,A>B,60900,1
-571c9c6659c3d0ff1b9e831826ac8910,264418,1940655,Supelranna,Seli - Pelguranna,A>B,60900,1
-571c9c6659c3d0ff1b9e831826ac8910,264418,1940657,Supelranna,Seli - Pelguranna,A>B,60900,1
-571c9c6659c3d0ff1b9e831826ac8910,264418,1940659,Supelranna,Seli - Pelguranna,A>B,60900,1
-571c9c6659c3d0ff1b9e831826ac8910,264419,1940662,Supelranna,Seli - Pelguranna,A>B,60900,1
-571c9c6659c3d0ff1b9e831826ac8910,264419,1940664,Supelranna,Seli - Pelguranna,A>B,60900,1
-571c9c6659c3d0ff1b9e831826ac8910,264419,1940666,Supelranna,Seli - Pelguranna,A>B,60900,1
-571c9c6659c3d0ff1b9e831826ac8910,264419,1940668,Supelranna,Seli - Pelguranna,A>B,60900,1
-571c9c6659c3d0ff1b9e831826ac8910,264419,1940670,Supelranna,Seli - Pelguranna,A>B,60900,1
-571c9c6659c3d0ff1b9e831826ac8910,264419,1940672,Supelranna,Seli - Pelguranna,A>B,60900,1
-571c9c6659c3d0ff1b9e831826ac8910,264419,1940674,Supelranna,Seli - Pelguranna,A>B,60900,1
-571c9c6659c3d0ff1b9e831826ac8910,264419,1940676,Supelranna,Seli - Pelguranna,A>B,60900,1
-b8fe52959158600c2eed1a74fe9817a0,264420,1940680,Priisle,Pelguranna - Priisle,B>A,61090,1
-b8fe52959158600c2eed1a74fe9817a0,264420,1940682,Priisle,Pelguranna - Priisle,B>A,61090,1
-b8fe52959158600c2eed1a74fe9817a0,264420,1940684,Priisle,Pelguranna - Priisle,B>A,61090,1
-b8fe52959158600c2eed1a74fe9817a0,264420,1940686,Priisle,Pelguranna - Priisle,B>A,61090,1
-b8fe52959158600c2eed1a74fe9817a0,264420,1940688,Priisle,Pelguranna - Priisle,B>A,61090,1
-b8fe52959158600c2eed1a74fe9817a0,264420,1940690,Priisle,Pelguranna - Priisle,B>A,61090,1
-b8fe52959158600c2eed1a74fe9817a0,264420,1940692,Priisle,Pelguranna - Priisle,B>A,61090,1
-b8fe52959158600c2eed1a74fe9817a0,264420,1940694,Priisle,Pelguranna - Priisle,B>A,61090,1
-b8fe52959158600c2eed1a74fe9817a0,264420,1940696,Priisle,Pelguranna - Priisle,B>A,61090,1
-b8fe52959158600c2eed1a74fe9817a0,264421,1940700,Priisle,Pelguranna - Priisle,B>A,61090,1
-b8fe52959158600c2eed1a74fe9817a0,264421,1940702,Priisle,Pelguranna - Priisle,B>A,61090,1
-b8fe52959158600c2eed1a74fe9817a0,264421,1940704,Priisle,Pelguranna - Priisle,B>A,61090,1
-b8fe52959158600c2eed1a74fe9817a0,264421,1940706,Priisle,Pelguranna - Priisle,B>A,61090,1
-b8fe52959158600c2eed1a74fe9817a0,264422,1940709,Priisle,Pelguranna - Priisle,B>A,61090,1
-b8fe52959158600c2eed1a74fe9817a0,264422,1940711,Priisle,Pelguranna - Priisle,B>A,61090,1
-b8fe52959158600c2eed1a74fe9817a0,264422,1940713,Priisle,Pelguranna - Priisle,B>A,61090,1
-b8fe52959158600c2eed1a74fe9817a0,264422,1940715,Priisle,Pelguranna - Priisle,B>A,61090,1
-b8fe52959158600c2eed1a74fe9817a0,264422,1940717,Priisle,Pelguranna - Priisle,B>A,61090,1
-b8fe52959158600c2eed1a74fe9817a0,264422,1940719,Priisle,Pelguranna - Priisle,B>A,61090,1
-b8fe52959158600c2eed1a74fe9817a0,264422,1940721,Priisle,Pelguranna - Priisle,B>A,61090,1
-b8fe52959158600c2eed1a74fe9817a0,264422,1940723,Priisle,Pelguranna - Priisle,B>A,61090,1
-b8fe52959158600c2eed1a74fe9817a0,264422,1940725,Priisle,Pelguranna - Priisle,B>A,61090,1
-b8fe52959158600c2eed1a74fe9817a0,264423,1940729,Priisle,Pelguranna - Priisle,B>A,61090,1
-b8fe52959158600c2eed1a74fe9817a0,264423,1940731,Priisle,Pelguranna - Priisle,B>A,61090,1
-b8fe52959158600c2eed1a74fe9817a0,264423,1940733,Priisle,Pelguranna - Priisle,B>A,61090,1
-b8fe52959158600c2eed1a74fe9817a0,264423,1940735,Priisle,Pelguranna - Priisle,B>A,61090,1
-b8fe52959158600c2eed1a74fe9817a0,264423,1940737,Priisle,Pelguranna - Priisle,B>A,61090,1
-b8fe52959158600c2eed1a74fe9817a0,264423,1940739,Priisle,Pelguranna - Priisle,B>A,61090,1
-b8fe52959158600c2eed1a74fe9817a0,264423,1940741,Priisle,Pelguranna - Priisle,B>A,61090,1
-b8fe52959158600c2eed1a74fe9817a0,264423,1940743,Priisle,Pelguranna - Priisle,B>A,61090,1
-b8fe52959158600c2eed1a74fe9817a0,264423,1940745,Priisle,Pelguranna - Priisle,B>A,61090,1
-b8fe52959158600c2eed1a74fe9817a0,264423,1940747,Priisle,Pelguranna - Priisle,B>A,61090,1
-b8fe52959158600c2eed1a74fe9817a0,264424,1940751,Priisle,Pelguranna - Priisle,B>A,61090,1
-b8fe52959158600c2eed1a74fe9817a0,264424,1940753,Priisle,Pelguranna - Priisle,B>A,61090,1
-b8fe52959158600c2eed1a74fe9817a0,264424,1940755,Priisle,Pelguranna - Priisle,B>A,61090,1
-b8fe52959158600c2eed1a74fe9817a0,264424,1940757,Priisle,Pelguranna - Priisle,B>A,61090,1
-b8fe52959158600c2eed1a74fe9817a0,264424,1940759,Priisle,Pelguranna - Priisle,B>A,61090,1
-b8fe52959158600c2eed1a74fe9817a0,264424,1940761,Priisle,Pelguranna - Priisle,B>A,61090,1
-b8fe52959158600c2eed1a74fe9817a0,264424,1940763,Priisle,Pelguranna - Priisle,B>A,61090,1
-b8fe52959158600c2eed1a74fe9817a0,264424,1940765,Priisle,Pelguranna - Priisle,B>A,61090,1
-b8fe52959158600c2eed1a74fe9817a0,264424,1940767,Priisle,Pelguranna - Priisle,B>A,61090,1
-b8fe52959158600c2eed1a74fe9817a0,264425,1940771,Priisle,Pelguranna - Priisle,B>A,61090,1
-b8fe52959158600c2eed1a74fe9817a0,264425,1940773,Priisle,Pelguranna - Priisle,B>A,61090,1
-b8fe52959158600c2eed1a74fe9817a0,264425,1940775,Priisle,Pelguranna - Priisle,B>A,61090,1
-b8fe52959158600c2eed1a74fe9817a0,264425,1940777,Priisle,Pelguranna - Priisle,B>A,61090,1
-b8fe52959158600c2eed1a74fe9817a0,264426,1940781,Priisle,Pelguranna - Priisle,B>A,61090,1
-b8fe52959158600c2eed1a74fe9817a0,264426,1940783,Priisle,Pelguranna - Priisle,B>A,61090,1
-b8fe52959158600c2eed1a74fe9817a0,264426,1940785,Priisle,Pelguranna - Priisle,B>A,61090,1
-b8fe52959158600c2eed1a74fe9817a0,264426,1940787,Priisle,Pelguranna - Priisle,B>A,61090,1
-b8fe52959158600c2eed1a74fe9817a0,264427,1940791,Priisle,Pelguranna - Priisle,B>A,61090,1
-b8fe52959158600c2eed1a74fe9817a0,264427,1940793,Priisle,Pelguranna - Priisle,B>A,61090,1
-b8fe52959158600c2eed1a74fe9817a0,264427,1940795,Priisle,Pelguranna - Priisle,B>A,61090,1
-b8fe52959158600c2eed1a74fe9817a0,264427,1940797,Priisle,Pelguranna - Priisle,B>A,61090,1
-b8fe52959158600c2eed1a74fe9817a0,264427,1940799,Priisle,Pelguranna - Priisle,B>A,61090,1
-b8fe52959158600c2eed1a74fe9817a0,264427,1940801,Priisle,Pelguranna - Priisle,B>A,61090,1
-b8fe52959158600c2eed1a74fe9817a0,264427,1940803,Priisle,Pelguranna - Priisle,B>A,61090,1
-b8fe52959158600c2eed1a74fe9817a0,264427,1940805,Priisle,Pelguranna - Priisle,B>A,61090,1
-b8fe52959158600c2eed1a74fe9817a0,264420,1940679,Randla,Priisle - Pelguranna,A>B,61805,1
-b8fe52959158600c2eed1a74fe9817a0,264420,1940681,Randla,Priisle - Pelguranna,A>B,61805,1
-b8fe52959158600c2eed1a74fe9817a0,264420,1940683,Randla,Priisle - Pelguranna,A>B,61805,1
-b8fe52959158600c2eed1a74fe9817a0,264420,1940685,Randla,Priisle - Pelguranna,A>B,61805,1
-b8fe52959158600c2eed1a74fe9817a0,264420,1940687,Randla,Priisle - Pelguranna,A>B,61805,1
-b8fe52959158600c2eed1a74fe9817a0,264420,1940689,Randla,Priisle - Pelguranna,A>B,61805,1
-b8fe52959158600c2eed1a74fe9817a0,264420,1940691,Randla,Priisle - Pelguranna,A>B,61805,1
-b8fe52959158600c2eed1a74fe9817a0,264420,1940693,Randla,Priisle - Pelguranna,A>B,61805,1
-b8fe52959158600c2eed1a74fe9817a0,264420,1940695,Randla,Priisle - Pelguranna,A>B,61805,1
-b8fe52959158600c2eed1a74fe9817a0,264421,1940699,Randla,Priisle - Pelguranna,A>B,61805,1
-b8fe52959158600c2eed1a74fe9817a0,264421,1940701,Randla,Priisle - Pelguranna,A>B,61805,1
-b8fe52959158600c2eed1a74fe9817a0,264421,1940703,Randla,Priisle - Pelguranna,A>B,61805,1
-b8fe52959158600c2eed1a74fe9817a0,264421,1940705,Randla,Priisle - Pelguranna,A>B,61805,1
-b8fe52959158600c2eed1a74fe9817a0,264422,1940710,Randla,Priisle - Pelguranna,A>B,61805,1
-b8fe52959158600c2eed1a74fe9817a0,264422,1940712,Randla,Priisle - Pelguranna,A>B,61805,1
-b8fe52959158600c2eed1a74fe9817a0,264422,1940714,Randla,Priisle - Pelguranna,A>B,61805,1
-b8fe52959158600c2eed1a74fe9817a0,264422,1940716,Randla,Priisle - Pelguranna,A>B,61805,1
-b8fe52959158600c2eed1a74fe9817a0,264422,1940718,Randla,Priisle - Pelguranna,A>B,61805,1
-b8fe52959158600c2eed1a74fe9817a0,264422,1940720,Randla,Priisle - Pelguranna,A>B,61805,1
-b8fe52959158600c2eed1a74fe9817a0,264422,1940722,Randla,Priisle - Pelguranna,A>B,61805,1
-b8fe52959158600c2eed1a74fe9817a0,264422,1940724,Randla,Priisle - Pelguranna,A>B,61805,1
-b8fe52959158600c2eed1a74fe9817a0,264422,1940726,Randla,Priisle - Pelguranna,A>B,61805,1
-b8fe52959158600c2eed1a74fe9817a0,264423,1940730,Randla,Priisle - Pelguranna,A>B,61805,1
-b8fe52959158600c2eed1a74fe9817a0,264423,1940732,Randla,Priisle - Pelguranna,A>B,61805,1
-b8fe52959158600c2eed1a74fe9817a0,264423,1940734,Randla,Priisle - Pelguranna,A>B,61805,1
-b8fe52959158600c2eed1a74fe9817a0,264423,1940736,Randla,Priisle - Pelguranna,A>B,61805,1
-b8fe52959158600c2eed1a74fe9817a0,264423,1940738,Randla,Priisle - Pelguranna,A>B,61805,1
-b8fe52959158600c2eed1a74fe9817a0,264423,1940740,Randla,Priisle - Pelguranna,A>B,61805,1
-b8fe52959158600c2eed1a74fe9817a0,264423,1940742,Randla,Priisle - Pelguranna,A>B,61805,1
-b8fe52959158600c2eed1a74fe9817a0,264423,1940744,Randla,Priisle - Pelguranna,A>B,61805,1
-b8fe52959158600c2eed1a74fe9817a0,264423,1940746,Randla,Priisle - Pelguranna,A>B,61805,1
-b8fe52959158600c2eed1a74fe9817a0,264424,1940750,Randla,Priisle - Pelguranna,A>B,61805,1
-b8fe52959158600c2eed1a74fe9817a0,264424,1940752,Randla,Priisle - Pelguranna,A>B,61805,1
-b8fe52959158600c2eed1a74fe9817a0,264424,1940754,Randla,Priisle - Pelguranna,A>B,61805,1
-b8fe52959158600c2eed1a74fe9817a0,264424,1940756,Randla,Priisle - Pelguranna,A>B,61805,1
-b8fe52959158600c2eed1a74fe9817a0,264424,1940758,Randla,Priisle - Pelguranna,A>B,61805,1
-b8fe52959158600c2eed1a74fe9817a0,264424,1940760,Randla,Priisle - Pelguranna,A>B,61805,1
-b8fe52959158600c2eed1a74fe9817a0,264424,1940762,Randla,Priisle - Pelguranna,A>B,61805,1
-b8fe52959158600c2eed1a74fe9817a0,264424,1940764,Randla,Priisle - Pelguranna,A>B,61805,1
-b8fe52959158600c2eed1a74fe9817a0,264424,1940766,Randla,Priisle - Pelguranna,A>B,61805,1
-b8fe52959158600c2eed1a74fe9817a0,264425,1940770,Randla,Priisle - Pelguranna,A>B,61805,1
-b8fe52959158600c2eed1a74fe9817a0,264425,1940772,Randla,Priisle - Pelguranna,A>B,61805,1
-b8fe52959158600c2eed1a74fe9817a0,264425,1940774,Randla,Priisle - Pelguranna,A>B,61805,1
-b8fe52959158600c2eed1a74fe9817a0,264425,1940776,Randla,Priisle - Pelguranna,A>B,61805,1
-b8fe52959158600c2eed1a74fe9817a0,264426,1940780,Randla,Priisle - Pelguranna,A>B,61805,1
-b8fe52959158600c2eed1a74fe9817a0,264426,1940782,Randla,Priisle - Pelguranna,A>B,61805,1
-b8fe52959158600c2eed1a74fe9817a0,264426,1940784,Randla,Priisle - Pelguranna,A>B,61805,1
-b8fe52959158600c2eed1a74fe9817a0,264426,1940786,Randla,Priisle - Pelguranna,A>B,61805,1
-b8fe52959158600c2eed1a74fe9817a0,264427,1940790,Randla,Priisle - Pelguranna,A>B,61805,1
-b8fe52959158600c2eed1a74fe9817a0,264427,1940792,Randla,Priisle - Pelguranna,A>B,61805,1
-b8fe52959158600c2eed1a74fe9817a0,264427,1940794,Randla,Priisle - Pelguranna,A>B,61805,1
-b8fe52959158600c2eed1a74fe9817a0,264427,1940796,Randla,Priisle - Pelguranna,A>B,61805,1
-b8fe52959158600c2eed1a74fe9817a0,264427,1940798,Randla,Priisle - Pelguranna,A>B,61805,1
-b8fe52959158600c2eed1a74fe9817a0,264427,1940800,Randla,Priisle - Pelguranna,A>B,61805,1
-b8fe52959158600c2eed1a74fe9817a0,264427,1940802,Randla,Priisle - Pelguranna,A>B,61805,1
-b8fe52959158600c2eed1a74fe9817a0,264427,1940804,Randla,Priisle - Pelguranna,A>B,61805,1
 9c188eac24875287d787861f6a1b9aa9,264434,1942550,Tartu bussijaam,Otepää - Lutike - Pangodi - Kambja - Tartu,B>C3>A,65444,0
-80ab22dbfa8cfed6c4701871892e87c3,264456,1940974,Tallinn,Valga - Tallinn,B>A,48806,0
-80ab22dbfa8cfed6c4701871892e87c3,264457,1940975,Valga,Tallinn - Tartu/Valga,A>B,48796,0
-760138b44a9f9f6f72e640f9ea1a67a1,264458,1940977,Priisle,Pelguranna - Priisle,B>A,64503,1
-760138b44a9f9f6f72e640f9ea1a67a1,264458,1940979,Priisle,Pelguranna - Priisle,B>A,64503,1
-760138b44a9f9f6f72e640f9ea1a67a1,264458,1940981,Priisle,Pelguranna - Priisle,B>A,64503,1
-760138b44a9f9f6f72e640f9ea1a67a1,264458,1940983,Priisle,Pelguranna - Priisle,B>A,64503,1
-760138b44a9f9f6f72e640f9ea1a67a1,264458,1940985,Priisle,Pelguranna - Priisle,B>A,64503,1
-760138b44a9f9f6f72e640f9ea1a67a1,264458,1940987,Priisle,Pelguranna - Priisle,B>A,64503,1
-760138b44a9f9f6f72e640f9ea1a67a1,264458,1940989,Priisle,Pelguranna - Priisle,B>A,64503,1
-760138b44a9f9f6f72e640f9ea1a67a1,264458,1940991,Priisle,Pelguranna - Priisle,B>A,64503,1
-760138b44a9f9f6f72e640f9ea1a67a1,264459,1940995,Priisle,Pelguranna - Priisle,B>A,64503,1
-760138b44a9f9f6f72e640f9ea1a67a1,264459,1940997,Priisle,Pelguranna - Priisle,B>A,64503,1
-760138b44a9f9f6f72e640f9ea1a67a1,264459,1940999,Priisle,Pelguranna - Priisle,B>A,64503,1
-760138b44a9f9f6f72e640f9ea1a67a1,264459,1941001,Priisle,Pelguranna - Priisle,B>A,64503,1
-760138b44a9f9f6f72e640f9ea1a67a1,264459,1941003,Priisle,Pelguranna - Priisle,B>A,64503,1
-760138b44a9f9f6f72e640f9ea1a67a1,264459,1941005,Priisle,Pelguranna - Priisle,B>A,64503,1
-760138b44a9f9f6f72e640f9ea1a67a1,264459,1941007,Priisle,Pelguranna - Priisle,B>A,64503,1
-760138b44a9f9f6f72e640f9ea1a67a1,264459,1941009,Priisle,Pelguranna - Priisle,B>A,64503,1
-760138b44a9f9f6f72e640f9ea1a67a1,264460,1941014,Priisle,Pelguranna - Priisle,B>A,64503,1
-760138b44a9f9f6f72e640f9ea1a67a1,264460,1941016,Priisle,Pelguranna - Priisle,B>A,64503,1
-760138b44a9f9f6f72e640f9ea1a67a1,264460,1941018,Priisle,Pelguranna - Priisle,B>A,64503,1
-760138b44a9f9f6f72e640f9ea1a67a1,264460,1941020,Priisle,Pelguranna - Priisle,B>A,64503,1
-760138b44a9f9f6f72e640f9ea1a67a1,264460,1941022,Priisle,Pelguranna - Priisle,B>A,64503,1
-760138b44a9f9f6f72e640f9ea1a67a1,264460,1941024,Priisle,Pelguranna - Priisle,B>A,64503,1
-760138b44a9f9f6f72e640f9ea1a67a1,264460,1941026,Priisle,Pelguranna - Priisle,B>A,64503,1
-760138b44a9f9f6f72e640f9ea1a67a1,264460,1941028,Priisle,Pelguranna - Priisle,B>A,64503,1
-760138b44a9f9f6f72e640f9ea1a67a1,264461,1941032,Priisle,Pelguranna - Priisle,B>A,64503,1
-760138b44a9f9f6f72e640f9ea1a67a1,264461,1941034,Priisle,Pelguranna - Priisle,B>A,64503,1
-760138b44a9f9f6f72e640f9ea1a67a1,264461,1941036,Priisle,Pelguranna - Priisle,B>A,64503,1
-760138b44a9f9f6f72e640f9ea1a67a1,264461,1941038,Priisle,Pelguranna - Priisle,B>A,64503,1
-760138b44a9f9f6f72e640f9ea1a67a1,264462,1941042,Priisle,Pelguranna - Priisle,B>A,64503,1
-760138b44a9f9f6f72e640f9ea1a67a1,264462,1941044,Priisle,Pelguranna - Priisle,B>A,64503,1
-760138b44a9f9f6f72e640f9ea1a67a1,264462,1941046,Priisle,Pelguranna - Priisle,B>A,64503,1
-760138b44a9f9f6f72e640f9ea1a67a1,264462,1941048,Priisle,Pelguranna - Priisle,B>A,64503,1
-760138b44a9f9f6f72e640f9ea1a67a1,264462,1941050,Priisle,Pelguranna - Priisle,B>A,64503,1
-760138b44a9f9f6f72e640f9ea1a67a1,264462,1941052,Priisle,Pelguranna - Priisle,B>A,64503,1
-760138b44a9f9f6f72e640f9ea1a67a1,264462,1941054,Priisle,Pelguranna - Priisle,B>A,64503,1
-760138b44a9f9f6f72e640f9ea1a67a1,264462,1941056,Priisle,Pelguranna - Priisle,B>A,64503,1
-760138b44a9f9f6f72e640f9ea1a67a1,264463,1941059,Priisle,Pelguranna - Priisle,B>A,64503,1
-760138b44a9f9f6f72e640f9ea1a67a1,264463,1941061,Priisle,Pelguranna - Priisle,B>A,64503,1
-760138b44a9f9f6f72e640f9ea1a67a1,264463,1941063,Priisle,Pelguranna - Priisle,B>A,64503,1
-760138b44a9f9f6f72e640f9ea1a67a1,264463,1941065,Priisle,Pelguranna - Priisle,B>A,64503,1
-760138b44a9f9f6f72e640f9ea1a67a1,264463,1941067,Priisle,Pelguranna - Priisle,B>A,64503,1
-760138b44a9f9f6f72e640f9ea1a67a1,264463,1941069,Priisle,Pelguranna - Priisle,B>A,64503,1
-760138b44a9f9f6f72e640f9ea1a67a1,264463,1941071,Priisle,Pelguranna - Priisle,B>A,64503,1
-760138b44a9f9f6f72e640f9ea1a67a1,264463,1941073,Priisle,Pelguranna - Priisle,B>A,64503,1
-760138b44a9f9f6f72e640f9ea1a67a1,264464,1941078,Priisle,Pelguranna - Priisle,B>A,64503,1
-760138b44a9f9f6f72e640f9ea1a67a1,264464,1941080,Priisle,Pelguranna - Priisle,B>A,64503,1
-760138b44a9f9f6f72e640f9ea1a67a1,264464,1941082,Priisle,Pelguranna - Priisle,B>A,64503,1
-760138b44a9f9f6f72e640f9ea1a67a1,264464,1941084,Priisle,Pelguranna - Priisle,B>A,64503,1
-760138b44a9f9f6f72e640f9ea1a67a1,264464,1941086,Priisle,Pelguranna - Priisle,B>A,64503,1
-760138b44a9f9f6f72e640f9ea1a67a1,264464,1941088,Priisle,Pelguranna - Priisle,B>A,64503,1
-760138b44a9f9f6f72e640f9ea1a67a1,264464,1941090,Priisle,Pelguranna - Priisle,B>A,64503,1
-760138b44a9f9f6f72e640f9ea1a67a1,264464,1941092,Priisle,Pelguranna - Priisle,B>A,64503,1
-760138b44a9f9f6f72e640f9ea1a67a1,264465,1941096,Priisle,Pelguranna - Priisle,B>A,64503,1
-760138b44a9f9f6f72e640f9ea1a67a1,264465,1941098,Priisle,Pelguranna - Priisle,B>A,64503,1
-760138b44a9f9f6f72e640f9ea1a67a1,264465,1941100,Priisle,Pelguranna - Priisle,B>A,64503,1
-760138b44a9f9f6f72e640f9ea1a67a1,264465,1941102,Priisle,Pelguranna - Priisle,B>A,64503,1
-760138b44a9f9f6f72e640f9ea1a67a1,264465,1941104,Priisle,Pelguranna - Priisle,B>A,64503,1
-760138b44a9f9f6f72e640f9ea1a67a1,264465,1941106,Priisle,Pelguranna - Priisle,B>A,64503,1
-760138b44a9f9f6f72e640f9ea1a67a1,264465,1941108,Priisle,Pelguranna - Priisle,B>A,64503,1
-760138b44a9f9f6f72e640f9ea1a67a1,264465,1941110,Priisle,Pelguranna - Priisle,B>A,64503,1
-760138b44a9f9f6f72e640f9ea1a67a1,264466,1941114,Priisle,Pelguranna - Priisle,B>A,64503,1
-760138b44a9f9f6f72e640f9ea1a67a1,264466,1941116,Priisle,Pelguranna - Priisle,B>A,64503,1
-760138b44a9f9f6f72e640f9ea1a67a1,264466,1941118,Priisle,Pelguranna - Priisle,B>A,64503,1
-760138b44a9f9f6f72e640f9ea1a67a1,264466,1941120,Priisle,Pelguranna - Priisle,B>A,64503,1
-760138b44a9f9f6f72e640f9ea1a67a1,264466,1941122,Priisle,Pelguranna - Priisle,B>A,64503,1
-760138b44a9f9f6f72e640f9ea1a67a1,264466,1941124,Priisle,Pelguranna - Priisle,B>A,64503,1
-760138b44a9f9f6f72e640f9ea1a67a1,264466,1941126,Priisle,Pelguranna - Priisle,B>A,64503,1
-760138b44a9f9f6f72e640f9ea1a67a1,264466,1941128,Priisle,Pelguranna - Priisle,B>A,64503,1
-760138b44a9f9f6f72e640f9ea1a67a1,264467,1941132,Priisle,Pelguranna - Priisle,B>A,64503,1
-760138b44a9f9f6f72e640f9ea1a67a1,264467,1941134,Priisle,Pelguranna - Priisle,B>A,64503,1
-760138b44a9f9f6f72e640f9ea1a67a1,264467,1941136,Priisle,Pelguranna - Priisle,B>A,64503,1
-760138b44a9f9f6f72e640f9ea1a67a1,264467,1941138,Priisle,Pelguranna - Priisle,B>A,64503,1
-760138b44a9f9f6f72e640f9ea1a67a1,264468,1941142,Priisle,Pelguranna - Priisle,B>A,64503,1
-760138b44a9f9f6f72e640f9ea1a67a1,264468,1941144,Priisle,Pelguranna - Priisle,B>A,64503,1
-760138b44a9f9f6f72e640f9ea1a67a1,264468,1941146,Priisle,Pelguranna - Priisle,B>A,64503,1
-760138b44a9f9f6f72e640f9ea1a67a1,264468,1941148,Priisle,Pelguranna - Priisle,B>A,64503,1
-760138b44a9f9f6f72e640f9ea1a67a1,264468,1941150,Priisle,Pelguranna - Priisle,B>A,64503,1
-760138b44a9f9f6f72e640f9ea1a67a1,264468,1941152,Priisle,Pelguranna - Priisle,B>A,64503,1
-760138b44a9f9f6f72e640f9ea1a67a1,264468,1941154,Priisle,Pelguranna - Priisle,B>A,64503,1
-760138b44a9f9f6f72e640f9ea1a67a1,264468,1941156,Priisle,Pelguranna - Priisle,B>A,64503,1
-760138b44a9f9f6f72e640f9ea1a67a1,264458,1940978,Supelranna,Priisle - Pelguranna,A>B,64504,1
-760138b44a9f9f6f72e640f9ea1a67a1,264458,1940980,Supelranna,Priisle - Pelguranna,A>B,64504,1
-760138b44a9f9f6f72e640f9ea1a67a1,264458,1940982,Supelranna,Priisle - Pelguranna,A>B,64504,1
-760138b44a9f9f6f72e640f9ea1a67a1,264458,1940984,Supelranna,Priisle - Pelguranna,A>B,64504,1
-760138b44a9f9f6f72e640f9ea1a67a1,264458,1940986,Supelranna,Priisle - Pelguranna,A>B,64504,1
-760138b44a9f9f6f72e640f9ea1a67a1,264458,1940988,Supelranna,Priisle - Pelguranna,A>B,64504,1
-760138b44a9f9f6f72e640f9ea1a67a1,264458,1940990,Supelranna,Priisle - Pelguranna,A>B,64504,1
-760138b44a9f9f6f72e640f9ea1a67a1,264458,1940992,Supelranna,Priisle - Pelguranna,A>B,64504,1
-760138b44a9f9f6f72e640f9ea1a67a1,264459,1940996,Supelranna,Priisle - Pelguranna,A>B,64504,1
-760138b44a9f9f6f72e640f9ea1a67a1,264459,1940998,Supelranna,Priisle - Pelguranna,A>B,64504,1
-760138b44a9f9f6f72e640f9ea1a67a1,264459,1941000,Supelranna,Priisle - Pelguranna,A>B,64504,1
-760138b44a9f9f6f72e640f9ea1a67a1,264459,1941002,Supelranna,Priisle - Pelguranna,A>B,64504,1
-760138b44a9f9f6f72e640f9ea1a67a1,264459,1941004,Supelranna,Priisle - Pelguranna,A>B,64504,1
-760138b44a9f9f6f72e640f9ea1a67a1,264459,1941006,Supelranna,Priisle - Pelguranna,A>B,64504,1
-760138b44a9f9f6f72e640f9ea1a67a1,264459,1941008,Supelranna,Priisle - Pelguranna,A>B,64504,1
-760138b44a9f9f6f72e640f9ea1a67a1,264459,1941010,Supelranna,Priisle - Pelguranna,A>B,64504,1
-760138b44a9f9f6f72e640f9ea1a67a1,264460,1941013,Supelranna,Priisle - Pelguranna,A>B,64504,1
-760138b44a9f9f6f72e640f9ea1a67a1,264460,1941015,Supelranna,Priisle - Pelguranna,A>B,64504,1
-760138b44a9f9f6f72e640f9ea1a67a1,264460,1941017,Supelranna,Priisle - Pelguranna,A>B,64504,1
-760138b44a9f9f6f72e640f9ea1a67a1,264460,1941019,Supelranna,Priisle - Pelguranna,A>B,64504,1
-760138b44a9f9f6f72e640f9ea1a67a1,264460,1941021,Supelranna,Priisle - Pelguranna,A>B,64504,1
-760138b44a9f9f6f72e640f9ea1a67a1,264460,1941023,Supelranna,Priisle - Pelguranna,A>B,64504,1
-760138b44a9f9f6f72e640f9ea1a67a1,264460,1941025,Supelranna,Priisle - Pelguranna,A>B,64504,1
-760138b44a9f9f6f72e640f9ea1a67a1,264460,1941027,Supelranna,Priisle - Pelguranna,A>B,64504,1
-760138b44a9f9f6f72e640f9ea1a67a1,264461,1941031,Supelranna,Priisle - Pelguranna,A>B,64504,1
-760138b44a9f9f6f72e640f9ea1a67a1,264461,1941033,Supelranna,Priisle - Pelguranna,A>B,64504,1
-760138b44a9f9f6f72e640f9ea1a67a1,264461,1941035,Supelranna,Priisle - Pelguranna,A>B,64504,1
-760138b44a9f9f6f72e640f9ea1a67a1,264461,1941037,Supelranna,Priisle - Pelguranna,A>B,64504,1
-760138b44a9f9f6f72e640f9ea1a67a1,264462,1941041,Supelranna,Priisle - Pelguranna,A>B,64504,1
-760138b44a9f9f6f72e640f9ea1a67a1,264462,1941043,Supelranna,Priisle - Pelguranna,A>B,64504,1
-760138b44a9f9f6f72e640f9ea1a67a1,264462,1941045,Supelranna,Priisle - Pelguranna,A>B,64504,1
-760138b44a9f9f6f72e640f9ea1a67a1,264462,1941047,Supelranna,Priisle - Pelguranna,A>B,64504,1
-760138b44a9f9f6f72e640f9ea1a67a1,264462,1941049,Supelranna,Priisle - Pelguranna,A>B,64504,1
-760138b44a9f9f6f72e640f9ea1a67a1,264462,1941051,Supelranna,Priisle - Pelguranna,A>B,64504,1
-760138b44a9f9f6f72e640f9ea1a67a1,264462,1941053,Supelranna,Priisle - Pelguranna,A>B,64504,1
-760138b44a9f9f6f72e640f9ea1a67a1,264462,1941055,Supelranna,Priisle - Pelguranna,A>B,64504,1
-760138b44a9f9f6f72e640f9ea1a67a1,264463,1941060,Supelranna,Priisle - Pelguranna,A>B,64504,1
-760138b44a9f9f6f72e640f9ea1a67a1,264463,1941062,Supelranna,Priisle - Pelguranna,A>B,64504,1
-760138b44a9f9f6f72e640f9ea1a67a1,264463,1941064,Supelranna,Priisle - Pelguranna,A>B,64504,1
-760138b44a9f9f6f72e640f9ea1a67a1,264463,1941066,Supelranna,Priisle - Pelguranna,A>B,64504,1
-760138b44a9f9f6f72e640f9ea1a67a1,264463,1941068,Supelranna,Priisle - Pelguranna,A>B,64504,1
-760138b44a9f9f6f72e640f9ea1a67a1,264463,1941070,Supelranna,Priisle - Pelguranna,A>B,64504,1
-760138b44a9f9f6f72e640f9ea1a67a1,264463,1941072,Supelranna,Priisle - Pelguranna,A>B,64504,1
-760138b44a9f9f6f72e640f9ea1a67a1,264463,1941074,Supelranna,Priisle - Pelguranna,A>B,64504,1
-760138b44a9f9f6f72e640f9ea1a67a1,264464,1941077,Supelranna,Priisle - Pelguranna,A>B,64504,1
-760138b44a9f9f6f72e640f9ea1a67a1,264464,1941079,Supelranna,Priisle - Pelguranna,A>B,64504,1
-760138b44a9f9f6f72e640f9ea1a67a1,264464,1941081,Supelranna,Priisle - Pelguranna,A>B,64504,1
-760138b44a9f9f6f72e640f9ea1a67a1,264464,1941083,Supelranna,Priisle - Pelguranna,A>B,64504,1
-760138b44a9f9f6f72e640f9ea1a67a1,264464,1941085,Supelranna,Priisle - Pelguranna,A>B,64504,1
-760138b44a9f9f6f72e640f9ea1a67a1,264464,1941087,Supelranna,Priisle - Pelguranna,A>B,64504,1
-760138b44a9f9f6f72e640f9ea1a67a1,264464,1941089,Supelranna,Priisle - Pelguranna,A>B,64504,1
-760138b44a9f9f6f72e640f9ea1a67a1,264464,1941091,Supelranna,Priisle - Pelguranna,A>B,64504,1
-760138b44a9f9f6f72e640f9ea1a67a1,264465,1941095,Supelranna,Priisle - Pelguranna,A>B,64504,1
-760138b44a9f9f6f72e640f9ea1a67a1,264465,1941097,Supelranna,Priisle - Pelguranna,A>B,64504,1
-760138b44a9f9f6f72e640f9ea1a67a1,264465,1941099,Supelranna,Priisle - Pelguranna,A>B,64504,1
-760138b44a9f9f6f72e640f9ea1a67a1,264465,1941101,Supelranna,Priisle - Pelguranna,A>B,64504,1
-760138b44a9f9f6f72e640f9ea1a67a1,264465,1941103,Supelranna,Priisle - Pelguranna,A>B,64504,1
-760138b44a9f9f6f72e640f9ea1a67a1,264465,1941105,Supelranna,Priisle - Pelguranna,A>B,64504,1
-760138b44a9f9f6f72e640f9ea1a67a1,264465,1941107,Supelranna,Priisle - Pelguranna,A>B,64504,1
-760138b44a9f9f6f72e640f9ea1a67a1,264465,1941109,Supelranna,Priisle - Pelguranna,A>B,64504,1
-760138b44a9f9f6f72e640f9ea1a67a1,264466,1941113,Supelranna,Priisle - Pelguranna,A>B,64504,1
-760138b44a9f9f6f72e640f9ea1a67a1,264466,1941115,Supelranna,Priisle - Pelguranna,A>B,64504,1
-760138b44a9f9f6f72e640f9ea1a67a1,264466,1941117,Supelranna,Priisle - Pelguranna,A>B,64504,1
-760138b44a9f9f6f72e640f9ea1a67a1,264466,1941119,Supelranna,Priisle - Pelguranna,A>B,64504,1
-760138b44a9f9f6f72e640f9ea1a67a1,264466,1941121,Supelranna,Priisle - Pelguranna,A>B,64504,1
-760138b44a9f9f6f72e640f9ea1a67a1,264466,1941123,Supelranna,Priisle - Pelguranna,A>B,64504,1
-760138b44a9f9f6f72e640f9ea1a67a1,264466,1941125,Supelranna,Priisle - Pelguranna,A>B,64504,1
-760138b44a9f9f6f72e640f9ea1a67a1,264466,1941127,Supelranna,Priisle - Pelguranna,A>B,64504,1
-760138b44a9f9f6f72e640f9ea1a67a1,264467,1941131,Supelranna,Priisle - Pelguranna,A>B,64504,1
-760138b44a9f9f6f72e640f9ea1a67a1,264467,1941133,Supelranna,Priisle - Pelguranna,A>B,64504,1
-760138b44a9f9f6f72e640f9ea1a67a1,264467,1941135,Supelranna,Priisle - Pelguranna,A>B,64504,1
-760138b44a9f9f6f72e640f9ea1a67a1,264467,1941137,Supelranna,Priisle - Pelguranna,A>B,64504,1
-760138b44a9f9f6f72e640f9ea1a67a1,264468,1941141,Supelranna,Priisle - Pelguranna,A>B,64504,1
-760138b44a9f9f6f72e640f9ea1a67a1,264468,1941143,Supelranna,Priisle - Pelguranna,A>B,64504,1
-760138b44a9f9f6f72e640f9ea1a67a1,264468,1941145,Supelranna,Priisle - Pelguranna,A>B,64504,1
-760138b44a9f9f6f72e640f9ea1a67a1,264468,1941147,Supelranna,Priisle - Pelguranna,A>B,64504,1
-760138b44a9f9f6f72e640f9ea1a67a1,264468,1941149,Supelranna,Priisle - Pelguranna,A>B,64504,1
-760138b44a9f9f6f72e640f9ea1a67a1,264468,1941151,Supelranna,Priisle - Pelguranna,A>B,64504,1
-760138b44a9f9f6f72e640f9ea1a67a1,264468,1941153,Supelranna,Priisle - Pelguranna,A>B,64504,1
-760138b44a9f9f6f72e640f9ea1a67a1,264468,1941155,Supelranna,Priisle - Pelguranna,A>B,64504,1
-00b13d796daf2a664a76a98bbfa09274,264469,1941159,Randla,Vana-Lõuna - Pelguranna,A>B,57857,1
-00b13d796daf2a664a76a98bbfa09274,264469,1941161,Randla,Vana-Lõuna - Pelguranna,A>B,57857,1
-00b13d796daf2a664a76a98bbfa09274,264469,1941163,Randla,Vana-Lõuna - Pelguranna,A>B,57857,1
-00b13d796daf2a664a76a98bbfa09274,264469,1941165,Randla,Vana-Lõuna - Pelguranna,A>B,57857,1
-00b13d796daf2a664a76a98bbfa09274,264469,1941167,Randla,Vana-Lõuna - Pelguranna,A>B,57857,1
-00b13d796daf2a664a76a98bbfa09274,264469,1941169,Randla,Vana-Lõuna - Pelguranna,A>B,57857,1
-00b13d796daf2a664a76a98bbfa09274,264470,1941173,Randla,Vana-Lõuna - Pelguranna,A>B,57857,1
-00b13d796daf2a664a76a98bbfa09274,264470,1941175,Randla,Vana-Lõuna - Pelguranna,A>B,57857,1
-00b13d796daf2a664a76a98bbfa09274,264470,1941177,Randla,Vana-Lõuna - Pelguranna,A>B,57857,1
-00b13d796daf2a664a76a98bbfa09274,264470,1941179,Randla,Vana-Lõuna - Pelguranna,A>B,57857,1
-00b13d796daf2a664a76a98bbfa09274,264470,1941181,Randla,Vana-Lõuna - Pelguranna,A>B,57857,1
-00b13d796daf2a664a76a98bbfa09274,264470,1941183,Randla,Vana-Lõuna - Pelguranna,A>B,57857,1
-00b13d796daf2a664a76a98bbfa09274,264471,1941187,Randla,Vana-Lõuna - Pelguranna,A>B,57857,1
-00b13d796daf2a664a76a98bbfa09274,264471,1941189,Randla,Vana-Lõuna - Pelguranna,A>B,57857,1
-00b13d796daf2a664a76a98bbfa09274,264471,1941191,Randla,Vana-Lõuna - Pelguranna,A>B,57857,1
-00b13d796daf2a664a76a98bbfa09274,264471,1941193,Randla,Vana-Lõuna - Pelguranna,A>B,57857,1
-00b13d796daf2a664a76a98bbfa09274,264471,1941195,Randla,Vana-Lõuna - Pelguranna,A>B,57857,1
-00b13d796daf2a664a76a98bbfa09274,264471,1941197,Randla,Vana-Lõuna - Pelguranna,A>B,57857,1
-00b13d796daf2a664a76a98bbfa09274,264471,1941199,Randla,Vana-Lõuna - Pelguranna,A>B,57857,1
-00b13d796daf2a664a76a98bbfa09274,264471,1941201,Randla,Vana-Lõuna - Pelguranna,A>B,57857,1
-00b13d796daf2a664a76a98bbfa09274,264471,1941203,Randla,Vana-Lõuna - Pelguranna,A>B,57857,1
-00b13d796daf2a664a76a98bbfa09274,264471,1941205,Randla,Vana-Lõuna - Pelguranna,A>B,57857,1
-00b13d796daf2a664a76a98bbfa09274,264471,1941207,Randla,Vana-Lõuna - Pelguranna,A>B,57857,1
-00b13d796daf2a664a76a98bbfa09274,264471,1941209,Randla,Vana-Lõuna - Pelguranna,A>B,57857,1
-00b13d796daf2a664a76a98bbfa09274,264472,1941214,Randla,Vana-Lõuna - Pelguranna,A>B,57857,1
-00b13d796daf2a664a76a98bbfa09274,264472,1941216,Randla,Vana-Lõuna - Pelguranna,A>B,57857,1
-00b13d796daf2a664a76a98bbfa09274,264472,1941218,Randla,Vana-Lõuna - Pelguranna,A>B,57857,1
-00b13d796daf2a664a76a98bbfa09274,264472,1941220,Randla,Vana-Lõuna - Pelguranna,A>B,57857,1
-00b13d796daf2a664a76a98bbfa09274,264472,1941222,Randla,Vana-Lõuna - Pelguranna,A>B,57857,1
-00b13d796daf2a664a76a98bbfa09274,264472,1941224,Randla,Vana-Lõuna - Pelguranna,A>B,57857,1
-00b13d796daf2a664a76a98bbfa09274,264472,1941226,Randla,Vana-Lõuna - Pelguranna,A>B,57857,1
-00b13d796daf2a664a76a98bbfa09274,264472,1941228,Randla,Vana-Lõuna - Pelguranna,A>B,57857,1
-00b13d796daf2a664a76a98bbfa09274,264472,1941230,Randla,Vana-Lõuna - Pelguranna,A>B,57857,1
-00b13d796daf2a664a76a98bbfa09274,264472,1941232,Randla,Vana-Lõuna - Pelguranna,A>B,57857,1
-00b13d796daf2a664a76a98bbfa09274,264472,1941234,Randla,Vana-Lõuna - Pelguranna,A>B,57857,1
-00b13d796daf2a664a76a98bbfa09274,264472,1941236,Randla,Vana-Lõuna - Pelguranna,A>B,57857,1
-00b13d796daf2a664a76a98bbfa09274,264473,1941239,Randla,Vana-Lõuna - Pelguranna,A>B,57857,1
-00b13d796daf2a664a76a98bbfa09274,264473,1941241,Randla,Vana-Lõuna - Pelguranna,A>B,57857,1
-00b13d796daf2a664a76a98bbfa09274,264473,1941243,Randla,Vana-Lõuna - Pelguranna,A>B,57857,1
-00b13d796daf2a664a76a98bbfa09274,264473,1941245,Randla,Vana-Lõuna - Pelguranna,A>B,57857,1
-00b13d796daf2a664a76a98bbfa09274,264473,1941247,Randla,Vana-Lõuna - Pelguranna,A>B,57857,1
-00b13d796daf2a664a76a98bbfa09274,264473,1941249,Randla,Vana-Lõuna - Pelguranna,A>B,57857,1
-00b13d796daf2a664a76a98bbfa09274,264473,1941251,Randla,Vana-Lõuna - Pelguranna,A>B,57857,1
-00b13d796daf2a664a76a98bbfa09274,264473,1941253,Randla,Vana-Lõuna - Pelguranna,A>B,57857,1
-00b13d796daf2a664a76a98bbfa09274,264473,1941255,Randla,Vana-Lõuna - Pelguranna,A>B,57857,1
-00b13d796daf2a664a76a98bbfa09274,264473,1941257,Randla,Vana-Lõuna - Pelguranna,A>B,57857,1
-00b13d796daf2a664a76a98bbfa09274,264473,1941259,Randla,Vana-Lõuna - Pelguranna,A>B,57857,1
-00b13d796daf2a664a76a98bbfa09274,264473,1941261,Randla,Vana-Lõuna - Pelguranna,A>B,57857,1
-00b13d796daf2a664a76a98bbfa09274,264474,1941266,Randla,Vana-Lõuna - Pelguranna,A>B,57857,1
-00b13d796daf2a664a76a98bbfa09274,264474,1941268,Randla,Vana-Lõuna - Pelguranna,A>B,57857,1
-00b13d796daf2a664a76a98bbfa09274,264474,1941270,Randla,Vana-Lõuna - Pelguranna,A>B,57857,1
-00b13d796daf2a664a76a98bbfa09274,264474,1941272,Randla,Vana-Lõuna - Pelguranna,A>B,57857,1
-00b13d796daf2a664a76a98bbfa09274,264474,1941274,Randla,Vana-Lõuna - Pelguranna,A>B,57857,1
-00b13d796daf2a664a76a98bbfa09274,264474,1941276,Randla,Vana-Lõuna - Pelguranna,A>B,57857,1
-00b13d796daf2a664a76a98bbfa09274,264475,1941280,Randla,Vana-Lõuna - Pelguranna,A>B,57857,1
-00b13d796daf2a664a76a98bbfa09274,264475,1941282,Randla,Vana-Lõuna - Pelguranna,A>B,57857,1
-00b13d796daf2a664a76a98bbfa09274,264475,1941284,Randla,Vana-Lõuna - Pelguranna,A>B,57857,1
-00b13d796daf2a664a76a98bbfa09274,264475,1941286,Randla,Vana-Lõuna - Pelguranna,A>B,57857,1
-00b13d796daf2a664a76a98bbfa09274,264475,1941288,Randla,Vana-Lõuna - Pelguranna,A>B,57857,1
-00b13d796daf2a664a76a98bbfa09274,264475,1941290,Randla,Vana-Lõuna - Pelguranna,A>B,57857,1
-00b13d796daf2a664a76a98bbfa09274,264475,1941292,Randla,Vana-Lõuna - Pelguranna,A>B,57857,1
-00b13d796daf2a664a76a98bbfa09274,264475,1941294,Randla,Vana-Lõuna - Pelguranna,A>B,57857,1
-00b13d796daf2a664a76a98bbfa09274,264475,1941296,Randla,Vana-Lõuna - Pelguranna,A>B,57857,1
-00b13d796daf2a664a76a98bbfa09274,264475,1941298,Randla,Vana-Lõuna - Pelguranna,A>B,57857,1
-00b13d796daf2a664a76a98bbfa09274,264475,1941300,Randla,Vana-Lõuna - Pelguranna,A>B,57857,1
-00b13d796daf2a664a76a98bbfa09274,264475,1941302,Randla,Vana-Lõuna - Pelguranna,A>B,57857,1
-00b13d796daf2a664a76a98bbfa09274,264476,1941306,Randla,Vana-Lõuna - Pelguranna,A>B,57857,1
-00b13d796daf2a664a76a98bbfa09274,264476,1941308,Randla,Vana-Lõuna - Pelguranna,A>B,57857,1
-00b13d796daf2a664a76a98bbfa09274,264476,1941310,Randla,Vana-Lõuna - Pelguranna,A>B,57857,1
-00b13d796daf2a664a76a98bbfa09274,264476,1941312,Randla,Vana-Lõuna - Pelguranna,A>B,57857,1
-00b13d796daf2a664a76a98bbfa09274,264476,1941314,Randla,Vana-Lõuna - Pelguranna,A>B,57857,1
-00b13d796daf2a664a76a98bbfa09274,264476,1941316,Randla,Vana-Lõuna - Pelguranna,A>B,57857,1
-00b13d796daf2a664a76a98bbfa09274,264476,1941318,Randla,Vana-Lõuna - Pelguranna,A>B,57857,1
-00b13d796daf2a664a76a98bbfa09274,264476,1941320,Randla,Vana-Lõuna - Pelguranna,A>B,57857,1
-00b13d796daf2a664a76a98bbfa09274,264476,1941322,Randla,Vana-Lõuna - Pelguranna,A>B,57857,1
-00b13d796daf2a664a76a98bbfa09274,264476,1941324,Randla,Vana-Lõuna - Pelguranna,A>B,57857,1
-00b13d796daf2a664a76a98bbfa09274,264476,1941326,Randla,Vana-Lõuna - Pelguranna,A>B,57857,1
-00b13d796daf2a664a76a98bbfa09274,264469,1941160,Kitseküla,Pelguranna - Vana-Lõuna,B>A,57855,1
-00b13d796daf2a664a76a98bbfa09274,264469,1941162,Kitseküla,Pelguranna - Vana-Lõuna,B>A,57855,1
-00b13d796daf2a664a76a98bbfa09274,264469,1941164,Kitseküla,Pelguranna - Vana-Lõuna,B>A,57855,1
-00b13d796daf2a664a76a98bbfa09274,264469,1941166,Kitseküla,Pelguranna - Vana-Lõuna,B>A,57855,1
-00b13d796daf2a664a76a98bbfa09274,264469,1941168,Kitseküla,Pelguranna - Vana-Lõuna,B>A,57855,1
-00b13d796daf2a664a76a98bbfa09274,264469,1941170,Kitseküla,Pelguranna - Vana-Lõuna,B>A,57855,1
-00b13d796daf2a664a76a98bbfa09274,264470,1941174,Kitseküla,Pelguranna - Vana-Lõuna,B>A,57855,1
-00b13d796daf2a664a76a98bbfa09274,264470,1941176,Kitseküla,Pelguranna - Vana-Lõuna,B>A,57855,1
-00b13d796daf2a664a76a98bbfa09274,264470,1941178,Kitseküla,Pelguranna - Vana-Lõuna,B>A,57855,1
-00b13d796daf2a664a76a98bbfa09274,264470,1941180,Kitseküla,Pelguranna - Vana-Lõuna,B>A,57855,1
-00b13d796daf2a664a76a98bbfa09274,264470,1941182,Kitseküla,Pelguranna - Vana-Lõuna,B>A,57855,1
-00b13d796daf2a664a76a98bbfa09274,264470,1941184,Kitseküla,Pelguranna - Vana-Lõuna,B>A,57855,1
-00b13d796daf2a664a76a98bbfa09274,264471,1941188,Kitseküla,Pelguranna - Vana-Lõuna,B>A,57855,1
-00b13d796daf2a664a76a98bbfa09274,264471,1941190,Kitseküla,Pelguranna - Vana-Lõuna,B>A,57855,1
-00b13d796daf2a664a76a98bbfa09274,264471,1941192,Kitseküla,Pelguranna - Vana-Lõuna,B>A,57855,1
-00b13d796daf2a664a76a98bbfa09274,264471,1941194,Kitseküla,Pelguranna - Vana-Lõuna,B>A,57855,1
-00b13d796daf2a664a76a98bbfa09274,264471,1941196,Kitseküla,Pelguranna - Vana-Lõuna,B>A,57855,1
-00b13d796daf2a664a76a98bbfa09274,264471,1941198,Kitseküla,Pelguranna - Vana-Lõuna,B>A,57855,1
-00b13d796daf2a664a76a98bbfa09274,264471,1941200,Kitseküla,Pelguranna - Vana-Lõuna,B>A,57855,1
-00b13d796daf2a664a76a98bbfa09274,264471,1941202,Kitseküla,Pelguranna - Vana-Lõuna,B>A,57855,1
-00b13d796daf2a664a76a98bbfa09274,264471,1941204,Kitseküla,Pelguranna - Vana-Lõuna,B>A,57855,1
-00b13d796daf2a664a76a98bbfa09274,264471,1941206,Kitseküla,Pelguranna - Vana-Lõuna,B>A,57855,1
-00b13d796daf2a664a76a98bbfa09274,264471,1941208,Kitseküla,Pelguranna - Vana-Lõuna,B>A,57855,1
-00b13d796daf2a664a76a98bbfa09274,264471,1941210,Kitseküla,Pelguranna - Vana-Lõuna,B>A,57855,1
-00b13d796daf2a664a76a98bbfa09274,264472,1941213,Kitseküla,Pelguranna - Vana-Lõuna,B>A,57855,1
-00b13d796daf2a664a76a98bbfa09274,264472,1941215,Kitseküla,Pelguranna - Vana-Lõuna,B>A,57855,1
-00b13d796daf2a664a76a98bbfa09274,264472,1941217,Kitseküla,Pelguranna - Vana-Lõuna,B>A,57855,1
-00b13d796daf2a664a76a98bbfa09274,264472,1941219,Kitseküla,Pelguranna - Vana-Lõuna,B>A,57855,1
-00b13d796daf2a664a76a98bbfa09274,264472,1941221,Kitseküla,Pelguranna - Vana-Lõuna,B>A,57855,1
-00b13d796daf2a664a76a98bbfa09274,264472,1941223,Kitseküla,Pelguranna - Vana-Lõuna,B>A,57855,1
-00b13d796daf2a664a76a98bbfa09274,264472,1941225,Kitseküla,Pelguranna - Vana-Lõuna,B>A,57855,1
-00b13d796daf2a664a76a98bbfa09274,264472,1941227,Kitseküla,Pelguranna - Vana-Lõuna,B>A,57855,1
-00b13d796daf2a664a76a98bbfa09274,264472,1941229,Kitseküla,Pelguranna - Vana-Lõuna,B>A,57855,1
-00b13d796daf2a664a76a98bbfa09274,264472,1941231,Kitseküla,Pelguranna - Vana-Lõuna,B>A,57855,1
-00b13d796daf2a664a76a98bbfa09274,264472,1941233,Kitseküla,Pelguranna - Vana-Lõuna,B>A,57855,1
-00b13d796daf2a664a76a98bbfa09274,264472,1941235,Kitseküla,Pelguranna - Vana-Lõuna,B>A,57855,1
-00b13d796daf2a664a76a98bbfa09274,264473,1941240,Kitseküla,Pelguranna - Vana-Lõuna,B>A,57855,1
-00b13d796daf2a664a76a98bbfa09274,264473,1941242,Kitseküla,Pelguranna - Vana-Lõuna,B>A,57855,1
-00b13d796daf2a664a76a98bbfa09274,264473,1941244,Kitseküla,Pelguranna - Vana-Lõuna,B>A,57855,1
-00b13d796daf2a664a76a98bbfa09274,264473,1941246,Kitseküla,Pelguranna - Vana-Lõuna,B>A,57855,1
-00b13d796daf2a664a76a98bbfa09274,264473,1941248,Kitseküla,Pelguranna - Vana-Lõuna,B>A,57855,1
-00b13d796daf2a664a76a98bbfa09274,264473,1941250,Kitseküla,Pelguranna - Vana-Lõuna,B>A,57855,1
-00b13d796daf2a664a76a98bbfa09274,264473,1941252,Kitseküla,Pelguranna - Vana-Lõuna,B>A,57855,1
-00b13d796daf2a664a76a98bbfa09274,264473,1941254,Kitseküla,Pelguranna - Vana-Lõuna,B>A,57855,1
-00b13d796daf2a664a76a98bbfa09274,264473,1941256,Kitseküla,Pelguranna - Vana-Lõuna,B>A,57855,1
-00b13d796daf2a664a76a98bbfa09274,264473,1941258,Kitseküla,Pelguranna - Vana-Lõuna,B>A,57855,1
-00b13d796daf2a664a76a98bbfa09274,264473,1941260,Kitseküla,Pelguranna - Vana-Lõuna,B>A,57855,1
-00b13d796daf2a664a76a98bbfa09274,264473,1941262,Kitseküla,Pelguranna - Vana-Lõuna,B>A,57855,1
-00b13d796daf2a664a76a98bbfa09274,264474,1941265,Kitseküla,Pelguranna - Vana-Lõuna,B>A,57855,1
-00b13d796daf2a664a76a98bbfa09274,264474,1941267,Kitseküla,Pelguranna - Vana-Lõuna,B>A,57855,1
-00b13d796daf2a664a76a98bbfa09274,264474,1941269,Kitseküla,Pelguranna - Vana-Lõuna,B>A,57855,1
-00b13d796daf2a664a76a98bbfa09274,264474,1941271,Kitseküla,Pelguranna - Vana-Lõuna,B>A,57855,1
-00b13d796daf2a664a76a98bbfa09274,264474,1941273,Kitseküla,Pelguranna - Vana-Lõuna,B>A,57855,1
-00b13d796daf2a664a76a98bbfa09274,264474,1941275,Kitseküla,Pelguranna - Vana-Lõuna,B>A,57855,1
-00b13d796daf2a664a76a98bbfa09274,264474,1941277,Kitseküla,Pelguranna - Vana-Lõuna,B>A,57855,1
-00b13d796daf2a664a76a98bbfa09274,264475,1941281,Kitseküla,Pelguranna - Vana-Lõuna,B>A,57855,1
-00b13d796daf2a664a76a98bbfa09274,264475,1941283,Kitseküla,Pelguranna - Vana-Lõuna,B>A,57855,1
-00b13d796daf2a664a76a98bbfa09274,264475,1941285,Kitseküla,Pelguranna - Vana-Lõuna,B>A,57855,1
-00b13d796daf2a664a76a98bbfa09274,264475,1941287,Kitseküla,Pelguranna - Vana-Lõuna,B>A,57855,1
-00b13d796daf2a664a76a98bbfa09274,264475,1941289,Kitseküla,Pelguranna - Vana-Lõuna,B>A,57855,1
-00b13d796daf2a664a76a98bbfa09274,264475,1941291,Kitseküla,Pelguranna - Vana-Lõuna,B>A,57855,1
-00b13d796daf2a664a76a98bbfa09274,264475,1941293,Kitseküla,Pelguranna - Vana-Lõuna,B>A,57855,1
-00b13d796daf2a664a76a98bbfa09274,264475,1941295,Kitseküla,Pelguranna - Vana-Lõuna,B>A,57855,1
-00b13d796daf2a664a76a98bbfa09274,264475,1941297,Kitseküla,Pelguranna - Vana-Lõuna,B>A,57855,1
-00b13d796daf2a664a76a98bbfa09274,264475,1941299,Kitseküla,Pelguranna - Vana-Lõuna,B>A,57855,1
-00b13d796daf2a664a76a98bbfa09274,264475,1941301,Kitseküla,Pelguranna - Vana-Lõuna,B>A,57855,1
-00b13d796daf2a664a76a98bbfa09274,264475,1941303,Kitseküla,Pelguranna - Vana-Lõuna,B>A,57855,1
-00b13d796daf2a664a76a98bbfa09274,264476,1941307,Kitseküla,Pelguranna - Vana-Lõuna,B>A,57855,1
-00b13d796daf2a664a76a98bbfa09274,264476,1941309,Kitseküla,Pelguranna - Vana-Lõuna,B>A,57855,1
-00b13d796daf2a664a76a98bbfa09274,264476,1941311,Kitseküla,Pelguranna - Vana-Lõuna,B>A,57855,1
-00b13d796daf2a664a76a98bbfa09274,264476,1941313,Kitseküla,Pelguranna - Vana-Lõuna,B>A,57855,1
-00b13d796daf2a664a76a98bbfa09274,264476,1941315,Kitseküla,Pelguranna - Vana-Lõuna,B>A,57855,1
-00b13d796daf2a664a76a98bbfa09274,264476,1941317,Kitseküla,Pelguranna - Vana-Lõuna,B>A,57855,1
-00b13d796daf2a664a76a98bbfa09274,264476,1941319,Kitseküla,Pelguranna - Vana-Lõuna,B>A,57855,1
-00b13d796daf2a664a76a98bbfa09274,264476,1941321,Kitseküla,Pelguranna - Vana-Lõuna,B>A,57855,1
-00b13d796daf2a664a76a98bbfa09274,264476,1941323,Kitseküla,Pelguranna - Vana-Lõuna,B>A,57855,1
-00b13d796daf2a664a76a98bbfa09274,264476,1941325,Kitseküla,Pelguranna - Vana-Lõuna,B>A,57855,1
-00b13d796daf2a664a76a98bbfa09274,264476,1941327,Kitseküla,Pelguranna - Vana-Lõuna,B>A,57855,1
-2ac268eee7a04e777be38e7ed1ee7cec,264510,1941362,Tallinn,Tartu - Tallinn,B2>A2,64236,0
 2ac268eee7a04e777be38e7ed1ee7cec,264514,1941365,Tallinn,Tartu - Tallinn,B2>A2,64236,0
 2ac268eee7a04e777be38e7ed1ee7cec,264515,1941366,Tallinn,Tartu - Tallinn,B2>A2,64236,0
 2ac268eee7a04e777be38e7ed1ee7cec,264518,1941369,Tallinn,Tartu - Tallinn,B2>A2,64236,0
@@ -30118,10 +29373,8 @@ b8fe52959158600c2eed1a74fe9817a0,264427,1940804,Randla,Priisle - Pelguranna,A>B,
 2ac268eee7a04e777be38e7ed1ee7cec,264512,1941364,Tartu,Tallinn - Tartu,A2>B2,64237,0
 2ac268eee7a04e777be38e7ed1ee7cec,264516,1941367,Tartu,Tallinn - Tartu,A2>B2,64237,0
 2ac268eee7a04e777be38e7ed1ee7cec,264517,1941368,Tartu,Tallinn - Tartu,A2>B2,64237,0
-2ac268eee7a04e777be38e7ed1ee7cec,264519,1941370,Tartu,Tallinn - Tartu,A2>B2,64237,0
-96a348bf297ad27bf77dcb4e280ea0c5,264544,1941394,Valga,Tartu - Valga,A1>B1,,0
+96a348bf297ad27bf77dcb4e280ea0c5,264544,1941394,Valga,Tartu - Valga,A1>B1,65649,0
 96a348bf297ad27bf77dcb4e280ea0c5,264532,1941383,Tartu,Valga - Tartu,B1>A1,65196,0
-96a348bf297ad27bf77dcb4e280ea0c5,264538,1941388,Tartu,Valga - Tartu,B>A,37756,0
 4d4b1ace6da77e3e7a5dfe94126249f4,264546,1941396,Elva,Tartu - Valga,A2>B2,,0
 4d4b1ace6da77e3e7a5dfe94126249f4,264545,1941395,Elva,Valga - Tartu,B2>A2,65215,0
 07f60e50e839764f4c64aa6018c638bb,264575,1941400,Tallinn,Paldiski - Tallinn,B>A,37779,0
@@ -31097,23 +30350,7 @@ f8a2ea2949bdbfa346e6297772bdc602,264956,1944800,Lao,Põlva bussijaam - Maksimark
 0a5e1d1daed269291b95ee537c417433,265057,1945850,Kultuurikeskus,Paide - Viraksaare - Paide,B>A,65194,0
 435d71341499e583f89a6300abec02a0,265058,1945851,Kultuurikeskus,Paide - Viraksaare - Paide,A>B,65195,0
 435d71341499e583f89a6300abec02a0,265058,1945852,Kultuurikeskus,Paide - Viraksaare - Paide,B>A,65192,0
-57a1103ce3c18cad3f8b5e935790cad1,265065,1945857,Tallinn,Tartu - Tallinn,B2>A2,64225,0
-57a1103ce3c18cad3f8b5e935790cad1,265067,1945859,Tallinn,Tartu - Tallinn,B2>A2,64225,0
-57a1103ce3c18cad3f8b5e935790cad1,265068,1945860,Tallinn,Tartu - Tallinn,B2>A2,64225,0
-57a1103ce3c18cad3f8b5e935790cad1,265066,1945858,Tartu,Tallinn - Tartu (ekspress),A2>B2,64226,0
-57a1103ce3c18cad3f8b5e935790cad1,265069,1945861,Tartu,Tallinn - Tartu (ekspress),A2>B2,64226,0
-57a1103ce3c18cad3f8b5e935790cad1,265070,1945862,Tartu,Tallinn - Tartu (ekspress),A2>B2,64226,0
 dacd6672101878eae682741dcdf27eef,265079,1945863,Tartu,Jõgeva - Tartu,A>B,37787,0
-2ac268eee7a04e777be38e7ed1ee7cec,265080,1945864,Tallinn,Tartu - Tallinn,B2>A2,64236,0
-2ac268eee7a04e777be38e7ed1ee7cec,265082,1945866,Tallinn,Tartu - Tallinn,B2>A2,64236,0
-2ac268eee7a04e777be38e7ed1ee7cec,265085,1945869,Tallinn,Tartu - Tallinn,B2>A2,64236,0
-2ac268eee7a04e777be38e7ed1ee7cec,265086,1945870,Tallinn,Tartu - Tallinn,B2>A2,64236,0
-2ac268eee7a04e777be38e7ed1ee7cec,265089,1945871,Tallinn,Tartu - Tallinn,B2>A2,64236,0
-2ac268eee7a04e777be38e7ed1ee7cec,265092,1945873,Tallinn,Tartu - Tallinn,B2>A2,64236,0
-2ac268eee7a04e777be38e7ed1ee7cec,265081,1945865,Tartu,Tallinn - Tartu,A2>B2,64237,0
-2ac268eee7a04e777be38e7ed1ee7cec,265083,1945867,Tartu,Tallinn - Tartu,A2>B2,64237,0
-2ac268eee7a04e777be38e7ed1ee7cec,265084,1945868,Tartu,Tallinn - Tartu,A2>B2,64237,0
-2ac268eee7a04e777be38e7ed1ee7cec,265090,1945872,Tartu,Tallinn - Tartu,A2>B2,64237,0
 e3c46447b3d60b8642b91547e0c1d627,265093,1945874,Tallinna bussijaam,Tartu - Tallinn,B>A,,0
 e3c46447b3d60b8642b91547e0c1d627,265094,1945875,Tallinna bussijaam,Tartu - Tallinn,B>A,,0
 9c8313ca69640ddef13bbd946898e6d6,265100,1945876,KURESSAARE,Tallinn - Kuivastu - Orissaare - Kuressaare,A>B,51293,0
@@ -31147,10 +30384,6 @@ e3c46447b3d60b8642b91547e0c1d627,265094,1945875,Tallinna bussijaam,Tartu - Talli
 57a1103ce3c18cad3f8b5e935790cad1,265148,1946145,Tartu,Tallinn - Tartu (ekspress),A2>B2,64226,0
 57a1103ce3c18cad3f8b5e935790cad1,265151,1946148,Tartu,Tallinn - Tartu (ekspress),A2>B2,64226,0
 57a1103ce3c18cad3f8b5e935790cad1,265152,1946149,Tartu,Tallinn - Tartu (ekspress),A2>B2,64226,0
-e9a11207746c08f796f5e220cb7bd374,265154,1946151,Koidula,Tartu - Koidula,A>B,37759,0
-e9a11207746c08f796f5e220cb7bd374,265155,1946152,Koidula,Tartu - Koidula,A>B,37759,0
-e9a11207746c08f796f5e220cb7bd374,265156,1946153,Tartu,Koidula - Tartu,B>A,37758,0
-e9a11207746c08f796f5e220cb7bd374,265157,1946154,Tartu,Koidula - Tartu,B>A,37758,0
 35491a75aa66b54f7f202786f7f61307,265236,1947125,Narva,Tallinn - Narva (ekspress),A>B,37765,0
 35491a75aa66b54f7f202786f7f61307,265239,1947128,Narva,Tallinn - Narva (ekspress),A>B,37765,0
 35491a75aa66b54f7f202786f7f61307,265237,1947126,Tallinn,Narva - Tallinn,B>A,37766,0
@@ -31179,7 +30412,6 @@ bcf5acaaf7ab32ef2bd08df39bd12c2a,265272,1947161,Aegviidu,Tallinn - Aegviidu,A>B,
 bcf5acaaf7ab32ef2bd08df39bd12c2a,265273,1947162,Aegviidu,Tallinn - Aegviidu,A>B,37785,0
 bcf5acaaf7ab32ef2bd08df39bd12c2a,265276,1947165,Aegviidu,Tallinn - Aegviidu,A>B,37785,0
 bcf5acaaf7ab32ef2bd08df39bd12c2a,265277,1947166,Aegviidu,Tallinn - Aegviidu,A>B,37785,0
-bcf5acaaf7ab32ef2bd08df39bd12c2a,265279,1947168,Aegviidu,Tallinn - Aegviidu,A>B,37785,0
 bcf5acaaf7ab32ef2bd08df39bd12c2a,265249,1947138,Tallinn,Aegviidu - Tallinn,B>A,37786,0
 bcf5acaaf7ab32ef2bd08df39bd12c2a,265251,1947140,Tallinn,Aegviidu - Tallinn,B>A,37786,0
 bcf5acaaf7ab32ef2bd08df39bd12c2a,265254,1947143,Tallinn,Aegviidu - Tallinn,B>A,37786,0
@@ -31484,10 +30716,10 @@ b1a5be6eda8616f787cbc53d041b06e4,265886,1951744,Kärdla bussijaam,(Kalana-) Kõp
 1e1a2d18490927f7af0becb4d97f83ba,265893,1951745,Kalana,Kärdla-(Malvaste)-Lauka-Viskoosa-(Luidja-Kiduspe-Kõpu-Kalana),A>C1>B,65272,0
 e995d8ee9b08e4814ba7062034092e7c,265908,1951746,Kärdla bussijaam,(Kalana)-Kõpu-Kiduspe-Luidja-Viskoosa-Lauka-(Kidaste)-Kärdla,B>C1>A,65273,0
 0285e89c6d72d0b28962f204fcecbad6,265917,1951747,Kärdla bussijaam,(Kalana) - Kõpu - Kiduspe - Luidja - Viskoosa- Lauka - Kärdla,B>C1>A,65274,0
-2a79a05f533b21cd6e3835a1613befd0,265919,1954177,Kõpu,Kärdla - Viskoosa - Luidja - Kõpu,A>B2,65643,0
+2a79a05f533b21cd6e3835a1613befd0,265919,1955973,Kõpu,Kärdla - Viskoosa - Luidja - Kõpu,A>B2,65643,0
 7e70daab4f78c642b4cef01d1aae913b,265929,1954178,Kõpu,Kärdla - (Lauka) - Viskoosa - Luidja - Kõpu,A>B2,65644,0
 234ba1488f52e35024c9b5f0ba7f34cd,265936,1951750,Kõpu,Kärdla - Lauka - Viskoosa - Luidja- (Kiduspe- Kõpu),A>C1>B,65275,0
-82b269b52076410cddc8f10413ba50e6,265946,1954179,Spordikeskus,Kõpu-Kiduspe-Suureranna küla-Luidja-Viskoosa-Lauka-Kärdla,B1>C1>A,65646,0
+82b269b52076410cddc8f10413ba50e6,265946,1955974,Spordikeskus,Kõpu-Kiduspe-Suureranna küla-Luidja-Viskoosa-Lauka-Kärdla,B1>C1>A,65646,0
 b7354843013a8c65158bedcb3721c584,265955,1951752,Kärdla bussijaam,Kõpu- Kiduspe- Luidja- Viskoosa- Lauka- Kärdla,B1>C1>A,65276,0
 14892b7cba904963f38e01339d98a834,265967,1951753,Kärdla bussijaam,(Kõpu) - Luidja - Viskoosa- Lauka - Kärdla,B>C1>A,65277,0
 9d85479ba26da5c47ddcdc98483b498e,265972,1951754,Lauka,Kärdla-Kidaste-Viskoosa-Lauka kool-Heiste-Isabella-Lauka kool,A>B,65278,0
@@ -31495,7 +30727,7 @@ b7354843013a8c65158bedcb3721c584,265955,1951752,Kärdla bussijaam,Kõpu- Kiduspe
 d2451dcc12630bf048bb4b8f93aa1d47,265974,1951756,Kärdla bussijaam,Kärdla - Lauka - Viskoosa - (Luidja) - Lauka - Kärdla,A>B,65280,0
 730620068d77da5f0e6e0ef0969fed88,265975,1951757,Luidja,Kärdla - Lauka - Viskoosa - Luidja,A>B,65281,0
 47a3e9821554714e373c9abcc9a35ad4,265976,1951758,Spordikeskus,Luidja - Viskoosa - Lauka - Kärdla (- Spordikeskus),B>A,65282,0
-9a6326a12d0e1f5c1657fd64397ad50c,265980,1951760,Spordikeskus,Luidja - Viskoosa - Lauka - Kärdla (- Spordikeskus),B>A,57596,0
+47a3e9821554714e373c9abcc9a35ad4,265980,1955975,Spordikeskus,Luidja - Viskoosa - Lauka - Kärdla (- Spordikeskus),B>A,57596,0
 71fcdf6c24446ae62d3adb5d8ffed51e,265984,1951761,Õngu,Kärdla - Käina - Emmaste (- Tohvri - Emmaste - Nurste- Õngu),A>B,65283,0
 7665f5003a5a164dfd1c5fdf7b7bdecd,265986,1951762,Õngu,Kärdla - Käina - Emmaste - Tohvri - Emmaste - Nurste- (Õngu),A>B,65284,0
 68cf37a826e6373d9c2c10660184a571,265988,1951763,Sõru sadamahoone,Kärdla - Käina - Emmaste (- Sõru sadam),A>B1,65285,0
@@ -31505,8 +30737,8 @@ cf4c3e11c1b66a995dcee2373a8b25a0,265990,1951764,Sõru sadamahoone,Kärdla - Käi
 1f8978a344299a1bfe4f380daf8364fc,265999,1954180,Emmaste kool,Käina- Tuuletorni- Emmaste- Emmaste lasteaed- (Emmaste kool),A>B,65645,0
 25211b9b6ee64f93e6dd1efa8e56d10e,266000,1951769,Kärdla bussijaam,Õngu - Nurste - Pärna - (Tohvri) - Emmaste - Käina - Kärdla,A>B,65289,0
 4d4b1ace6da77e3e7a5dfe94126249f4,266093,1952050,Valga,Tartu - Valga,A>B,,0
-4d4b1ace6da77e3e7a5dfe94126249f4,266094,1952051,Valga,Tartu - Valga,A>B4,,0
-4d4b1ace6da77e3e7a5dfe94126249f4,266094,1952052,Tartu,Valga - Tartu,B4>A,,0
+4d4b1ace6da77e3e7a5dfe94126249f4,266094,1952051,Valga,Tartu - Valga,A>B4,65648,0
+4d4b1ace6da77e3e7a5dfe94126249f4,266094,1952052,Tartu,Valga - Tartu,B4>A,65647,0
 26eb3e850642d797893eefdefebea46a,266101,1952161,Priisle,Väike-Õismäe - Bussijaam - Priisle,A>B,,1
 26eb3e850642d797893eefdefebea46a,266101,1952163,Priisle,Väike-Õismäe - Bussijaam - Priisle,A>B,,1
 26eb3e850642d797893eefdefebea46a,266101,1952165,Priisle,Väike-Õismäe - Bussijaam - Priisle,A>B,,1

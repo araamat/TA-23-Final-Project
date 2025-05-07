@@ -2,6 +2,9 @@ import streamlit as st
 import os
 import time
 import zipfile
+import shutil
+import hashlib
+import filecmp
 from datetime import datetime
 from zoneinfo import ZoneInfo
 import requests
@@ -16,6 +19,17 @@ from search_by_stop_pair import gtfs_view as stop_pair_view
 
 GTFS_ZIP = "gtfs.zip"
 GTFS_URL = "https://peatus.ee/gtfs/gtfs.zip"
+GTFS_TEMP_DIR = "gtfs_temp"
+GTFS_MAIN_DIR = "gtfs_data"
+
+# --- Session state flags ---
+if "view" not in st.session_state:
+    st.session_state.view = "home"
+if "filter" not in st.session_state:
+    st.session_state.filter = ""
+if "force_reload" not in st.session_state:
+    st.cache_data.clear()
+    st.session_state.force_reload = False
 
 # --- Andmefaili uuendamine ---
 def needs_update(filepath, hours=24):
@@ -27,17 +41,40 @@ def needs_update(filepath, hours=24):
 def download_latest_gtfs():
     st.info("Laadin uusimat GTFS andmestikku...")
     response = requests.get(GTFS_URL)
+    
     with open(GTFS_ZIP, "wb") as f:
         f.write(response.content)
     st.success("GTFS andmestik uuendatud!")
 
-if needs_update(GTFS_ZIP):
+def directories_differ(dir1, dir2):
+    cmp = filecmp.dircmp(dir1, dir2)
+    if cmp.left_only or cmp.right_only or cmp.diff_files:
+        return True
+    for subdir in cmp.common_dirs:
+        if directories_differ(os.path.join(dir1, subdir), os.path.join(dir2, subdir)):
+            return True
+    return False
+
+if needs_update(GTFS_ZIP) or st.session_state.force_reload:
     download_latest_gtfs()
+    if os.path.exists(GTFS_TEMP_DIR):
+        shutil.rmtree(GTFS_TEMP_DIR)
     with zipfile.ZipFile(GTFS_ZIP, 'r') as zip_ref:
-        zip_ref.extractall("gtfs_data")  # ← Lisa see rida siia
-elif not os.path.exists("gtfs_data"):
+        zip_ref.extractall(GTFS_TEMP_DIR)
+
+    if not os.path.exists(GTFS_MAIN_DIR) or directories_differ(GTFS_TEMP_DIR, GTFS_MAIN_DIR):
+        if os.path.exists(GTFS_MAIN_DIR):
+            shutil.rmtree(GTFS_MAIN_DIR)
+        shutil.move(GTFS_TEMP_DIR, GTFS_MAIN_DIR)
+        st.success("✅ GTFS andmed uuendati.")
+
+
+    st.cache_data.clear()
+    st.session_state.force_reload = False
+
+elif not os.path.exists(GTFS_MAIN_DIR):
     with zipfile.ZipFile(GTFS_ZIP, 'r') as zip_ref:
-        zip_ref.extractall("gtfs_data")
+        zip_ref.extractall(GTFS_MAIN_DIR)
 
 # --- CSS ---
 def local_css(file_name):
@@ -49,28 +86,13 @@ def local_css(file_name):
 
 local_css("style.css")
 
-# --- session_state ---
-if "view" not in st.session_state:
-    st.session_state.view = "home"
-if "filter" not in st.session_state:
-    st.session_state.filter = ""
-
-
 # --- Sidebar ---
 with st.sidebar:
     st.title("Eesti ühistranspordi avaandmed 🚍")
+    st.markdown("<div style='margin-top: 1.5rem;'></div>", unsafe_allow_html=True)
 
-    if os.path.exists(GTFS_ZIP):
-        est_time = datetime.fromtimestamp(os.path.getmtime(GTFS_ZIP), ZoneInfo("Europe/Tallinn"))
-        st.markdown(
-            f"""
-            <div style="text-align: center; margin-bottom: 1rem; margin-top: 0.5rem;">
-                📅 <strong>GTFS uuendati:</strong><br>
-                {est_time.strftime('%H:%M:%S %d.%m.%Y')}
-            </div>
-            """,
-            unsafe_allow_html=True
-        )
+    
+    
 
     if st.button("🏠 Avaleht"):
         st.session_state.view = "home"
@@ -81,30 +103,46 @@ with st.sidebar:
         st.session_state.view = "history"
         st.session_state.filter = ""
         st.session_state["filter_select"] = ""
-        
+
     if st.button("📄 Ühistranspordi peatuse info"):
         st.session_state.view = "poster"
         st.session_state.filter = ""
         st.session_state["filter_select"] = ""
-    
+
     if st.button("🔁 Otsing kahe peatuse vahel"):
         st.session_state.view = "stop_pair"
         st.session_state.filter = ""
         st.session_state["filter_select"] = ""
 
+    st.markdown('<div class="filter-label" style="margin-top: 1.5rem; margin-bottom: 0.2rem;">🔍 Otsi ja analüüsi liine: </div>', unsafe_allow_html=True)
 
-    # Filtri valik (pealkiri + selectbox)
-    st.markdown('<div class="filter-label">🔍 Otsi ja analüüsi liine: </div>', unsafe_allow_html=True)
     selected = st.selectbox(
-        "",
-        ["", "Liininumbri järgi", "Route ID järgi", "Trip ID järgi", "Peatuste kuuluvuse järgi"],
+        label_visibility="collapsed",
+        label="",
+        options=["", "Liininumbri järgi", "Route ID järgi", "Trip ID järgi", "Peatuste kuuluvuse järgi"],
         key="filter_select"
-    )
-
+        
+)
     if selected:
         st.session_state.view = "filter"
         st.session_state.filter = selected
-
+    
+            
+    if os.path.exists(GTFS_ZIP):
+        est_time = datetime.fromtimestamp(os.path.getmtime(GTFS_ZIP), ZoneInfo("Europe/Tallinn"))
+        st.markdown(
+            f"""
+            <div style="text-align: center; margin-bottom: 0.25rem; margin-top: 0.5rem;">
+                📅 <strong>GTFS-i uuendati viimati:</strong><br>
+                {est_time.strftime('%H:%M:%S %d.%m.%Y')}
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
+        
+    if st.button("🔄 Uuenda GTFS-i avaandmestikku"):
+            st.session_state.force_reload = True
+            st.rerun()
 
 # --- Vaadete renderdamine ---
 view = st.session_state.view
@@ -129,10 +167,10 @@ if view == "home":
 
 elif view == "history":
     show_history_view()
-    
+
 elif view == "poster":
     stop_poster_view()
-    
+
 elif view == "stop_pair":
     stop_pair_view()
 
