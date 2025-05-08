@@ -59,7 +59,7 @@ def gtfs_view():
 
     st.title("🚍 Liininumbri järgi seoste filtreerimine")
 
-    # Session state algseadistus
+    # Session algseadistus
     if "otsi_input" not in st.session_state:
         st.session_state.otsi_input = ""
     if "otsi_tehtud" not in st.session_state:
@@ -102,7 +102,6 @@ def gtfs_view():
                 st.session_state.valik = None
                 st.session_state.otsi_tehtud = True
                 st.session_state.automaatne_valik = False
-
 
     # Kuvame õiged teated vastavalt olukorrale
     if not st.session_state.otsi_tehtud and not st.session_state.valik:
