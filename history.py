@@ -5,10 +5,6 @@ from datetime import datetime
 import toml
 from pytz import timezone  # <-- Lisatud Eesti aja jaoks
 
-# Lokaalses serveris pean kasutama seda:
-# secrets = toml.load("secrets.toml")
-
-# Streamlit impordi puhul:
 secrets = st.secrets
 
 def show_history_view():
@@ -41,10 +37,9 @@ def show_history_view():
 
         for f in filtered_files[start:end]:
             created = datetime.strptime(f['createdTime'], "%Y-%m-%dT%H:%M:%S.%fZ")
-            # Eesti ajavöönd
             est = timezone('Europe/Tallinn')
             created = created.replace(tzinfo=timezone('UTC')).astimezone(est)
-            formatted_date = created.strftime("%d.%m.%Y %H:%M")  # Täielik aasta ja kellaaeg
+            formatted_date = created.strftime("%d.%m.%Y %H:%M")
 
             download_url = f"https://drive.google.com/uc?id={f['id']}&export=download"
 
@@ -55,7 +50,7 @@ def show_history_view():
                     """, unsafe_allow_html=True)
 
 def list_gtfs_files_from_drive():
-    key_data = dict(secrets["gcp_service_account"])  # tee koopia!
+    key_data = dict(secrets["gcp_service_account"]) 
     key_data["private_key"] = key_data["private_key"].replace("\\n", "\n")
 
     creds = service_account.Credentials.from_service_account_info(key_data)

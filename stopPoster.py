@@ -260,7 +260,7 @@ def gtfs_view():
             mime="application/pdf"
         )
 
-        # --- CSV allalaadimine UTF-8-sig kodeeringus
+        # --- CSV allalaadimine UTF-8 kodeeringus
         csv_buffer = io.StringIO()
         csv_writer = csv.writer(csv_buffer, quoting=csv.QUOTE_ALL)
         csv_writer.writerow([f"Peatus: {stop_info['stop_name']}"])

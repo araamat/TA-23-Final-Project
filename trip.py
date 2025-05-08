@@ -33,8 +33,6 @@ def gtfs_view():
     if otsi_klikitud and trip_input:
      st.session_state["submitted_trip"] = trip_input
 
-
-    # Kui otsitud
     if otsi_klikitud and st.session_state.get("trip_input"):
         st.session_state["submitted_trip"] = st.session_state["trip_input"]
 
@@ -59,14 +57,14 @@ def gtfs_view():
         stop_times = stop_times_df[stop_times_df['trip_id'] == selected_trip]
         stop_data = stop_times.merge(stops_df, on="stop_id").sort_values("stop_sequence")
 
-        # 1. Peatused
+    
         if not stop_data.empty:
             st.write("### Valitud reisiga seotud peatused ja nende andmestik")
             cols = ['stop_sequence', 'stop_id', 'stop_code', 'stop_name', 'arrival_time', 'departure_time']
             existing_cols = [col for col in cols if col in stop_data.columns]
             st.dataframe(stop_data[existing_cols].astype(str), use_container_width=True, hide_index=True)
 
-        # 2. Teenindusperiood
+        
         st.write("**Teenindusperiood**")
         service_id = filtered_trips[filtered_trips['trip_id'] == selected_trip]['service_id'].values[0]
         service_info = calendar_df[calendar_df['service_id'] == service_id]
@@ -85,7 +83,7 @@ def gtfs_view():
         else:
             st.info("Teenindusperioodi andmed puuduvad.")
 
-        # 3. Erandid
+        
         st.write("**Teenindusperioodi erandid**")
         exceptions = calendar_dates_df[calendar_dates_df['service_id'] == service_id]
         if exceptions.empty:
@@ -95,7 +93,7 @@ def gtfs_view():
                 muutus = "Reis erandkorras käigus" if row['exception_type'] == 1 else "Tühistatud"
                 st.markdown(f"- {row['date'].strftime('%d.%m.%Y')} — **{muutus}**")
 
-        # 4. Kaart viimasena
+      
         if not stop_data.empty:
             st.write("### Peatused kaardil")
             m = folium.Map(location=[stop_data.iloc[0]['stop_lat'], stop_data.iloc[0]['stop_lon']], zoom_start=13)

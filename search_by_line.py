@@ -103,7 +103,6 @@ def gtfs_view():
                 st.session_state.otsi_tehtud = True
                 st.session_state.automaatne_valik = False
 
-
     # Kuvame õiged teated vastavalt olukorrale
     if not st.session_state.otsi_tehtud and not st.session_state.valik:
         st.info("Sisesta liininumber")
