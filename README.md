@@ -1,4 +1,6 @@
-# GTFS Viewer & Validator
+# Live link: https://gtfsdataestonia.streamlit.app/
+
+# EESTI ÜHISTRANSPORDI AVAANDMETE (GTFS) ANALÜÜSI TÖÖRIIST
 
 ## 📌 Projekti eesmärk
 See tööriist on loodud GTFS-andmestiku visualiseerimiseks, filtreerimiseks ja andmekvaliteedi kontrolliks Eesti ühistranspordi kontekstis. Lahendus võimaldab mugavalt uurida sõiduplaane, liine, peatuseid ning genereerida plakateid koos QR-koodidega.
@@ -15,12 +17,12 @@ Tööriist on mõeldud kasutamiseks ühistranspordi osakonna töötajatele, ühi
 
 ## 📁 Projekti struktuur
 ```plaintext
-├── index.py                 # Avaleht, juhib vaateid
+├── index.py                # Avaleht, juhib vaateid
 ├── route.py                # Route ID ja liini info
 ├── trip.py                 # Trip ID ja sõidu peatuste info
 ├── search_by_line.py       # Liini numbri otsing
 ├── search_by_stop_pair.py  # Kahe peatuse vaheline ühendus
-├── stopPoster.py           # PDF plakati ja QR-koodi genereerija
+├── stopPoster.py           # Peatuse info, PDF posteri ja QR-koodi genereerija
 ├── authority.py            # Peatuste filtreerimine haldaja järgi
 ├── history.py              # Ajalooliste GTFS-andmete haldus
 ├── requirements.txt        # Vajalikud paketid
@@ -42,9 +44,9 @@ GitHub Actions töövoog `upload_gtfs.yml`:
 - Failile määratakse automaatselt kuupäevaga nimi
 
 ## 📄 Kasutus
-1. Klona projekt:
+1. Klooni projekt:
 ```bash
-git clone https://github.com/SINU_KASUTAJA/gtfs-viewer.git
+git clone https://github.com:araamat/TA-23-Final-Project.git
 ```
 
 2. Installi sõltuvused:
