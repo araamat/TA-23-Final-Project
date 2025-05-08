@@ -22,6 +22,7 @@ GTFS_URL = "https://peatus.ee/gtfs/gtfs.zip"
 GTFS_TEMP_DIR = "gtfs_temp"
 GTFS_MAIN_DIR = "gtfs_data"
 
+# --- Session state flags ---
 if "view" not in st.session_state:
     st.session_state.view = "home"
 if "filter" not in st.session_state:
@@ -90,6 +91,9 @@ with st.sidebar:
     st.title("Eesti ühistranspordi avaandmed 🚍")
     st.markdown("<div style='margin-top: 1.5rem;'></div>", unsafe_allow_html=True)
 
+    
+    
+
     if st.button("🏠 Avaleht"):
         st.session_state.view = "home"
         st.session_state.filter = ""
@@ -140,6 +144,7 @@ with st.sidebar:
             st.session_state.force_reload = True
             st.rerun()
 
+# --- Vaadete renderdamine ---
 view = st.session_state.view
 filter_view = st.session_state.filter
 

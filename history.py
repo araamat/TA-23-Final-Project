@@ -5,6 +5,10 @@ from datetime import datetime
 import toml
 from pytz import timezone  # <-- Lisatud Eesti aja jaoks
 
+# Lokaalses serveris pean kasutama seda:
+# secrets = toml.load("secrets.toml")
+
+# Streamlit impordi puhul:
 secrets = st.secrets
 
 def show_history_view():
@@ -17,7 +21,7 @@ def show_history_view():
         if not files:
             st.warning("Ühtegi GTFS ajaloo faili ei leitud.")
             return
-        
+
         # Filtreeri failid
         filtered_files = [f for f in sorted(files, key=lambda x: x['createdTime'], reverse=True)
                           if filter_text.lower() in f['name'].lower()]
@@ -51,7 +55,7 @@ def show_history_view():
                     """, unsafe_allow_html=True)
 
 def list_gtfs_files_from_drive():
-    key_data = dict(secrets["gcp_service_account"]) 
+    key_data = dict(secrets["gcp_service_account"])  # tee koopia!
     key_data["private_key"] = key_data["private_key"].replace("\\n", "\n")
 
     creds = service_account.Credentials.from_service_account_info(key_data)

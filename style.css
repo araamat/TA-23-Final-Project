@@ -91,6 +91,7 @@ button[kind="secondary"] {
     transition: background-color 0.3s ease;
 }
 
+/* Hover efekt */
 button[kind="secondary"]:hover {
     background-color: #dce0ea;
     color: black;

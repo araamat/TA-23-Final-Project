@@ -33,6 +33,8 @@ def gtfs_view():
     if otsi_klikitud and trip_input:
      st.session_state["submitted_trip"] = trip_input
 
+
+    # Kui otsitud
     if otsi_klikitud and st.session_state.get("trip_input"):
         st.session_state["submitted_trip"] = st.session_state["trip_input"]
 
