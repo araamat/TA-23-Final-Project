@@ -3,13 +3,13 @@ import pandas as pd
 import folium
 import os
 
-def load_data():
+def load_data(version=None):  # ← lisab cache'i võtme
     base_path = "gtfs_data"
     stops_df = pd.read_csv(os.path.join(base_path, "stops.txt"))
     return stops_df
 
 def gtfs_view():
-    stops_df = load_data()
+    stops_df = load_data(version=st.session_state["gtfs_version"])
 
     st.title("🚏 Peatuste filtreerimine kuuluvse järgi")
 

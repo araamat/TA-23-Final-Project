@@ -6,7 +6,7 @@ import os
 
 
 @st.cache_data(ttl=86400)
-def load_data():
+def load_data(version=None):  # ← lisab cache'i võtme
     base_path = "gtfs_data"
     routes_df = pd.read_csv(os.path.join(base_path, "routes.txt"))
     trips_df = pd.read_csv(os.path.join(base_path, "trips.txt"))
@@ -23,7 +23,7 @@ def load_data():
 
 
 def gtfs_view():
-    routes_df, trips_df, stop_times_df, stops_df, calendar_df, calendar_dates_df = load_data()
+    trips_df, routes_df, stop_times_df, stops_df, calendar_df, calendar_dates_df = load_data(version=st.session_state["gtfs_version"])
 
     st.title("🚏 Route ID järgi seoste filtreerimine")
 

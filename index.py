@@ -3,7 +3,6 @@ import os
 import time
 import zipfile
 import shutil
-import hashlib
 import filecmp
 from datetime import datetime
 from zoneinfo import ZoneInfo
@@ -22,29 +21,32 @@ GTFS_URL = "https://peatus.ee/gtfs/gtfs.zip"
 GTFS_TEMP_DIR = "gtfs_temp"
 GTFS_MAIN_DIR = "gtfs_data"
 
+# --- Session state algseadistus ---
 if "view" not in st.session_state:
     st.session_state.view = "home"
 if "filter" not in st.session_state:
     st.session_state.filter = ""
 if "force_reload" not in st.session_state:
-    st.cache_data.clear()
     st.session_state.force_reload = False
+if "gtfs_version" not in st.session_state:
+    st.session_state.gtfs_version = None
 
-# --- Andmefaili uuendamine ---
+# --- Kontroll, kas andmed vajavad uuendamist ---
 def needs_update(filepath, hours=24):
     if not os.path.exists(filepath):
         return True
     last_modified = os.path.getmtime(filepath)
     return (time.time() - last_modified) > hours * 3600
 
+# --- GTFS ZIP allalaadimine ---
 def download_latest_gtfs():
     st.info("Laadin uusimat GTFS andmestikku...")
     response = requests.get(GTFS_URL)
-    
     with open(GTFS_ZIP, "wb") as f:
         f.write(response.content)
     st.success("GTFS andmestik uuendatud!")
 
+# --- Kataloogide erinevuse kontroll ---
 def directories_differ(dir1, dir2):
     cmp = filecmp.dircmp(dir1, dir2)
     if cmp.left_only or cmp.right_only or cmp.diff_files:
@@ -54,8 +56,10 @@ def directories_differ(dir1, dir2):
             return True
     return False
 
+# --- Andmete laadimine ja uuendamine ---
 if needs_update(GTFS_ZIP) or st.session_state.force_reload:
     download_latest_gtfs()
+
     if os.path.exists(GTFS_TEMP_DIR):
         shutil.rmtree(GTFS_TEMP_DIR)
     with zipfile.ZipFile(GTFS_ZIP, 'r') as zip_ref:
@@ -67,15 +71,16 @@ if needs_update(GTFS_ZIP) or st.session_state.force_reload:
         shutil.move(GTFS_TEMP_DIR, GTFS_MAIN_DIR)
         st.success("✅ GTFS andmed uuendati.")
 
-
     st.cache_data.clear()
     st.session_state.force_reload = False
+    st.session_state.gtfs_version = os.path.getmtime(GTFS_ZIP)
 
 elif not os.path.exists(GTFS_MAIN_DIR):
     with zipfile.ZipFile(GTFS_ZIP, 'r') as zip_ref:
         zip_ref.extractall(GTFS_MAIN_DIR)
+    st.session_state.gtfs_version = os.path.getmtime(GTFS_ZIP)
 
-# --- CSS ---
+# --- Kohalik CSS ---
 def local_css(file_name):
     try:
         with open(file_name) as f:
@@ -117,13 +122,12 @@ with st.sidebar:
         label="",
         options=["", "Liininumbri järgi", "Route ID järgi", "Trip ID järgi", "Peatuste kuuluvuse järgi"],
         key="filter_select"
-        
-)
+    )
+
     if selected:
         st.session_state.view = "filter"
         st.session_state.filter = selected
-    
-            
+
     if os.path.exists(GTFS_ZIP):
         est_time = datetime.fromtimestamp(os.path.getmtime(GTFS_ZIP), ZoneInfo("Europe/Tallinn"))
         st.markdown(
@@ -135,11 +139,12 @@ with st.sidebar:
             """,
             unsafe_allow_html=True
         )
-        
-    if st.button(":inbox_tray: Uuenda GTFS-i avaandmestikku"):
-            st.session_state.force_reload = True
-            st.rerun()
 
+    if st.button(":inbox_tray: Uuenda GTFS-i avaandmestikku"):
+        st.session_state.force_reload = True
+        st.rerun()
+
+# --- Vaate juhtimine ---
 view = st.session_state.view
 filter_view = st.session_state.filter
 
@@ -156,8 +161,6 @@ if view == "home":
           Analüüsi, kuidas erinevad GTFS **.txt** failid omavahel seotud on (nt trips.txt, routes.txt, stop_times.txt).
         - 🗺️ **Grupeeri peatuseid**  
           Filtreeri ja koonda andmeid vastavalt haldurile või kohaliku omavalitsuse kuuluvusele.
-
-        See tööriist on mõeldud ühistranspordiosakonna töötajatele, kuid sobib ka nii transpordiplaneerijale, kes soovib kiiresti näha seoseid avaandmetes, ilma käsitsi **.zip** faile avamata.
     """)
 
 elif view == "history":

@@ -5,7 +5,7 @@ from streamlit_folium import st_folium
 import os
 
 @st.cache_data(ttl=86400)
-def load_gtfs_data():
+def load_gtfs_data(version=None):
     base_path = "gtfs_data"
     stops = pd.read_csv(os.path.join(base_path, "stops.txt"))
     stop_times = pd.read_csv(os.path.join(base_path, "stop_times.txt"))
@@ -18,7 +18,7 @@ def load_gtfs_data():
 def gtfs_view():
     st.title("🔁 Otsing kahe peatuse vahel")
 
-    stops, stop_times, trips, routes, calendar, agency = load_gtfs_data()
+    stops, stop_times, trips, routes, calendar, agency = load_gtfs_data(version=st.session_state["gtfs_version"])
 
     def format_peatus(row):
         code = row.get("stop_code", "—")

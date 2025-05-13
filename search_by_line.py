@@ -5,7 +5,7 @@ from streamlit_folium import st_folium
 import os
 
 @st.cache_data(ttl=86400)
-def load_data():
+def load_data(version=None):  # ← versioon cache võtmes
     base_path = "gtfs_data"
     routes_df = pd.read_csv(os.path.join(base_path, "routes.txt"))
     trips_df = pd.read_csv(os.path.join(base_path, "trips.txt"))
@@ -21,6 +21,7 @@ def load_data():
     calendar_dates_df['date'] = pd.to_datetime(calendar_dates_df['date'], format='%Y%m%d')
 
     return routes_df, trips_df, stop_times_df, stops_df, calendar_df, calendar_dates_df
+
 
 
 def custom_sort(valikud, otsi):
@@ -55,7 +56,7 @@ def custom_sort(valikud, otsi):
     )
 
 def gtfs_view():
-    routes_df, trips_df, stop_times_df, stops_df, calendar_df, calendar_dates_df = load_data()
+    routes_df, trips_df, stop_times_df, stops_df, calendar_df, calendar_dates_df = load_data(version=st.session_state["gtfs_version"])
 
     st.title("🚍 Liininumbri järgi seoste filtreerimine")
 

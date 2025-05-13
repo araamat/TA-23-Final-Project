@@ -5,7 +5,7 @@ from streamlit_folium import st_folium
 import os
 
 @st.cache_data(ttl=86400)
-def load_data():
+def load_data(version=None):  # ← lisame version argumendi
     base_path = "gtfs_data"
     trips_df = pd.read_csv(os.path.join(base_path, "trips.txt"))
     routes_df = pd.read_csv(os.path.join(base_path, "routes.txt"))
@@ -22,7 +22,8 @@ def load_data():
 
 
 def gtfs_view():
-    trips_df, routes_df, stop_times_df, stops_df, calendar_df, calendar_dates_df = load_data()
+    trips_df, routes_df, stop_times_df, stops_df, calendar_df, calendar_dates_df = load_data(version=st.session_state["gtfs_version"])
+
 
     st.title("🚍 Trip ID järgi seoste filtreerimine")
 

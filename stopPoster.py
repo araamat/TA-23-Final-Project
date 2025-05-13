@@ -18,7 +18,7 @@ from reportlab.lib.units import mm
 
 
 @st.cache_data(ttl=86400)
-def load_gtfs_data():
+def load_gtfs_data(version=None):
     try:
         base_path = "gtfs_data"
         stops = pd.read_csv(os.path.join(base_path, "stops.txt"))
@@ -144,7 +144,8 @@ def generate_pdf(stop_info, stop_code, qr_img, poster_df, kuupaev):
 def gtfs_view():
     st.title("🚏 Ühistranspordi peatuse info")
 
-    stops, stop_times, trips, routes, calendar = load_gtfs_data()
+    stops, stop_times, trips, routes, calendar = load_gtfs_data(version=st.session_state["gtfs_version"])
+
 
     if stops is not None:
         def format_peatus(row):
