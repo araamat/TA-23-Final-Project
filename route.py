@@ -6,7 +6,7 @@ import os
 
 
 @st.cache_data(ttl=86400)
-def load_data(version=None):  # ← lisab cache'i võtme
+def load_data(version=None):
     base_path = "gtfs_data"
     routes_df = pd.read_csv(os.path.join(base_path, "routes.txt"))
     trips_df = pd.read_csv(os.path.join(base_path, "trips.txt"))
@@ -23,49 +23,59 @@ def load_data(version=None):  # ← lisab cache'i võtme
 
 
 def gtfs_view():
-    trips_df, routes_df, stop_times_df, stops_df, calendar_df, calendar_dates_df = load_data(version=st.session_state["gtfs_version"])
+    routes_df, trips_df, stop_times_df, stops_df, calendar_df, calendar_dates_df = load_data(version=st.session_state.get("gtfs_version"))
 
     st.title("🚏 Route ID järgi seoste filtreerimine")
 
     with st.form("route_search_form"):
         route_input = st.text_input("**Sisesta route_id:**", placeholder="nt dc6d5ccae7f41a36dd71c4b569278734 või midagi sarnast")
         search_clicked = st.form_submit_button("🔍 Otsi")
-        
-    if search_clicked and route_input:
-        st.session_state["submitted_route"] = route_input
 
+    if search_clicked:
+        if route_input:
+            st.session_state["submitted_route"] = route_input
+        else:
+            st.warning("Palun sisesta Route ID.")
+            return  # Peatab funktsiooni, kui pole sisendit
 
+    if "submitted_route" not in st.session_state or not st.session_state["submitted_route"]:
+        st.info("Sisesta ülemises lahtris route_id ja vajuta 'Otsi'.")
+        return
 
-    if search_clicked and st.session_state.get("route_input"):
-        st.session_state["submitted_route"] = st.session_state["route_input"]
+    selected_route_id = st.session_state["submitted_route"]
 
-    if "submitted_route" in st.session_state and st.session_state["submitted_route"]:
-        selected_route_id = st.session_state["submitted_route"]
-        filtered_routes = routes_df[routes_df['route_id'].astype(str).str.contains(selected_route_id, na=False)]
+    filtered_routes = routes_df[routes_df['route_id'].astype(str).str.contains(selected_route_id, na=False)]
 
-        if filtered_routes.empty:
-            st.warning(f"Ei leitud liine route_id-ga **{selected_route_id}**.")
-            return
+    if filtered_routes.empty:
+        st.warning(f"Ei leitud liine route_id-ga **{selected_route_id}**.")
+        return
 
-        def wrap_text(value):
-            if len(value) > 10:
-                return value[:10] + "\n" + value[10:]
-            return value
+    def wrap_text(value):
+        if len(value) > 10:
+            return value[:10] + "\n" + value[10:]
+        return value
 
-        filtered_routes_display = filtered_routes.copy()
-        filtered_routes_display['route_short_name'] = filtered_routes_display['route_short_name'].astype(str).apply(wrap_text)
+    filtered_routes_display = filtered_routes.copy()
 
-        st.write(f"**Seotud liinid Route ID-ga**: {selected_route_id}")
-        st.dataframe(filtered_routes_display[['route_id', 'route_short_name', 'route_long_name']], hide_index=True, use_container_width=True)
+    if 'route_short_name' in filtered_routes_display.columns:
+        filtered_routes_display['route_short_name'] = (
+            filtered_routes_display['route_short_name'].astype(str).apply(wrap_text)
+        )
+    else:
+        st.warning("Andmetes puudub veerg `route_short_name`.")
 
-        selected_route = st.selectbox("**Vali täpne Route ID**", filtered_routes['route_id'].values)
-        filtered_trips = trips_df[trips_df['route_id'] == selected_route]
+    st.write(f"**Seotud liinid Route ID-ga**: {selected_route_id}")
+    st.dataframe(filtered_routes_display[['route_id', 'route_short_name', 'route_long_name']], hide_index=True, use_container_width=True)
 
-        if not filtered_trips.empty:
-            trips_display = filtered_trips[['trip_id', 'service_id', 'trip_headsign', 'trip_long_name']].copy()
-            trips_display = trips_display.astype(str)
-            st.write(f"**Seotud reisid liinil:** {selected_route}")
-            st.dataframe(trips_display, use_container_width=True, hide_index=True)
+    selected_route = st.selectbox("**Vali täpne Route ID**", filtered_routes['route_id'].values)
+
+    filtered_trips = trips_df[trips_df['route_id'] == selected_route]
+
+    if not filtered_trips.empty:
+        trips_display = filtered_trips[['trip_id', 'service_id', 'trip_headsign', 'trip_long_name']].copy()
+        trips_display = trips_display.astype(str)
+        st.write(f"**Seotud reisid liinil:** {selected_route}")
+        st.dataframe(trips_display, use_container_width=True, hide_index=True)
 
         selected_trip = st.selectbox("**Liini Trip ID valik:**", filtered_trips['trip_id'].values)
         stop_times = stop_times_df[stop_times_df['trip_id'] == selected_trip]
@@ -114,5 +124,8 @@ def gtfs_view():
                     icon=folium.Icon(color='blue', icon='info-sign')
                 ).add_to(m)
             st_folium(m, height=400, width="100%")
+    else:
+        st.info(f"Liinil {selected_route} puuduvad seotud reisid (trips).")
+
 
 
