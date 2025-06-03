@@ -11,7 +11,7 @@ def load_data(version=None):  # ← lisab cache'i võtme
 def gtfs_view():
     stops_df = load_data(version=st.session_state["gtfs_version"])
 
-    st.title("🚏 Peatuste filtreerimine kuuluvse järgi")
+    st.title("🚏 Peatuste filtreerimine kuuluvuse järgi")
 
     search_type = st.radio("**Vali tunnus, mille järgi soovid peatusi grupeerida:**", ["Haldaja", "Kohalik omavalitsus"])
 
