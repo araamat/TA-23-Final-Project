@@ -30,11 +30,9 @@ def gtfs_view():
     with st.form("route_search_form"):
         route_input = st.text_input("**Sisesta route_id:**", placeholder="nt dc6d5ccae7f41a36dd71c4b569278734 või midagi sarnast")
         search_clicked = st.form_submit_button("🔍 Otsi")
-        
+
     if search_clicked and route_input:
         st.session_state["submitted_route"] = route_input
-
-
 
     if search_clicked and st.session_state.get("route_input"):
         st.session_state["submitted_route"] = st.session_state["route_input"]
@@ -53,7 +51,16 @@ def gtfs_view():
             return value
 
         filtered_routes_display = filtered_routes.copy()
-        filtered_routes_display['route_short_name'] = filtered_routes_display['route_short_name'].astype(str).apply(wrap_text)
+
+        # 👇 Kontrolli kas veerg 'route_short_name' eksisteerib
+        if 'route_short_name' in filtered_routes_display.columns:
+            filtered_routes_display['route_short_name'] = (
+                filtered_routes_display['route_short_name'].astype(str).apply(wrap_text)
+            )
+        else:
+            st.warning("Veerg `route_short_name` puudub failis `routes.txt`.")
+            st.write("Olemasolevad veerud:", filtered_routes_display.columns.tolist())
+            filtered_routes_display['route_short_name'] = ""
 
         st.write(f"**Seotud liinid Route ID-ga**: {selected_route_id}")
         st.dataframe(filtered_routes_display[['route_id', 'route_short_name', 'route_long_name']], hide_index=True, use_container_width=True)
@@ -114,3 +121,4 @@ def gtfs_view():
                     icon=folium.Icon(color='blue', icon='info-sign')
                 ).add_to(m)
             st_folium(m, height=400, width="100%")
+
