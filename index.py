@@ -15,6 +15,8 @@ from search_by_line import gtfs_view as line_view
 from authority import gtfs_view as authority_view
 from stopPoster import gtfs_view as stop_poster_view
 from search_by_stop_pair import gtfs_view as stop_pair_view
+from competent_agency_view import gtfs_view as competent_agency_view
+
 
 GTFS_ZIP = "gtfs.zip"
 GTFS_URL = "https://peatus.ee/gtfs/gtfs.zip"
@@ -114,6 +116,12 @@ with st.sidebar:
         st.session_state.view = "stop_pair"
         st.session_state.filter = ""
         st.session_state["filter_select"] = ""
+        
+    if st.button("🏛️ Seosta competent_authority"):
+        st.session_state.view = "competent_agency"
+        st.session_state.filter = ""
+        st.session_state["filter_select"] = ""
+
 
     st.markdown('<div class="filter-label" style="margin-top: 1.5rem; margin-bottom: 0.2rem;">🔍 Otsi ja analüüsi liine: </div>', unsafe_allow_html=True)
 
@@ -171,6 +179,9 @@ elif view == "poster":
 
 elif view == "stop_pair":
     stop_pair_view()
+    
+elif view == "competent_agency":
+    competent_agency_view()
 
 elif view == "filter":
     if filter_view == "Route ID järgi":
