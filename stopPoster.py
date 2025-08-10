@@ -146,7 +146,6 @@ def gtfs_view():
 
     stops, stop_times, trips, routes, calendar = load_gtfs_data(version=st.session_state["gtfs_version"])
 
-
     if stops is not None:
         def format_peatus(row):
             code = row.get("stop_code", "—")
@@ -235,6 +234,7 @@ def gtfs_view():
             "monday": "E", "tuesday": "T", "wednesday": "K",
             "thursday": "N", "friday": "R", "saturday": "L", "sunday": "P"
         }
+        weekday_order = ["E", "T", "K", "N", "R", "L", "P"]
 
         output_rows = []
         for _, row in enriched.iterrows():
@@ -244,15 +244,28 @@ def gtfs_view():
                 "Väljumine": row['departure_time'],
                 "Liini nr": f"'{row['route_short_name']}" if "-" in str(row['route_short_name']) else row['route_short_name'],
                 "Liini nimetus": row['trip_long_name'],
-                "Liin on käigus": ", ".join(weekdays),
+                "Liin on käigus": weekdays,
                 "Liini info": liin_info
             })
 
-        poster_df = pd.DataFrame(output_rows)
+        # --- KOONDA SAMAD VÄLJUMISED
+        poster_df = (
+            pd.DataFrame(output_rows)
+            .groupby(["Väljumine", "Liini nr", "Liini nimetus", "Liini info"], as_index=False)
+            .agg({"Liin on käigus": lambda days: sorted(set(sum(days, [])), key=weekday_order.index)})
+        )
+        poster_df["Liin on käigus"] = poster_df["Liin on käigus"].apply(lambda days: ", ".join(days))
+        poster_df = poster_df.sort_values(["Väljumine", "Liini nr", "Liini nimetus"]).reset_index(drop=True)
+        
+        # 🛠 Muuda veergude järjekorda ekraanil
+        poster_df = poster_df[["Väljumine", "Liini nr", "Liini nimetus", "Liin on käigus", "Liini info"]]
+
+
+        # --- Kuvamine
         st.subheader("📄 Väljumised")
         st.dataframe(poster_df, use_container_width=True, hide_index=True)
 
-               # --- PDF allalaadimine
+        # --- PDF allalaadimine
         pdf_buffer = generate_pdf(stop_info, stop_code, img, poster_df, kuupaev)
         st.download_button(
             "⬇️ Laadi poster PDF-na alla",
@@ -274,12 +287,12 @@ def gtfs_view():
 
         st.download_button(
             "⬇️ Laadi poster CSV-na alla",
-            data=csv_buffer.getvalue().encode("utf-8-sig"),  # ← see tagab täpitähed Excelis
+            data=csv_buffer.getvalue().encode("utf-8-sig"),
             file_name=f"poster_{stop_info['stop_name']}.csv",
             mime="text/csv"
         )
 
-        # Kaart
+        # --- Kaart
         if 'stop_lat' in stop_info and 'stop_lon' in stop_info:
             st.subheader("🗺️ Peatuse asukoht kaardil")
             import folium
