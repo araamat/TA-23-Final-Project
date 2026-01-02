@@ -19,7 +19,7 @@ from competent_agency_view import gtfs_view as competent_agency_view
 
 
 GTFS_ZIP = "gtfs.zip"
-GTFS_URL = "https://peatus.ee/gtfs/gtfs.zip"
+GTFS_URL = "https://cloud.agri.ee/s/dL5oSSTd47XCymD"
 GTFS_TEMP_DIR = "gtfs_temp"
 GTFS_MAIN_DIR = "gtfs_data"
 
