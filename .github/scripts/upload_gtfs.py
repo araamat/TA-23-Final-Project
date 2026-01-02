@@ -7,8 +7,8 @@ import json
 import os
 
 # GTFS settings
-GTFS_URL = "https://peatus.ee/gtfs/gtfs.zip"
-GTFS_ZIP = "gtfs.zip"
+GTFS_URL = "https://eu-gtfs.remix.com/estonia_unified_gtfs.zip"
+GTFS_ZIP = "estonia_unified_gtfs.zip"
 FOLDER_ID = "1BdOatFcuxghS3sI7nqwdUUfom35aY-vM"
 
 # Save GTFS zip
