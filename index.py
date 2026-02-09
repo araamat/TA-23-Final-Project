@@ -18,13 +18,8 @@ from search_by_stop_pair import gtfs_view as stop_pair_view
 from competent_agency_view import gtfs_view as competent_agency_view
 
 
-<<<<<<< HEAD
-GTFS_ZIP = "gtfs.zip"
-GTFS_URL = "https://cloud.agri.ee/s/dL5oSSTd47XCymD/download/gtfs.zip"
-=======
 GTFS_ZIP = "estonia_unified_gtfs.zip"
 GTFS_URL = "https://eu-gtfs.remix.com/estonia_unified_gtfs.zip"
->>>>>>> acc768b (trip_long_name->trip_short_name)
 GTFS_TEMP_DIR = "gtfs_temp"
 GTFS_MAIN_DIR = "gtfs_data"
 
