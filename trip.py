@@ -45,7 +45,7 @@ def gtfs_view():
             return
 
         st.write(f"**Seotud sõidud Trip ID-ga**: {selected_trip_id}")
-        st.dataframe(filtered_trips[['trip_id', 'route_id', 'service_id', 'trip_headsign', 'trip_long_name']].astype(str), use_container_width=True, hide_index=True)
+        st.dataframe(filtered_trips[['trip_id', 'route_id', 'service_id', 'trip_headsign', 'trip_short_name']].astype(str), use_container_width=True, hide_index=True)
 
         trip_ids = filtered_trips['trip_id'].unique()
 

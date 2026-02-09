@@ -72,7 +72,7 @@ def gtfs_view():
     filtered_trips = trips_df[trips_df['route_id'] == selected_route]
 
     if not filtered_trips.empty:
-        trips_display = filtered_trips[['trip_id', 'service_id', 'trip_headsign', 'trip_long_name']].copy()
+        trips_display = filtered_trips[['trip_id', 'service_id', 'trip_headsign', 'trip_short_name']].copy()
         trips_display = trips_display.astype(str)
         st.write(f"**Seotud reisid liinil:** {selected_route}")
         st.dataframe(trips_display, use_container_width=True, hide_index=True)

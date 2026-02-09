@@ -139,7 +139,7 @@ def gtfs_view():
                 st.warning("Selle liiniga ei leitud sõite.")
                 return
 
-            relevant_trips['trip_label'] = relevant_trips['trip_id'].astype(str) + " (" + relevant_trips['trip_long_name'] + ")"
+            relevant_trips['trip_label'] = relevant_trips['trip_id'].astype(str) + " (" + relevant_trips['trip_short_name'] + ")"
             trip_valik = st.selectbox(
                 "**Liini Trip ID valik:**",
                 relevant_trips['trip_label'],
@@ -152,7 +152,7 @@ def gtfs_view():
             trip_id = selected_trip['trip_id']
             service_id = selected_trip['service_id']
 
-            st.markdown(f"**Valitud Trip ID:** {trip_id} — **{selected_trip['trip_long_name']}**")
+            st.markdown(f"**Valitud Trip ID:** {trip_id} — **{selected_trip['trip_short_name']}**")
 
             stop_seq = stop_times_df[stop_times_df['trip_id'] == trip_id].merge(stops_df, on="stop_id").sort_values("stop_sequence")
 

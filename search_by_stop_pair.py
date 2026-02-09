@@ -70,7 +70,7 @@ def gtfs_view():
     enriched['Väljumine'] = enriched['departure_time']
     enriched['Saabumine'] = enriched['arrival_time']
     enriched['Trip ID'] = enriched['trip_id'].astype(str).str.replace(",", "")
-    enriched['Liini nimetus'] = enriched['trip_long_name']
+    enriched['Liini nimetus'] = enriched['trip_short_name']
     enriched['Vedaja'] = enriched['agency_name']
     enriched['Liin'] = enriched['route_short_name']
 
@@ -89,14 +89,14 @@ def gtfs_view():
     st.dataframe(final_df, use_container_width=True, hide_index=True)
 
     if st.checkbox("**:arrow_left: avab liini peatuste kuvamise nii tabelis kui ka kaardil**"):
-        trip_options = enriched[['trip_id', 'trip_long_name']].drop_duplicates()
-        trip_options['valik'] = trip_options['trip_id'].astype(str) + " — " + trip_options['trip_long_name']
+        trip_options = enriched[['trip_id', 'trip_short_name']].drop_duplicates()
+        trip_options['valik'] = trip_options['trip_id'].astype(str) + " — " + trip_options['trip_short_name']
         valik_dict = dict(zip(trip_options['valik'], trip_options['trip_id']))
         valitud_valik = st.selectbox("**Vali Trip**", list(valik_dict.keys()))
         trip_valik = valik_dict[valitud_valik]
 
         stops_for_map = stop_times[stop_times['trip_id'] == trip_valik].merge(stops, on="stop_id").sort_values("stop_sequence")
-        valitud_trip_long_name = enriched[enriched['trip_id'] == trip_valik]['trip_long_name'].values[0]
+        valitud_trip_short_name = enriched[enriched['trip_id'] == trip_valik]['trip_short_name'].values[0]
 
         if not stops_for_map.empty:
             st.markdown("### 📋 Valitud liini peatused järjestuses")
@@ -116,7 +116,7 @@ def gtfs_view():
             for idx, row in stops_for_map.iterrows():
                 folium.Marker(
                     location=[row['stop_lat'], row['stop_lon']],
-                    popup=f"{row['stop_name']} ({valitud_trip_long_name})",
+                    popup=f"{row['stop_name']} ({valitud_trip_short_name})",
                     icon=folium.Icon(color='blue', icon='info-sign')
                 ).add_to(m)
             st_folium(m, height=500, width="100%")

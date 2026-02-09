@@ -223,7 +223,7 @@ def gtfs_view():
         enriched = enriched[enriched['service_id'].isin(sobivad_service_id)]
         enriched = enriched.merge(routes, on="route_id").merge(calendar, on="service_id")
         enriched['departure_time'] = pd.to_datetime(enriched['departure_time'], format='%H:%M:%S', errors='coerce')
-        enriched = enriched.sort_values(["departure_time", "route_short_name", "trip_long_name"])
+        enriched = enriched.sort_values(["departure_time", "route_short_name", "trip_short_name"])
         enriched['departure_time'] = enriched['departure_time'].dt.strftime('%H:%M')
 
         if enriched.empty:
@@ -243,7 +243,7 @@ def gtfs_view():
             output_rows.append({
                 "Väljumine": row['departure_time'],
                 "Liini nr": f"'{row['route_short_name']}" if "-" in str(row['route_short_name']) else row['route_short_name'],
-                "Liini nimetus": row['trip_long_name'],
+                "Liini nimetus": row['trip_short_name'],
                 "Liin on käigus": weekdays,
                 "Liini info": liin_info
             })
