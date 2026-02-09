@@ -55,8 +55,14 @@ def gtfs_view():
         else:
             selected_trip = st.selectbox("**Vali täpne Trip ID**", trip_ids)
 
-        stop_times = stop_times_df[stop_times_df['trip_id'] == selected_trip]
-        stop_data = stop_times.merge(stops_df, on="stop_id").sort_values("stop_sequence")
+        stop_times = stop_times_df[stop_times_df['trip_id'] == selected_trip].copy()
+        stops_copy = stops_df.copy()
+
+        # Tagame, et mõlemad 'stop_id' veerud on stringid
+        stop_times['stop_id'] = stop_times['stop_id'].astype(str)
+        stops_copy['stop_id'] = stops_copy['stop_id'].astype(str)
+
+        stop_data = stop_times.merge(stops_copy, on="stop_id").sort_values("stop_sequence")
 
     
         if not stop_data.empty:

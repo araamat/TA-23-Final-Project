@@ -36,7 +36,7 @@ def gtfs_view():
             st.session_state["submitted_route"] = route_input
         else:
             st.warning("Palun sisesta Route ID.")
-            return  # Peatab funktsiooni, kui pole sisendit
+            return
 
     if "submitted_route" not in st.session_state or not st.session_state["submitted_route"]:
         st.info("Sisesta ülemises lahtris route_id ja vajuta 'Otsi'.")
@@ -78,8 +78,14 @@ def gtfs_view():
         st.dataframe(trips_display, use_container_width=True, hide_index=True)
 
         selected_trip = st.selectbox("**Liini Trip ID valik:**", filtered_trips['trip_id'].values)
-        stop_times = stop_times_df[stop_times_df['trip_id'] == selected_trip]
-        stop_data = stop_times.merge(stops_df, on="stop_id").sort_values("stop_sequence")
+        stop_times = stop_times_df[stop_times_df['trip_id'] == selected_trip].copy()
+        stops_df_copy = stops_df.copy()
+
+        # VEERTUPEDE TAASTAMINE SAME TYPE
+        stop_times['stop_id'] = stop_times['stop_id'].astype(str)
+        stops_df_copy['stop_id'] = stops_df_copy['stop_id'].astype(str)
+
+        stop_data = stop_times.merge(stops_df_copy, on="stop_id").sort_values("stop_sequence")
 
         if not stop_data.empty:
             st.write("### Valitud reisiga seotud peatused ja nende andmestik")
@@ -126,6 +132,4 @@ def gtfs_view():
             st_folium(m, height=400, width="100%")
     else:
         st.info(f"Liinil {selected_route} puuduvad seotud reisid (trips).")
-
-
 

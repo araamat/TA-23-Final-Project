@@ -1,38 +1,66 @@
-agency_id,agency_name,agency_url,agency_timezone,agency_phone,agency_lang
-31,Aktsiaselts MK Autobuss,http://www.peatus.ee,Europe/Tallinn,"",et
-100063,Alukvik OÜ,http://www.alukvik.ee,Europe/Tallinn,"",""
-632,Arilix OÜ,http://www.vaikebussid.ee,Europe/Tallinn,+372 5172166,et
-78,AS Lux Express Estonia,http://www.luxexpress.eu,Europe/Tallinn,+372 6813471,et
-100082,ATG Bussiliinid OÜ,http://www.peatus.ee,Europe/Tallinn,+372 6272710,et
-100083,ATG Bussipark OÜ,http://www.peatus.ee,Europe/Tallinn,+372 6272710,et
-100047,Atko Bussiliinid AS,https://atko.ee/,Europe/Tallinn,"",""
-898970,Eesti Bussiliinid OÜ,http://www.peatus.ee,Europe/Tallinn,+3726272710,""
-100056,Ekspressbussiliinid osaühing,http://www.peatus.ee,Europe/Tallinn,"",et
-82,ELRON,http://www.elron.ee,Europe/Tallinn,1447,et
-100043,Estonian Lines OÜ,http://www.peatus.ee,Europe/Tallinn,+372 5188493,et
-100086,FlixBus Estonia OÜ,http://www.peatus.ee,Europe/Tallinn,6708401,""
-100084,Flixbus Polska sp.o.o,https://www.flixbus.ee/,Europe/Tallinn,"",""
-60,GoBus AS,http://www.gobus.ee,Europe/Tallinn,+372 736 2290,et
-295,HANSABUSS AS,http://www.hansabuss.ee,Europe/Tallinn,+372 6713260,et
-787,Kalle Bussid OÜ,http://www.peatus.ee,Europe/Tallinn,+372 5177354,et
-100002,Kihnu Veeteed AS,http://www.veeteed.com,Europe/Tallinn,+372 4431069,et
-100073,MEELIS HEEK,http://www.peatus.ee,Europe/Tallinn,+372 5265204,et
-317,MK Reis OÜ,http://www.reis.ee,Europe/Tallinn,+372 5101872,et
-100027,NAJA OÜ,http://www.peatus.ee,Europe/Tallinn,+372 5540170,et
-628,Norma-A SIA,http://www.peatus.ee,Europe/Tallinn,00371 9412675 ,""
-100081,Osaühing Bristol Takso,http://www.bristoltakso.ee,Europe/Tallinn,Kontori telefon: +372 443 0600,et
-100026,OSAÜHING FREMANTI,http://www.peatus.ee,Europe/Tallinn,+37256904537,et
-100078,osaühing Tulisilm,http://www.tulisilm.ee,Europe/Tallinn,+372 6888080,et
-100025,OV Ida-Bus OÜ,http://www.peatus.ee,Europe/Tallinn,+372 5358 6017,et
-100075,OÜ Baltic Shuttle,http://www.peatus.ee,Europe/Tallinn,+372 53048877,et
-100032,Piiroja Invest OÜ,http://www.peatus.ee,Europe/Tallinn,56699550,et
-42,Rannu Rukkilill E.S.T. OÜ,http://www.peatus.ee,Europe/Tallinn,+ 372 3351263,et
-100060,Saaremaa vald,http://saaremaavald.ee,Europe/Tallinn,4550530,""
-50,SEBE Aktsiaselts,http://www.sebe.ee,Europe/Tallinn,+372 6064969,et
-100030,Sirel Reisid OÜ,http://sirelreisid.com/,Europe/Tallinn,+372 5152849,et
-220,Taisto Express OÜ,http://www.taistoexpress.ee,Europe/Tallinn,+372 56257001,et
-56,Tallinna Linnatranspordi AS,http://www.tallinnlt.ee/,Europe/Tallinn,+372 643 4142,et
-100052,TS Laevad OÜ,http://www.praamid.ee,Europe/Tallinn,6318323,""
-869,Tõnu Tours OÜ,http://tonutours.onepagefree.com/,Europe/Tallinn,+372 56624522,et
-100077,Valgis osaühing,http://www.peatus.ee,Europe/Tallinn,+372 56923925,et
-0,Teadmata,http://www.peatus.ee,Europe/Tallinn,"",
+agency_id,agency_name,agency_url,agency_timezone,agency_phone,agency_fare_url,agency_lang,agency_email
+LAANE_VIRUMAA_10230847,HANSABUSS AS,http://www.hansabuss.ee,Europe/Tallinn,+372 600 7755,https://iil.ee,et,liinid@hansabuss.ee
+10111752,Alukvik OÜ,http://www.alukvik.ee,Europe/Tallinn,+372 508 2087,https://iil.ee,et,alukvik@gmail.com
+12794933,Ekspressbussiliinid osaühing,https://www.facebook.com/ekspressbussiliinid/,Europe/Tallinn,+372 5259100,https://www.tpilet.ee/,et,ekspressbussiliinid@gmail.com
+HARJUMAA_10085032,GoBus AS,http://www.gobus.ee,Europe/Tallinn,+372 6404000,https://iil.ee,et,harjumaa@gobus.ee
+HARJUMAA_10230847,HANSABUSS AS,http://www.hansabuss.ee,Europe/Tallinn,+372 6007755,https://iil.ee,et,liinid@hansabuss.ee
+HARJUMAA_10077848,SEBE Aktsiaselts,http://www.sebe.ee,Europe/Tallinn,+372 6022555,https://iil.ee,et,harjuinfo@sebe.ee
+12678055,TS Laevad OÜ,http://www.praamid.ee,Europe/Tallinn,6318323,http://www.praamid.ee,et,info@praamid.ee
+12019051,OÜ Baltic Shuttle,https://www.balticshuttle.ee/ee,Europe/Tallinn,+372 53048877,https://www.balticshuttle.ee/ee,et,info@balticshuttle.ee
+KAUGLIINID_10092807,AS Lux Express Estonia,https://luxexpress.eu/,Europe/Tallinn,+372 680 0909,https://luxexpress.eu/,et,info@luxexpress.eu
+KAUGLIINID_10085032,GoBus AS,https://gobus.ee,Europe/Tallinn,+372 640 4000,https://gobus.ee,et,klienditugi@gobus.ee
+11362249,Kalle Bussid OÜ,https://www.facebook.com/KalleBussid/,Europe/Tallinn,+372 5177354,https://www.facebook.com/KalleBussid/,et,kallebussidou@gmail.com
+10769546,Taisto Express OÜ,https://express.taisto.ee/,Europe/Tallinn,+372 56257001,https://express.taisto.ee/,et,taisto@taisto.ee
+KAUGLIINID_10117921,Aktsiaselts MK Autobuss,https://mkautobuss.ee/,Europe/Tallinn,+372 5551 5316,https://mkautobuss.ee/,et,info@mkautobuss.ee
+10696072,Arilix OÜ,https://www.bussikeskus.ee/,Europe/Tallinn,+372 5886 0000,https://www.bussikeskus.ee/,et,tellimine@bussikeskus.ee
+12483162,Estonian Lines OÜ,https://www.estonianlines.eu,Europe/Tallinn,+372 518 8493,https://www.estonianlines.eu,et,info@estonianlines.eu
+KAUGLIINID_10230847,HANSABUSS AS,https://hansabuss.ee/,Europe/Tallinn,+ 372 600 7755,https://hansabuss.ee/,et,teated@hansabuss.ee
+KAUGLIINID_10734513,MK Reis OÜ,https://reis.ee/,Europe/Tallinn,+372 5101872,https://reis.ee/,et,info@reis.ee
+10180026,osaühing Tulisilm,https://tulisilm.eu/,Europe/Tallinn,+372 6888080,https://tulisilm.eu/,et,info@tulisilm.eu
+12131492,Sirel Reisid OÜ,http://sirelreisid.com/,Europe/Tallinn,+372 515 2849,http://sirelreisid.com/,et,info@sirelreisid.com
+TARTUMAA_10230847,HANSABUSS AS,http://www.hansabuss.ee,Europe/Tallinn,+372 5213555,https://transport.tartumaa.ee/bussiliiklus/,et,teated@hansabuss.ee
+10867071,Kihnu Veeteed AS,https://www.veeteed.com/#/et/,Europe/Tallinn,+372 4431069,https://www.veeteed.com/#/et/main-inside/select-datetime?route=LAA-PII-LAA&package=LAA-PII&date=2026-01-23,et,veeteed@veeteed.com
+10520953,ELRON,https://elron.ee/,Europe/Tallinn,6160245,https://elron.ee/piletiinfo/piletid,et,klienditugi@elron.ee
+IDA_VIRU_10085032,GoBus AS,https://www.gobus.ee,Europe/Tallinn,+3723540344,https://maakonnad.pilet.ee/,et,ida@gobus.ee
+10895370,MEELIS HEEK,http://www.peatus.ee,Europe/Tallinn,+372 5265204,https://maakonnad.pilet.ee/,et,meelisheek@hot.ee
+IDA_VIRU_10734513,MK Reis OÜ,http://www.reis.ee,Europe/Tallinn,+372 5101872,https://maakonnad.pilet.ee/,et,rakvere@reis.ee
+VILJANDIMAA_10092807,AS Lux Express Estonia,http://www.luxexpress.eu,Europe/Tallinn,+3726813471,http://www.luxexpress.eu,et,info@luxexpress.eu
+VILJANDIMAA_10926425,Atko Bussiliinid AS,https://atko.ee/,Europe/Tallinn,+3724340089,https://maakonnad.pilet.ee,et,viljandi@atko.ee
+VILJANDIMAA_10085032,GoBus AS,http://www.gobus.ee,Europe/Tallinn,+3727362290,https://tpilet.ee,et,info@gobus.ee
+NARVA_10085032,GoBus AS,http://www.gobus.ee,Europe/Tallinn,+372 736 2290,http://www.pilet.ee,et,ita@gobus.ee
+POLVAMAA_10085032,GoBus AS,https://www.gobus.ee,Europe/Tallinn,+372 640 4000,https://maakonnad.pilet.ee,et,info@gobus.ee
+77000306,Saaremaa vald,http://saaremaavald.ee,Europe/Tallinn,4550530,https://www.saarelaevapiletid.ee,et,vald@saaremaavald.ee
+SAAREMAA_10085032,GoBus AS,https://www.gobus.ee,Europe/Tallinn,+372 736 2290,https://maakonnad.pilet.ee/et/home,et,klienditugi@gobus.ee
+PARNUMAA_10117921,Aktsiaselts MK Autobuss,https://mkautobuss.ee/,Europe/Tallinn,+372 554 9236,https://parnu.pilet.ee/,et,parnu@mkautobuss.ee
+PARNUMAA_10926425,Atko Bussiliinid AS,https://atko.ee/,Europe/Tallinn, +372 4424 096,https://parnu.pilet.ee/,et,grupp@atko.ee
+PARNUMAA_10085032,GoBus AS,https://gobus.ee/,Europe/Tallinn,+372 640 4000,https://parnu.pilet.ee/,et,info@gobus.ee
+PARNUMAA_10077848,SEBE Aktsiaselts,https://www.sebe.ee,Europe/Tallinn,+372 4499 060,https://parnu.pilet.ee/,et,parnuinfo@sebe.ee
+10312960,Tallinna Linnatranspordi AS,https://transport.tallinn.ee,Europe/Tallinn,+372 643 4142,https://tallinn.pilet.ee/,et,info@tlt.ee
+VORUMAA_10085032,GoBus AS,https://www.gobus.ee,Europe/Tallinn,+372 640 4000,https://maakonnad.pilet.ee,et,info@gobus.ee
+RAKVERE_10230847,HANSABUSS AS,https://www.hansabuss.ee,Europe/Tallinn,+372 6713260,https://rakvere.pilet.ee,et,liinid@hansabuss.ee
+LAANEMAA_10085032,GoBus AS,http://www.gobus.ee,Europe/Tallinn,+372 640 4000,https://iil.ee,et,klienditugi@gobus.ee
+LAANEMAA_10734513,MK Reis OÜ,http://www.reis.ee,Europe/Tallinn,+372 555 64006,https://iil.ee,et,info@reis.ee
+16043603,ATG Bussipark OÜ,http://www.peatus.ee,Europe/Tallinn,+372 6272710,http://www.peatus.ee,et,trans@atko.ee
+JARVAMAA_10085032,GoBus AS,http://www.gobus.ee,Europe/Tallinn,+372 736 2290,http://www.gobus.ee,et,klienditugi@gobus.ee
+RAPLAMAA_10230847,HANSABUSS AS,http://www.hansabuss.ee,Europe/Tallinn,+372 600 7755,https://iil.ee,et,liinid@hansabuss.ee
+RAPLAMAA_10085032,GoBus AS,http://www.gobus.ee,Europe/Tallinn,+372 640 4000,https://iil.ee,et,klienditugi@gobus.ee
+HIIUMAA_10230847,HANSABUSS AS,https://www.hansabuss.ee,Europe/Tallinn,+37258558338,https://maakonnad.pilet.ee/et/home,et,teated@hansabuss.ee
+PARNU_10077848,SEBE Aktsiaselts,https://www.sebe.ee/,Europe/Tallinn,+372 6064969,https://www.sebe.ee/,et,info@pytk.ee
+10315213,Osaühing Bristol Takso,https://www.bristoltakso.ee/,Europe/Tallinn,+372 443 0600,https://www.bristoltakso.ee/,et,info@pytk.ee
+11321747,Piiroja Invest OÜ,https://vurr.eu/,Europe/Tallinn,56699550,https://vurr.eu/,et,info@pytk.ee
+16038306,ATG Bussiliinid OÜ,https://atko.ee/,Europe/Tallinn,+372 6272710,https://maakonnad.pilet.ee/et/home,et,grupp@atko.ee
+VALGAMAA_10085032,GoBus AS,https://gobus.ee/,Europe/Tallinn,+372 640 4000,https://maakonnad.pilet.ee/et/home,et,klienditugi@gobus.ee
+TARTU_10077848,SEBE Aktsiaselts,https://www.sebe.ee/,Europe/Tallinn,+372 6064969,https://tartu.pilet.ee/et/home,et,info@sebe.ee
+TARTU_10085032,GoBus AS,http://www.gobus.ee,Europe/Tallinn,+372 640 4000,https://tartu.pilet.ee/et/home,et,klienditugi@gobus.ee
+TARTU_10230847,HANSABUSS AS,https://hansabuss.ee/,Europe/Tallinn,+372 5213555,https://tartu.pilet.ee/et/home,et,tartu@hansaliinid.ee
+10715869,SIA NORMA-A EESTI Filiaal,https://ecolines.net/et-EE,Europe/Tallinn,+3726062217,https://ecolines.net/et-EE/tickets,et,booking@ecolines.ee
+100084,Flixbus Polska sp.o.o,https://www.flixbus.ee/bussiliinid,Europe/Tallinn,+48223079334,https://www.flixbus.ee,et,uslugi@flixbus.pl
+14868446,FlixBus Estonia OÜ,https://www.flixbus.com/bus-routes,Europe/Tallinn,6708401,https://www.flixbus.com/,et,estonia@flixbus.com
+14144978,Highway Riders OÜ,http://highwayriders.eu/,Europe/Tallinn,+37256958080,https://www.tpilet.ee/,et,charter@highwayriders.eu​
+KAUGLIINID_RAHVUSVAHELINE_10092807,AS Lux Express Estonia,https://luxexpress.eu/all-routes/,Europe/Tallinn,+3726800909,https://luxexpress.eu/,et,info@luxexpress.eu
+11522011,OV Ida-Bus OÜ,https://www.peatus.ee,Europe/Tallinn,+372 5358 6017,https://kohtla-jarve.ee/linn-uudised-ja-kontakt/linna-info/uhistransport/,et,vladislav-rukin@yandex.ru
+KOHTLA_JARVE_10085032,GoBus AS,https://peatus.ee/,Europe/Tallinn,+372 640 4000,https://kohtla-jarve.ee/linn-uudised-ja-kontakt/linna-info/uhistransport/,et,klienditugi@gobus.ee
+12012468,NAJA OÜ,https://www.peatus.ee,Europe/Tallinn,+372 5540170,https://kohtla-jarve.ee/linn-uudised-ja-kontakt/linna-info/uhistransport/,et,oksanatu@mail.ru
+10579290,OSAÜHING FREMANTI,https://www.peatus.ee,Europe/Tallinn,+37256904537,https://kohtla-jarve.ee/linn-uudised-ja-kontakt/linna-info/uhistransport/,et,vos.lia@gmail.com
+JOGEVAMAA_10085032,GoBus AS,https://gobus.ee,Europe/Tallinn,55980420,https://gobus.ee,ET,info@gobus.ee
+12701825,Eesti Bussiliinid OÜ,https://atko.ee/,Europe/Tallinn,+372 7760321,https://uhistransport.ee/,et,jogeva@atko.ee

@@ -5,22 +5,53 @@ from streamlit_folium import st_folium
 import os
 
 @st.cache_data(ttl=86400)
-def load_data(version=None):  # ← versioon cache võtmes
+def load_data(version=None):
     base_path = "gtfs_data"
-    routes_df = pd.read_csv(os.path.join(base_path, "routes.txt"))
-    trips_df = pd.read_csv(os.path.join(base_path, "trips.txt"))
-    stop_times_df = pd.read_csv(os.path.join(base_path, "stop_times.txt"))
-    stops_df = pd.read_csv(os.path.join(base_path, "stops.txt"))
-    calendar_df = pd.read_csv(os.path.join(base_path, "calendar.txt"))
-    calendar_dates_df = pd.read_csv(os.path.join(base_path, "calendar_dates.txt"))
 
-    routes_df['route_short_name'] = routes_df['route_short_name'].astype(str)
-    routes_df['valik'] = routes_df['route_short_name'] + " (" + routes_df['route_long_name'] + ")"
+    routes_df = pd.read_csv(
+        os.path.join(base_path, "routes.txt"),
+        dtype={"route_id": str, "route_short_name": str}
+    )
+
+    trips_df = pd.read_csv(
+        os.path.join(base_path, "trips.txt"),
+        dtype={"route_id": str, "trip_id": str, "service_id": str}
+    )
+
+    stop_times_df = pd.read_csv(
+        os.path.join(base_path, "stop_times.txt"),
+        dtype={"trip_id": str, "stop_id": str}
+    )
+
+    stops_df = pd.read_csv(
+        os.path.join(base_path, "stops.txt"),
+        dtype={"stop_id": str}
+    )
+
+    calendar_df = pd.read_csv(
+        os.path.join(base_path, "calendar.txt"),
+        dtype={"service_id": str}
+    )
+
+    calendar_dates_df = pd.read_csv(
+        os.path.join(base_path, "calendar_dates.txt"),
+        dtype={"service_id": str}
+    )
+
+    # kuupäevad
     calendar_df['start_date'] = pd.to_datetime(calendar_df['start_date'], format='%Y%m%d')
     calendar_df['end_date'] = pd.to_datetime(calendar_df['end_date'], format='%Y%m%d')
     calendar_dates_df['date'] = pd.to_datetime(calendar_dates_df['date'], format='%Y%m%d')
 
+    routes_df['valik'] = (
+        routes_df['route_short_name'].astype(str)
+        + " ("
+        + routes_df['route_long_name']
+        + ")"
+    )
+
     return routes_df, trips_df, stop_times_df, stops_df, calendar_df, calendar_dates_df
+
 
 
 
